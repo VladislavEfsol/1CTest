@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05a3f749-b22f-46f8-beaf-16943dc62b3f">
+  <producedTypes>
+    <selectionType typeId="9ad59331-e68b-4578-bc99-7a033db9a79f" valueTypeId="2e7338dd-154b-4a8c-acff-ffb19c60e3cf"/>
+    <listType typeId="c992def8-7102-42c1-9be1-63eae0012938" valueTypeId="fe0677b1-3153-42c1-a939-96da84d89000"/>
+    <managerType typeId="89eea763-d751-41ec-bca1-28f2002ce60e" valueTypeId="4c6f63e8-2e06-4082-a94d-a479908a58a1"/>
+    <recordSetType typeId="4769b00b-3117-4f39-b167-fd324ddf2846" valueTypeId="30976792-bb72-41c4-a7ee-08d4952aef2c"/>
+    <recordKeyType typeId="648e04ac-9d80-4bbc-b07d-f9d6caa332e7" valueTypeId="61db4409-d632-4e0c-86f2-fe304b3b3886"/>
+    <recordType typeId="711b6050-3bd1-4f4a-8025-4c9e34778d29" valueTypeId="0ab08633-0a7b-4f9f-8824-65c4d114ec6b"/>
+    <recordManagerType typeId="ff82c544-7508-4bd9-822e-c86316f3e11d" valueTypeId="e1a44731-b82a-4791-9549-9f3934cf25e7"/>
+  </producedTypes>
+  <name>ДатыИзмененныхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты измененных документов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="79b3abdf-d6f1-4362-8023-605bacbfb316">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cfe8cff8-f78d-47bd-b267-bbcc746ca04c">
+    <name>ДатаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="321e37e7-8565-4b09-b4c4-239d8da196af">
+  <producedTypes>
+    <selectionType typeId="0b8be09a-f295-46d4-8b9e-68632d11f325" valueTypeId="062bbf68-912a-43b9-91c5-52aa3c78f4e2"/>
+    <listType typeId="ef83a5f4-99c6-4632-bf49-8bf45f4b03a5" valueTypeId="8167703b-f46f-41bf-a773-4f3eafc0caf3"/>
+    <managerType typeId="82024813-8bfd-4281-9687-6eb768f6dc4c" valueTypeId="6e9a2542-d2e6-4f03-8765-5514f295e8d8"/>
+    <recordSetType typeId="db80b1d7-70ce-4524-b898-99d5a4dc3c6b" valueTypeId="5e1473bd-7393-42f9-9453-ef3c5f43b4a1"/>
+    <recordKeyType typeId="500f9bef-964c-4c5a-8b77-2e7ca2b69fd7" valueTypeId="354a871b-5d01-415f-98cf-1c7a4dda73cc"/>
+    <recordType typeId="ece527b6-f289-4615-a46f-100d2856794c" valueTypeId="c2c53b47-2c1a-4de3-b476-aa0d24e8f434"/>
+    <recordManagerType typeId="ee73dd90-1674-43e4-bcd1-5bae824e3e13" valueTypeId="4f811503-af72-4483-a8b2-49f4b667c145"/>
+  </producedTypes>
+  <name>НДФЛСтандартныеВычетыНаДетей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вычеты по НДФЛ на детей</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НДФЛСтандартныеВычетыНаДетей.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заявления</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Вычет по НДФЛ на детей</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Вычеты по НДФЛ на детей</value>
+  </listPresentation>
+  <resources uuid="723ea20d-dfca-4eb2-b815-7a40ad8eed43">
+    <name>ПериодЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Период, в котором данный вычет перестает действовать (например, ребенку исполняется 18 лет)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9285a63e-3c74-49ec-a2b5-34f30169c6c2">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, которому предоставляется вычет</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a71acd09-39a1-40fe-8f10-979ccc1c3ae1">
+    <name>КодВычета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код вычета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВычетыНДФЛ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ВычетыНДФЛ.Код108</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="88842bb3-662f-4edc-b1a7-553889a51db4">
+    <name>ДатаРожденияРебенка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рождения ребенка</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e4499502-2904-4e15-b685-4f8ec786d123">
+    <name>НомерСтрокиСРебенком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки с ребенком</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="55aef9bf-a7a9-4cdc-8b58-b98dbd3ce6e3">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9bc42152-5a48-4c8f-92fb-88df6b9a1ca9">
+    <name>ФормаЗаполненияСтандартныхВычетовДляДетей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения стандартных вычетов для детей</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

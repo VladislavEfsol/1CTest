@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9c147ce-c313-4e2a-9815-280c67841e19">
+  <producedTypes>
+    <objectType typeId="42f697f2-9ffa-452c-8f07-14388343e535" valueTypeId="afb48596-63a4-42e3-b51f-0747eeadba7f"/>
+    <refType typeId="1948d7bc-4661-44e2-9998-b807e98e4ca5" valueTypeId="5c458dea-5eae-4fdb-9e57-f9842b0f3fb0"/>
+    <selectionType typeId="6cdbc568-5210-40fd-a3d8-7231832582c8" valueTypeId="d66c2712-204e-4fde-beb5-4c55d1550dd6"/>
+    <listType typeId="3d2a3d74-60ff-4094-81ca-a45d77c272ff" valueTypeId="d7068562-7396-49e8-8391-977b8dec1554"/>
+    <managerType typeId="def32b7d-5511-413d-90e1-0c6deefa6236" valueTypeId="10f3a9a8-1608-4489-ab48-bb680127bf6a"/>
+  </producedTypes>
+  <name>ВидыНалогов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды налогов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыНалогов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыНалогов.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВидыНалогов.Attribute.КодБК</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предопределенный</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак предопределенного элемента</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на элемент справочника</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления элемента</value>
+    </toolTip>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это группа</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак группы налогов</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владелец</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Владелец элемента справочника</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа налогов</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа налогов</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ВидыНалогов.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование налога</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Код элемента справочника</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Налог</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Виды налогов: НДС, налог на прибыль и др.</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>70</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="0a7f8aa5-c949-423b-869d-0d2a7748a6c6">
+      <name>АвансовыйПлатежПриУСН</name>
+      <description>Авансовый платеж (УСН)</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000001</value>
+      </code>
+    </items>
+    <items id="a7e1f50b-5b8d-464b-a773-bfc1a9de3838">
+      <name>ПФРСвыше300тр</name>
+      <description>Взносы в ПФР при доходах свыше 300 тысяч руб.(ИП)</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000014</value>
+      </code>
+    </items>
+    <items id="bc3a3df7-f770-492a-92b1-de86ad2cbee0">
+      <name>ЕНВД</name>
+      <description>Единый налог(ЕНВД)</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000007</value>
+      </code>
+    </items>
+    <items id="ab5ce3c3-0129-4a8e-9a03-ed4439bf2222">
+      <name>ЕдиныйНалогПриУСН</name>
+      <description>Единый налог(УСН)</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000002</value>
+      </code>
+    </items>
+    <items id="a1f536c1-bb10-4852-9e61-e7945a41a32e">
+      <name>Патент</name>
+      <description>Налог с патента</description>
+      <code xsi:type="core:StringValue">
+        <value>01-000015</value>
+      </code>
+    </items>
+    <items id="91004e58-30f7-43f0-8d6a-08b9a0b9a20e">
+      <name>НДФЛСотрудники</name>
+      <description>НДФЛ при исполнении обязанностей налогового агента</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000008</value>
+      </code>
+    </items>
+    <items id="3a09f2ec-9a2e-4465-9984-2e80cc1332f2">
+      <name>ПФРСтраховаяСотрудники</name>
+      <description>Страховые взносы в ПФР по сотрудникам</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000010</value>
+      </code>
+    </items>
+    <items id="4c59d476-1162-4cd7-be35-71b2a6cc594b">
+      <name>ПФРНакопительнаяСотрудники</name>
+      <description>Страховые взносы в ПФР, накопительная часть по сотрудникам (до 2014 г)</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000009</value>
+      </code>
+    </items>
+    <items id="53105362-216f-4ea7-bd5b-a85d1005152b">
+      <name>ФСССотрудники</name>
+      <description>Страховые взносы в ФСС</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000011</value>
+      </code>
+    </items>
+    <items id="d3fb49d5-8ba2-4db9-b3de-9ee64254e1ee">
+      <name>ФССТравматизмСотрудники</name>
+      <description>Страховые взносы в ФСС от несчастных случаев</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000012</value>
+      </code>
+    </items>
+    <items id="e68cced5-802a-4413-bf1b-ad64aeb60d9c">
+      <name>ФОМССотрудники</name>
+      <description>Страховые взносы в ФФОМС</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000013</value>
+      </code>
+    </items>
+    <items id="cb02aee8-ed3d-4f8a-ba15-c95eb986803b">
+      <name>ТорговыйСбор</name>
+      <description>Торговый сбор</description>
+      <code xsi:type="core:StringValue">
+        <value>01-000016</value>
+      </code>
+    </items>
+    <items id="e2d9ea16-374d-4883-bb23-a2cf39a38c37">
+      <name>ПФРСтраховая</name>
+      <description>Фиксированные взносы в ПФР</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000004</value>
+      </code>
+    </items>
+    <items id="b340f634-7cd5-4b36-924d-7f9be1209522">
+      <name>ПФРНакопительная</name>
+      <description>Фиксированные взносы в ПФР, накопительная часть (до 2014 г)</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000003</value>
+      </code>
+    </items>
+    <items id="8938ceea-9ad0-423c-881d-57a4aa6d97d8">
+      <name>ТФОМС</name>
+      <description>Фиксированные взносы в ТФОМС</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000005</value>
+      </code>
+    </items>
+    <items id="4ec6723b-a28c-4276-8716-0887ec27c0d2">
+      <name>ФФОМС</name>
+      <description>Фиксированные взносы в ФФОМС</description>
+      <code xsi:type="core:StringValue">
+        <value>00-000006</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыНалогов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыНалогов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыНалогов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="01abda2e-a682-425d-b651-97c797fd610b">
+    <name>ВидНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид налога</value>
+    </synonym>
+    <comment>Заполняется для поставляемых данных</comment>
+    <type>
+      <types>EnumRef.ВидыНалогов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="db9ace75-0014-4ebf-9f27-65caf8a41419">
+    <name>СчетУчетаКВозмещению</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет к возмещению</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Управленческий</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Счет учета налога к возмещению из бюджета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипСчета</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыСчетов.EnumValue.Дебиторы</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfAccounts.Управленческий.НалогиКВозмещению</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa3ff319-3121-4db9-a493-90542a9a2ed9">
+    <name>КодБК</name>
+    <synonym>
+      <key>ru</key>
+      <value>КБК</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код бюджетной классификации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffe28244-cf00-4c32-894c-27bba4b249f8">
+    <name>СчетУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет учета</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Управленческий</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Счет учета налога</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипСчета</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыСчетов.EnumValue.Кредиторы</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfAccounts.Управленческий.Налоги</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="079320cd-84d8-4100-8083-db1ddce4f2ed">
+    <name>НазначениеПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>210</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="842536ba-bfaa-46d0-89da-b72bb684ac37">
+    <name>ДатаАктуальности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата актуальности</value>
+    </synonym>
+    <comment>Служебный реквизит</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="19fb848b-fc7e-43da-84fe-9081778fb76a">
+    <name>НазначениеПлатежаИзменено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа изменено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c20b164-6dc4-4213-829b-df9656ab39b8">
+    <name>КорреспондирующийСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корр. счет (БП)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>7</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер корреспондирующего счета, субсчета</value>
+    </toolTip>
+    <mask>99.99.9</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9d3229cb-160c-488c-998a-9f63872af414">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fec19b23-85d8-40c8-b9bc-c500856f0577">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a168d30f-46f4-4973-829a-33495c3d0653">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="050716da-a997-4704-83be-6eabec0d0229">
+    <name>ФормаРедактированияСчетовУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма редактирования счетов учета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f827fcd3-a159-4715-9b8d-3b989b5aaed9">
+    <name>ФормаВыбораКодаИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор кода из классификатора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="869e50f7-7a82-446f-9f73-24d2e7812233">
+    <name>КонструкторКБК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор КБК</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="62fe24a9-820d-49f7-86a3-a963bf3d0192">
+    <name>АдминистраторыДоходовБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Администраторы доходов бюджетов</value>
+    </synonym>
+  </templates>
+  <templates uuid="fe6bed40-42aa-40f7-844f-625d698a4d65">
+    <name>КлассификацияДоходовБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификация доходов бюджетов за 2014 г.</value>
+    </synonym>
+  </templates>
+  <templates uuid="fdaa9f23-d11e-47aa-864a-38b0f22af6f8">
+    <name>КлассификацияДоходовБюджетов2017</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификация доходов бюджетов за 2017 г.</value>
+    </synonym>
+  </templates>
+  <commands uuid="a919f3cb-274d-460b-aa54-7a8c417b0ebc">
+    <name>ОткрытьФормуРедактированияСчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счета учета</value>
+    </synonym>
+    <group>FormNavigationPanelSeeAlso</group>
+    <commandParameterType>
+      <types>CatalogRef.ВидыНалогов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

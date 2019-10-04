@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.9600.18538"></meta></head><body>
+<h1>Документ "Расходная накладная"</h1>
+<p class="Usual">Документ предназначен для хранения информации по отражению в учете различных операции по реализации (отгрузке) запасов и услуг стороннему контрагенту.</p>
+<p class="Usual">В зависимости от установленного вида операции с помощью данного документа может быть зафиксирована реализация (отгрузка) запасов и услуг по различным операциям:</p>
+<ul><li>
+<p class="Usual">Продажа покупателю,</p>
+</li>
+<li>
+<p class="Usual">Передача на комиссию,</p>
+</li>
+<li>
+<p class="Usual">Передача в переработку,</p>
+</li>
+<li>
+<p class="Usual">Передача на ответхранение,</p>
+</li>
+<li>
+<p class="Usual">Возврат поставщику,</p>
+</li>
+<li>
+<p class="Usual">Возврат комитенту,</p>
+</li>
+<li>
+<p class="Usual">Возврат из переработки,</p>
+</li>
+<li>
+<p class="Usual">Возврат с ответхранения.</p></li></ul><p class="Usual">Необходимо заполнить следующие реквизиты:</p>
+<ul style="MARGIN-RIGHT: 0px" dir="ltr"><li>
+<div><strong>Организация.</strong> В данном реквизите указывается собственная организация, от имени которой оформляется документ. Выбирается из справочника <a href="Catalog.Организации/Help">"Организации"</a>. Реквизит отображается на форме, если в настройках параметров учета включено ведение учета по нескольким организациям.</div>
+</li>
+<li>
+<div><strong>Вид операции.</strong> Указывается вид операции документа.</div>
+</li>
+<li><strong>Контрагент.</strong> В данном реквизите указывается информация о контрагенте, которому реализуются (отгружаются) запасы и услуги. Выбирается из справочника <a href="Catalog.Контрагенты/Help">"Контрагенты"</a>. 
+</li>
+<li>
+<p class="Usual"><strong>Договор.</strong> В данном реквизите указывается договор контрагента, в рамках которого оформляется документ. Выбирается из справочника <a href="Catalog.ДоговорыКонтрагентов/Help">"Договоры контрагентов"</a>.</p>
+</li>
+<li>
+<p class="Usual"><strong>Основание. </strong>В данном реквизите указывается <a href="Document.ПриходнаяНакладная/Help">"Приходная накладная"</a> или <a href="Document.СчетНаОплату/Help">"Счет на оплату"</a> на основание которых сформирован данный документ. Реквизит обязателен для заполнения только для операций "Возврат поставщику", "Возврат комитенту" или "Возврат с ответхранения".</p>
+</li>
+<li>
+<p class="Usual"><strong>Заказ.</strong> В данном реквизите указывается заказ, по которому реализуются (отгружаются) запасы и услуги. Выбирается документ <a href="Document.ЗаказПокупателя/Help">"Заказ покупателя"</a>, если вид операции документа "Продажа покупателю", "Передача на комиссию" или "Возврат из переработки". Выбирается документ <a href="Document.ЗаказПоставщику/Help">"Заказ поставщику"</a>, если вид операции документа "Возврат поставщику", "Возврат комитенту" или "Передача в переработку". Реквизит отображается на форме, если в настройках параметров учета включено заказ в документах отгрузки устанавливается для вссего документа. Реквизит не обязателен для заполнения. Примечание: если вид операции документа "Передача на ответхранение" или "Возврат с ответхранения", реквизит не отображается на форме.</p>
+</li>
+<li>
+<p class="Usual"><strong>Склад.</strong> Структурная единица, с которой списываются запасы. Выбирается из справочника <a href="Catalog.СтруктурныеЕдиницы/Help">"Структурные единицы"</a> с типом "Склад".</p>
+</li>
+<li>
+<p class="Usual"><strong>Ячейка.</strong> В данном реквизите указывается ячейка структурной единицы (стеллаж, участок), с которой списываются запасы. Выбирается из справочника <a href="Catalog.Ячейки/Help">"Ячейки"</a>. Реквизит отображается на форме, если в настройках параметров учета включено ведение учета по ячеистым складам и склад не имеет признак ордерного.</p></li></ul><p class="Usual">На форме документа расположена гиперссылка <a href="CommonForm.ФормаЦеныИВалюта/Help">"Редактировать цены и валюту"</a>, по которой вызывается диалог редактирования видов цен, скидок и валюты данного документа.</p>
+<p class="Usual">В подвале формы можно указать ручную скидку на документ, процентом или суммой.</p>
+<ul><li>
+<p class="Usual"><strong>Запасы и услуги.</strong> Данная табличная часть может быть заполнена с помощью подбора (кнопка <a href="CommonForm.ФормаПодбора/Help">"Подбор"</a> командной панели табличной части) либо методом ручного ввода. Реквизиты табличной части:</p>
+<ul><li><strong>Номенклатура</strong> - позиция номенклатуры, расход которой отражается данным документом. Выбирается из справочника <a href="Catalog.Номенклатура/Help">"Номенклатура"</a> с типом "Запас" или "Услуга". 
+</li>
+<li>
+<p class="Usual"><strong>Характеристика</strong> - при необходимости в данном поле указывается характеристика номенклатуры. Выбирается из справочника <a href="Catalog.ХарактеристикиНоменклатуры/Help">"Характеристики номенклатуры"</a>. Реквизит отображается на форме, если в настройках параметров учета включено ведение учета по характеристикам номенклатуры.</p>
+</li>
+<li>
+<p class="Usual"><strong>Партия</strong> - в данном поле указывается партия номенклатуры. Выбирается из справочника <a href="Catalog.ПартииНоменклатуры/Help">"Партии номенклатуры"</a>. Реквизит обязателен для заполнения, если вид операции документа: "Возврат комитенту", "Возврат из переработки" или "Возврат с ответхранения". Реквизит отображается на форме, если в настройках параметров учета включено ведение партионного учета.</p>
+</li>
+<li>
+<p class="Usual"><strong>Количество</strong> - количество номенклатурной позиции, подлежащей реализации (отгрузке).</p>
+</li>
+<li>
+<p class="Usual"><strong>Из резерва</strong> - количество запасов которые спишутся из резерва при проведении документа.</p>
+</li>
+<li>
+<p class="Usual"><strong>Можно отгрузить</strong> - количество доступной к отгрузке номенклатуры.</p>
+</li>
+<li>
+<p class="Usual"><strong>Не хватает</strong> - количество номенклатуры, которой не хватает для отгрузки по документу.</p>
+</li>
+<li>
+<p class="Usual"><strong>Зарезервировано (всего)</strong> - зарезервировано номенклатуры в рамках заказа на всех складах.</p>
+</li>
+<li>
+<p class="Usual"><strong>Свободно (всего)</strong> - количество свободной номенклатуры на всех складах.</p>
+</li>
+<li>
+<p class="Usual"><strong>Свободно для отгрузки</strong> - свободное количество номенклатуры на складе из колонки "Склад" или из шапки документа.</p>
+</li>
+<li>
+<p class="Usual"><strong>Ед.</strong> - единица измерения номенклатурной позиции. Выбирается из справочника <a href="Catalog.КлассификаторЕдиницИзмерения/Help">"Классификатор единиц измерения"</a> или <a href="Catalog.ЕдиницыИзмерения/Help">"Единицы измерения"</a>.</p>
+</li>
+<li>
+<p class="Usual"><strong>Цена</strong> - цена реализуемой номенклатурной позиции.</p>
+</li>
+<li>
+<p class="Usual"><strong>% Скидки</strong> - процент ручной скидки (наценки).</p>
+</li>
+<li>
+<p class="Usual"><strong>% Авт.</strong> - процент автоматической скидки (наценки). Процент автоматической скидки редактируется в справочнике "<a href="Catalog.АвтоматическиеСкидки/Help">Виды автоматических скидок и наценок</a>". Расчёт автоматических скидок в документе осуществляется при записи документа и при нажатии кнопки "% Авт." над табличной частью.</p>
+<p class="Usual"><strong>Сумма</strong> - стоимость реализуемой номенклатуры по данной строке.</p>
+</li>
+<li>
+<p class="Usual"><strong>Ставка НДС</strong> - ставка налога на добавленную стоимость. Выбирается из справочника <a href="Catalog.СтавкиНДС/Help">"Ставки НДС"</a>.</p>
+</li>
+<li>
+<p class="Usual"><strong>Сумма НДС</strong> - сумма налога на добавленную стоимость по данной строке.</p>
+</li>
+<li>
+<p class="Usual"><strong>Всего</strong> - поле, автоматически заполняемое суммарной стоимостью запасов и услуг согласно настройкам цен и валют. Настройки устанавливаются в диалоге, вызываемом по гиперссылке <a href="CommonForm.ФормаЦеныИВалюта/Help">"Редактировать цены и валюту"</a>.</p>
+</li>
+<li><strong>Заказ </strong>- указывается заказ, по которому реализуются (отгружаются) запасы и услуги. Выбирается документ <a href="Document.ЗаказПокупателя/Help">"Заказ покупателя"</a>, если вид операции документа "Продажа покупателю", "Передача на комиссию" или "Возврат из переработки". Выбирается документ <a href="Document.ЗаказПоставщику/Help">"Заказ поставщику"</a>, если вид операции документа "Возврат поставщику", "Возврат комитенту" или "Передача в переработку". Реквизит отображается на форме, если в настройках параметров учета включено <strong>Заказ в документах отгрузки устанавливается для каждой строки отдельно</strong>. Реквизит не обязателен для заполнения. Примечание: если вид операции документа "Передача на ответхранение" или "Возврат с ответхранения", реквизит не отображается на форме. 
+</li>
+<li><strong>Заказ резерва </strong>- указывается заказ, по которому будет снят резерв запасов. Отображается только для вида операции "Возврат поставщику", при использовании резервирования запасов и заполненном заказе поставщику с указанными заказами покупателей. </li>
+<li><strong>Содержание</strong> - представление запаса в печатной форме. Чтобы реквизит стал видимым, необходимо выполнить <strong>"Все действия" - "Изменить форму"</strong> и установить флаг напротив реквизита.</li></ul></li>
+<li><strong>Доставка</strong>. Группа реквизитов: 
+<ul><li>
+<p class="Usual"><strong>Услуга</strong> - номенклатура с типом "Услуга", использующаяся для отражения доставки в учете. Обязательный реквизит при использовании способа доставки отличного от "Самовывоз". Выбирается из справочника <a href="Catalog.Номенклатура/Help">"Номенклатура"</a>.</p>
+</li>
+<li>
+<p class="Usual"><strong>Стоимость</strong> - стоимость доставки заказа.</p>
+</li>
+<li>
+<p class="Usual"><strong>% НДС, сумма НДС</strong> - данные НДС доставки.</p>
+</li>
+<li>
+<p class="Usual"><strong>Объем </strong>- общий объем заказа. Рассчитывается автоматически по объему элементов из табличной части "Запасы". Может быть отредактирован вручную.</p>
+</li>
+<li>
+<p class="Usual"><strong>Вес</strong> - вес заказа. Рассчитывается автоматически по весу элементов из табличной части "Запасы". Может быть отредактирован вручную.</p></li></ul></li>
+<li>
+<p class="Usual"><strong>Зачет предоплаты.</strong> Данная табличная часть заполняется сведениями по зачету авансов от покупателя или по зачету авансов поставщику, если документом отражается операция возврата. На форме документа расположена гиперссылка <a href="CommonForm.ФормаПодбораАвансовПоставщикам/Help">"Редактировать зачет предоплаты"</a>, по которой вызывается диалог редактирования табличной части "Зачет предоплаты". Реквизиты табличной части:</p>
+<ul><li>
+<p class="Usual"><strong>Документ</strong> - документ поступления авансов: <a href="Document.РасходСоСчета/Help">"Расход со счета"</a>, <a href="Document.РасходИзКассы/Help">"Расход из кассы"</a>, <a href="Document.ПоступлениеВКассу/Help">"Поступление в кассу"</a>, <a href="Document.ПоступлениеНаСчет/Help">"Поступление на счет"</a>. </p>
+</li>
+<li>
+<p class="Usual"><strong>Сумма расчетов</strong> - сумма в валюте договора.</p>
+</li>
+<li>
+<p class="Usual"><strong>Курс</strong> - курс пересчета в валюту документа.</p>
+</li>
+<li>
+<p class="Usual"><strong>Кратность</strong> - кратность пересчета в валюту документа.</p>
+</li>
+<li>
+<p class="Usual"><strong>Сумма платежа</strong> - указывается в валюте документа.</p></li></ul></li>
+<li>
+<p class="Usual"><strong>Дополнительная информация.</strong> Группа реквизитов:</p>
+<ul><li>
+<p class="Usual"><strong>Подразделение</strong> - информация о подразделении-исполнителе. Выбирается из справочника <a href="Catalog.СтруктурныеЕдиницы/Help">"Структурные единицы"</a> с типом "Административно-управленческое подразделение".</p>
+<div></div>
+</li>
+<li>
+<p class="Usual"><strong>Ответственный</strong> - информация о сотруднике, ответственном за ввод текущего документа. Выбирается из справочника <a href="Catalog.Сотрудники/Help">"Сотрудники"</a>. Реквизит необязателен для заполнения.</p>
+</li>
+<li>
+<p class="Usual"><strong>Реквизиты печати</strong> - дополнительные сведения, которые используются при заполнении печатных форм.</p></li></ul></li></ul><p class="Usual"><br></p>
+<p class="Usual"><b>Пример  режима "Остатки и резервы":</b></p>
+<p class="Usual"><b><br></b></p>
+<table style="overflow: visible; table-layout: fixed; padding: 0px 0px 0px 2px; vertical-align: bottom; border-collapse: collapse; font-family: Arial; font-size: 8pt;" cellspacing="0"><tbody style="margin: 0px; font-size: 8pt; background-position: initial initial; background-repeat: initial initial;"><tr style="display: none;"></tr></tbody><colgroup><col width="271"></col><col width="111"></col><col width="39"></col><col width="167"></col><col width="122"></col><col width="170"></col><col width="70"></col><col width="122"></col><col width="123"></col><col width="153"></col><col width="106"></col><col width="206"></col><col width="123"></col></colgroup><tbody><tr style="height: 43px; "><td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Номенклатура</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Количество</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Ед.</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(255, 232, 179); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Можно отгрузить</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(255, 232, 179); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Не хватает</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Склад</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Ячейка</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Остаток  в ячейке</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Свободно  для отгрузки</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Зарезервировано</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Из резерва</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Зарезервировано  (всего)</td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);">Свободно (всего)</td>
+</tr><tr style="height: 17px; "><td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Варочная панель</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">151,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">шт</span></td>
+<td style="color: rgb(255, 165, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">136,000</span></td>
+<td style="color: rgb(255, 165, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">15,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Хозяйственные товары</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1</span></td>
+<td style="color: rgb(255, 165, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">33,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">126,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">15,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">10,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">20,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">132,000</span></td>
+</tr><tr style="height: 17px; "><td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Варочная панель</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">19,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">шт</span></td>
+<td style="color: rgb(255, 165, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">6,000</span></td>
+<td style="color: rgb(255, 165, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">13,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Склад материалов</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">6,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">5,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">20,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">132,000</span></td>
+</tr><tr style="height: 17px; "><td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Ведро с отжимом </span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">шт</span></td>
+<td style="color: rgb(0, 128, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1,000</span></td>
+<td style="color: rgb(0, 128, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">0</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Хозяйственные товары</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1,000</span></td>
+</tr><tr style="height: 17px; "><td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Антифриз-40 10л (зеленый)</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">шт</span></td>
+<td style="color: rgb(255, 0, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">0</span></td>
+<td style="color: rgb(255, 0, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space:nowrap;max-width:0px;">Склад материалов</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><br></td></tr></tbody></table><blockquote dir="ltr" style="margin-right: 0px;">
+<li><strong>Цветовая индикация колонок:</strong></li></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>Зарезервировано:</li></blockquote></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Оранжевый</b> - можно отгрузить полный объем, но использован не весь резерв.</p></blockquote></blockquote></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>Остаток в ячейке:</li></blockquote></blockquote><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Оранжевый</b> - можно отгрузить полный объем в рамках структурной единицы, но остатка в ячейке не достаточно.</p></blockquote></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>Можно отгрузить:</li></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Зеленый</b> - доступно к отгрузке в полном объеме</p></blockquote></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Оранжевый</b> - доступно к отгрузке частично.</p></blockquote></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Красный</b> - не доступно  к отгрузке.</p></blockquote></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>Не хватает:</li></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Зеленый</b> - номенклатура доступна к отгрузке полностью.</p></blockquote></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Оранжевый</b> - номенклатура доступна к отгрузке частично.</p></blockquote></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Красный</b> - номенклатура не доступна к отгрузке.</p></blockquote></blockquote></blockquote><blockquote dir="ltr" style="margin-right: 0px;">
+<li><strong>Расшифровки гиперссылок:</strong></li></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">Зарезервировано - отображает резервы по текущей структурной единице.</p></li></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">Зарезервировано (всего) - отображает резервы по всем структурным единицам.</p></li></blockquote></blockquote><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">Свободно (всего) - отображает свободный (не зарезервированный) остаток по всем структурным единицам.</p>
+<p class="Usual"><br></p></li></blockquote></blockquote>
+<p class="Usual">Документ "Расходная накладная" может быть введен на основании документов:</p>
+<ul><li>
+<div><a href="Document.ПриходнаяНакладная/Help">"Приходная накладная"</a>,</div>
+</li>
+<li>
+<div><a href="Document.СчетНаОплату/Help">"Счет на оплату"</a>,</div>
+</li>
+<li>
+<div><a href="Document.ЗаказПокупателя/Help">"Заказ покупателя"</a>,</div>
+</li>
+<li>
+<div><a href="Document.ЗаказПоставщику/Help">"Заказ поставщику"</a>.</div></li></ul></body></html>

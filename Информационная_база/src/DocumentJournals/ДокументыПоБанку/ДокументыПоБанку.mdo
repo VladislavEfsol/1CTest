@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1afb1991-3115-4f27-aab9-5bcaaabdbba4">
+  <producedTypes>
+    <selectionType typeId="9b77ce31-3f71-49f7-af98-8502812bdeb6" valueTypeId="0c40a73d-7f32-41b7-b079-0f6e28f4ee60"/>
+    <listType typeId="8873b4db-ce3a-4a33-a019-e2061b9f8d68" valueTypeId="4834b865-aa58-41ee-9f83-cb38b0ab8bc4"/>
+    <managerType typeId="18bc3019-16f0-4373-a5c1-1bf006f16618" valueTypeId="21794225-4815-4f98-8ba2-ce2b7f2e5442"/>
+  </producedTypes>
+  <name>ДокументыПоБанку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по банку</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоБанку.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.ПоступлениеНаСчет</registeredDocuments>
+  <registeredDocuments>Document.РасходСоСчета</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment>Пометка удаления</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="5acb0ae2-3b2e-48a9-a88d-f445a77c3d37">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Организация</references>
+    <references>Document.РасходСоСчета.Attribute.Организация</references>
+  </columns>
+  <columns uuid="0647267a-e85d-4baf-95ff-5efab0187fac">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.ВидОперации</references>
+    <references>Document.РасходСоСчета.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="c0844886-8b5e-42f4-8ecc-0459d34c8e54">
+    <name>БанковскийСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.БанковскийСчет</references>
+    <references>Document.РасходСоСчета.Attribute.БанковскийСчет</references>
+  </columns>
+  <columns uuid="4ce3d901-93e3-4cc6-a099-f94303728d4a">
+    <name>Статья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Статья</references>
+    <references>Document.РасходСоСчета.Attribute.Статья</references>
+  </columns>
+  <columns uuid="7e470c24-9e78-4236-b0d9-703f59198dad">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Контрагент</references>
+    <references>Document.РасходСоСчета.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="08028b56-c5e3-4dd9-b4c7-45749d2dcc83">
+    <name>Подотчетник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотчетник</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.Подотчетник</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Подотчетник</references>
+  </columns>
+  <columns uuid="724b96dc-30f7-4dbc-92ea-0780f6161ae6">
+    <name>СуммаПриход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма приход</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="b42b4c71-6f0e-49b2-877a-0b04f49983c0">
+    <name>СуммаРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма расход</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="c07e9f02-b0f3-40f0-a829-cab5a3ae8690">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.ВалютаДенежныхСредств</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.ВалютаДенежныхСредств</references>
+  </columns>
+  <columns uuid="da225395-2eb5-442e-8b8b-1d89020f1e40">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="e2c156d1-3709-49f2-b792-466be33122dc">
+    <name>НазначениеПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.НазначениеПлатежа</references>
+    <references>Document.РасходСоСчета.Attribute.НазначениеПлатежа</references>
+  </columns>
+  <columns uuid="d4bd81f6-3014-42fa-a526-1b741b97020a">
+    <name>Корреспонденция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корреспонденция</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Корреспонденция</references>
+    <references>Document.РасходСоСчета.Attribute.Корреспонденция</references>
+  </columns>
+  <columns uuid="16ba93a0-46b2-4c59-806b-f5fb7560f90b">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Автор</references>
+    <references>Document.РасходСоСчета.Attribute.Автор</references>
+  </columns>
+  <columns uuid="beb77bdf-db2e-4150-8006-bec43dcac923">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.СуммаДокумента</references>
+    <references>Document.РасходСоСчета.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="c1431bff-dc3e-4521-87f5-696bd6298a6a">
+    <name>УчитыватьВНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый учет (УСН)</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.УчитыватьВНУ</references>
+    <references>Document.РасходСоСчета.Attribute.УчитыватьВНУ</references>
+  </columns>
+  <columns uuid="40d03e6d-832d-4224-aaf1-61411d00061c">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Касса</references>
+    <references>Document.РасходСоСчета.Attribute.Касса</references>
+  </columns>
+  <columns uuid="e8f8bdaa-588a-4be6-94bf-428a5b1a16dd">
+    <name>СчетКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет контрагента</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.СчетКонтрагента</references>
+    <references>Document.РасходСоСчета.Attribute.СчетКонтрагента</references>
+  </columns>
+  <forms uuid="b00adf2d-8f8b-41b5-b22d-2dc83f0a383c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6a56ad56-ab09-44cb-aaa3-72e7e8d2d700">
+    <name>ФормаВыбораВидаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора вида операции</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="50b3bf9c-eb39-40c3-a865-c805bf599cb4">
+    <name>ДокументыПоБанку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы по банку</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DocumentJournal>

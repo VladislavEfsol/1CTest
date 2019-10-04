@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7c443ac-8721-4e63-86b1-b95ba2e46968">
+  <producedTypes>
+    <objectType typeId="360b5d3d-4600-4f48-9af4-bfd92299265d" valueTypeId="e9de8cbd-5ee0-4c9c-85c5-63374b55abe9"/>
+    <managerType typeId="ccc5ba5e-a593-418b-9a57-4e55c61b43a4" valueTypeId="26d39fbf-4958-4df0-809e-d49516fb3b45"/>
+  </producedTypes>
+  <name>РасчетыПоЭквайрингу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты по эквайрингу</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.РасчетыПоЭквайрингу.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="73ab46bc-7c49-4cbe-9872-b8d6782b42e4">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="c6c11c27-4ecd-43df-b3cc-b5681c11988e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="07d11930-3c73-4588-881e-96a5c03022a8">
+    <name>ОбразецОсновнойБезРазнесенияПоОперациямОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной без разнесения по операциям оплаты</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="e34e9e8a-a49d-4a4c-91c3-c651da093c87">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="d835eb0b-42fd-417a-b6c5-4ba24d2068f2">
+    <name>ОбразецКредит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец кредит</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

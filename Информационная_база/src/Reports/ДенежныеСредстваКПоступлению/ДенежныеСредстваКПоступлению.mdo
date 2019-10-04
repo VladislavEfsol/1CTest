@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d55e4bb3-4c2c-4fc7-8760-65ca4dc7b555">
+  <producedTypes>
+    <objectType typeId="c9479fd6-f5e9-4333-ba48-16edde788a3d" valueTypeId="2f5d013d-8c08-4d59-8a99-822bf2aec89c"/>
+    <managerType typeId="6463bb6e-9168-4e34-abc8-579a1abdfc94" valueTypeId="c15fae98-760a-4527-b6cf-78f9aca4c117"/>
+  </producedTypes>
+  <name>ДенежныеСредстваКПоступлению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Денежные средства к поступлению</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ДенежныеСредстваКПоступлению.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="6d02b60d-4d24-4900-904f-5ae8e67b2f5d">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="66c7a46c-9a15-43ec-b0ad-2398056d421d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="807f7771-8085-418c-9fcc-d0a7f6ab58cc">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

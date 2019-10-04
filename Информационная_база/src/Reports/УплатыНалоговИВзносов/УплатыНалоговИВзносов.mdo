@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c820f858-22d1-498d-9d45-27bf5c3537b8">
+  <producedTypes>
+    <objectType typeId="2e355a14-d3b5-41ae-ab54-d85baff7a735" valueTypeId="c8d2b78a-450f-4348-b58f-8932fedc2cd7"/>
+    <managerType typeId="db31e6c4-9381-4b6b-8142-153b701915c0" valueTypeId="994bf188-dc3e-4365-ad03-4ba686c102c1"/>
+  </producedTypes>
+  <name>УплатыНалоговИВзносов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уплаты налогов и взносов</value>
+  </synonym>
+  <defaultForm>Report.УплатыНалоговИВзносов.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.УплатыНалоговИВзносов.Template.Макет</mainDataCompositionSchema>
+  <attributes uuid="d2174299-3450-468c-8d32-3531831081dc">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="7d9ec2f0-b5f7-4875-ac8b-60cbd029403b">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="58f3b3f6-dfbe-4f4a-a4f2-0f601a47de23">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

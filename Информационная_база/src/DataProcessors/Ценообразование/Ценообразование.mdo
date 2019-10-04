@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="510237f6-80f1-4275-8dcd-abb4889c5a01">
+  <producedTypes>
+    <objectType typeId="c6627855-4b23-4c34-be09-9b7f05d14bae" valueTypeId="8b83588e-6812-4042-b3ad-228524fb0aea"/>
+    <managerType typeId="a365814e-9520-4501-a307-8738f9ccfd41" valueTypeId="e5db5e34-8c5c-4c23-923a-de3b2e2b8b85"/>
+  </producedTypes>
+  <name>Ценообразование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пакетное формирование цен номенклатуры</value>
+  </synonym>
+  <defaultForm>DataProcessor.Ценообразование.Form.ФормаПомощника</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="7d568705-a6d1-43fe-9e36-63e38303aa6a">
+    <name>ФормаПомощника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление новых цен</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="046cd204-956a-44e9-a440-62d82be123f2">
+    <name>ВидыЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды цен</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="30568db9-3e98-47a9-a537-17983e7f10cf">
+    <name>ФормаЗаполненияПоВидамЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнения по видам цен</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="04d8ace2-ee89-462f-913d-ac98dad4fef3">
+    <name>ФормаЗаполненияПоПриходнымНакладным</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения по приходным накладным</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3a588c45-d921-4e47-838d-7ce10e3173ae">
+    <name>ФормаЗаполненияПоКатегорииНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения по категории номенклатуры</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4af3f63d-9753-45b5-bbde-c5d059f98593">
+    <name>ФормаЗаполненияПоЦеновымГруппам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения по ценовым группам</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3dc2b974-c051-43a3-9c02-80e0d81ee456">
+    <name>ФормаПредварительногоПросмотра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма предварительного просмотра</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3e0663e0-3eef-483c-9468-9341a2db4bb9">
+    <name>ФормаИзмененияЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма изменения цен</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="be79a25e-c858-4b3b-a821-48e48f441df0">
+    <name>РасчетныеЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчетные цены</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a37e596b-430f-4abc-bbb1-0a2d81db3268">
+    <name>ПоВидамЦенСЦеной</name>
+    <synonym>
+      <key>ru</key>
+      <value>По видам цен (С заполненными ценами)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="ca8a7725-105b-434a-b211-94f7c12df3f6">
+    <name>ПоВидамЦенБезЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>По видам цен (без установленных цен)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="6f57b2d5-bd3a-4517-8a96-8f2deca2cc42">
+    <name>ПоПриходнымНакладным</name>
+    <synonym>
+      <key>ru</key>
+      <value>По приходным накладным</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="914322f4-b0a7-4d19-8072-db3a9116d6f0">
+    <name>ПоКатегориямНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>По категориям номенклатуры</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="f7d00bb9-7d79-4290-9e14-dd3ddc801b9a">
+    <name>ПоЦеновымГруппам</name>
+    <synonym>
+      <key>ru</key>
+      <value>По ценовым группам</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="2cb2298c-cedd-4b89-8ab8-50ec004f2575">
+    <name>ПоНоменклатуре</name>
+    <synonym>
+      <key>ru</key>
+      <value>По номенклатуре</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="f9b7d6be-166d-48f1-8994-bb06675f28db">
+    <name>ПечатьТабличнойЧасти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть формирования цен</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="9bbb2773-cf33-413c-88ff-9e50d6d04959">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="3dff7731-92ef-4064-8444-60850a6b7ebb">
+    <name>Ценообразование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формирование цен</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

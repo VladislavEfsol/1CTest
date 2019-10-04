@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БонуснаяКарта</dataPath>
+			<field>БонуснаяКарта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Изменение</dataPath>
+			<field>Изменение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Остаток</dataPath>
+			<field>Остаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НарастающееИзменение</dataPath>
+			<field>НарастающееИзменение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нарастающее изменение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БонуснаяПрограмма</dataPath>
+			<field>БонуснаяПрограмма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бонусная программа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВладелецКарты</dataPath>
+			<field>ВладелецКарты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владелец карты</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	БонусныеБаллы.БонуснаяКарта КАК БонуснаяКарта,
+	БонусныеБаллы.Период КАК Период,
+	СУММА(ВЫБОР
+			КОГДА БонусныеБаллы.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+				ТОГДА ВЫБОР
+						КОГДА БонусныеБаллы.Начислено &lt;&gt; 0
+							ТОГДА БонусныеБаллы.Начислено
+						КОГДА БонусныеБаллы.КСписанию &lt;&gt; 0
+							ТОГДА -БонусныеБаллы.КСписанию
+						ИНАЧЕ 0
+					КОНЕЦ
+			ИНАЧЕ ВЫБОР
+					КОГДА БонусныеБаллы.Начислено &lt;&gt; 0
+						ТОГДА -БонусныеБаллы.Начислено
+					КОГДА БонусныеБаллы.КСписанию &lt;&gt; 0
+						ТОГДА БонусныеБаллы.КСписанию
+					ИНАЧЕ 0
+				КОНЕЦ
+		КОНЕЦ) КАК Изменение
+ПОМЕСТИТЬ ИзмененияПоПериодам
+ИЗ
+	РегистрНакопления.БонусныеБаллы КАК БонусныеБаллы
+ГДЕ
+	БонусныеБаллы.Период &gt; &amp;Период
+
+СГРУППИРОВАТЬ ПО
+	БонусныеБаллы.БонуснаяКарта,
+	БонусныеБаллы.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Изменения.БонуснаяКарта КАК БонуснаяКарта,
+	Изменения.Период КАК Период,
+	Изменения.Изменение КАК Изменение,
+	СУММА(Изменения2.Изменение) КАК НарастающееИзменение
+ПОМЕСТИТЬ ИзмененияСИтогом
+ИЗ
+	ИзмененияПоПериодам КАК Изменения
+		ЛЕВОЕ СОЕДИНЕНИЕ ИзмененияПоПериодам КАК Изменения2
+		ПО Изменения.БонуснаяКарта = Изменения2.БонуснаяКарта
+			И Изменения.Период &gt;= Изменения2.Период
+
+СГРУППИРОВАТЬ ПО
+	Изменения.Период,
+	Изменения.БонуснаяКарта,
+	Изменения.Изменение
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДисконтныеКарты.Ссылка КАК БонуснаяКарта,
+	&amp;Период КАК Период,
+	NULL КАК Изменение,
+	NULL КАК НарастающееИзменение,
+	ЕСТЬNULL(БонусныеБаллыОстатки.НачисленоОстаток, 0) - ЕСТЬNULL(БонусныеБаллыОстатки.КСписаниюОстаток, 0) КАК Остаток,
+	ДисконтныеКарты.Владелец.БонуснаяПрограмма КАК БонуснаяПрограмма,
+	ДисконтныеКарты.ВладелецКарты КАК ВладелецКарты
+ИЗ
+	Справочник.ДисконтныеКарты КАК ДисконтныеКарты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.БонусныеБаллы.Остатки(&amp;Период, ) КАК БонусныеБаллыОстатки
+		ПО (БонусныеБаллыОстатки.БонуснаяКарта = ДисконтныеКарты.Ссылка)
+ГДЕ
+	НЕ ДисконтныеКарты.Владелец.БонуснаяПрограмма = ЗНАЧЕНИЕ(Справочник.БонусныеПрограммы.ПустаяСсылка)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЕСТЬNULL(ИзмененияСИтогом.БонуснаяКарта, БонусныеБаллыОстатки.БонуснаяКарта),
+	ИзмененияСИтогом.Период,
+	ИзмененияСИтогом.Изменение,
+	ИзмененияСИтогом.НарастающееИзменение,
+	ЕСТЬNULL(БонусныеБаллыОстатки.НачисленоОстаток, 0) - ЕСТЬNULL(БонусныеБаллыОстатки.КСписаниюОстаток, 0) + ЕСТЬNULL(ИзмененияСИтогом.НарастающееИзменение, 0),
+	ЕСТЬNULL(ИзмененияСИтогом.БонуснаяКарта.Владелец.БонуснаяПрограмма, БонусныеБаллыОстатки.БонуснаяКарта.Владелец.БонуснаяПрограмма),
+	ЕСТЬNULL(ИзмененияСИтогом.БонуснаяКарта.ВладелецКарты, БонусныеБаллыОстатки.БонуснаяКарта.ВладелецКарты)
+ИЗ
+	ИзмененияСИтогом КАК ИзмененияСИтогом
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрНакопления.БонусныеБаллы.Остатки(&amp;Период, ) КАК БонусныеБаллыОстатки
+		ПО (БонусныеБаллыОстатки.БонуснаяКарта = ИзмененияСИтогом.БонуснаяКарта)
+
+УПОРЯДОЧИТЬ ПО
+	БонуснаяКарта,
+	Период</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Остаток</dataPath>
+		<expression>Остаток</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Изменение</dataPath>
+		<expression>Изменение</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВыводитьЗаголовок</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выводить заголовок</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Остатки бонусных баллов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БонуснаяПрограмма</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВладелецКарты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>БонуснаяКарта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Изменение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Остаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>БонуснаяПрограмма</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВладелецКарты</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>БонуснаяКарта</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Период</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

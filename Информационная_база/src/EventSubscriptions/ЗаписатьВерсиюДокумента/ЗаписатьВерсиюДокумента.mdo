@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e425b9d1-c6ce-457e-941f-bf7341374322">
+  <name>ЗаписатьВерсиюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Записать версию документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.СдельныйНаряд</types>
+    <types>DocumentObject.СверкаВзаиморасчетов</types>
+    <types>DocumentObject.СчетНаОплату</types>
+    <types>DocumentObject.РасходСоСчета</types>
+    <types>DocumentObject.ПланПродаж</types>
+    <types>DocumentObject.РасходИзКассы</types>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.ДоговорКредитаИЗайма</types>
+    <types>DocumentObject.ПоступлениеДСПлан</types>
+    <types>DocumentObject.ЗаданиеНаРаботу</types>
+    <types>DocumentObject.ПеремещениеЗапасов</types>
+    <types>DocumentObject.ПеремещениеДСПлан</types>
+    <types>DocumentObject.РасходДСПлан</types>
+    <types>DocumentObject.ОперацияПоПлатежнымКартам</types>
+    <types>DocumentObject.ЗаказПоставщику</types>
+    <types>DocumentObject.Событие</types>
+    <types>DocumentObject.ЗаказНаПроизводство</types>
+    <types>DocumentObject.ПриходнаяНакладная</types>
+    <types>DocumentObject.РасходнаяНакладная</types>
+    <types>DocumentObject.ПоступлениеНаСчет</types>
+    <types>DocumentObject.ПоступлениеВКассу</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ВерсионированиеОбъектовСобытия.ЗаписатьВерсиюДокумента</handler>
+</mdclass:EventSubscription>

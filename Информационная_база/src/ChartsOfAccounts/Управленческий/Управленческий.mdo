@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfAccounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b0c4744-6437-4ccc-bc96-9dd9bae7a7ae">
+  <producedTypes>
+    <objectType typeId="e59af4f8-5d83-413f-a8a9-26f22b678772" valueTypeId="af05659a-c534-473d-b4e3-f156bf5a425e"/>
+    <refType typeId="27dbc75d-f059-48ed-975d-24d0118eca46" valueTypeId="1c56ea0b-11c4-4e08-adc5-40ce4ea026d2"/>
+    <selectionType typeId="163b4e66-20f7-4c09-9d58-f11c7b6ae656" valueTypeId="7f4a4561-6ab8-40fe-a046-bebf9169ec9b"/>
+    <listType typeId="83a8d7e1-2df7-4969-ba9c-e2e27e8ddc3e" valueTypeId="04ab7aa1-b65e-4c0c-a777-a1c55d490e74"/>
+    <managerType typeId="8a3728bb-a2c7-4af2-9174-c3a6910ee9a9" valueTypeId="14ef508b-7db3-4898-9a38-761aa9f33e3b"/>
+    <extDimensionTypes typeId="7cdb3f5c-68e6-4b87-bb2b-c76e7a9e24b6" valueTypeId="b2e38966-7b10-4d8c-b633-e80770f391a0"/>
+    <extDimensionTypesRow typeId="3019d5a2-c934-4bdd-b310-d28f9a3d0c5e" valueTypeId="3eca44ab-a5f6-488e-9b5a-574172b0d0b6"/>
+  </producedTypes>
+  <name>Управленческий</name>
+  <synonym>
+    <key>ru</key>
+    <value>План счетов управленческого учета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfAccounts.Управленческий.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfAccounts.Управленческий.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Порядок счета.</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>OffBalance</name>
+    <synonym>
+      <key>ru</key>
+      <value>Забалансовый</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак забалансевости счета.</value>
+    </toolTip>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид счета.</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="form:AccountTypeValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование счета.</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код счета</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Код счета.</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подчинен счету</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа счета.</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предопределенный</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак предопределенного элемента.</value>
+    </toolTip>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления счета.</value>
+    </toolTip>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на счет.</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Счет</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>План счетов</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>План счетов управленческого учета</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>План счетов управленческого учета.</value>
+  </explanation>
+  <codeMask>XXXXXXXX</codeMask>
+  <codeLength>8</codeLength>
+  <descriptionLength>120</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <standardTabularSections>
+    <name>ExtDimensionTypes</name>
+    <synonym>
+      <key></key>
+      <value>Виды субконто</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>TurnoversOnly</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>Predefined</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>ExtDimensionType</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+  </standardTabularSections>
+  <predefined>
+    <items id="ceacb23a-fb1f-4e1c-99a5-22726a63629b">
+      <name>Служебный</name>
+      <description>Служебный</description>
+      <code>00      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 00</order>
+    </items>
+    <items id="45a21369-997b-4acd-a53f-086501a82b73">
+      <name>ВнеоборотныеАктивы</name>
+      <description>Имущество</description>
+      <code>01      </code>
+      <order> 01     </order>
+    </items>
+    <items id="01c14ce2-612f-42a7-8e2d-13f3d5b0ffb9">
+      <name>АмортизацияВнеоборотныхАктивов</name>
+      <description>Амортизация имущества</description>
+      <code>02      </code>
+      <accountType>Passive</accountType>
+      <order> 02     </order>
+    </items>
+    <items id="bdb04be9-30f5-46b4-a3ac-1a72f9f7c35d">
+      <name>ВложенияВоВнеоборотныеАктивы</name>
+      <description>Вложения в имущество</description>
+      <code>08      </code>
+      <order> 08     </order>
+    </items>
+    <items id="2db638f0-3622-4ab7-9f7f-dd8fe946e63f">
+      <name>СырьеИМатериалы</name>
+      <description>Сырье и материалы</description>
+      <code>10      </code>
+      <order> 10     </order>
+    </items>
+    <items id="d16c0403-0cb6-4402-a749-a7674ad28818">
+      <name>НезавершенноеПроизводство</name>
+      <description>Незавершенное производство</description>
+      <code>20      </code>
+      <order> 20     </order>
+    </items>
+    <items id="bb5dc64b-06a4-422f-b174-e55129963a74">
+      <name>КосвенныеЗатраты</name>
+      <description>Косвенные затраты</description>
+      <code>25      </code>
+      <order> 25     </order>
+    </items>
+    <items id="0b18f279-1cb6-457b-962d-bd529a54e061">
+      <name>ТоварыПродукция</name>
+      <description>Товары, продукция</description>
+      <code>41      </code>
+      <order> 41     </order>
+    </items>
+    <items id="c2193df0-b1d4-4f98-8b37-d0e61fce5fa6">
+      <name>ТорговаяНаценка</name>
+      <description>Торговая наценка</description>
+      <code>42      </code>
+      <accountType>Passive</accountType>
+      <order> 42     </order>
+    </items>
+    <items id="7f214981-3b05-4e3e-8d8c-c8c7adfc92d9">
+      <name>Касса</name>
+      <description>Касса</description>
+      <code>50      </code>
+      <order> 50     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+    </items>
+    <items id="14b45c0e-69e5-4340-8b05-280f46301c03">
+      <name>Банк</name>
+      <description>Банк</description>
+      <code>51      </code>
+      <order> 51     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+    </items>
+    <items id="42d57f95-6695-469b-9f08-b527025b1dc5">
+      <name>ПереводыВПути</name>
+      <description>Переводы в пути</description>
+      <code>57      </code>
+      <order> 57     </order>
+    </items>
+    <items id="ec0f1c43-ab8c-4df7-aa37-252b79151bc6">
+      <name>ФинансовыеВложения</name>
+      <description>Финансовые вложения</description>
+      <code>58      </code>
+      <order> 58     </order>
+    </items>
+    <items id="5a7042a0-7610-49fe-a556-a0a60ce4bca1">
+      <name>РасчетыСПоставщикамиИПодрядчиками</name>
+      <description>Расчеты с поставщиками и подрядчиками</description>
+      <code>60      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 60     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      <childItems id="9d195613-e9b0-4dd9-959d-72fd653ac7fc">
+        <name>РасчетыСПоставщиками</name>
+        <description>Расчеты с поставщиками</description>
+        <code>60.01   </code>
+        <accountType>Passive</accountType>
+        <order> 60.01  </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+      <childItems id="5060faf9-602e-478c-be88-7145c6f48586">
+        <name>РасчетыПоАвансамВыданным</name>
+        <description>Расчеты по авансам выданным</description>
+        <code>60.02   </code>
+        <order> 60.02  </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+    </items>
+    <items id="2ab60f18-44ad-400d-b09d-bb540772389a">
+      <name>РасчетыСПокупателямиИЗаказчиками</name>
+      <description>Расчеты с покупателями и заказчиками</description>
+      <code>62      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 62     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      <childItems id="552c3f13-4ae6-48a3-a9e2-5ce660958242">
+        <name>РасчетыСПокупателями</name>
+        <description>Расчеты с покупателями</description>
+        <code>62.01   </code>
+        <order> 62.01  </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+      <childItems id="d38b5a6a-be8b-4c2b-8702-57ea8e02e3e6">
+        <name>РасчетыПоАвансамПолученным</name>
+        <description>Расчеты по авансам полученным</description>
+        <code>62.02   </code>
+        <accountType>Passive</accountType>
+        <order> 62.02  </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+    </items>
+    <items id="e34e9ad4-16de-40a3-b561-a03511ff2e47">
+      <name>РасчетыПоКраткосрочнымКредитамИЗаймам</name>
+      <description>Расчеты по краткосрочным кредитам и займам</description>
+      <code>66      </code>
+      <accountType>Passive</accountType>
+      <order> 66     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+    </items>
+    <items id="f3879ecd-eb16-4df0-b633-9066d6c8c9e9">
+      <name>РасчетыПоДолгосрочнымКредитамИЗаймам</name>
+      <description>Расчеты по долгосрочным кредитам и займам</description>
+      <code>67      </code>
+      <accountType>Passive</accountType>
+      <order> 67     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+    </items>
+    <items id="be6993d3-e269-413b-8d5a-6e8539ab6c80">
+      <name>РасчетыПоНалогам</name>
+      <description>Расчеты по налогам</description>
+      <code>68      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 68     </order>
+      <childItems id="66a3d158-e2e6-44db-881c-a4bf2ff6b3ad">
+        <name>Налоги</name>
+        <description>Налоги</description>
+        <code>68.01   </code>
+        <accountType>Passive</accountType>
+        <order> 68.01  </order>
+      </childItems>
+      <childItems id="9ae53539-84e2-43a0-87f3-bd10ac6b2eb8">
+        <name>НалогиКВозмещению</name>
+        <description>Налоги к возмещению</description>
+        <code>68.02   </code>
+        <order> 68.02  </order>
+      </childItems>
+    </items>
+    <items id="6c5d15d8-92e6-42c3-9e8a-88a29a7765be">
+      <name>РасчетыСПерсоналомПоОплатеТруда</name>
+      <description>Расчеты с персоналом по оплате труда</description>
+      <code>70      </code>
+      <accountType>Passive</accountType>
+      <order> 70     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+    </items>
+    <items id="67a891e4-9208-4b98-81fa-90df7931f494">
+      <name>РасчетыСПодотчетнымиЛицами</name>
+      <description>Расчеты с подотчетными лицами</description>
+      <code>71      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 71     </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      <childItems id="f5b4c690-2b32-4e1b-a51b-a289e93382b7">
+        <name>РасчетыСПодотчетниками</name>
+        <description>Авансы, выданные подотчетным лицам</description>
+        <code>71.01   </code>
+        <order> 71.01  </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+      <childItems id="681fb963-99aa-4ab5-bd75-a50f0fb9af90">
+        <name>ПерерасходПодотчетников</name>
+        <description>Перерасход подотчетных лиц</description>
+        <code>71.02   </code>
+        <accountType>Passive</accountType>
+        <order> 71.02  </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+    </items>
+    <items id="d913d5ca-cb51-428c-8c08-7391350ae444">
+      <name>РасчетыСПерсоналомПоПрочимОперациям</name>
+      <description>Расчеты с персоналом по прочим операциям</description>
+      <code>73      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 73      </order>
+      <childItems id="85509b1d-128e-432e-b8dd-870032057dd7">
+        <name>РасчетыПоПредоставленнымЗаймам</name>
+        <description>Расчеты по предоставленным займам</description>
+        <code>73.01   </code>
+        <order> 73.01   </order>
+      </childItems>
+      <childItems id="ea844777-9220-48c0-bd90-6510460adc0b">
+        <name>РасчетыПоВозмещениюМатериальногоУщерба</name>
+        <description>Расчеты по возмещению материального ущерба</description>
+        <code>73.02   </code>
+        <order> 73.02   </order>
+      </childItems>
+    </items>
+    <items id="f03c50d2-9b5d-4788-b8f9-862d365256d3">
+      <name>РасчетыСУчредителями</name>
+      <description>Расчеты с учредителями</description>
+      <code>75      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 75</order>
+      <childItems id="30190401-1e80-4bc4-b68f-87084e809dd8">
+        <name>РасчетыПоВкладамВУставныйКапитал</name>
+        <description>Расчеты по вкладам в уставный капитал</description>
+        <code>75.01   </code>
+        <order> 75.01   </order>
+      </childItems>
+      <childItems id="4ea30196-82f6-4234-823a-a72230e18224">
+        <name>РасчетыПоВыплатеДоходов</name>
+        <description>Расчеты по выплате доходов</description>
+        <code>75.02   </code>
+        <accountType>Passive</accountType>
+        <order> 75.02   </order>
+      </childItems>
+    </items>
+    <items id="3a585c9a-2a6d-4c4d-acee-a550ce762b81">
+      <name>РасчетыСРазнымиДебиторамиИКредиторами</name>
+      <description>Расчеты с разными дебиторами и кредиторами</description>
+      <code>76      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 76      </order>
+      <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      <childItems id="fc16df8c-f5e5-4ee5-aa1e-717918772a21">
+        <name>РасчетыСРазнымиДебиторами</name>
+        <description>Расчеты с разными дебиторами</description>
+        <code>76.01   </code>
+        <order> 76.01   </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+      <childItems id="879611a7-470a-46a8-920d-89e2108288ad">
+        <name>РасчетыСРазнымиКредиторами</name>
+        <description>Расчеты с разными кредиторами</description>
+        <code>76.02   </code>
+        <accountType>Passive</accountType>
+        <order> 76.02   </order>
+        <accountingFlags>ChartOfAccounts.Управленческий.AccountingFlag.Валютный</accountingFlags>
+      </childItems>
+      <childItems id="9db097d0-2ad8-4714-a07b-97f9831260c0">
+        <name>РасчетыСПрочимиПоставщикамиИТаможеннымиОрганами</name>
+        <description>Расчеты с прочими поставщиками и таможенными органами</description>
+        <code>76.05   </code>
+        <accountType>ActivePassive</accountType>
+        <order> 76.05</order>
+      </childItems>
+    </items>
+    <items id="b1572658-029d-4c63-9503-034545b3fae1">
+      <name>УставныйКапитал</name>
+      <description>Уставный капитал</description>
+      <code>80      </code>
+      <accountType>Passive</accountType>
+      <order> 80     </order>
+    </items>
+    <items id="1130687d-84f7-4151-a7bb-e7fad1ce0b0a">
+      <name>РезервныйИДобавочныйКапитал</name>
+      <description>Резервный и добавочный капитал</description>
+      <code>82      </code>
+      <accountType>Passive</accountType>
+      <order> 82     </order>
+    </items>
+    <items id="23a17562-07f8-4faf-8fde-a079c77b32cc">
+      <name>НераспределеннаяПрибыль</name>
+      <description>Нераспределенная прибыль (непокрытый убыток)</description>
+      <code>84      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 84     </order>
+    </items>
+    <items id="3a5b9345-0690-47b4-8f3a-f9e3d3a3a227">
+      <name>Продажи</name>
+      <description>Продажи</description>
+      <code>90      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 90     </order>
+      <childItems id="f1d2beac-f415-451c-a142-09e0e2ca458f">
+        <name>ВыручкаОтПродаж</name>
+        <description>Выручка от продаж</description>
+        <code>90.01   </code>
+        <accountType>Passive</accountType>
+        <order> 90.01  </order>
+      </childItems>
+      <childItems id="508af3bf-b374-4774-b10b-608297175dee">
+        <name>СебестоимостьПродаж</name>
+        <description>Себестоимость продаж</description>
+        <code>90.02   </code>
+        <order> 90.02  </order>
+      </childItems>
+      <childItems id="cb8a40d2-2dec-4a5d-be8d-7fe8778df8be">
+        <name>КоммерческиеРасходы</name>
+        <description>Коммерческие расходы</description>
+        <code>90.07   </code>
+        <order> 90.07  </order>
+      </childItems>
+      <childItems id="f2c096be-28de-407b-8e97-8b65c3b9c0c1">
+        <name>УправленческиеРасходы</name>
+        <description>Управленческие расходы</description>
+        <code>90.08   </code>
+        <order> 90.08  </order>
+      </childItems>
+    </items>
+    <items id="ea8d6858-040d-4081-b436-9c5b9dbeb845">
+      <name>ПрочиеДоходыИРасходы</name>
+      <description>Прочие доходы и расходы</description>
+      <code>91      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 91     </order>
+      <childItems id="4fca6175-c45f-4087-8873-f489db7949a2">
+        <name>ПрочиеДоходы</name>
+        <description>Прочие доходы</description>
+        <code>91.01   </code>
+        <accountType>Passive</accountType>
+        <order> 91.01  </order>
+      </childItems>
+      <childItems id="814aeeef-6b5f-495c-b297-f2ce3f8a7901">
+        <name>ПрочиеРасходы</name>
+        <description>Прочие расходы</description>
+        <code>91.02   </code>
+        <order> 91.02  </order>
+      </childItems>
+      <childItems id="fc567860-1a5a-4fc8-b5d7-6bd40d5d7dab">
+        <name>ПроцентыПоКредитам</name>
+        <description>Проценты по кредитам</description>
+        <code>91.03   </code>
+        <order> 91.03  </order>
+      </childItems>
+    </items>
+    <items id="a462e77c-7f9a-44de-ae94-65eaeeae0509">
+      <name>НедостачиИПотериОтПорчиЦенностей</name>
+      <description>Недостачи и потери от порчи ценностей</description>
+      <code>94      </code>
+      <order> 94     </order>
+    </items>
+    <items id="d0bd9ca6-e654-44d3-a67f-554c47c41d7e">
+      <name>РасходыБудущихПериодов</name>
+      <description>Расходы будущих периодов</description>
+      <code>97      </code>
+      <order> 97     </order>
+    </items>
+    <items id="d99ad861-e815-4c55-881b-58bd316c0607">
+      <name>ПрибылиИУбытки</name>
+      <description>Прибыли и убытки</description>
+      <code>99      </code>
+      <accountType>ActivePassive</accountType>
+      <order> 99     </order>
+      <childItems id="4b028129-ba74-4362-b3e2-ee3a9652a6a6">
+        <name>ПрибылиИУбыткиБезНалогаНаПрибыль</name>
+        <description>Прибыли и убытки (за исключением налога на прибыль)</description>
+        <code>99.01   </code>
+        <accountType>ActivePassive</accountType>
+        <order> 99.01  </order>
+      </childItems>
+      <childItems id="d75a79cf-add3-4115-aafc-040709f9bc0b">
+        <name>ПрибылиИУбытки_НалогНаПрибыль</name>
+        <description>Налог на прибыль</description>
+        <code>99.02   </code>
+        <accountType>ActivePassive</accountType>
+        <order> 99.02  </order>
+      </childItems>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfAccounts.Управленческий.Form.ФормаСчета</defaultObjectForm>
+  <defaultListForm>ChartOfAccounts.Управленческий.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>ChartOfAccounts.Управленческий.Form.ФормаВыбора</defaultChoiceForm>
+  <autoOrderByCode>true</autoOrderByCode>
+  <orderLength>9</orderLength>
+  <attributes uuid="f235988e-9eba-4340-ba38-2d876b9dd2a9">
+    <name>ТипСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип счета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыСчетов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыСчетов.EnumValue.Расходы</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e1c9e9b-6d2a-4157-ba20-8de1c7fd7e11">
+    <name>СпособРаспределения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ распределения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.БазыРаспределенияРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ распределения (для счетов, распределяемых автоматически, при закрытии месяца)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.БазыРаспределенияРасходов.EnumValue.НеРаспределять</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="06452fd5-3a8a-4c2e-adfc-ac594f93cdba">
+    <name>СчетЗакрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет закрытия</value>
+    </synonym>
+    <type>
+      <types>ChartOfAccountsRef.Управленческий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>ChartOfAccounts.Управленческий.НезавершенноеПроизводство</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d4a57a1a-680a-46e7-b230-7d5f3cb0fc33">
+    <name>АналитикаДоходовИРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитика</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="f5446e29-4799-42b1-b18f-5de006bbdfad">
+    <producedTypes>
+      <objectType typeId="a1d9bf67-e9ee-4363-bf2a-c8c26ff3c88e" valueTypeId="40a5ef30-332a-46a5-9336-9a715b40dfd8"/>
+      <rowType typeId="602d1132-2f26-4063-afca-1342696b0e6b" valueTypeId="fbf6dce6-3a21-4b51-b8c3-c0e9d78d3114"/>
+    </producedTypes>
+    <name>СчетаУчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счета учета</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f1e8439e-1ba6-40b8-ba4c-09d1277895bb">
+      <name>СчетУчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счет учета</value>
+      </synonym>
+      <type>
+        <types>ChartOfAccountsRef.Управленческий</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ТипСчета</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыСчетов.EnumValue.НезавершенноеПроизводство</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <accountingFlags uuid="792ab2d9-7d4a-476c-bf3f-7ece60992129">
+    <name>Валютный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валютный</value>
+    </synonym>
+    <comment>Валютный</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </accountingFlags>
+  <forms uuid="cfa12a59-5164-49a3-bd9b-051657570413">
+    <name>ФормаСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма счета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="09fc0a5a-6ce8-40be-be50-86e8f29b8c02">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="efcd59b6-10dc-4b13-a825-60f4ca1816f2">
+    <name>ФормаФильтра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="52fb3805-c92b-42c9-9162-6fd7d19ab243">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfAccounts>

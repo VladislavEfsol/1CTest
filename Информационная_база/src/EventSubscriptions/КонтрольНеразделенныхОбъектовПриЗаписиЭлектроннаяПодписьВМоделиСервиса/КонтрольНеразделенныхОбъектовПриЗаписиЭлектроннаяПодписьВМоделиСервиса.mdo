@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6743469e-f6de-49c0-b077-413e6b531179">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиЭлектроннаяПодписьВМоделиСервиса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи электронная подпись в модели сервиса</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.ИспользоватьЭлектроннуюПодписьВМоделиСервиса</types>
+    <types>ConstantValueManager.АдресКриптосервиса</types>
+    <types>ConstantValueManager.АдресСервисаПодключенияЭлектроннойПодписиВМоделиСервиса</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd56bcef-a59d-47c2-be28-cc8dee46337c">
+  <producedTypes>
+    <objectType typeId="a19037f2-f991-4d93-aeea-952394469f6e" valueTypeId="725d1427-59cf-4fd7-b76e-ee9af0006c7d"/>
+    <managerType typeId="3402b997-e207-4f98-8b28-43cc4d98b33e" valueTypeId="2f9c72f5-ae95-4ab5-a72f-cde92f6bee13"/>
+  </producedTypes>
+  <name>ОстаткиТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ОстаткиТоваров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="42b293c1-1810-4ad8-af72-252cdf8776ee">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="61373a36-5cee-4de5-947e-ca5d4781912d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="af97dae9-5791-49d4-b3d8-3a36ad681316">
+    <name>ОбразецПоМестамХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец по местам хранения</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="f98527dd-c952-459b-bb31-e79d21b6d449">
+    <name>ОбразецПрогноз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец прогноз</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

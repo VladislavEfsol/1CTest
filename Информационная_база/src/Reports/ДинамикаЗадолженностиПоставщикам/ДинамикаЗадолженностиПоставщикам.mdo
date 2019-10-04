@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5548b398-95e6-4b8e-bf11-803f4e3c89dd">
+  <producedTypes>
+    <objectType typeId="a2493eb6-b81f-4b26-9603-5c62a714e15a" valueTypeId="f42daf9c-d482-4c39-89c0-044491f5e005"/>
+    <managerType typeId="3fe25ba6-fb11-40ad-8a3f-a8a0a3458cf2" valueTypeId="85066857-9a38-4b25-afc8-0c1b0fdf1216"/>
+  </producedTypes>
+  <name>ДинамикаЗадолженностиПоставщикам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Динамика задолженности поставщикам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ДинамикаЗадолженностиПоставщикам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="d7eacaf4-0e8a-43af-9d24-2dbe2caf8079">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="d11eff26-f874-4e59-abfc-2b931c1d3070">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="dd5acbdb-f552-4e45-bb48-2b84cd778c59">
+    <name>ОбразецДинамикаЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец динамика задолженности</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

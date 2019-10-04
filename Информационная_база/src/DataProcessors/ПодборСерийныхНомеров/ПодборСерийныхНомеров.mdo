@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6cdc95a9-38d3-4d11-9fa1-988f86c520af">
+  <producedTypes>
+    <objectType typeId="ab457351-f7ad-4a30-bc56-10ce5206a5a6" valueTypeId="0b84c902-3ccf-408a-9ee6-5ed0b2bcfb07"/>
+    <managerType typeId="f322fc12-19f6-4678-94ab-d62c6ea0043e" valueTypeId="33aed027-df06-42f8-a3c5-72638e933a4e"/>
+  </producedTypes>
+  <name>ПодборСерийныхНомеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор серийных номеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПодборСерийныхНомеров.Form.Форма</defaultForm>
+  <tabularSections uuid="50b5a208-bbd5-4647-9849-277b1486bff9">
+    <producedTypes>
+      <objectType typeId="25212146-39f6-43b4-b68f-595173d7f095" valueTypeId="451fc654-2db4-4e3a-bf86-4e2257a79003"/>
+      <rowType typeId="2306d50f-1e58-4bb5-8c52-5427ef622981" valueTypeId="d9c34452-5ed4-4bd2-b8c6-c52268722bca"/>
+    </producedTypes>
+    <name>СерийныеНомера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серийные номера</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="67140de8-061d-4655-b2a0-21211267092c">
+      <name>СерийныйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Серийный номер</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СерийныеНомера</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Серия товара</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ac99edb6-73dd-4174-8ebc-068933f09db7">
+      <name>НовыйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Новый номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="586e4e05-be7d-4919-bfc5-a3413d468653">
+      <name>СерийныйНомерЧисло</name>
+      <synonym>
+        <key>ru</key>
+        <value>Серийный номер число</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="02ea032d-20ab-4b98-a58f-b2cf53b53734">
+      <name>КлючСвязи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ключ связи</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4381b2dd-9568-42f6-8554-3b028aa92610">
+      <name>НомерКИЗГИСМ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер контрольного идентификационного знака ГИСМ</value>
+      </synonym>
+      <type>
+        <types>DefinedType.НомерКиЗГИСМ</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3a149f04-d492-47d2-99f5-1f62c3b80109">
+      <name>RFIDTID</name>
+      <synonym>
+        <key>ru</key>
+        <value>RFID TID</value>
+      </synonym>
+      <type>
+        <types>DefinedType.RFIDTID</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Tag identificator - идентификатор RFID-метки</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3c28f62e-e33f-42b4-92b9-85c8bb006c74">
+      <name>RFIDUser</name>
+      <synonym>
+        <key>ru</key>
+        <value>RFID User</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="fa3f147e-b563-4710-a0dc-77bd3abd6adc">
+      <name>RFIDEPC</name>
+      <synonym>
+        <key>ru</key>
+        <value>RFID EPC</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Electronic Product Code - электронный код продукта</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d0106fb6-9589-49ca-a8dd-7bc055139569">
+      <name>EPCGTIN</name>
+      <synonym>
+        <key>ru</key>
+        <value>EPC: GTIN</value>
+      </synonym>
+      <type>
+        <types>DefinedType.GTIN</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>GTIN извлеченный из EPC (или предназначенный для записи в EPC)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5cec3896-5fc4-4331-bb33-64861988844b">
+      <name>ЗаполненRFIDTID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заполнен RFIDTID</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3bc79398-97e4-472c-ba11-4693c4bc3241">
+      <name>НужноЗаписатьМетку</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нужно записать метку</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f7dcbe5d-c11b-4a2a-aab0-1a7959a3e411">
+      <name>СтатусРаботыRFID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус работы RFID</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="43f23fa3-23a1-44b2-9ebf-dbfc2207aaa4">
+      <name>НомерГИСМ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер ГИСМ</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="ec253b28-01ea-47e8-8c4e-bf78951d3fe2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c25a1bcf-d0ee-4397-8877-ff33cca30a33">
+    <name>ФормаВводаДляПеремаркировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода для перемаркировки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b266a93a-b533-4696-a314-9f81c7a7a96c">
+  <name>ЗарегистрироватьИзмененияРегистраНакопленияДляОбменаСОборудованиемOffline</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарегистрировать изменения регистра накопления для обмена с оборудованием offline</value>
+  </synonym>
+  <source>
+    <types>AccumulationRegisterRecordSet.Запасы</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбменДаннымиПодключаемоеОборудованиеOfflineСобытия.ЗарегистрироватьИзмененияРегистраНакопленияДляОбменаСОборудованиемOfflineПриЗаписи</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c562191a-5309-4859-8665-ca8b0a143345">
+  <producedTypes>
+    <selectionType typeId="e0e5d578-3d77-48e7-9f21-7e4b5e46d80e" valueTypeId="35bf434c-37cf-4cb7-a160-c943afa0ae44"/>
+    <listType typeId="ad1f69fc-d593-404d-9daa-311d789e4172" valueTypeId="a7c3308c-b794-41a2-9356-1d61c074c65a"/>
+    <managerType typeId="59211095-3095-4339-8515-eb5667b50cf1" valueTypeId="16e44155-e9f8-4fd8-8ec9-54c676cd6575"/>
+    <recordSetType typeId="b0eaaf02-d019-4bb6-98bc-475482aea28b" valueTypeId="30a9d9a6-5c0d-4da5-9fe2-882ac035364b"/>
+    <recordKeyType typeId="1be5717c-1fe0-4ad7-b8be-a0fffc6b0694" valueTypeId="a90cce5d-2a27-46a4-adbb-35d32239333c"/>
+    <recordType typeId="8fc72a29-e334-491e-aff8-74b2ecee4198" valueTypeId="a0a40d0b-ed96-455c-8bf4-d2dc415ea203"/>
+    <recordManagerType typeId="be2d9d31-5641-403c-b491-6a17cc7ce8aa" valueTypeId="55649f3b-3f86-4da2-b94d-57ea29552507"/>
+  </producedTypes>
+  <name>КодыТоваровPLUНаОборудовании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коды товаров PLU на оборудовании</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.КодыТоваровPLUНаОборудовании.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1e46a7dc-0025-46c8-bef5-7a128163499c">
+    <name>КодТовараSKU</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код товара SKU</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код товара SKU выгружаемый на внешнее оборудование</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="a4f84d5c-4c0b-4ec1-adcb-c32a044fc9d1">
+    <name>ПравилоОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило обмена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПравилаОбменаСПодключаемымОборудованиемOffline</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Правило обмена с подключаемым оборудованием Offline</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ПравилаОбменаСПодключаемымОборудованиемOffline.EmptyRef</value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1cbc4b02-0e4c-4d87-882e-7e39cb3fc4ee">
+    <name>КодТовараPLU</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код товара PLU</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код товара PLU на внешнем оборудовании</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2045e0c8-f846-4c88-b383-21ad078b2d2d">
+    <name>ФормаИзмененияPLU</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма изменения PLU</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ded44fd-c658-48cc-8e66-ed236fbf359e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

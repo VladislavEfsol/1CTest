@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aaedc73b-f6b5-43cb-885e-ee25471bb045">
+  <producedTypes>
+    <objectType typeId="9f6e3369-dbb4-4572-a490-817044b19c8b" valueTypeId="49d4e121-d1a6-4385-95f4-146770631986"/>
+    <managerType typeId="a1f36e41-4a05-4699-adce-f7f2f36cd82b" valueTypeId="e49f09d0-5c8d-4cd9-b276-7f21ae075d4d"/>
+  </producedTypes>
+  <name>АнализСчетовНаОплату</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ счетов на оплату</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.АнализСчетовНаОплату.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="5c8198d0-fc54-49e5-b322-8c93b2341674">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="dca59a06-de0c-4e57-b9f5-7aa65a10c343">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="80702a08-85fa-4459-a0e1-b8873672176d">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

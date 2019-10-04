@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f58df3d9-8dca-4a99-ae1f-67dda41658b8">
+  <producedTypes>
+    <objectType typeId="7d02b224-2603-40c6-8cd7-004ee32cb3c4" valueTypeId="69bafc4d-af12-42e3-a2e7-f25fcc3ef438"/>
+    <managerType typeId="ba55103d-0ae4-4745-843d-02d72ffe8e5c" valueTypeId="68fe5dfa-dbd0-4c96-bf7b-b63a7e1ecace"/>
+  </producedTypes>
+  <name>Запасы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запасы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.Запасы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Очтет отображает состояние запасов предприятия.</value>
+  </explanation>
+  <attributes uuid="8ddc5a3e-48e2-4c2a-8739-8579d3a002a4">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="3cb9f3fb-49e4-4f6a-a522-4c152e124815">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d9e309ae-00ce-4aaa-81b5-924184b6fe1e">
+    <name>ОбразецВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ведомость</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="213801a4-609b-42c9-8049-c2255d807d45">
+    <name>ОбразецОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец остатки</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

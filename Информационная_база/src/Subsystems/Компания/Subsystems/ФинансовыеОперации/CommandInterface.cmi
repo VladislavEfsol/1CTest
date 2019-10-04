@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>DocumentJournal.РегламентныеДокументы.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.СверкаВзаиморасчетов.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Document.Взаимозачет.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>DocumentJournal.РегламентныеДокументы.StandardCommand.OpenList</commands>
+      <commands>Document.СверкаВзаиморасчетов.StandardCommand.OpenList</commands>
+      <commands>Document.Взаимозачет.StandardCommand.OpenList</commands>
+      <commands>Document.Операция.StandardCommand.OpenList</commands>
+      <commands>Document.ПрочиеРасходы.StandardCommand.OpenList</commands>
+      <commands>Document.НачислениеНалогов.StandardCommand.OpenList</commands>
+      <commands>DataProcessor.ЗакрытиеМесяца.Command.ОткрытьЗакрытиеМесяца</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelCreate</group>
+      <commands>Document.ПрочиеРасходы.StandardCommand.Create</commands>
+      <commands>Document.Взаимозачет.StandardCommand.Create</commands>
+      <commands>Document.Операция.StandardCommand.Create</commands>
+      <commands>Document.НачислениеНалогов.StandardCommand.Create</commands>
+      <commands>Document.СверкаВзаиморасчетов.StandardCommand.Create</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="156baa13-7316-4c54-aa50-af47efcd8209">
+  <producedTypes>
+    <selectionType typeId="459c24b1-09c7-479a-959b-9e6deed5b3b2" valueTypeId="b6badfe6-d62f-4fbc-b192-b163e91e8a07"/>
+    <listType typeId="f5635772-1107-4616-bf12-a1081dab29cd" valueTypeId="ebd619c7-9b12-41a2-94c3-df8770230714"/>
+    <managerType typeId="e8472905-62b3-4a86-8b59-13d079bfaf4b" valueTypeId="ebca4f8e-cd9b-4333-bb7f-ee81d292ae58"/>
+    <recordSetType typeId="a772d273-d07f-4c4b-8d96-5bb680e66a6c" valueTypeId="524660be-cf26-4fc6-9b5d-f18a87ea40e5"/>
+    <recordKeyType typeId="cc623edb-63cc-482d-9b52-10610375b937" valueTypeId="2af99105-764d-4eea-b37e-5501f6543fdd"/>
+    <recordType typeId="726fb7c7-1171-4f48-939d-af22ade0f94a" valueTypeId="5a02d903-5df9-46c3-a011-82087750e9fe"/>
+    <recordManagerType typeId="5e683c78-a410-4c95-b5c6-9d72b3807d6f" valueTypeId="bae3e2fe-526d-47a5-80c7-4d2ae364dcf4"/>
+  </producedTypes>
+  <name>ПрименяемыеТарифыСтраховыхВзносов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Применяемые тарифы страховых взносов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПрименяемыеТарифыСтраховыхВзносов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПрименяемыеТарифыСтраховыхВзносов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата перехода на тариф</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="69786047-ee84-4349-9c78-37068bfff86b">
+    <name>ВидТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф страховых взносов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыТарифовСтраховыхВзносов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7743c97c-4632-45c6-897c-b524bf335d45">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="00bffb16-f12c-4512-a09a-f71c51a4f0dc">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8787a919-b9ad-4852-a33f-3a09d82f4133">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

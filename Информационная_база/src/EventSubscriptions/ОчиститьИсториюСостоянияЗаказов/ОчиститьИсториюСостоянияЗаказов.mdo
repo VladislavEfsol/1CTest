@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3dd65ba-78e6-4367-95b1-b0ff7bb1c5d9">
+  <name>ОчиститьИсториюСостоянияЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистить историю состояния заказов</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.СостоянияЗаказовНаПроизводство</types>
+    <types>CatalogObject.СостоянияЗаказНарядов</types>
+    <types>CatalogObject.СостоянияЗаказовПоставщикам</types>
+    <types>CatalogObject.СостоянияЗаказовПокупателей</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.СостоянияЗаказов.ОчиститьИсториюСостоянияЗаказовПередУдалением</handler>
+</mdclass:EventSubscription>

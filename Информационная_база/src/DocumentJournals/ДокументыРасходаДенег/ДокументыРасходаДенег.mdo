@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c85294b-44eb-4ee4-8eeb-5e9123a22571">
+  <producedTypes>
+    <selectionType typeId="9d406f3a-9376-43f9-a8ee-59c0ef4028bb" valueTypeId="428c3a46-f350-4ea0-a6d6-df627326fd66"/>
+    <listType typeId="2d398800-9b35-4d79-80a7-9b80cfe39700" valueTypeId="cb39fb8b-2b57-4f64-81a1-893c89d0f778"/>
+    <managerType typeId="53f6ce40-9383-424a-bc5f-c5492dd6f7ee" valueTypeId="a70ddbfa-eafd-4338-9a1a-ce7d4d395e45"/>
+  </producedTypes>
+  <name>ДокументыРасходаДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы расхода денег</value>
+  </synonym>
+  <registeredDocuments>Document.РасходИзКассы</registeredDocuments>
+  <registeredDocuments>Document.РасходСоСчета</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заказа</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ заказа</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="d70a88b8-4614-4ae7-b7b7-ada1fb73fa21">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.Организация</references>
+    <references>Document.РасходСоСчета.Attribute.Организация</references>
+  </columns>
+  <columns uuid="4c3e3021-2a22-4796-a975-729f687429fb">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.ВидОперации</references>
+    <references>Document.РасходСоСчета.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="44392436-99a1-4a32-a9ec-fa4ed711ab0f">
+    <name>СчетКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет, касса</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.Касса</references>
+    <references>Document.РасходСоСчета.Attribute.БанковскийСчет</references>
+  </columns>
+  <columns uuid="b169fc9e-416b-42c4-8db2-9b714009f73b">
+    <name>Статья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.Статья</references>
+    <references>Document.РасходСоСчета.Attribute.Статья</references>
+  </columns>
+  <columns uuid="a303d766-f271-42ae-8a83-01098d2e8f5d">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.Контрагент</references>
+    <references>Document.РасходСоСчета.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="e5653778-17f6-4e26-9edc-cccf179ef954">
+    <name>Подотчетник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотчетник</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.Подотчетник</references>
+    <references>Document.РасходСоСчета.Attribute.Подотчетник</references>
+  </columns>
+  <columns uuid="3798ab34-b29c-4df1-80c4-640a3bb919be">
+    <name>СуммаРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма расход</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.СуммаДокумента</references>
+    <references>Document.РасходСоСчета.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="f802e734-7e69-4f79-9473-c802f2f71505">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.ВалютаДенежныхСредств</references>
+    <references>Document.РасходСоСчета.Attribute.ВалютаДенежныхСредств</references>
+  </columns>
+  <columns uuid="ca3c2252-3ecb-4f60-934a-39fa76bc5fa3">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РасходИзКассы.Attribute.Комментарий</references>
+    <references>Document.РасходСоСчета.Attribute.Комментарий</references>
+  </columns>
+</mdclass:DocumentJournal>

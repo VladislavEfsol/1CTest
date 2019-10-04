@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dad942ec-d13d-4908-9efd-d4303bf94d59">
+  <producedTypes>
+    <objectType typeId="1d2b1756-d3ad-436e-8c6f-12a1d5912395" valueTypeId="afa94729-1c37-4a7c-82a0-4942e6325190"/>
+    <managerType typeId="bd52b2c0-d0e9-4956-a22e-7f71b70f27a1" valueTypeId="fe0a3547-7a37-4fab-9318-6d4b4badafe3"/>
+  </producedTypes>
+  <name>НЗП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Незавершенное производство</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.НЗП.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Отчет по прямым и косвенным затратам.</value>
+  </explanation>
+  <attributes uuid="04f3c6e2-479e-41e2-af70-cf48e80ad6aa">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="ded33f9f-b68b-4f39-a0af-7a794d406e96">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="cafc3fa5-ec50-4f14-9a45-5d4d79e9329f">
+    <name>ОбразецВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ведомость</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="1f5ffd47-701e-4bd1-bff8-f66a8fc0ac8e">
+    <name>ОбразецОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец остатки</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1de86e7-6890-4317-9d2a-9a418164b2ce">
+  <producedTypes>
+    <objectType typeId="700c5c29-33a9-4b92-85aa-34a70f30a63f" valueTypeId="6661fbf6-8ec2-4c12-88d3-7dcf490f7f03"/>
+    <managerType typeId="1b086861-0d5f-461c-a511-a5de0f60c319" valueTypeId="4e885e9d-dccf-49df-b2e4-f82446999f8c"/>
+  </producedTypes>
+  <name>БанкИКасса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банк и касса</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.БанкИКасса.Form.ФормаСписка</defaultForm>
+  <attributes uuid="1368c412-aee8-480d-b81e-136cd4c5e6d3">
+    <name>ВариантОтображенияИтогов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отображения итогов</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыОтображенияИтоговБанкИКасса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="98de2d58-aca1-4472-8ba3-43d006fceaa8">
+    <name>ВариантыДетализацииИтоговБанкИКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Варианты детализации итогов банк и касса</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыДетализацииИтоговБанкИКасса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="699d5964-e6a1-4e44-a47b-2915e6dfe876">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="71dc5272-a1f4-4d59-8675-b7072ec470bd">
+    <name>ФормаВыбораВидаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора вида операции</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="5ca45d6b-dd25-46d8-99d0-318099b0cdab">
+    <name>ОткрытьЖурналБанкИКассаРазделГлавное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк и касса</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

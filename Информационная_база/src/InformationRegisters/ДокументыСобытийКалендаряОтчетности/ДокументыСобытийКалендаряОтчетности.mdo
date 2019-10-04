@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1583608e-a56f-4dba-a806-7979b94ccce0">
+  <producedTypes>
+    <selectionType typeId="ab43af5b-cbca-4f0d-8067-98d745cf54a7" valueTypeId="a688f85b-5143-4e46-87a9-8040916e36bd"/>
+    <listType typeId="3c700234-ad68-4612-919f-361618b4030e" valueTypeId="e72a5c45-3d99-48c3-8ff5-4db358e4b4f2"/>
+    <managerType typeId="4215916f-48b1-4b5b-b783-f6ba9d44c3d2" valueTypeId="ef57e9ec-4e07-4b81-a8c7-a39b0531bda5"/>
+    <recordSetType typeId="535ffc68-a043-4a34-9489-a98f9d998625" valueTypeId="4096c40e-2244-40ff-b047-8730787221a8"/>
+    <recordKeyType typeId="d266c04f-ce60-44d7-a376-7b49131873dd" valueTypeId="6cf35efb-a089-45bf-b43e-cddd56e10a22"/>
+    <recordType typeId="a56be0fb-aa2a-43a4-ac5d-b4b46eaf4842" valueTypeId="f3f7a6b6-5310-4ebd-9af2-7b0ed96630dc"/>
+    <recordManagerType typeId="59c437e4-5504-47c9-8eef-d4b1a8de51d9" valueTypeId="cdd456df-3836-4cc2-9565-448ff6518a13"/>
+  </producedTypes>
+  <name>ДокументыСобытийКалендаряОтчетности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы событий календаря отчетности</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="b2791e58-829a-411f-b0c4-685e3c2b799f">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КалендарьПодготовкиОтчетности</types>
+      <types>CatalogRef.КалендарьПерсональныхЗадачОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="284a6cc4-c51a-4d9a-bb7f-dba9605899b6">
+    <name>СвязанныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанный документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.НачислениеНалогов</types>
+      <types>DocumentRef.РасходСоСчета</types>
+      <types>DocumentRef.НачислениеЗарплаты</types>
+      <types>DocumentRef.ПлатежноеПоручение</types>
+      <types>DocumentRef.РасходИзКассы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

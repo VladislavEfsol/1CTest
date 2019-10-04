@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0adb560-608b-4acb-a7d5-6c921eabd6c1">
+  <name>SiteExchange2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Site exchange2</value>
+  </synonym>
+  <namespace>http://www.1c.ru/ExchangeWithSites2</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.CommerceML210</value>
+  </xdtoPackages>
+  <descriptorFileName>ExchangeWithSites2.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="027aff36-61b0-4934-a707-8431b83f5898">
+    <name>GetAmountAndPrices</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get amount and prices</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>КоммерческаяИнформация</name>
+      <nsUri>urn:1C.ru:commerceml_205</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>GetAmountAndPrices</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="47093bc1-befe-4981-80d4-55dcc908736d">
+      <name>ModificationDate</name>
+      <synonym>
+        <key>ru</key>
+        <value>Modification date</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="f127dcb1-d01e-47c8-9d68-af5a1c139f01">
+      <name>GroupCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Group code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="25dc1e9f-42b0-4d08-bc56-36c047e9b6d5">
+      <name>WarehouseCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Warehouse code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="4c98e4e3-78b3-4df2-b5ec-157ea928acb2">
+      <name>OrganizationCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Organization code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="23538925-dbe0-4b3b-a9eb-16014e4dbec5">
+      <name>SettingsExchangeCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Settings exchange code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="f9e46e58-b3cb-43c0-b2d2-7f7c1380df3b">
+    <name>GetItems</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get items</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>КоммерческаяИнформация</name>
+      <nsUri>urn:1C.ru:commerceml_205</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>GetItems</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="d5e397e4-0603-4b33-b356-72b08d23aee5">
+      <name>ModificationDate</name>
+      <synonym>
+        <key>ru</key>
+        <value>Modification date</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="ef5ff761-e232-4ec8-ac5d-c56bcb23c4bf">
+      <name>GroupCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Group code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="eb7d1392-1d7d-4a69-b023-35ee159e53cd">
+      <name>SettingsExchangeCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Settings exchange code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="17478ef2-5642-4623-b3ee-ac9aa4267b95">
+    <name>GetOrders</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get orders</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>КоммерческаяИнформация</name>
+      <nsUri>urn:1C.ru:commerceml_205</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>GetOrders</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="e97714b0-962c-4eda-8630-3903ca23237b">
+      <name>ModificationDate</name>
+      <synonym>
+        <key>ru</key>
+        <value>Modification date</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="a89dd9ab-4231-4327-8e72-9b35e2df20c9">
+      <name>SettingsExchangeCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Settings exchange code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="ce5f2bba-231b-496b-9622-669ef445b420">
+    <name>GetPicture</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get picture</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>base64Binary</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>GetPicture</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="91b3025c-e37d-41c2-a092-4f806989ab29">
+      <name>ItemID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Item ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="562901e2-25bb-4a6b-beb5-5fff56989d9c">
+      <name>SettingsExchangeCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Settings exchange code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+  <operations uuid="2f1090e2-1a93-4741-a5e0-01804e5e1a43">
+    <name>LoadOrders</name>
+    <synonym>
+      <key>ru</key>
+      <value>Load orders</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>LoadOrders</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="39368e68-f6e2-4159-93af-87cbdf5f0996">
+      <name>OrdersData</name>
+      <synonym>
+        <key>ru</key>
+        <value>Orders data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>КоммерческаяИнформация</name>
+        <nsUri>urn:1C.ru:commerceml_205</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3b4e0fd4-f1bc-4eba-b41f-eb69788c845c">
+      <name>SettingsExchangeCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Settings exchange code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+  </operations>
+</mdclass:WebService>

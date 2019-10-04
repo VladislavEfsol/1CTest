@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a60a1eff-1812-4e89-a169-6d917ed1a766">
+  <name>СоздатьУзелОбменаСПодключаемымОборудованиемOffline</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создать узел обмена с подключаемым оборудованием offline</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ПодключаемоеОборудование</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиПодключаемоеОборудованиеOfflineСобытия.СоздатьУзелОбменаСПодключаемымОборудованиемOffline</handler>
+</mdclass:EventSubscription>

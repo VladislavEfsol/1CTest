@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82b13470-bfc3-4b5a-b634-308374b24756">
+  <name>КассоваяСменаПриЗаписиДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кассовая смена при записи документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.КассоваяСмена</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РозничныеПродажиСервер.КассоваяСменаПриЗаписиДокументаПриЗаписи</handler>
+</mdclass:EventSubscription>

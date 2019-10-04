@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e9664cc-ff26-40e0-b73d-c0c6e4dfa1dc">
+  <name>ВыполнитьРабочийПроцессПередЗаписьюИсточника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнить рабочий процесс перед записью источника</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.ЗаданиеНаРаботу</types>
+    <types>DocumentObject.ОперацияПоПлатежнымКартам</types>
+    <types>DocumentObject.ЗаказПоставщику</types>
+    <types>DocumentObject.Событие</types>
+    <types>DocumentObject.ПриемИПередачаВРемонт</types>
+    <types>DocumentObject.ЗаказНаПроизводство</types>
+    <types>DocumentObject.ПоступлениеНаСчет</types>
+    <types>DocumentObject.ПоступлениеВКассу</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РабочиеПроцессы.ВыполнитьРабочийПроцессПередЗаписьюИсточника</handler>
+</mdclass:EventSubscription>

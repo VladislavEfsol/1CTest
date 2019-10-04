@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8cd94bcc-4950-4062-b02c-633ceaa72d13">
+  <producedTypes>
+    <objectType typeId="65d1d7b2-5ffb-4c6f-8642-c52a724321e0" valueTypeId="48a7caab-4cc8-4e3f-82ae-c4ee3ae1393f"/>
+    <managerType typeId="a42bfd67-78cd-4570-b7a6-a4bc42c4cb54" valueTypeId="5c08d4d3-7fd3-40e2-91c6-0445767d413e"/>
+  </producedTypes>
+  <name>ДокументыПоКонтрагенту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по контрагенту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ДокументыПоКонтрагенту.Form.СписокДокументов</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="84af0057-521a-401d-b14f-1db9f87dd880">
+    <name>СписокДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список документов</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4ce5455a-5c17-4577-bcc2-208a021f3409">
+    <name>НастройкаСоставаВидовДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка состава видов документов</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="306a610d-86fe-41a1-84a4-5ba0a8cbe94b">
+    <name>ДокументыПоКонтрагенту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Контрагенты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Список документов по контрагенту</value>
+    </toolTip>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="c5f36b52-8dfa-4a00-8011-40932efc9553">
+    <name>ДокументыПоДоговору</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Список документов по контрагенту</value>
+    </toolTip>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

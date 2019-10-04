@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e486a0be-8a9f-41eb-bff9-f5eef9e0804c">
+  <producedTypes>
+    <selectionType typeId="57a27c95-742d-46d5-ac34-f10aaa239944" valueTypeId="d6db7f18-e392-443b-bf14-4567e2c2bd31"/>
+    <listType typeId="c6c9ef4b-4c1a-4c35-bc73-80438bd34106" valueTypeId="1f731320-46d6-4cfe-8369-164c930d4dad"/>
+    <managerType typeId="b76dbcca-f59d-4102-a061-78d7494df526" valueTypeId="ee68348a-74d2-4cb1-970c-57638935ca02"/>
+    <recordSetType typeId="7a5e1a4a-ded4-4ca9-821a-74bf51c6b9c3" valueTypeId="37374948-c2b5-4777-b6ac-014f6a6c6818"/>
+    <recordKeyType typeId="b6a7e01b-f423-49c6-a44a-fefc4d26c774" valueTypeId="90664969-de48-440e-a9ef-8b7e8f04b4c6"/>
+    <recordType typeId="37ec9a4b-c83c-44de-94ba-030bb83ae785" valueTypeId="65338734-b3aa-4bec-ad40-26f045e7d024"/>
+    <recordManagerType typeId="1434b4bb-3aad-4457-a05e-036a0d42fef7" valueTypeId="e3e3c422-3f0a-4bc4-acec-3a1ab06be53b"/>
+  </producedTypes>
+  <name>ОплатыПокупателейССайта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплаты покупателей с сайта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Оплаты покупателя с сайта</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Оплаты покупателей с сайта</value>
+  </listPresentation>
+  <resources uuid="036c24b0-208e-4b80-8eb1-8f7dc405ba5f">
+    <name>НомерОплатыНаСайте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер оплаты на сайте</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1381f4b9-2f63-4e41-ac1a-5da7f1301ac0">
+    <name>ДатаОплатыНаСайте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата оплаты на сайте</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="75022b14-f7d1-48e7-81d0-3726b0753cb0">
+    <name>УзелОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел обмена</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef.ОбменУправлениеНебольшойФирмойСайт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bfcf67df-f70f-4ec0-bfe2-7e88d8ec333c">
+    <name>ДокументОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ оплаты</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ОперацияПоПлатежнымКартам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

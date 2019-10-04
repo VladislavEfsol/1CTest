@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aec347a8-d8f9-4f93-9d76-54102454535a">
+  <name>СинхронизацияМПУНФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация МПУНФ</value>
+  </synonym>
+  <rootURL>synchronization</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="ebbfe104-2a14-4855-b586-61e0c3a2d8d5">
+    <name>GetPrimaryData</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get primary data</value>
+    </synonym>
+    <template>/GetPrimaryData/*</template>
+    <methods uuid="42a8e55a-9ae6-46fd-ae6b-099c37d3c461">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>GetPrimaryDataPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="6e620c14-42c9-4fdb-91b2-bd7172dacef3">
+    <name>GetBasicData</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get basic data</value>
+    </synonym>
+    <template>/GetBasicData/*</template>
+    <methods uuid="1756ea49-e45e-4b4b-be2f-80cbe4458628">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>GetBasicDataPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="aa9b923b-0b24-4dbb-a886-b43ad5fb835a">
+    <name>Exchange</name>
+    <synonym>
+      <key>ru</key>
+      <value>Exchange</value>
+    </synonym>
+    <template>/Exchange/*</template>
+    <methods uuid="da511bcc-ed4e-418a-a2fd-314a9eed5ff8">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ExchangePost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="68b627b6-574a-44f1-a764-070f1a827a40">
+    <name>SendXSD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Send XSD</value>
+    </synonym>
+    <template>/SendXSD/*</template>
+    <methods uuid="f3e83fd8-d2e3-45d2-9395-016514c47c4a">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>SendXSDPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="987f5cf9-b09b-42e3-abb2-d6ef10d39f4d">
+    <name>GetXSD</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get XSD</value>
+    </synonym>
+    <template>/GetXSD/*</template>
+    <methods uuid="c277d824-8d72-4f56-95ed-aa91f4b2624e">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>GetXSDPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="d8427448-4425-4c2a-b102-37b7c8d5ea01">
+    <name>DeleteMessage</name>
+    <synonym>
+      <key>ru</key>
+      <value>Delete message</value>
+    </synonym>
+    <template>/DeleteMessage/*</template>
+    <methods uuid="7c6720dd-5384-4f35-8245-bb96a033b797">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>DeleteMessagePost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="24104b08-5e32-4081-9ce1-5e89fc080890">
+    <name>CheckNewNumbers</name>
+    <synonym>
+      <key>ru</key>
+      <value>Check new numbers</value>
+    </synonym>
+    <template>/CheckNewNumbers/*</template>
+    <methods uuid="ed4c55a5-ba51-478e-be8e-0cb7537b17fe">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>CheckNewNumbersPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="37be10df-31a3-4f8d-833a-26de16ae0d13">
+    <name>DeleteNewNumbers</name>
+    <synonym>
+      <key>ru</key>
+      <value>Delete new numbers</value>
+    </synonym>
+    <template>/DeleteNewNumbers/*</template>
+    <methods uuid="c0f1b8a4-d361-40b3-9285-f4c5592be6f8">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>DeleteNewNumbersPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="27a15cb1-98a5-47fb-a158-9b5215e4feaf">
+    <name>SendImage</name>
+    <synonym>
+      <key>ru</key>
+      <value>Send image</value>
+    </synonym>
+    <template>/SendImage/*</template>
+    <methods uuid="f95d78d7-5149-4ae9-a10f-15a7d57a4740">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>SendImagePost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="055f51b7-c0af-433b-9de8-f99a023e324c">
+    <name>Connection</name>
+    <synonym>
+      <key>ru</key>
+      <value>Connection</value>
+    </synonym>
+    <template>/Connection/*</template>
+    <methods uuid="841e3063-0a94-4469-9d36-7559bb05809d">
+      <name>Get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>ConnectionGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b135fb95-52b5-4783-9765-9d3967fcea19">
+    <name>FirstConnection</name>
+    <synonym>
+      <key>ru</key>
+      <value>First connection</value>
+    </synonym>
+    <template>/FirstConnection/*</template>
+    <methods uuid="decf2b67-cb9f-4af7-9a51-81f61690d618">
+      <name>Get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>FirstConnectionGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="9054fb52-3ff1-431e-8e98-2d488f6232c8">
+    <name>GetBaseId</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get base id</value>
+    </synonym>
+    <template>/GetBaseId/*</template>
+    <methods uuid="104031d0-c25e-4319-aad8-d083d1ecfdca">
+      <name>Get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>GetBaseIdGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c5c37bd6-7f2c-476e-8072-b8b8f42c86eb">
+    <name>GetListOfUsers</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get list of users</value>
+    </synonym>
+    <template>/GetListOfUsers/*</template>
+    <methods uuid="eb56b15a-d1b2-4b19-b060-a21002542f3e">
+      <name>Get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>GetListOfUsersGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="eac1270e-6cb9-403b-ac9b-f9c8392350f7">
+    <name>AddUser</name>
+    <synonym>
+      <key>ru</key>
+      <value>Add user</value>
+    </synonym>
+    <template>/AddUser/*</template>
+    <methods uuid="19dd491d-04a0-4f80-9f42-1a31c5cfd147">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>AddUserPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="5795e46d-4bf1-45c2-83ae-203fb71765b8">
+    <name>UpdateUserDetails</name>
+    <synonym>
+      <key>ru</key>
+      <value>Update user details</value>
+    </synonym>
+    <template>/UpdateUserDetails/*</template>
+    <methods uuid="75d918e5-d8d6-4e45-ae73-6c71a829bdc0">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>UpdateUserDetailsPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="c933cc1e-0079-4d45-a4de-2bed335643bd">
+    <name>GetSubscriberID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Get subscriber ID</value>
+    </synonym>
+    <template>/GetSubscriberID/*</template>
+    <methods uuid="a57d3de9-798e-4169-b645-72f371f10d13">
+      <name>Post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>GetSubscriberIDPost</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

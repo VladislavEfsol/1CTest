@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13ceea5a-7b4d-4c9e-8dd0-67c5c246a3d7">
+  <producedTypes>
+    <selectionType typeId="d588b0a7-b1ed-41b8-bc22-fcc72704f791" valueTypeId="59ee2fc9-0171-44bd-9e63-776c1bc65ad6"/>
+    <listType typeId="06416e99-bb98-4354-864e-a59c22e70401" valueTypeId="7b6c7ba2-3efd-49fd-ba7a-6a6b8d6d6d1e"/>
+    <managerType typeId="b629ed7e-1f2d-47f4-9de3-250aafd8bf6c" valueTypeId="a6d0c101-1aef-484c-95a7-266192c350d9"/>
+  </producedTypes>
+  <name>РозничныеПродажиГИСМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Розничные продажи ГИСМ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ОтчетОРозничныхПродажах</registeredDocuments>
+  <registeredDocuments>Document.РасходнаяНакладная</registeredDocuments>
+  <columns uuid="95141590-73a3-48d1-8ee6-055991daec29">
+    <name>ЕстьМаркируемаяПродукцияГИСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть маркируемая продукция ГИСМ</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.ЕстьМаркируемаяПродукцияГИСМ</references>
+    <references>Document.РасходнаяНакладная.Attribute.ЕстьМаркируемаяПродукцияГИСМ</references>
+  </columns>
+  <columns uuid="d654f81e-43b3-4cc2-ab9d-322a8aa4fd57">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <references>Document.ОтчетОРозничныхПродажах.Attribute.СуммаДокумента</references>
+    <references>Document.РасходнаяНакладная.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="b5f6b795-469b-4fa6-bcb1-d94a9f06660d">
+    <name>СпособПродажиГИСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ продажи ГИСМ</value>
+    </synonym>
+    <indexing>Index</indexing>
+    <references>Document.РасходнаяНакладная.Attribute.СпособПродажиГИСМ</references>
+  </columns>
+</mdclass:DocumentJournal>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c795a99a-9b70-48b6-9bf5-77e4193ce69b">
+  <producedTypes>
+    <selectionType typeId="639b66ef-2d33-4dea-9422-a38cca74e826" valueTypeId="b402fcb0-5ec5-4df9-9a9e-21dd55f16694"/>
+    <listType typeId="261062fe-6b43-4484-a0b7-97ca63d05234" valueTypeId="b73be8f8-af8e-47a4-b771-5e6b3df2de4f"/>
+    <managerType typeId="36775974-c2de-4989-9276-296162998a89" valueTypeId="6c96de68-2f3a-476d-91ca-ff860de10003"/>
+    <recordSetType typeId="156b9336-8de6-4f80-b059-4418202cc4f6" valueTypeId="4840af4a-d8b1-482a-af0b-261037514586"/>
+    <recordKeyType typeId="4b1e5566-de27-4e98-8396-b047244e7a9b" valueTypeId="c9c40401-6a5a-46f8-b3eb-625dbab3424e"/>
+    <recordType typeId="15d42a18-1ba4-4b1c-9ba1-3ec803dda69b" valueTypeId="90e2fe50-b386-4f11-aef7-247d065f03e8"/>
+  </producedTypes>
+  <name>РасчетыСФондамиПоСтраховымВзносам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты с фондами по страховым взносам</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="8f69e39f-bb4f-4ea5-b821-04c09cc2d58d">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="ca5705cc-937b-4698-a67a-0d383dbe3e7a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment>Это может быть как головная организация, так и обособленное подразделение</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5c96fd63-a2b5-4ce9-a438-6664eb58ab6f">
+    <name>ВидОбязательногоСтрахованияСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид обязательного страхования сотрудников</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОбязательногоСтрахованияСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="70562c20-7683-4fa8-a1ac-ad182ff96edd">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6b44cb79-e399-4294-b414-c47e3a01aa1c">
+    <name>ЭтоСтраховыеВзносы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это страховые взносы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e3fd7c1a-3555-4379-9821-9e791e5e8a1e">
+    <name>ЭтоРасчетыПоНачислениюУплатеВзносовВФСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это расчеты по начислению уплате взносов ВФСС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f3c6690-8cc9-4491-a311-9a759a703050">
+  <producedTypes>
+    <objectType typeId="cd376728-7e9f-4094-bee0-9598bc9c6578" valueTypeId="4d565b40-7d5b-4aa3-96fa-5955df1e52ec"/>
+    <managerType typeId="ea967006-2dfa-44eb-aae9-8bbefe20d712" valueTypeId="dc956ad1-38f7-42a1-af07-a24f8ac8a38b"/>
+  </producedTypes>
+  <name>ЗаданияНаРаботу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задания на работу</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ЗаданияНаРаботу.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="a0dc0d89-28a4-4435-b6cc-5865d418cda0">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="20fec5ab-b251-465d-8f2b-7de643a04659">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="7344e613-4ba6-44bb-8019-04d0198d16fc">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="17a7c035-bee0-4b80-9727-1d51a2f65f6a">
+    <name>ОбразецОтчетЗаказчику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец отчет заказчику</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="daff1e22-8ba5-44f9-9e44-7ad4e02adff8">
+    <name>ЗаданияПоТекущемуСотруднику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задания по текущему сотруднику</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

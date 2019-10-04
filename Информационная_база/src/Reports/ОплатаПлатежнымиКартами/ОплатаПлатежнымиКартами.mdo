@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de4ecc7d-0f25-494d-90cf-f4dfd170a689">
+  <producedTypes>
+    <objectType typeId="2eac172f-04e3-4108-993d-b491cddb325e" valueTypeId="203090e9-6df5-4822-af8d-bba9c43af51e"/>
+    <managerType typeId="7dea595d-f5ef-448d-a9e7-0c45ce8b1315" valueTypeId="a55a1c0b-ffe5-4dce-a628-8c1bce352a34"/>
+  </producedTypes>
+  <name>ОплатаПлатежнымиКартами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оплата платежными картами</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ОплатаПлатежнымиКартами.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="07ef29eb-6b3b-41be-bae6-6dc832f2850c">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="68481a7f-6ac1-4977-b999-2d230e304c09">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="09a20b5f-f1c8-4e33-8abc-21e3c878ad32">
+    <name>ОбразецОплатаПлатежнымиКартами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец оплата платежными картами</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

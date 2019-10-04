@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b276f136-ab58-4672-8169-1d452a6925b6">
+  <producedTypes>
+    <selectionType typeId="d64e7165-32cf-41c7-ade5-1bf391f0ba35" valueTypeId="644a5db5-ec5c-4e5a-8bb8-0b98a28a1037"/>
+    <listType typeId="8a675104-486d-49f0-9df6-8024826ae761" valueTypeId="8954852a-b31f-4f27-ba85-24e473f63d94"/>
+    <managerType typeId="2bf32437-0475-4153-bbc7-a83631200b8f" valueTypeId="1cf3b5b4-5b70-49c9-b421-4f2cc171e2cf"/>
+    <recordSetType typeId="c6d53878-0713-42ff-a9ce-bc35bf7e7f6c" valueTypeId="4acecef5-432e-4ba6-a83c-cf5279ef2c18"/>
+    <recordKeyType typeId="318940d0-b619-42e3-a8da-f3160737234b" valueTypeId="be5ed7e0-3e8f-4480-b580-96e61ee9c83a"/>
+    <recordType typeId="7c4800b9-4982-453d-8c42-2de5a6e8b4e7" valueTypeId="4d865ae0-40dd-4705-84f1-d36058f0a427"/>
+    <recordManagerType typeId="9ec22096-ce84-4a0c-b47a-e5dd7b574088" valueTypeId="d8157709-4171-433a-9ec4-1663fc83a5f6"/>
+  </producedTypes>
+  <name>УдалитьЗаполненностьСвойствКатегорий</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Не используется) Заполненность свойств категорий</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6e0e0b0e-88cb-4339-920f-a483b9e41f13">
+    <name>Счетчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счетчик</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="12a8d9ad-33aa-41f7-a026-e4c5e5f89f26">
+    <name>НаборСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор свойств</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаборыДополнительныхРеквизитовИСведений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="0c7e6744-fa9b-4183-895e-d95462f7d876">
+    <name>Свойство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="e23917a4-0bcd-46bc-b946-4c61aeb36a2a">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+      <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      <types>CatalogRef.ЗначенияСвойствОбъектовИерархия</types>
+      <types>Boolean</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+      <types>String</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>Date</types>
+      <types>Number</types>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Проекты</types>
+      <types>CatalogRef.Сотрудники</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+</mdclass:InformationRegister>

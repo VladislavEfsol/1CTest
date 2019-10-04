@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bcd3b0d1-60f5-4d86-ad33-b39eb263d2c4">
+  <producedTypes>
+    <objectType typeId="fb44c404-a72f-4c5d-b586-f908454ec695" valueTypeId="d96554a2-25e1-43d1-a8e5-23e9a2252fa8"/>
+    <managerType typeId="857f31ad-1868-49e8-a66d-6c3eb174d4db" valueTypeId="f83a90f2-474c-42a5-8df0-24ea397515ad"/>
+  </producedTypes>
+  <name>ДвиженияСерийныхНомеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения серийных номеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ДвиженияСерийныхНомеров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="a0a8031c-5075-4bcd-8a4b-7580e42aa07c">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="f283fccb-200b-4beb-83bf-e358aec4ee32">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="950c2f08-51ec-4745-b75b-d8c22acebbfb">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

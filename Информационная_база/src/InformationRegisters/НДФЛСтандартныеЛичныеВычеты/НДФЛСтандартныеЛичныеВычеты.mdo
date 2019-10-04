@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="274820d1-e890-4e82-b658-76168df9fd8e">
+  <producedTypes>
+    <selectionType typeId="dcf1bc1b-1335-49e0-8b6c-ffcb6ab3cd0e" valueTypeId="0cc0ab7f-af80-4650-8153-e23a5226086d"/>
+    <listType typeId="dc370e86-3bba-4e25-8b0f-97e03844037f" valueTypeId="2631c968-a576-4404-bf22-3346304567bc"/>
+    <managerType typeId="fb5320d3-5291-4e85-a784-2c49e8c9382d" valueTypeId="2ae704a4-b395-445c-bf24-b9fe61e3faa8"/>
+    <recordSetType typeId="b9a8c5c7-ce9d-43d7-9c9b-b044074d9ce5" valueTypeId="98453997-cc61-4da2-bf6e-518031528fd3"/>
+    <recordKeyType typeId="cc4be9fa-cd32-4f10-8ee6-761ff033e9fe" valueTypeId="c97129d0-62d4-4166-a530-086a4aeda594"/>
+    <recordType typeId="9ad8214c-1e8c-42b3-8a9f-699b6645c021" valueTypeId="f6e4b01f-0445-456e-b2a0-6ba45c603752"/>
+    <recordManagerType typeId="86216dc1-1e50-4aa1-9966-510b7a9a6069" valueTypeId="f2388a03-4cf5-4ce8-ba16-dc7460142952"/>
+  </producedTypes>
+  <name>НДФЛСтандартныеЛичныеВычеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Личные вычеты по НДФЛ</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НДФЛСтандартныеЛичныеВычеты.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НДФЛСтандартныеЛичныеВычеты.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заявления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала действия вычета. Вычет будет дейтсвовать до тех пор, пока по сотруднику не появится запись с другими данными, например, признак &quot;Применяется&quot; будет не установлен</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Личный вычет по НДФЛ</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Личные вычеты по НДФЛ</value>
+  </listPresentation>
+  <resources uuid="47873b1f-a6c2-4979-aed5-5dccd1b03d41">
+    <name>Применяется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применяется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="6ca54350-5020-4ddd-bfb9-575f867b745f">
+    <name>КодВычета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код вычета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВычетыНДФЛ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ВычетыНДФЛ.Код103</value>
+    </fillValue>
+  </resources>
+  <resources uuid="7feca001-961c-405e-b32f-bcad5dc67578">
+    <name>Представление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имущественный вычет</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="23edec8d-01a9-4809-b094-4dd13b8849d7">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, которому предоставляется вычет</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d274d0d1-cbac-49de-a31b-830173f3f970">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c130edf3-7b02-4bba-bbad-32d9069c6211">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="664a314c-225e-4fac-b3c4-82c2c76509c5">
+    <name>ФормаЗаполненияСтандартныхЛичныхВычетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения стандартных личных вычетов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

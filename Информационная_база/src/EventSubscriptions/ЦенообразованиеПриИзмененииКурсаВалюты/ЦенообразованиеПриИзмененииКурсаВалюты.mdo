@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2fd5cda-36ba-46f4-9d78-dd9e8a8d4b50">
+  <name>ЦенообразованиеПриИзмененииКурсаВалюты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ценообразование: При изменении курса валюты</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.КурсыВалют</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ЦенообразованиеСервер.ПодпискаНаСобытиеПриИзмененииКурсаВалюты</handler>
+</mdclass:EventSubscription>

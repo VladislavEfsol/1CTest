@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d66b0c86-5648-481b-96f9-d6b1956d8a06">
+  <producedTypes>
+    <selectionType typeId="2f1e9b41-c921-4e40-94a5-df8a13072e29" valueTypeId="df341565-c04d-4e97-b9de-ff8bd3f2f8db"/>
+    <listType typeId="a92a6dcf-6304-4394-be1e-a37e405b1273" valueTypeId="8c31b49d-a6c1-47d8-9d7c-9ff0f123debd"/>
+    <managerType typeId="ee2943dc-541d-4c29-bc5b-04269131ec45" valueTypeId="fa7b6744-905d-4bdf-bd1c-19de5f82915f"/>
+    <recordSetType typeId="c505415b-6e3a-4b45-94ca-6f7a69ba59f2" valueTypeId="b600fc23-6bae-4a25-8075-de920e841d95"/>
+    <recordKeyType typeId="566ff62c-f5d6-4c46-adac-100f0f6d2076" valueTypeId="e9d2928e-e8fe-4ada-a868-f0826221fbb0"/>
+    <recordType typeId="3cb1254d-5475-4012-8c0c-ad06abdec4d1" valueTypeId="913c75e7-31b1-4bc1-9623-44c3f63b0ca8"/>
+    <recordManagerType typeId="b41c4829-2765-43d1-953f-ad1049d57e5e" valueTypeId="6beda034-6fbb-4b1a-9b72-89588e1d1298"/>
+  </producedTypes>
+  <name>НастройкиЗагрузкиПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки загрузки писем</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="70a4c7d5-9df3-4f86-bcbf-1c5df5eab612">
+    <name>ВариантЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант загрузки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыЗагрузкиПисем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВариантыЗагрузкиПисем.EnumValue.НеЗагружать</value>
+    </fillValue>
+  </resources>
+  <resources uuid="eacd67d4-e6b2-4ba2-a663-006f74aa184a">
+    <name>ВариантСинхронизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронизировать просмотр и удаление</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыСинхронизацииПисем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВариантыСинхронизацииПисем.EnumValue.НеСинхронизировать</value>
+    </fillValue>
+  </resources>
+  <resources uuid="2a308aaa-4a36-475d-9e41-e0ad8edd40fb">
+    <name>ВариантУдаления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант удаления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыУдаленияПисем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВариантыУдаленияПисем.EnumValue.Архивировать</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="e6751766-b974-4c7d-b233-388d90a1d099">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ed8b311e-fa6f-4fdb-975f-09b656247e98">
+    <name>ПочтоваяПапка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почтовая папка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1a0c6d3a-5e70-4b16-9b90-3dfdc914ac15">
+    <name>ФормаНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки писем</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="4cc9fa05-1cb0-4286-b303-bde2ab5251b4">
+    <name>НастройкиЗагрузкиПисем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки загрузки писем</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30f4ccae-fa96-443a-960f-e45d0d4fe90b">
+  <producedTypes>
+    <selectionType typeId="833a9af7-f003-4db8-83e8-5cc76ffd881d" valueTypeId="d65fe76b-734a-4605-9e16-15e06aed1562"/>
+    <listType typeId="5c9c821f-ebd7-4d37-96f0-4550336e4cb3" valueTypeId="8512d67b-f65a-4ab6-97e9-798a792debcd"/>
+    <managerType typeId="adbcec06-2145-42e5-b646-1cf483aa2a64" valueTypeId="4d9164f3-c2db-483d-8c8f-977e164b4c9d"/>
+  </producedTypes>
+  <name>ЧекиККМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чеки ККМ</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ЧекиККМ.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ЧекККМ</registeredDocuments>
+  <registeredDocuments>Document.ЧекККМВозврат</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="12c9dee8-78ac-46bd-9a27-cadd0e237966">
+    <name>КассаККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса ККМ</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.КассаККМ</references>
+    <references>Document.ЧекККМВозврат.Attribute.КассаККМ</references>
+  </columns>
+  <columns uuid="95ca222e-e8c2-47cf-b9aa-dd6d5ae85699">
+    <name>ВалютаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта документа</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.ВалютаДокумента</references>
+    <references>Document.ЧекККМВозврат.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="c2672c71-0e80-48d2-819b-f1904f89a9fc">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.СуммаДокумента</references>
+    <references>Document.ЧекККМВозврат.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="817a5345-942c-465f-97fe-a85dc9beea61">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.Статус</references>
+  </columns>
+  <columns uuid="d46731c6-c2dc-4c9a-91c6-ed0faf7518f6">
+    <name>НомерЧекаККМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ фискального чека</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.НомерЧекаККМ</references>
+    <references>Document.ЧекККМВозврат.Attribute.НомерЧекаККМ</references>
+  </columns>
+  <columns uuid="f7a93fc0-105b-41d3-bfb6-2d1ee5be2c93">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.Организация</references>
+    <references>Document.ЧекККМВозврат.Attribute.Организация</references>
+  </columns>
+  <columns uuid="64571453-fac5-410f-8b9e-161bbf0e3a81">
+    <name>Архивный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Архивный</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.Архивный</references>
+    <references>Document.ЧекККМВозврат.Attribute.Архивный</references>
+  </columns>
+  <columns uuid="45e23567-8422-4fa5-9d94-c6c6754acc06">
+    <name>КассоваяСмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кассовая смена</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.КассоваяСмена</references>
+    <references>Document.ЧекККМВозврат.Attribute.КассоваяСмена</references>
+  </columns>
+  <columns uuid="3de0166e-961a-4ad5-a08f-e2ec049932b5">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.ЧекККМВозврат.Attribute.СтруктурнаяЕдиница</references>
+  </columns>
+  <columns uuid="1f91cedf-b8c0-4e44-8574-380407637368">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.Комментарий</references>
+    <references>Document.ЧекККМВозврат.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="e589f892-d287-4da3-9d86-54906b8d7e28">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.Автор</references>
+    <references>Document.ЧекККМВозврат.Attribute.Автор</references>
+  </columns>
+  <columns uuid="d74004d1-1604-4481-a0b4-59bd5335cfc7">
+    <name>ЕстьЗаказы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.ЕстьЗаказы</references>
+    <references>Document.ЧекККМВозврат.Attribute.ЕстьЗаказы</references>
+  </columns>
+  <columns uuid="09bc2974-4254-48d0-bf30-bbe4969586c6">
+    <name>ДисконтнаяКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дисконтная карта</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.ДисконтнаяКарта</references>
+    <references>Document.ЧекККМВозврат.Attribute.ДисконтнаяКарта</references>
+  </columns>
+  <columns uuid="096d209a-bc42-4e16-b3bc-5767d1c5703a">
+    <name>Покупатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Покупатель</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.Контрагент</references>
+    <references>Document.ЧекККМВозврат.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="2b23dd10-18b5-4a49-a3e8-37bebdb709d0">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <references>Document.ЧекККМ.Attribute.Заказ</references>
+    <references>Document.ЧекККМВозврат.Attribute.Заказ</references>
+  </columns>
+  <forms uuid="bcb3e7a2-316d-4a61-9e78-69995fdd3205">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

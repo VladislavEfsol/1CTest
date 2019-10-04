@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff9ac982-9ebf-4736-ae4b-121b222cc578">
+  <producedTypes>
+    <objectType typeId="284dc0c8-d1db-439d-af14-9a2da1811795" valueTypeId="a57f7398-0e91-407d-9790-71e455689808"/>
+    <managerType typeId="ba3a1be1-e916-460d-9f69-ede279822cfd" valueTypeId="6a2b36af-e574-4f95-b82a-90fb5cad2e92"/>
+  </producedTypes>
+  <name>АнализБазыКонтрагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ базы контрагентов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.АнализБазыКонтрагентов.Form.Форма</defaultForm>
+  <mainDataCompositionSchema>Report.АнализБазыКонтрагентов.Template.ПустаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="594d4b40-413d-4e75-b5a3-4db3704bf7b8">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="aeaef87f-981c-4f5d-9e99-66438cdb43ff">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d7a0beee-eb5d-4fc0-9676-6318c7acc20a">
+    <name>ПФ_MXL_КонтрагентыРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка базы контрагентов</value>
+    </synonym>
+  </templates>
+  <templates uuid="6a218447-b889-41bd-98b0-bf548d375357">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="422a744b-05e9-43e0-9b38-18ba76755900">
+    <name>ПустаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пустая схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

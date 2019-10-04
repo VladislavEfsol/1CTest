@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="969a8c0b-aa08-4f8b-b4b2-75343d945b3f">
+  <name>СинхронизацияПриКопированииДокументаМП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация при копировании документа МП</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтчетОРозничныхПродажахМП</types>
+    <types>DocumentObject.ЧекККММП</types>
+    <types>DocumentObject.ВводОстатковМП</types>
+    <types>DocumentObject.ПриходДенегМП</types>
+    <types>DocumentObject.ЗаказМП</types>
+    <types>DocumentObject.ПриходТовараМП</types>
+    <types>DocumentObject.ПроизводствоМП</types>
+    <types>DocumentObject.РасходТовараМП</types>
+    <types>DocumentObject.РасходДенегМП</types>
+    <types>DocumentObject.ЧекККМВозвратМП</types>
+  </source>
+  <event>OnCopy</event>
+  <handler>CommonModule.СинхронизацияПодпискиНаСобытияМП.СинхронизацияПриКопированииДокумента</handler>
+</mdclass:EventSubscription>

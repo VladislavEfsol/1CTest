@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ac8d08a-a0cb-40f8-b22b-608b1710d5c5">
+  <producedTypes>
+    <selectionType typeId="a18db05a-ac79-4198-9584-a419b5d1d541" valueTypeId="b9cb3ef5-00d5-482a-9304-3810b7636961"/>
+    <listType typeId="66ae5a92-1ade-49d1-ad29-21eea3fdbf8f" valueTypeId="17e62867-c316-497e-b5b7-3b75e5206961"/>
+    <managerType typeId="8cb4b31c-68fe-4f22-8ad6-de522b1c8afb" valueTypeId="bf2ad881-d825-43db-9869-51593c05c555"/>
+    <recordSetType typeId="6114a267-a617-40a3-b558-40c049acb424" valueTypeId="e94bd449-2064-405c-8d40-7ff45e8c14c0"/>
+    <recordKeyType typeId="cf018406-5fac-40a7-8a61-8438dedd2a87" valueTypeId="fc36b2ac-24e5-49f0-b983-cda9f8304f52"/>
+    <recordType typeId="d83003c6-0772-4e30-baba-4e56cc5b8458" valueTypeId="3c52814b-5413-49ff-831b-f7ec28ddea85"/>
+    <recordManagerType typeId="e6481b84-4864-4756-9e8c-ba47b0910095" valueTypeId="7555409d-c795-4e7c-82a7-12d1bc14da49"/>
+  </producedTypes>
+  <name>ИнкрементнаяСинхронизацияПочты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инкрементная синхронизация почты</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="66d6c56f-5163-46f6-9322-65f2b6a5bb3b">
+    <name>ИдентификаторИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор истории</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="2d72af8e-4990-48d8-a4fe-03a23377b1d8">
+    <name>ДатаОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отправления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c4bab6d9-e771-4d53-b9b2-727441165040">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

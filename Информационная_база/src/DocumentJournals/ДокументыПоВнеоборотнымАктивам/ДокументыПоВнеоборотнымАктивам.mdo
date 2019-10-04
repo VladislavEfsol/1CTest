@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98d7b0af-ef62-496f-9b80-83d5cad207bd">
+  <producedTypes>
+    <selectionType typeId="bc0548b4-3904-4d20-8e44-22bafc0715ae" valueTypeId="dfafdb43-7a3b-454c-bf06-65c78b1b360a"/>
+    <listType typeId="09457eba-aa01-4c49-84f4-411090994cc0" valueTypeId="beee44be-3c62-4c98-beb0-ab35225fd32e"/>
+    <managerType typeId="277b9647-4ac9-49ea-b6f9-0b539eb56209" valueTypeId="600f1b4f-2ed7-4ea3-8409-a43d68b7f58b"/>
+  </producedTypes>
+  <name>ДокументыПоВнеоборотнымАктивам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по имуществу</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоВнеоборотнымАктивам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ВыработкаВА</registeredDocuments>
+  <registeredDocuments>Document.ИзменениеПараметровВА</registeredDocuments>
+  <registeredDocuments>Document.ПринятиеКУчетуВА</registeredDocuments>
+  <registeredDocuments>Document.СписаниеВА</registeredDocuments>
+  <registeredDocuments>Document.ПередачаВА</registeredDocuments>
+  <registeredDocuments>Document.АмортизацияВА</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="cc763bdc-3bf0-4f1c-a694-2214b9b4b0a7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуВА.Attribute.Организация</references>
+    <references>Document.ПередачаВА.Attribute.Организация</references>
+    <references>Document.СписаниеВА.Attribute.Организация</references>
+    <references>Document.ИзменениеПараметровВА.Attribute.Организация</references>
+    <references>Document.ВыработкаВА.Attribute.Организация</references>
+    <references>Document.АмортизацияВА.Attribute.Организация</references>
+  </columns>
+  <columns uuid="b68a7898-7ac0-4482-82eb-5146194c8455">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ПередачаВА.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="af33ea1e-c106-48e3-a230-c3a8487a367e">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <references>Document.ПередачаВА.Attribute.Договор</references>
+  </columns>
+  <columns uuid="ea7bfbfb-a293-4b24-b985-0f761190a22a">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПринятиеКУчетуВА.Attribute.Комментарий</references>
+    <references>Document.ПередачаВА.Attribute.Комментарий</references>
+    <references>Document.СписаниеВА.Attribute.Комментарий</references>
+    <references>Document.ИзменениеПараметровВА.Attribute.Комментарий</references>
+    <references>Document.ВыработкаВА.Attribute.Комментарий</references>
+    <references>Document.АмортизацияВА.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="feab1df2-dd90-421b-8025-a2cd41b2f40f">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.АмортизацияВА.Attribute.Автор</references>
+    <references>Document.ВыработкаВА.Attribute.Автор</references>
+    <references>Document.ИзменениеПараметровВА.Attribute.Автор</references>
+    <references>Document.ПередачаВА.Attribute.Автор</references>
+    <references>Document.ПринятиеКУчетуВА.Attribute.Автор</references>
+    <references>Document.СписаниеВА.Attribute.Автор</references>
+  </columns>
+  <forms uuid="bbfd137e-41b9-4fe8-a070-4532b1af6b71">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="194e70d9-dfdf-40f5-a56b-26041e0f6456">
+    <name>ДокументыПоВнеоборотнымАктивам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы по имуществу</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнеоборотныеАктивы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="64149501-a39b-4f60-b674-49fe7d415a11">
+    <name>ДокументыПоВнеоборотнымАктивамВОсновномОкне</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы по имуществу</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ВнеоборотныеАктивы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="83aba5ca-7f31-47a5-a1ac-75adc39eb939">
+    <name>ДокументыПоВнеоборотнымАктивамОткрытьЖурнал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы по имуществу</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DocumentJournal>

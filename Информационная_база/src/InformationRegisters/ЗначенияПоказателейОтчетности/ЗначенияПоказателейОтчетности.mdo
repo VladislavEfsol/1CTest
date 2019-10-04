@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8d9ccfe-6fd5-4bc1-a1f3-f5b976d90e69">
+  <producedTypes>
+    <selectionType typeId="adffd2e1-a01d-4a3e-8ca9-d33457bb84f0" valueTypeId="d80cb970-a75c-42bc-980e-b302cb754383"/>
+    <listType typeId="a7a06df4-511c-4678-a3c9-e5fb5b2a8229" valueTypeId="c4a716c7-8b6c-46dd-83bb-6e59fb354ffb"/>
+    <managerType typeId="b13102fb-5d3e-48e3-ab87-7f9341cf5d9c" valueTypeId="7a6a31c8-ce29-474f-b5ed-656f7194f86c"/>
+    <recordSetType typeId="a4b4b6d4-6b46-4889-b03c-e7da69616564" valueTypeId="6a6f8b0b-df2e-4051-a432-0780539a50ac"/>
+    <recordKeyType typeId="a4a472e4-253d-43a1-80c4-bd96a3d90994" valueTypeId="93c4a4e0-af51-43c2-ad35-6ce38295aef1"/>
+    <recordType typeId="9b55eea3-28df-42da-b08f-c65f93e07711" valueTypeId="d78d68ad-dd22-435a-b460-537dbedd7fa2"/>
+    <recordManagerType typeId="b272a85c-c1f9-4fc0-8b2f-f8494740dc25" valueTypeId="e485edb8-d041-402b-af5a-cc5b937f02e5"/>
+  </producedTypes>
+  <name>ЗначенияПоказателейОтчетности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения показателей отчетности</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a825253d-2cca-40b6-9067-42e03cfacabe">
+    <name>ЗначениеПоказателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение показателя</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ПоказателиОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.ЗначенияПоказателейОтчетности.Dimension.ПоказательОтчетности</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="594a176f-4490-47be-93a6-2523b1dfe9c0">
+    <name>ПроизвольноеЗначениеПоказателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольное значение показателя</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8b9a70aa-43ea-4885-ae8a-71594adb1130">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4c18e96e-f0b8-4bae-9823-1b3d1384b07f">
+    <name>ПериодОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отчетности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cdbbab8f-a127-4d74-a697-718ff6531ebd">
+    <name>ПоказательОтчетности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель отчетности</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ПоказателиОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.ЗначенияПоказателейОтчетности.Resource.ЗначениеПоказателя</field>
+    </linkByType>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

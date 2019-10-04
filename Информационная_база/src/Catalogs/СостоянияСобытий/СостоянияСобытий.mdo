@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b4fc4ba-6f90-4ba6-b287-3349972b4366">
+  <producedTypes>
+    <objectType typeId="a1cb2517-b6e5-47ab-927d-8855d067aa8e" valueTypeId="75667258-1dc4-465a-aa25-d94f2e5f2842"/>
+    <refType typeId="c702e5ed-b56a-46c7-bd7b-92949a34375c" valueTypeId="ae3efc4c-8134-41c8-8d40-54d3c427f5c5"/>
+    <selectionType typeId="8bd3012f-bfd3-4498-ba95-c95a525e2df7" valueTypeId="2a594c8d-7e1d-44b2-b540-371a3e781345"/>
+    <listType typeId="503064f0-1b98-4fa0-8dcc-e2ff2706a492" valueTypeId="4319180b-50fe-400c-9968-cee0417a15d7"/>
+    <managerType typeId="4cd995b5-392c-4efe-b79e-c062100f57cd" valueTypeId="4717e880-8031-46eb-b3d2-d11516bedb15"/>
+  </producedTypes>
+  <name>СостоянияСобытий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния событий и заданий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СостоянияСобытий.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СостоянияСобытий.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Состояние события и задания</value>
+  </objectPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Классификация категории события и задания</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="395dd04e-9062-47a6-bae8-2f757f83e458">
+      <name>Завершено</name>
+      <description>Завершено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="7cef93d4-5404-4b40-8492-79cb06db49bc">
+      <name>Запланировано</name>
+      <description>Запланировано</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="d57a69f8-8292-4b50-97c9-0655dfa04732">
+      <name>Отменено</name>
+      <description>Отменено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СостоянияСобытий.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СостоянияСобытий.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СостоянияСобытий.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="c0a51292-5ac5-4ebd-b867-ca7d4d00fe21">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Рекомендации по использованию состояния события.</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6067523f-6830-4a13-8a07-47570f8e00de">
+    <name>Цвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Цвет строки в списке заказов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f0d011c-81dd-457a-ae95-478cc50244a5">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для упорядочивания (служебный)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b3471008-d3d2-4879-b3a6-dfdd60206da7">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7ecdd210-9106-411d-9269-7ff6234faf21">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ca160389-aa3a-4c55-8d18-4e5691628899">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

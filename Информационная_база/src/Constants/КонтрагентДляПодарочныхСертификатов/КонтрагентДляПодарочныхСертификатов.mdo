@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd1028ef-2c34-4588-ac14-fedf1aeaa9c5">
+  <producedTypes>
+    <managerType typeId="b3e99876-e95c-4113-9f50-89fd847a1f90" valueTypeId="f3ae4e61-7390-49eb-bf7c-fb06e86c80af"/>
+    <valueManagerType typeId="5c540317-ca96-48a8-88e4-ced19a34a992" valueTypeId="c6697187-1ddd-4d59-ae75-55ac86d1c067"/>
+    <valueKeyType typeId="5b4bf48e-238c-5820-9470-61ac8da33292" valueTypeId="789ef725-8e67-5b6e-870a-9a231247b67e"/>
+  </producedTypes>
+  <name>КонтрагентДляПодарочныхСертификатов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контрагент для подарочных сертификатов</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Контрагенты</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <choiceParameters>
+    <name>Отбор.Покупатель</name>
+    <value xsi:type="core:BooleanValue">
+      <value>true</value>
+    </value>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.Поставщик</name>
+    <value xsi:type="core:BooleanValue"/>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ПрочиеОтношения</name>
+    <value xsi:type="core:BooleanValue"/>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ВестиРасчетыПоДоговорам</name>
+    <value xsi:type="core:BooleanValue">
+      <value>true</value>
+    </value>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ВестиРасчетыПоДокументам</name>
+    <value xsi:type="core:BooleanValue"/>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ВестиРасчетыПоЗаказам</name>
+    <value xsi:type="core:BooleanValue"/>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ВестиУчетОплатыПоСчетам</name>
+    <value xsi:type="core:BooleanValue"/>
+  </choiceParameters>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

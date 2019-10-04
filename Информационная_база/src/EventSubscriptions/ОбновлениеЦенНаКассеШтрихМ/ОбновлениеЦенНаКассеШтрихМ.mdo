@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb9cf949-fd60-4e93-9d6b-72673bc91f94">
+  <name>ОбновлениеЦенНаКассеШтрихМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление цен на кассе штрих М</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.ЦеныНоменклатуры</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбменСКассовымСерверомШтрихМПереопределяемый.ОбновлениеЦенНаКассеШтрихМПриЗаписи</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a1bb35cc-cc20-4077-b4af-6645d5cffcce">
+  <producedTypes>
+    <selectionType typeId="43602333-b20e-4d41-941c-e2c2ee0c9292" valueTypeId="b830680b-30a2-4a36-b747-22119e0fb8b3"/>
+    <listType typeId="989584dc-fadb-4e6e-b443-144ae2ffd225" valueTypeId="628e209d-49a4-4f0c-866d-d0042656f836"/>
+    <managerType typeId="33f7335d-80d3-4809-968c-3d36c1d6d805" valueTypeId="c367aa62-5e75-4688-84bc-61971b1126a9"/>
+    <recordSetType typeId="b32224b1-1f70-4d8d-baaf-a872ac462bde" valueTypeId="51e0ac8b-b2cb-4ebf-a798-d99d45e6a4e0"/>
+    <recordKeyType typeId="1c3f5a36-9d41-4e5a-be75-d302d9233908" valueTypeId="6f29e0c2-85b2-4119-8805-dd6142a703da"/>
+    <recordType typeId="b8fff3f3-8f84-421b-a284-ec1a4f821c21" valueTypeId="d394f575-9859-4fb2-9064-a882a9c12c2a"/>
+    <recordManagerType typeId="bbcac1de-e8ce-4882-a351-d6bb08bc1e16" valueTypeId="f27f03a5-1bf3-4037-ae90-73b99d449d5f"/>
+  </producedTypes>
+  <name>ДанныеАвторизацииGoogle</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные авторизации Google</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d658eb53-1318-449a-a129-8c8a49b6e26c">
+    <name>ТокенЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ebcf184c-61d1-4be0-b0e1-ab430868f27b">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <comment>Универсальная дата, используется для очистки устаревших данных</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3d54cebe-7332-42f6-aea4-5fe38f3ffa56">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08dc7d6c-9b8d-4140-a282-138885f68d8a">
+  <name>НастроитьУчетныеЗаписиТекущегоПользователя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настроить учетные записи текущего пользователя</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.УчетныеЗаписиЭлектроннойПочты</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ЭлектроннаяПочтаУНФ.НастроитьУчетныеЗаписиТекущегоПользователяПриЗаписи</handler>
+</mdclass:EventSubscription>

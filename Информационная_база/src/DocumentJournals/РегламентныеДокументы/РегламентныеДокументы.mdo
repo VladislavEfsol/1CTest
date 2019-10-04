@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef5ed02c-ae8f-48e3-8fbc-eeebd653da78">
+  <producedTypes>
+    <selectionType typeId="6e091c87-8664-4f43-8eed-563d7acbd1be" valueTypeId="817a8ad6-eec6-4515-940d-c69c0298d0aa"/>
+    <listType typeId="7781f08f-796a-4de5-baa0-ab912294dea7" valueTypeId="d6fdcd1c-687e-46bf-b911-b7bf89dbdcda"/>
+    <managerType typeId="6b1d1010-099b-42d5-aa14-50bfbe50c57a" valueTypeId="dc810c74-91e3-433a-8266-cc851958819b"/>
+  </producedTypes>
+  <name>РегламентныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансовые документы</value>
+  </synonym>
+  <defaultForm>DocumentJournal.РегламентныеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ЗакрытиеМесяца</registeredDocuments>
+  <registeredDocuments>Document.Операция</registeredDocuments>
+  <registeredDocuments>Document.Взаимозачет</registeredDocuments>
+  <registeredDocuments>Document.Бюджет</registeredDocuments>
+  <registeredDocuments>Document.ПрочиеРасходы</registeredDocuments>
+  <registeredDocuments>Document.НачислениеНалогов</registeredDocuments>
+  <registeredDocuments>Document.СверкаВзаиморасчетов</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="f6b74172-d233-4012-814a-f5f15da096c4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.Операция.Attribute.Организация</references>
+    <references>Document.Взаимозачет.Attribute.Организация</references>
+    <references>Document.ЗакрытиеМесяца.Attribute.Организация</references>
+    <references>Document.Бюджет.Attribute.Организация</references>
+    <references>Document.ПрочиеРасходы.Attribute.Организация</references>
+    <references>Document.НачислениеНалогов.Attribute.Организация</references>
+    <references>Document.СверкаВзаиморасчетов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="63413430-6c68-496b-aa3b-043a0d6693dc">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.Операция.Attribute.Комментарий</references>
+    <references>Document.Взаимозачет.Attribute.Комментарий</references>
+    <references>Document.ЗакрытиеМесяца.Attribute.Комментарий</references>
+    <references>Document.Бюджет.Attribute.Комментарий</references>
+    <references>Document.ПрочиеРасходы.Attribute.Комментарий</references>
+    <references>Document.НачислениеНалогов.Attribute.Комментарий</references>
+    <references>Document.СверкаВзаиморасчетов.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="dcd5a957-4e50-40c9-8580-b6945a613a38">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.Бюджет.Attribute.Автор</references>
+    <references>Document.Взаимозачет.Attribute.Автор</references>
+    <references>Document.ЗакрытиеМесяца.Attribute.Автор</references>
+    <references>Document.НачислениеНалогов.Attribute.Автор</references>
+    <references>Document.Операция.Attribute.Автор</references>
+    <references>Document.ПрочиеРасходы.Attribute.Автор</references>
+    <references>Document.СверкаВзаиморасчетов.Attribute.Автор</references>
+  </columns>
+  <forms uuid="edbf7436-4b0e-4fc5-9b81-c64f949d3a79">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58fef9f2-ed43-44ca-a294-60787220b67f">
+  <producedTypes>
+    <objectType typeId="1376e99f-a82b-4979-a9f2-838d7e12ee21" valueTypeId="d9b20d3b-3993-4fe2-9c1c-cfc82f16371e"/>
+    <managerType typeId="74a924ec-f70b-4d39-818e-2a3521a77433" valueTypeId="3ab6d2a7-6613-4cb4-90df-e448e8128f33"/>
+  </producedTypes>
+  <name>РеестрСтаренияДебиторскойЗадолженности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задолженность покупателей по срокам долга</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.РеестрСтаренияДебиторскойЗадолженности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="64172ac2-324a-4183-ad53-349901ab6f31">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="deaa5796-a405-4639-b5c2-50052e83de83">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="5da2ecb8-f91a-44bd-bff6-cc9ea470ab08">
+    <name>ОбразецВВалюте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец в валюте</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="a2e69291-20a0-4c88-b553-870e212c2a68">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

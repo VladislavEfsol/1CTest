@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="069b6bbf-fbfe-4749-9f36-d0055e357a03">
+  <name>СформироватьФайлыДокументаПерсУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сформировать файлы документа перс учета</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ДанныеОКорректировкеСведенийЗастрахованныхЛицСЗВ_КОРР</types>
+    <types>DocumentObject.ОписьОДВ_1</types>
+    <types>DocumentObject.СведенияОСтраховомСтажеЗастрахованныхЛицСЗВ_СТАЖ</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ПерсонифицированныйУчет.ДокументыПерсУчетаПриЗаписи</handler>
+</mdclass:EventSubscription>

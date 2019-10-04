@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8230ad59-c602-4da3-a105-339cdee29838">
+  <producedTypes>
+    <selectionType typeId="7655c82f-ed67-4de0-a9e7-92daac40c60b" valueTypeId="cd703f90-d50f-43ea-8167-0a601ff65301"/>
+    <listType typeId="aff09922-8e51-4998-90f9-3a32c5f5e226" valueTypeId="836baa6e-6e5f-451f-9a4d-eddac088e381"/>
+    <managerType typeId="79e85a73-a624-4959-bcfe-2828a8705eae" valueTypeId="6e3b8435-bd04-4ad3-af21-5cec7f80754a"/>
+    <recordSetType typeId="022e1bf5-5c1a-4441-a6e5-5a8f586ec784" valueTypeId="39fb337d-2b94-446f-88c5-83e8aef24ee5"/>
+    <recordKeyType typeId="83d11a63-ce55-48b0-88eb-11f4514c7d05" valueTypeId="34b497e4-d1c9-4d78-97f2-4720d9753de6"/>
+    <recordType typeId="123e85b2-396e-4851-b68a-62075abdfbd0" valueTypeId="4978e624-a3ea-44a0-924b-487040fb694e"/>
+    <recordManagerType typeId="9f6c69b2-26be-4858-b02e-891c1d499df2" valueTypeId="07723f50-9abd-4da2-ae1c-a7fbc67a0e82"/>
+  </producedTypes>
+  <name>ОтслеживаниеИсточниковПривлечения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отслеживание источников привлечения</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5e7e6a45-9793-46d5-9b59-92a16e04e593">
+    <name>ЗначениеКИДляПоиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение КИДля поиска</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="14cbcc9f-1474-474a-8387-ad1688b02784">
+    <name>ИсточникПривлечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник привлечения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсточникиПривлеченияПокупателей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="11d22c75-9f31-43cf-b848-d4c288c17a8a">
+    <name>ТипКИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип КИ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыКонтактнойИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a48095c4-ef00-4d6e-a3e0-a073d0782a71">
+    <name>ЗначениеКИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение КИ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

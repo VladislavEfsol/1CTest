@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f24b86b9-b369-49a7-a3d8-3149ddec5fec">
+  <producedTypes>
+    <objectType typeId="c58c3930-6429-4054-bce5-f00db6d4649e" valueTypeId="e108b813-82ad-4675-8831-4f36804ede7b"/>
+    <managerType typeId="0c550b8d-2c4e-4b74-aa07-1d03463765ac" valueTypeId="e3220988-ba73-412d-a128-50459501da8e"/>
+  </producedTypes>
+  <name>ПримененныеСкидкиВДокументе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Примененные автоматические скидки в документе</value>
+  </synonym>
+  <defaultForm>Report.ПримененныеСкидкиВДокументе.Form.ФормаОтчета</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="76584113-92f7-48c9-ac27-93099b6bd7fc">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0b1ca069-b256-4c20-a1ca-c64d30faab25">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+  <commands uuid="21c4757a-4aea-42fb-b29a-381f4329002d">
+    <name>ПримененныеСкидки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примененные автоматические скидки</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.РасходнаяНакладная</types>
+      <types>DocumentRef.ЧекККМВозврат</types>
+      <types>DocumentRef.АктВыполненныхРабот</types>
+      <types>DocumentRef.ЧекККМ</types>
+      <types>DocumentRef.ОтчетОПереработке</types>
+      <types>DocumentRef.ЗаказПокупателя</types>
+      <types>DocumentRef.СчетНаОплату</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+    </commandParameterType>
+    <representation>Picture</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

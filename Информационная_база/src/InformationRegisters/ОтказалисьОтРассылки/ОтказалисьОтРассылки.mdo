@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e33c73e1-dbf2-4472-b157-f9804679d01b">
+  <producedTypes>
+    <selectionType typeId="1f911e3b-d384-469f-856d-09045148c23f" valueTypeId="6c7e39f1-0905-45ff-abb3-40e2452a1238"/>
+    <listType typeId="834cd455-6408-41d4-8eae-e0c231651d35" valueTypeId="f825977f-bf77-4b01-b9ab-f581c4563aa7"/>
+    <managerType typeId="779523fb-da65-4b9a-b9bc-bfae0026481d" valueTypeId="8c5fca97-e189-4ef6-b418-908e80b612db"/>
+    <recordSetType typeId="5953c77a-7641-41a3-bdfc-d3d8731aca12" valueTypeId="972c795a-c455-4448-81d9-f97b9dcd6249"/>
+    <recordKeyType typeId="533a16de-ad9b-4a63-aefc-8a2d3609016c" valueTypeId="fc504bd0-815d-4347-96a0-d49028c6f894"/>
+    <recordType typeId="40b3aa8e-9195-433d-8567-1db47f16dea1" valueTypeId="38ab477c-a57b-41bc-9990-5266a0b9e251"/>
+    <recordManagerType typeId="8e87e116-8571-4bec-872d-9f9d2bd06aaf" valueTypeId="c9048eb9-696a-42c2-afba-3adb22779e7f"/>
+  </producedTypes>
+  <name>ОтказалисьОтРассылки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отказались от рассылки</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ОтказалисьОтРассылки.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="eddd7121-457c-4223-8359-32308f9c8978">
+    <name>КакСвязаться</name>
+    <synonym>
+      <key>ru</key>
+      <value>Как связаться</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="35aec4f0-f48e-46ad-aa10-760a81893535">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="9a2ff8b0-d8df-4177-a351-09a8dfb7d827">
+    <name>ОтказалисьОтРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отказались от рассылки</value>
+    </synonym>
+    <group>FormNavigationPanelSeeAlso</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.ОтказОтРассылки</picture>
+    </picture>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

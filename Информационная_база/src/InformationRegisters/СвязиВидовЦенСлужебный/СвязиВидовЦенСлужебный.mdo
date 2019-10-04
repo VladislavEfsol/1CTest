@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e011098-7069-423f-baaf-fb2d455a3d28">
+  <producedTypes>
+    <selectionType typeId="95fa59b0-f56d-489a-83ba-0047300159ea" valueTypeId="b383f13a-5213-4a98-9620-a17a664c3473"/>
+    <listType typeId="34c94e65-b46b-4b37-b78d-a8131b12e13f" valueTypeId="e53f220d-29cb-4058-bea0-a88ff6b56faa"/>
+    <managerType typeId="e1cc1fcc-ca74-46e9-b7ce-8fcd864c0de8" valueTypeId="e42218a7-e7ee-4c03-b178-6e5b3d3be7e4"/>
+    <recordSetType typeId="955a8ed9-ce0c-4206-8eb5-3e088eb3ad28" valueTypeId="d94caa2e-c430-4a53-aade-72ce9d8474c2"/>
+    <recordKeyType typeId="690f13de-c37c-465e-9732-70564252defa" valueTypeId="2633dc52-2e0c-4b73-ab43-a2ae7627cbdf"/>
+    <recordType typeId="20a18629-b8db-404f-9d3e-669695ef372c" valueTypeId="755e3da8-76bb-4ce2-b9b6-e26c8cb8c7ef"/>
+    <recordManagerType typeId="a0643bae-d179-43a4-a2bf-22f4ccad1da8" valueTypeId="b89167c9-cd06-4b0d-bc81-711cf6c5a55c"/>
+  </producedTypes>
+  <name>СвязиВидовЦенСлужебный</name>
+  <synonym>
+    <key>ru</key>
+    <value>(Ценообразование) Использование в формулах динамических колонок прайс-листов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="694e5e72-5242-40fb-ad05-57e152074e4a">
+    <name>ВидЦенРасчетный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цен расчетный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЦен</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e0ddd363-5602-4aa5-b855-2fe3a5913af0">
+    <name>ВидЦенБазовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цен базовый</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЦен</types>
+      <types>CatalogRef.ВидыЦенКонтрагентов</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="be860698-fff4-4c0d-a6b1-dd7ce01728ef">
+    <name>ЦеноваяГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ценовая группа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЦеновыеГруппы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d79fb38a-0028-487c-9bab-8742fd945a95">
+    <name>ВидЦенБазовыйЦеновойГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цен базовый ценовой группы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыЦен</types>
+      <types>CatalogRef.ВидыЦенКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="289e9f42-03e2-49b5-9130-66be07e22bc9">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+</mdclass:InformationRegister>

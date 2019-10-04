@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90ef7e03-db95-477c-8c01-d70c50980195">
+  <producedTypes>
+    <selectionType typeId="118334ed-a302-4ece-9ffd-2f0841b4f9ca" valueTypeId="ce9dc760-9682-4bef-8bfd-4980e3a75957"/>
+    <listType typeId="9d3b290a-f2f4-4772-aa5f-b95687e755d4" valueTypeId="642a08c4-8045-42af-b2cd-c4e01d0d9472"/>
+    <managerType typeId="56620b82-6c46-49f8-bf07-0e329ab77348" valueTypeId="c6239c48-631c-4256-88da-50c4d7d73c16"/>
+    <recordSetType typeId="d9647d86-c4cd-4e53-a679-820054dbb8b7" valueTypeId="76dfacb4-8e1a-44f4-8bb9-7a7ee3bd908c"/>
+    <recordKeyType typeId="eef9da65-1db4-41a4-a297-7f3a2d279f95" valueTypeId="796aad14-3427-4724-aa25-96b69d730860"/>
+    <recordType typeId="ae345f8c-bdf2-41d5-bb94-965f406f5d5c" valueTypeId="3db434af-4d6a-4db0-b789-5b48b5f47375"/>
+    <recordManagerType typeId="e269e73c-367c-4f19-9936-28d7f0ee7d92" valueTypeId="e2e56107-0c2d-42b6-af85-76fcb61817e2"/>
+  </producedTypes>
+  <name>ВыполнениеПравилРабочегоПроцесса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнение правил рабочего процесса</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВыполнениеПравилРабочегоПроцесса.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8b3bc19b-2061-4fea-b53b-31fa3223044b">
+    <name>ДатаВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выполнения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="caeda7f3-3754-4d61-a56d-a3bf5024a805">
+    <name>Правило</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПравилаРабочегоПроцесса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fad42131-810a-4f7e-8854-b71cd9f2e3d0">
+    <name>СозданныйОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Созданный объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаданиеНаРаботу</types>
+      <types>CatalogRef.ЗаписиКалендаряСотрудника</types>
+      <types>DocumentRef.Событие</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="398e0cff-8d8c-46c8-987e-a8df1eea34ff">
+    <name>Действие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДействияРабочегоПроцесса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="12b0b35d-2dfe-4685-a2b9-dfe234fe678d">
+    <name>ВыполнениеПравила</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнение правила</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="60ad48c1-29c8-4cb8-bcc8-baa9b01ca0df">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="99edfc91-2a32-40d8-946f-c1dc8968934a">
+    <name>ВыполнениеПравила</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнение правила</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ПравилаРабочегоПроцесса</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

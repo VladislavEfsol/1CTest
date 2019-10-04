@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6888b4e1-64d0-4704-a1f3-38aaf0fa7e40">
+  <producedTypes>
+    <selectionType typeId="844fad9e-b949-4b55-a386-efa93a562348" valueTypeId="2af92561-cdb2-4253-99ec-b6670ea47a98"/>
+    <listType typeId="b48fd0d2-8cbd-4211-baaa-2d18c5ae9874" valueTypeId="a0879f73-482b-4bb4-9744-e6568d7327a5"/>
+    <managerType typeId="ac290edb-d518-4c5e-9839-3d6a16b3267f" valueTypeId="be26fe48-9d9c-4f2d-b4bf-18af060a83d7"/>
+  </producedTypes>
+  <name>ДокументыПоБанкуИКассе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по банку и кассе</value>
+  </synonym>
+  <registeredDocuments>Document.ПоступлениеНаСчет</registeredDocuments>
+  <registeredDocuments>Document.РасходСоСчета</registeredDocuments>
+  <registeredDocuments>Document.РасходИзКассы</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеВКассу</registeredDocuments>
+  <registeredDocuments>Document.ПеремещениеДС</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment>Пометка удаления</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="57f5d3d0-a6b4-4ed1-b05e-d89fb8cbe26a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Организация</references>
+    <references>Document.РасходСоСчета.Attribute.Организация</references>
+    <references>Document.РасходИзКассы.Attribute.Организация</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Организация</references>
+    <references>Document.ПеремещениеДС.Attribute.Организация</references>
+  </columns>
+  <columns uuid="c181d1fc-7689-4b81-9717-4c173995e521">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.ВидОперации</references>
+    <references>Document.РасходСоСчета.Attribute.ВидОперации</references>
+    <references>Document.ПоступлениеВКассу.Attribute.ВидОперации</references>
+    <references>Document.РасходИзКассы.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="1f20e85e-e982-48c5-bd56-994cec82ca40">
+    <name>БанковскийСчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет / касса</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.БанковскийСчет</references>
+    <references>Document.РасходСоСчета.Attribute.БанковскийСчет</references>
+    <references>Document.ПеремещениеДС.Attribute.БанковскийСчет</references>
+    <references>Document.ПоступлениеВКассу.Attribute.СчетОрганизации</references>
+  </columns>
+  <columns uuid="b7afb127-e031-4e33-8736-178ee95085d4">
+    <name>Статья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Статья</references>
+    <references>Document.РасходСоСчета.Attribute.Статья</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Статья</references>
+    <references>Document.РасходИзКассы.Attribute.Статья</references>
+    <references>Document.ПеремещениеДС.Attribute.Статья</references>
+  </columns>
+  <columns uuid="b7b51e0a-c53f-4711-bddb-3efbfa9a2bff">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Контрагент</references>
+    <references>Document.РасходСоСчета.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Контрагент</references>
+    <references>Document.РасходИзКассы.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="29f2a20f-8315-4398-8d65-0f6a4c6f230a">
+    <name>Подотчетник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотчетник</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.Подотчетник</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Подотчетник</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Подотчетник</references>
+    <references>Document.РасходИзКассы.Attribute.Подотчетник</references>
+  </columns>
+  <columns uuid="a6a80d7f-c360-4ef0-847f-e0375986ddf4">
+    <name>СуммаПриход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма приход</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеВКассу.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="d1fdf278-862e-4c38-b26c-0955426c8c6d">
+    <name>СуммаРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма расход</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.СуммаДокумента</references>
+    <references>Document.РасходИзКассы.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="18db43fc-f520-44d3-9321-1c0baedcc4ce">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.ВалютаДенежныхСредств</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.ВалютаДенежныхСредств</references>
+    <references>Document.ПоступлениеВКассу.Attribute.ВалютаДенежныхСредств</references>
+    <references>Document.РасходИзКассы.Attribute.ВалютаДенежныхСредств</references>
+    <references>Document.ПеремещениеДС.Attribute.ВалютаДенежныхСредств</references>
+  </columns>
+  <columns uuid="ab7e4aef-6582-4dea-946b-2883695c5376">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РасходСоСчета.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Комментарий</references>
+    <references>Document.РасходИзКассы.Attribute.Комментарий</references>
+    <references>Document.ПеремещениеДС.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="74392a3a-159c-44b0-ab95-a9fadd95bbb2">
+    <name>НазначениеПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначение платежа</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.НазначениеПлатежа</references>
+    <references>Document.РасходСоСчета.Attribute.НазначениеПлатежа</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Основание</references>
+    <references>Document.РасходИзКассы.Attribute.Основание</references>
+  </columns>
+  <columns uuid="22da2873-2bcf-4b79-a4d4-fb8da3bf57cb">
+    <name>Корреспонденция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корреспонденция</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Корреспонденция</references>
+    <references>Document.РасходСоСчета.Attribute.Корреспонденция</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Корреспонденция</references>
+    <references>Document.РасходИзКассы.Attribute.Корреспонденция</references>
+  </columns>
+  <columns uuid="5390dcfd-cbe8-46b8-b66c-160d73441b5a">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.Автор</references>
+    <references>Document.РасходСоСчета.Attribute.Автор</references>
+    <references>Document.ПоступлениеВКассу.Attribute.Автор</references>
+    <references>Document.РасходИзКассы.Attribute.Автор</references>
+    <references>Document.ПеремещениеДС.Attribute.Автор</references>
+  </columns>
+  <columns uuid="fa21d0e6-8cd2-4e7d-b9a6-c48eabe5d43b">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.СуммаДокумента</references>
+    <references>Document.РасходСоСчета.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеВКассу.Attribute.СуммаДокумента</references>
+    <references>Document.РасходИзКассы.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="fc705ff5-1bfc-4817-85cb-96941a09ad66">
+    <name>ХозяйственнаяОперация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хозяйственная операция</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.РасходИзКассы.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.РасходСоСчета.Attribute.ХозяйственнаяОперация</references>
+    <references>Document.ПеремещениеДС.Attribute.ХозяйственнаяОперация</references>
+  </columns>
+  <columns uuid="9971ef02-07ee-43e9-8014-66c3c1da12cd">
+    <name>Касса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.Касса</references>
+    <references>Document.РасходИзКассы.Attribute.Касса</references>
+    <references>Document.ПеремещениеДС.Attribute.Касса</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Касса</references>
+  </columns>
+  <columns uuid="b09580f8-d2dc-4ff6-9a0c-b0ddd2910c12">
+    <name>КассаПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Касса получатель</value>
+    </synonym>
+    <references>Document.ПеремещениеДС.Attribute.КассаПолучатель</references>
+    <references>Document.РасходСоСчета.Attribute.Касса</references>
+  </columns>
+  <columns uuid="278c409a-b215-4b99-aedd-44685b6ce7fe">
+    <name>БанковскийСчетПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет получатель</value>
+    </synonym>
+    <references>Document.ПеремещениеДС.Attribute.БанковскийСчетПолучатель</references>
+    <references>Document.РасходИзКассы.Attribute.СчетОрганизации</references>
+    <references>Document.РасходСоСчета.Attribute.СчетКонтрагента</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.СчетКонтрагента</references>
+  </columns>
+  <columns uuid="9e5fbecc-3e20-4b1b-a96a-88c685be2340">
+    <name>СуммаПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма перемещения</value>
+    </synonym>
+    <references>Document.ПеремещениеДС.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="3343f5d3-67ad-4263-a1fb-8f5735e26986">
+    <name>ТипДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип денежных средств</value>
+    </synonym>
+    <references>Document.ПеремещениеДС.Attribute.ТипДенежныхСредств</references>
+  </columns>
+  <columns uuid="5c077e0f-c8de-4734-96a5-6cdc2d6c9bbc">
+    <name>ТипДенежныхСредствПолучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип денежных средств получатель</value>
+    </synonym>
+    <references>Document.ПеремещениеДС.Attribute.ТипДенежныхСредствПолучатель</references>
+  </columns>
+  <columns uuid="f86a78f3-22e1-4a65-bcd8-2cf764e85c10">
+    <name>УчитыватьВНУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый учет (УСН)</value>
+    </synonym>
+    <references>Document.ПоступлениеНаСчет.Attribute.УчитыватьВНУ</references>
+    <references>Document.РасходСоСчета.Attribute.УчитыватьВНУ</references>
+    <references>Document.РасходИзКассы.Attribute.УчитыватьВНУ</references>
+    <references>Document.ПоступлениеВКассу.Attribute.УчитыватьВНУ</references>
+  </columns>
+</mdclass:DocumentJournal>

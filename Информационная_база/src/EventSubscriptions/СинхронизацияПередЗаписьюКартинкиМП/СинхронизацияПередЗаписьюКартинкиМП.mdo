@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9c4a47e-624b-4f8b-868b-714f5f2276fb">
+  <name>СинхронизацияПередЗаписьюКартинкиМП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация перед записью картинки МП</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ТоварыМП</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.СинхронизацияПодпискиНаСобытияМП.СинхронизацияПередЗаписьюКартинки</handler>
+</mdclass:EventSubscription>

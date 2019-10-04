@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ee1f526-4143-49c0-babb-ec9d711d987c">
+  <producedTypes>
+    <selectionType typeId="e5261731-5367-49fb-be57-46fd07d7dc95" valueTypeId="c9b7a291-99b2-4351-a493-aac3d350a240"/>
+    <listType typeId="557809e1-2084-4de8-84d3-7f6ad2852375" valueTypeId="a42fd401-fe10-423e-9f5b-fd2232163efa"/>
+    <managerType typeId="fc5b37e7-96df-41c3-87a5-52922d6ccf80" valueTypeId="649d366d-42ea-4553-82da-9ed26c27b5da"/>
+    <recordSetType typeId="7cde1147-12f4-45cc-9fec-968b786b6421" valueTypeId="bbb5c5ba-22b9-41d7-b885-52f2757ca2df"/>
+    <recordKeyType typeId="ec5f5796-ef69-4fd5-a29f-0fb1b9bda8d0" valueTypeId="036d4950-c12e-48a4-a36f-69d9337b9597"/>
+    <recordType typeId="6b3a5d76-e584-4147-b242-de99adc9bfef" valueTypeId="4e1be7de-fbc0-4b16-acf0-c8d31b319935"/>
+    <recordManagerType typeId="16c43d25-adcd-43f5-b0ba-310d0c2b7f33" valueTypeId="e2bdfe6a-8932-40e8-97ea-b5590c1b3122"/>
+  </producedTypes>
+  <name>СоответствиеНаименованияКолонокПолямЗагрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие наименования колонок полям загрузки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СоответствиеНаименованияКолонокПолямЗагрузки.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f2a848bf-810f-4f92-a822-fdc7fe1044e2">
+    <name>Поле</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поле</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="94bf3215-94fa-4ac7-9f85-290e04386f6d">
+    <name>ДополнительныйРеквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный реквизит</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f51ed041-349a-46a1-8851-500492fccb54">
+    <name>ЗаголовокКолонки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок колонки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f80af820-cdf2-41de-838b-93bd6a8d324f">
+    <name>ОбъектЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект загрузки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6d08e0ae-6359-4d59-a608-e20ee521a9f5">
+    <name>ИмяТабличнойЧасти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя табличной части</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1836d11a-d21d-49d1-b845-61f3cb9814c6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

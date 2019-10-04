@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73bfeec9-d897-4fcc-811f-7bd7f77adc46">
+  <producedTypes>
+    <objectType typeId="c6e566d8-2328-46f5-ba09-69644708a983" valueTypeId="ce6c83ba-60ba-4749-b5f0-0d12f17d45eb"/>
+    <managerType typeId="0ce75e4e-88a9-4745-a354-c71e77ccdcbc" valueTypeId="9651703b-ffb1-497f-ae64-21ad922a32f6"/>
+  </producedTypes>
+  <name>АнализСчетовИЗаказовВВалютеУчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ счетов и заказов в валюте учета</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.АнализСчетовИЗаказовВВалютеУчета.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="c0b70dde-c288-45dd-a578-474f3d3ed2ba">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="df608cb8-6889-45b7-8795-5fbd623d313b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="05bbf7c0-595f-4685-9ce9-cc3c39bce494">
+    <name>ОбразецЗаказыПокупателейКонтекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец заказы покупателей контекст</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="12e815ca-149a-4eb8-a892-02b217aae77f">
+    <name>ОбразецЗаказыПоставщикамКонтекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец заказы поставщикам контекст</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="3703cd51-0f45-4697-99e4-91e097d2de4f">
+    <name>ОбразецСчетаНаОплатуКонтекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец счета на оплату контекст</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

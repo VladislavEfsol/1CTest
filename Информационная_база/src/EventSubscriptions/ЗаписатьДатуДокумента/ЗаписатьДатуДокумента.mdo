@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16ea48a4-7cf0-457f-ab22-7f05b1c69dc1">
+  <name>ЗаписатьДатуДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Записать дату документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.РасходСоСчета</types>
+    <types>DocumentObject.РасходИзКассы</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.ВводНачальныхОстатков</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.ПринятиеКУчетуВА</types>
+    <types>DocumentObject.ПриходнаяНакладная</types>
+    <types>DocumentObject.РасходнаяНакладная</types>
+    <types>DocumentObject.ПоступлениеНаСчет</types>
+    <types>DocumentObject.ПоступлениеВКассу</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РегламентированнаяОтчетностьУСН.ЗаписатьДатуДокументаВРегистр</handler>
+</mdclass:EventSubscription>

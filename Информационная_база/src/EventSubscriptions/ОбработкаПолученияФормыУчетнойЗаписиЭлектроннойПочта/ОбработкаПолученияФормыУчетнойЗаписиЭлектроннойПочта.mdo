@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="270a9424-c94b-4a8d-9e90-34c4e75fa5cc">
+  <name>ОбработкаПолученияФормыУчетнойЗаписиЭлектроннойПочта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка получения формы учетной записи электронной почта</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.УчетныеЗаписиЭлектроннойПочты</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.ОбменСGoogleКлиентСервер.ОбработкаПолученияФормыУчетнойЗаписиЭлектроннойПочты</handler>
+</mdclass:EventSubscription>

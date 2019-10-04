@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee93e505-e281-4510-893c-24061d9fe2e0">
+  <producedTypes>
+    <objectType typeId="b74c6c4f-9ef3-4c93-8fa7-e56ed88cc4b9" valueTypeId="7fcb075a-6c83-4f67-adce-1e6385aa6031"/>
+    <managerType typeId="68e7e173-5abd-475f-9ffa-ca6e4aa7f15c" valueTypeId="c983f076-4c79-4a68-b5bb-ea3b6b1f35b6"/>
+  </producedTypes>
+  <name>НачалоРаботыСПрограммой</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начало работы с программой</value>
+  </synonym>
+  <defaultForm>DataProcessor.НачалоРаботыСПрограммой.Form.Форма</defaultForm>
+  <tabularSections uuid="9beb6d3b-2705-467c-a24e-34e293308e8b">
+    <producedTypes>
+      <objectType typeId="9cd94962-20ee-4bbe-b341-160aecd6faf9" valueTypeId="01b49371-1e66-40c6-9268-7e0c46d95fad"/>
+      <rowType typeId="447e9572-4900-4f79-862c-be3d024308b5" valueTypeId="d377971e-a9ee-4541-8ef5-71470a94867b"/>
+    </producedTypes>
+    <name>Организации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организации</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d7790a81-9f0a-4a24-961c-6f263e115a04">
+      <name>ИндексОрганизации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Индекс организации</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="94cefcf3-a245-40f7-a984-b913c3881262">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="879cd895-9e6b-4fc4-b6a8-fa85516f9529">
+      <name>НаименованиеПолное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование полное</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5f152779-2ccb-4fcd-8be3-c6c8f5d718ee">
+      <name>ЮридическоеФизическоеЛицо</name>
+      <synonym>
+        <key>ru</key>
+        <value>Юридическое физическое лицо</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ЮридическоеФизическоеЛицо</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7f512b0f-2717-4f3c-80c3-8a32db1125ea">
+      <name>ИНН</name>
+      <synonym>
+        <key>ru</key>
+        <value>ИНН</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>12</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value>            </value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="71749e9c-a580-4a0c-903b-0560ba3d144a">
+      <name>КПП</name>
+      <synonym>
+        <key>ru</key>
+        <value>КПП</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="02c7e083-9b52-4c31-b091-b2f316af29f9">
+      <name>ОГРН</name>
+      <synonym>
+        <key>ru</key>
+        <value>ОГРН</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="22a46a8e-a696-43ed-b910-a0fcb7af5524">
+      <name>КодОКВЭД</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код ОКВЭД</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>8</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="2ccedd8b-bcb7-4ea7-bfcd-26fda49e17f5">
+      <name>АдресЮридический</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес юридический</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="28e39eff-7a88-4add-8a4f-cbb0f02a31b1">
+      <name>АдресФактический</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес фактический</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f9a3526c-2359-4970-bb53-a37a9f6bb86a">
+      <name>Телефон</name>
+      <synonym>
+        <key>ru</key>
+        <value>Телефон</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d70003f4-0e56-4a43-b4da-d47003b68f49">
+      <name>СвидетельствоСерияНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свидетельство серия номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="c4e37e49-b08f-45ad-b5f4-7e1e4341d079">
+      <name>СвидетельствоДатаВыдачи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свидетельство дата выдачи</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9c3371e2-58bb-4f3a-87b4-1930501dc53c">
+      <name>Фамилия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Фамилия</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="59e22745-c3b9-4fb9-ae21-71b1d4700adc">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="b6f9bff3-e651-42f8-8f5c-f337fe9c6a97">
+      <name>Отчество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отчество</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="717bd826-37fa-4fee-a305-230d34a9a2ec">
+      <name>Пол</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пол</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ПолФизическогоЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c251d8c9-50a2-41bc-8cd4-9e220236e93f">
+      <name>КодНалоговогоОргана</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код налогового органа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>4</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f854b959-702e-496a-831f-430825545c8f">
+      <name>КодНалоговогоОрганаПолучателя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код налогового органа получателя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>4</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f53f7179-f55a-486e-88fd-82582f2e1f1f">
+      <name>РегистрационныйНомерПФР</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистрационный номер в ПФР</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>14</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="a0cd5421-7fbd-4e48-8efe-5fa26bc56b88">
+      <name>РегистрационныйНомерПФР_ИП</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистрационный номер в ПФР (за себя)</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="7acaf3ae-b162-4be0-9ddc-02cf0260c283">
+      <name>КодОрганаПФР</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код органа ПФР</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>7</length>
+        </stringQualifiers>
+      </type>
+      <mask>999-999</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="950b7395-5bf0-418d-9c4b-966627aa1cb8">
+      <name>КодОрганаФСС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код органа ФСС</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>4</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="f29660b0-e039-4499-a636-5f4f62b5a893">
+      <name>НаименованиеТерриториальногоОрганаФСС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Территориальный орган ФСС</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Указано в Извещении о регистрации в ФСС в качестве страхователя</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a2261160-53ba-44df-a6a8-e377a5d61fa0">
+      <name>РегистрационныйНомерФСС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Регистрационный номер в ФСС</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>15</length>
+        </stringQualifiers>
+      </type>
+      <mask>9999999999</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8cb4f98e-2565-4d65-b628-0b7629cad969">
+      <name>НаименованиеПлательщикаПриПеречисленииНалогов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование для бюджета</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование плательщика при перечислении в бюджет</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="8d313ccc-be27-4e17-a228-6039bed47d4b">
+      <name>ЕстьЕНВД</name>
+      <synonym>
+        <key>ru</key>
+        <value>Есть ЕНВД</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="be2365e5-f22f-4028-9bbb-d621c022ac84">
+      <name>ЕстьПатент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Есть патент</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aa701030-3f72-4f07-980d-d280ad171a50">
+      <name>ЕстьУСН</name>
+      <synonym>
+        <key>ru</key>
+        <value>Есть УСН</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fa6c19e8-2093-4589-a603-0ccc7624f7ec">
+      <name>ИПИспользуетТрудНаемныхРаботников</name>
+      <synonym>
+        <key>ru</key>
+        <value>Индивидуальный предприниматель использует труд наемных работников</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="daf5278e-c7af-4f6c-adb4-4dd8298922e4">
+      <name>ФайлЛоготип</name>
+      <synonym>
+        <key>ru</key>
+        <value>Файл логотип</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ОрганизацииПрисоединенныеФайлы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ecd8b5e5-dca1-4144-81f5-948753741bfa">
+      <name>СтавкаНалога</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка налога</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c9f15a55-34d7-48f7-a734-4b6ec5725620">
+      <name>ВидыОбъектовНалогообложения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Виды объектов налогообложения</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВидыОбъектовНалогообложения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9aa771b0-5ad8-49c9-9c83-eaf8e46ab485">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ссылка</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ca53f09d-6c97-4846-8ecb-929d2fb1aefd">
+      <name>СистемаНалогообложения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Система налогообложения</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5f49cd31-9550-40cc-b3fb-17835d0c6c01">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

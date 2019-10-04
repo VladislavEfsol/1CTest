@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33e00eae-0092-4c33-adac-7add88272e22">
+  <name>ОтчетыУНФПриЗаписиДополнительногоОтчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи дополнительного отчета</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ДополнительныеОтчетыИОбработки</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОтчетыУНФ.ПодпискаНаСобытиеДополнительныйОтчетПриЗаписи</handler>
+</mdclass:EventSubscription>

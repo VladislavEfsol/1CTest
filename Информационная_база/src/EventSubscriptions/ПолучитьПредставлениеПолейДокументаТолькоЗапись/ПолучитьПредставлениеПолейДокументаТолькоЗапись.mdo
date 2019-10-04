@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c5d80a5-c828-40e4-b655-5981c6d16785">
+  <name>ПолучитьПредставлениеПолейДокументаТолькоЗапись</name>
+  <synonym>
+    <key>ru</key>
+    <value>Получить представление полей документа (только запись)</value>
+  </synonym>
+  <source>
+    <types>DocumentManager.КорректировкаРегистров</types>
+    <types>DocumentManager.Доверенность</types>
+    <types>DocumentManager.ПлатежнаяВедомость</types>
+    <types>DocumentManager.ПлатежноеПоручение</types>
+    <types>DocumentManager.СверкаВзаиморасчетов</types>
+    <types>DocumentManager.ИнвентаризацияЗапасов</types>
+  </source>
+  <event>PresentationFieldsGetProcessing</event>
+  <handler>CommonModule.УправлениеНебольшойФирмойСобытия.ПолучитьПредставлениеПолейДокументаТолькоЗапись</handler>
+</mdclass:EventSubscription>

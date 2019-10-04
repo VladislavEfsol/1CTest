@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68e361d6-f757-4b49-9b77-22038c651df9">
+  <producedTypes>
+    <objectType typeId="e9777f04-920d-461a-ab35-c27328f56ec1" valueTypeId="bf364f49-52cb-41d6-ad25-3b12027c43b3"/>
+    <managerType typeId="f971f6b5-4cab-4894-884b-dead3e6ba53a" valueTypeId="1f6e9d96-cf01-4687-9b2c-cff81ba67849"/>
+  </producedTypes>
+  <name>СкладПоЗапасамВРемонте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склад по запасам в ремонте</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.СкладПоЗапасамВРемонте.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="46458453-31ae-4900-992e-384183e1f1dc">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="c89d70da-5dfd-4d23-974b-f6c37ceb1a4d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c8225544-c5d0-44d2-a354-70060a4b83f7">
+    <name>ОбразецВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ведомость</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="77c4444d-0d0c-42de-88ab-b22a3fe1a6e2">
+    <name>ОбразецОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец остатки</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

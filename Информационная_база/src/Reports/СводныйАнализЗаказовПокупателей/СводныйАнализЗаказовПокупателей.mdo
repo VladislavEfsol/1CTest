@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc097764-d83b-47ac-9300-3cfd7973dbcc">
+  <producedTypes>
+    <objectType typeId="63f858f9-d428-42e5-9552-0b432021d34d" valueTypeId="5ec6672a-1d6d-4e1d-8129-19e0ac63e2f8"/>
+    <managerType typeId="81a541ac-a135-4a97-955e-04f49fb03daa" valueTypeId="416c6d1f-b1e5-49fd-aa27-d02764a8699c"/>
+  </producedTypes>
+  <name>СводныйАнализЗаказовПокупателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводный анализ заказов покупателей</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.СводныйАнализЗаказовПокупателей.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="47f48c79-a9f0-4247-b94e-f5948ba51563">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="39502d6a-0bc1-4745-94c7-89c6cb09692b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a685a62d-7243-431a-8904-421f817aaa3c">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="a636329f-ba16-45ab-b112-be3e15222c32">
+    <name>ОбразецВыполнениеИОплатаЗаказНарядов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец выполнение и оплата заказ нарядов</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

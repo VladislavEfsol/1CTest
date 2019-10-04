@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68f18dc7-8016-4cfc-a236-739d2d692e5f">
+  <producedTypes>
+    <objectType typeId="40da014d-324f-4505-b571-41b8894b6331" valueTypeId="6582b4ee-8980-447d-892d-f3be4d96c176"/>
+    <managerType typeId="013285e2-828c-4275-b177-453dcefb3ed7" valueTypeId="9f3a29ed-e6cf-4c17-b170-65e1579a7d14"/>
+  </producedTypes>
+  <name>ОтработанноеВремя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отработанное время</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ОтработанноеВремя.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="3c53ede7-86f3-4870-b5b0-edb2fe6d1668">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="da079759-77d2-4058-bb58-2a18aab93150">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8a4108b1-7d1e-4e5b-8c8e-b8bf52ffeaee">
+    <name>ОбразецПоДням</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец по дням</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="a2630874-f3f0-4f4b-8043-f8798a195c81">
+    <name>ОбразецВЦеломЗаПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец в целом за период</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

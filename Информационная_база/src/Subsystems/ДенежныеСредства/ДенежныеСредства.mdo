@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86772f92-0df4-4910-971d-7e20c100a966">
+  <name>ДенежныеСредства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Деньги</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделДеньги</picture>
+  </picture>
+  <content>ScheduledJob.ЗагрузкаКурсовВалют</content>
+  <content>Report.ДенежныеСредства</content>
+  <content>Report.ДенежныеСредстваПрогноз</content>
+  <content>Report.РасчетыСПодотчетниками</content>
+  <content>Document.Событие</content>
+  <content>CommonCommand.ДополнительныеОбработкиДенежныеСредства</content>
+  <content>DataProcessor.ОбменСБанками</content>
+  <content>CommonCommand.ЗагрузкаКурсовВалют</content>
+  <content>Catalog.Контрагенты</content>
+  <content>CommonForm.ФормаНастройкиИтоговБанкИКасса</content>
+  <content>CommonCommand.БольшеВозможностейДеньги</content>
+  <content>Document.СписаниеПроданныхПодарочныхСертификатов</content>
+  <content>CommonModule.ДвижениеДенежныхСредствСервер</content>
+  <content>CommonModule.ДвиженияДенежныхСредствВызовСервера</content>
+  <content>CommonModule.ДвиженияДенежныхСредствКлиент</content>
+  <subsystems>Деньги</subsystems>
+  <subsystems>Банк</subsystems>
+  <subsystems>Касса</subsystems>
+  <subsystems>Эквайринг</subsystems>
+  <subsystems>ПодарочныеСертификаты</subsystems>
+  <subsystems>КредитыИЗаймы</subsystems>
+  <subsystems>ПлатежныйКалендарь</subsystems>
+  <subsystems>НСИ</subsystems>
+  <subsystems>Аналитика</subsystems>
+</mdclass:Subsystem>

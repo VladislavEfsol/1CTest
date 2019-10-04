@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a006b8a-04bb-418b-b15e-8450fa5c940f">
+  <producedTypes>
+    <selectionType typeId="21f47e61-635d-47d8-bf13-86ee7beac9c2" valueTypeId="54d9df18-0802-4e60-8bbf-296de2f34f87"/>
+    <listType typeId="c45edccd-ac53-4ba6-b22b-f922dfaf04f4" valueTypeId="4a4ad19c-d15b-429c-87ea-713ca4d7df98"/>
+    <managerType typeId="a61c8016-42f6-44ec-983b-61c9426932f7" valueTypeId="f26f941b-f5ba-4bfe-b464-2e39576b0198"/>
+  </producedTypes>
+  <name>ДокументыПоКадрам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по кадрам</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоКадрам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПриемНаРаботу</registeredDocuments>
+  <registeredDocuments>Document.КадровоеПеремещение</registeredDocuments>
+  <registeredDocuments>Document.Увольнение</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="6518d53a-7713-4245-88f8-0daf517b8db3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.Увольнение.Attribute.Организация</references>
+    <references>Document.ПриемНаРаботу.Attribute.Организация</references>
+    <references>Document.КадровоеПеремещение.Attribute.Организация</references>
+  </columns>
+  <columns uuid="79bce310-bbac-4ff9-a655-a614788bbd50">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПриемНаРаботу.Attribute.Комментарий</references>
+    <references>Document.Увольнение.Attribute.Комментарий</references>
+    <references>Document.КадровоеПеремещение.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="96cd3468-d61c-4b27-ad8c-a7873e2d1195">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.КадровоеПеремещение.Attribute.Автор</references>
+    <references>Document.ПриемНаРаботу.Attribute.Автор</references>
+    <references>Document.Увольнение.Attribute.Автор</references>
+  </columns>
+  <forms uuid="6ed294f6-7b8a-4d8b-b165-26044e1b9bea">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="23200525-5058-4064-b9bf-61b2c0b7330b">
+    <name>ОткрытьЖурналДокументыПоКадрам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы по кадрам</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DocumentJournal>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7475fc6c-5c26-4647-9a7d-c152883cf37b">
+  <producedTypes>
+    <objectType typeId="95f6fbb7-bdbc-4e3a-ba44-ece354220b7f" valueTypeId="66322777-70a1-4754-8112-3befb6c12ec2"/>
+    <managerType typeId="9caf3d5f-c2fa-477d-a1c9-7fc6934e87fa" valueTypeId="6fde5e72-509b-4333-9e31-708ceee39a93"/>
+  </producedTypes>
+  <name>АнализДоступности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки товаров на складах</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.АнализДоступности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="383498c9-9392-441d-ae11-97f6a234d9de">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="b4016051-799c-4806-8dae-e5c28990bec7">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="5ca8caca-a0ab-493c-b8ea-cf21262908c2">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="134efd8a-a421-43a3-bf51-9629af492bcc">
+    <name>ОбразецСвободныеОстаткиКонтекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец свободные остатки контекст</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b58f722-9b0a-4de2-bca2-c782595e4c68">
+  <producedTypes>
+    <objectType typeId="5f550ac3-7b6d-4d04-86e2-019b64a0bc03" valueTypeId="0782ce17-1e7d-45bf-9c5c-c4558af40875"/>
+    <managerType typeId="defe598d-5b78-4c78-b15c-485cc466f51b" valueTypeId="1f61a3dc-ae5d-4484-bccb-a9c26ee4b38f"/>
+  </producedTypes>
+  <name>ДвижениеТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ДвижениеТоваров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="657f68da-53ac-4197-8f26-04a62e07f743">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="be879bc6-c463-4e26-8e4f-53d9d07e8bc1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="46aa64da-af97-4994-8ce6-dafff860c71c">
+    <name>ОбразецДвижениеТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец движение товаров</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

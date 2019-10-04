@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c9c748a5-caeb-498f-b1d5-ea3a2704a591">
+  <producedTypes>
+    <objectType typeId="1d658b50-d2ff-48ca-9483-95129e411705" valueTypeId="eb7d2358-c93d-4040-9bc4-7687064d5230"/>
+    <managerType typeId="59ae2d35-8b6b-42d8-a8e8-e8f44a2fe33a" valueTypeId="3d5ea0fa-c37b-4a3d-b594-de28a8263190"/>
+  </producedTypes>
+  <name>Расходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.Расходы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="145ff733-e8e9-4760-9ff4-38572bf98d3d">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="478ea865-505c-4256-9417-2d6dba92ff1b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="383dda72-9dfc-472c-81c0-29e687174471">
+    <name>ОбразецРасходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец расходы</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

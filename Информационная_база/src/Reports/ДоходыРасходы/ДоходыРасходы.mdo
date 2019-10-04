@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="177bdfc7-5a21-42a1-b3f4-8e397d874a08">
+  <producedTypes>
+    <objectType typeId="5554a00b-7417-4c2a-b365-8e631f87806c" valueTypeId="ee0cfdfb-da23-4a7e-b738-3f211ecb4422"/>
+    <managerType typeId="1bd8dd50-334b-48f7-adde-f5656c4df589" valueTypeId="6f3afc21-9aca-4928-931c-7eddc07f5296"/>
+  </producedTypes>
+  <name>ДоходыРасходы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доходы и расходы</value>
+  </synonym>
+  <defaultForm>Report.ДоходыРасходы.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ДоходыРасходы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="0a79f0c3-9767-4699-8b07-a1b1b2436760">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="68991a8a-d074-4116-bc64-d8e9ef5c8b63">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3d3ba95e-6126-4890-8f71-336bf0b704a3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

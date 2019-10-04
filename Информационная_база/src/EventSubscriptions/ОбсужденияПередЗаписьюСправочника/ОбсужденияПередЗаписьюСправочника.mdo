@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb0d7ece-2c41-4d68-bbd7-46a4a5799e25">
+  <name>ОбсужденияПередЗаписьюСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обсуждения перед записью справочника</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.Лиды</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Спецификации</types>
+    <types>CatalogObject.КонтактныеЛица</types>
+    <types>CatalogObject.Проекты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбсужденияСервер.ОбсужденияПередЗаписью</handler>
+</mdclass:EventSubscription>

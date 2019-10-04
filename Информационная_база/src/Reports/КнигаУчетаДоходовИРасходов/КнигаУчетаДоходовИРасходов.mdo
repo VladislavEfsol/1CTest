@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="480d37de-4c17-4bf9-aa7a-d18d509347ab">
+  <producedTypes>
+    <objectType typeId="5a8662c5-761d-4b70-8246-3de329ddfad9" valueTypeId="55fcd127-fe61-4cf1-88b5-62c6f23d6b28"/>
+    <managerType typeId="2711d817-0297-4594-9cd9-8b3793fc8be2" valueTypeId="23ef4412-cafb-45c2-8a75-f9c7c09e063d"/>
+  </producedTypes>
+  <name>КнигаУчетаДоходовИРасходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книга доходов и расходов УСН</value>
+  </synonym>
+  <defaultForm>Report.КнигаУчетаДоходовИРасходов.Form.ФормаОтчета</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="5ea05049-8580-4e70-b8c8-be956f66428e">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="22c4f525-ec42-45fc-bca6-48ca36b0b85a">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f6b840a7-894e-46cb-b6d6-a871d09278a6">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae779ea6-94ac-4bbb-be99-54e67d6c352c">
+    <name>СписокСформированныхЛистов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список листов</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1c545cbc-26c2-4e18-ba16-fbe67e67530b">
+    <name>ВыводитьРасшифровки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выводить расшифровки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2c5242a7-d6a8-4f01-baf1-455dbeb3a48d">
+    <name>РежимПечатиНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим печати НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="93e1c1b1-6c61-43d6-ba9c-d1674b94163d">
+    <name>РежимПечатиГраф4и6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включение граф &quot;Доходы всего&quot; и &quot;Расходы всего&quot;</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="277fb6d5-4e57-4ff5-aba5-3dd0ce8be65c">
+    <name>ПорядокПризнанияРасходовПоНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок признания расходов по НДС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4418f170-8be1-456f-b110-c77a0dcb9681">
+    <name>УСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>УСН</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СистемыНалогообложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a7f4764f-fb52-4664-a631-9b504104b42e">
+    <name>ОбъектНалогообложенияУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект налогообложения УСН</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыОбъектовНалогообложения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="848cf15a-a6b9-4e0e-bb32-1edf6d995fbc">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ad7ec2de-5511-48d9-a41f-f482371e9ae1">
+    <name>ФормаВыбораРазделов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора разделов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="193f6c2c-e6bc-4347-9ebc-b7384ef296b0">
+    <name>Раздел1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел I. Доходы и расходы</value>
+    </synonym>
+  </templates>
+  <templates uuid="24afc4e5-1f18-4846-bc43-dc4dc4207d33">
+    <name>Раздел2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел II. Расчет расходов на приобретение основных средств, принимаемых при расчете налоговой базы по единому налогу </value>
+    </synonym>
+  </templates>
+  <templates uuid="3ed77474-82a8-42b3-984f-0732124b66c7">
+    <name>Раздел3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3</value>
+    </synonym>
+  </templates>
+  <templates uuid="9230b235-1105-48de-9811-2e145392a0eb">
+    <name>ТитульныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТитульныйЛист</value>
+    </synonym>
+  </templates>
+  <templates uuid="c3b20093-0f78-4292-ac09-794f7567539a">
+    <name>ТитульныйЛист_167н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист 167н</value>
+    </synonym>
+  </templates>
+  <templates uuid="b8e858ab-4468-4133-87a2-ca658d21a09b">
+    <name>Раздел2_167н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2 167н</value>
+    </synonym>
+  </templates>
+  <templates uuid="ef76508f-685e-45ee-b5bc-47d2c5f69871">
+    <name>Раздел3_167н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3 167н</value>
+    </synonym>
+  </templates>
+  <templates uuid="88b506ea-ed85-4f78-82d2-808d24496dfe">
+    <name>ТитульныйЛист_154н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист 154н</value>
+    </synonym>
+  </templates>
+  <templates uuid="2b8ee5c5-4aff-4cd9-a032-d019283314ad">
+    <name>Раздел2_154н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2 154н</value>
+    </synonym>
+  </templates>
+  <templates uuid="e018cf75-f42f-4c4b-a9dd-57e6a7669de6">
+    <name>Раздел3_154н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3 154н</value>
+    </synonym>
+  </templates>
+  <templates uuid="ab853184-04ba-49cd-aa9d-457f55d6a626">
+    <name>ТитульныйЛист_135н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Титульный лист /проект/</value>
+    </synonym>
+  </templates>
+  <templates uuid="1ed0dbc6-ce8e-45f2-956e-c1c8f3b27f4f">
+    <name>Раздел2_135н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел2 135н</value>
+    </synonym>
+  </templates>
+  <templates uuid="e21d66cf-9070-480a-aec9-643f1caa1b73">
+    <name>Раздел3_135н</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел3 135н</value>
+    </synonym>
+  </templates>
+  <templates uuid="948a6443-2561-406b-98ce-af7cbdb5c1bb">
+    <name>Раздел4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел4</value>
+    </synonym>
+  </templates>
+  <templates uuid="7dcdbd8d-4beb-4b1a-9427-931b0dc683bb">
+    <name>Раздел1ТолькоДоходыРасходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел I. Доходы и расходы</value>
+    </synonym>
+  </templates>
+  <templates uuid="564870a6-6e16-4612-9344-5c211ab5acb8">
+    <name>Раздел5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел 5</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

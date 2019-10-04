@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af9b2d62-980b-4e4e-9a30-1919131ea181">
+  <producedTypes>
+    <selectionType typeId="dea40eca-d2b7-4b10-9a74-f0f02c8e6d7a" valueTypeId="051183f2-ce60-4f17-9660-e396162ee3af"/>
+    <listType typeId="26999bba-5ba5-4700-b650-c9baacf9527b" valueTypeId="517c0bec-fb88-4c18-9386-9f32f2a8241d"/>
+    <managerType typeId="87edc116-41b9-4d8e-8b4c-48c414e36f75" valueTypeId="aa0149f9-c3f6-437f-9439-cfe6e3bbfd03"/>
+    <recordSetType typeId="8f3d15db-c45a-4643-ac13-6baa3813f6d7" valueTypeId="1fc0b281-0fe3-4ee5-ba9f-8854447cce71"/>
+    <recordKeyType typeId="5ea02242-99a7-495a-b992-958cb50baf4f" valueTypeId="44b5d21e-606c-48ef-870f-08aba8c6ebe9"/>
+    <recordType typeId="5acc842a-0e75-4b5c-b7d3-f6b6e573317b" valueTypeId="c3d713e5-2da6-4b04-86cf-53d8c4ef5899"/>
+    <recordManagerType typeId="d333e808-d21d-42ff-96b4-686ba407d43e" valueTypeId="8bd702c1-fa37-4126-9914-1b10406d1caf"/>
+  </producedTypes>
+  <name>ИсторияСостоянийЛидов</name>
+  <synonym>
+    <key>ru</key>
+    <value>История состояний лидов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="119e4f4b-8492-424b-ae4c-1a1e3e56db8a">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СостоянияЛидов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fb2069f5-cb8e-4124-af71-e62e452d4a91">
+    <name>Лид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лид</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лиды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

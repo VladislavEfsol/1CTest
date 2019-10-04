@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3613e458-4c8b-4399-8b50-653ef4f9b505">
+  <producedTypes>
+    <objectType typeId="6f2bccd4-f50f-4d18-b128-73164fef93a7" valueTypeId="4e399bd9-158a-4065-8ac5-dd2a16ed3228"/>
+    <managerType typeId="77fc8314-2e39-48ce-9113-060c6dcf91d4" valueTypeId="79a2e5b6-5290-4fec-b36b-90add061884f"/>
+  </producedTypes>
+  <name>ПечатьТН</name>
+  <synonym>
+    <key>ru</key>
+    <value>ПечатьТН</value>
+  </synonym>
+  <defaultForm>DataProcessor.ПечатьТН.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="44f0c88f-a74b-43e2-961a-94fb8c405857">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РасходнаяНакладная</types>
+      <types>DocumentRef.ПеремещениеЗапасов</types>
+      <types>DocumentRef.ОтчетОПереработке</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="ab080192-33cf-4e12-8ee1-7e46e5ec6d56">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="eaca88af-cb80-489e-8c40-f15faf761106">
+    <name>ПФ_MXL_ТранспортнаяНакладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная</value>
+    </synonym>
+  </templates>
+  <templates uuid="11d0ad15-991a-4e41-bc05-e63296806222">
+    <name>ПФ_MXL_ТранспортнаяНакладная1208</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная по Постановлению № 1208</value>
+    </synonym>
+  </templates>
+  <templates uuid="8a81aa70-2339-40c7-9a32-47b24a6f3698">
+    <name>ПФ_MXL_ТранспортнаяНакладная1529</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортная накладная по Постановлению № 1529</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

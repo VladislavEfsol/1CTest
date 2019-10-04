@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="40cd1060-0eea-480d-ab9b-1ab6108a4bac">
+  <producedTypes>
+    <selectionType typeId="5474547f-c6c4-4773-9501-1a7752f258bf" valueTypeId="e9319714-576f-4187-aec1-7728dd00b46f"/>
+    <listType typeId="a5b195f6-22a3-46c8-b86c-8ec76133769b" valueTypeId="3f30b34e-54b6-4b98-b44c-27eafedc2b97"/>
+    <managerType typeId="d2a8d79b-5f07-4893-93c5-83bb6cca90ba" valueTypeId="1f51c132-3dd2-463f-a3b8-8df594d598f0"/>
+  </producedTypes>
+  <name>ДокументыПоступленияДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы поступления денег</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоступленияДенег.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.ПоступлениеНаСчет</registeredDocuments>
+  <registeredDocuments>Document.ПоступлениеВКассу</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заказа</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ заказа</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="f0ce560c-0d29-463e-a927-8459f67ca10c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.Организация</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Организация</references>
+  </columns>
+  <columns uuid="5df6b194-3d9b-40b4-8849-082737a67999">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.ВидОперации</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="c4424374-6b24-48c0-a89d-f5cc6a123ac1">
+    <name>СчетКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет, касса</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.Касса</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.БанковскийСчет</references>
+  </columns>
+  <columns uuid="8a2ffa7d-3f5e-4715-ba5e-9ee0e59e6f47">
+    <name>Статья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.Статья</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Статья</references>
+  </columns>
+  <columns uuid="45f2677f-3225-4ca6-930e-5a8d37de4182">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.Контрагент</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="ba592593-f185-4d52-83c3-7dad0df59aff">
+    <name>Подотчетник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотчетник</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.Подотчетник</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Подотчетник</references>
+  </columns>
+  <columns uuid="94790b9e-8df9-4171-a736-93a4afbafd35">
+    <name>СуммаПриход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма приход</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.СуммаДокумента</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="c4749326-6002-4bdf-ba1e-13924718c71a">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.ВалютаДенежныхСредств</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.ВалютаДенежныхСредств</references>
+  </columns>
+  <columns uuid="eedc293b-04ef-4077-9d0e-01a04bddcff0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ПоступлениеВКассу.Attribute.Комментарий</references>
+    <references>Document.ПоступлениеНаСчет.Attribute.Комментарий</references>
+  </columns>
+  <forms uuid="452ef2dd-bcf2-4dde-980c-f39d613145e5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

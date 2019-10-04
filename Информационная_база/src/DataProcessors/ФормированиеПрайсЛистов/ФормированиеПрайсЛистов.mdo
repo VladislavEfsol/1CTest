@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f167e486-0e27-48c5-871e-118af4382fe9">
+  <producedTypes>
+    <objectType typeId="47b9c4aa-4b22-4ee3-91a2-1ecd8c1fbf6f" valueTypeId="43fb1946-4ba1-4c93-93e1-cd168f1d22b2"/>
+    <managerType typeId="aa9e3c70-2e2d-4520-af8b-9096de2b04a5" valueTypeId="ac7202fd-a8c7-44d3-afc1-03a228f79aaf"/>
+  </producedTypes>
+  <name>ФормированиеПрайсЛистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать прайс-листов</value>
+  </synonym>
+  <defaultForm>DataProcessor.ФормированиеПрайсЛистов.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Печать прайс-листов</value>
+  </extendedPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Обработка предназначена для печати прайс-листов
+</value>
+  </explanation>
+  <tabularSections uuid="661d6275-0a8f-408a-a4e4-da0b2d9fea80">
+    <producedTypes>
+      <objectType typeId="f3628862-1169-474e-973f-bf9101d49cfe" valueTypeId="1a3534a4-d340-45f8-80e9-4fb3f6eacf5d"/>
+      <rowType typeId="eb121983-c1fb-4475-a209-13929a4283bc" valueTypeId="c386d8ed-8112-48e0-ab3f-fb07324dd497"/>
+    </producedTypes>
+    <name>ВидыЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды цен</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="aa9b0cb8-6274-41c2-a244-da8160179666">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид цен</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыЦен</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="de423969-8338-4f3f-b527-1eef5a1a512e">
+    <producedTypes>
+      <objectType typeId="4d499f82-8ed9-4a29-907d-77332651546e" valueTypeId="a2f4390d-5b93-4d36-8859-2ce70557f0df"/>
+      <rowType typeId="9a9e8797-a34c-48a6-8f36-7a1e1450e8f1" valueTypeId="f68c5124-bf15-4f70-b837-ed015a8cff2f"/>
+    </producedTypes>
+    <name>ЦеновыеГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ценовые группы</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="13233bc2-d08d-4b48-bf06-b9283405fba4">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ценовая группа</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЦеновыеГруппы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceForm>Catalog.ЦеновыеГруппы.Form.ФормаВыбора</choiceForm>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2ca5e1d3-0946-484b-9abf-a97d798f90ff">
+    <producedTypes>
+      <objectType typeId="6f3596bb-f6d7-4c77-b294-1223ba6ff6ac" valueTypeId="2cca526a-5f0f-4769-8ead-d661a4f6dc10"/>
+      <rowType typeId="3e9f3707-da1d-4f12-b4fe-9e1c12c8b699" valueTypeId="90334026-a6ef-46e3-9a69-723aa86b8fda"/>
+    </producedTypes>
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5794c735-9da3-458a-8b88-73195e04548a">
+      <name>Ссылка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e87ad353-7d9b-4165-9ffe-5b17d587cf65">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9d574331-3573-45d5-93fe-be04bc09e38d">
+    <name>ФормаНеИспользуемаяНоменклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура, которая не используется в прайс-листах</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="216f3d5a-c951-4d1e-97a5-d3e5f8ea3067">
+    <name>ФормаПредупреждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма предупреждения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7ba19c61-a91b-4c35-9d6e-1de0a88053c6">
+    <name>ПФ_MXL_Полотно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полотно</value>
+    </synonym>
+  </templates>
+  <templates uuid="3b0983b8-7d6e-421c-a09b-4179fb0bb761">
+    <name>ПФ_MXL_ДвеКолонки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Две колонки</value>
+    </synonym>
+  </templates>
+  <templates uuid="85214919-7e8d-4729-baf5-9e6e373ae416">
+    <name>ПФ_MXL_Диафильм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диафильм (слайды)</value>
+    </synonym>
+  </templates>
+  <templates uuid="4832f4d6-dd60-40ed-a98f-9c4a297a7854">
+    <name>ИерархияНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия номенклатуры (номенклатура)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="074ecb8b-0fe5-4a6c-856b-4fd3ede03749">
+    <name>ИерархияНоменклатурыИХарактеристик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия номенклатуры (номенклатура и характеристики)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="2eabf117-7381-40f3-8154-81d6f93c1d12">
+    <name>ИерархияЦенновыхГрупп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия ценновых групп (номенклатура)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3796e171-0ebd-40b5-a156-8883ebe986d9">
+    <name>ИерархияЦенновыхГруппНоменклатураИХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия ценновых групп (номенклатура и характеристики)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="80860b74-12b1-4963-8c1f-4d398df31573">
+    <name>ИерархияКатегорийНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия категорий номенклатуры</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8cc92938-8d85-4437-8844-ae8acb78d2da">
+    <name>ИерархияКатегорийНоменклатурыИХарактеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иерархия категорий номенклатуры (номенклатура и характеристики)</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="505f2470-bafe-4359-9c58-e429b23a91a1">
+    <name>НеИспользуемаяНоменклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не используемая номенклатура</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

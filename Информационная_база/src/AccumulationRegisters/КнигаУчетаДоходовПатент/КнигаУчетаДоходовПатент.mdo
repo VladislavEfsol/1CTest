@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30804df2-41d2-4b10-ab31-a678eaf0c73d">
+  <producedTypes>
+    <selectionType typeId="47efab1f-c24e-4825-80eb-4c290623c3d7" valueTypeId="2e404bfc-62cf-4804-b0c7-3418b946c196"/>
+    <listType typeId="03d3b201-404d-470e-b1e1-9e91694534fa" valueTypeId="f755d22a-ba47-4318-a120-6cc1ff6cb0a9"/>
+    <managerType typeId="eaf7a607-a83d-4622-ab6e-aa2685cbca11" valueTypeId="d1ab5109-7fb1-47ca-8c61-d32cc19341a8"/>
+    <recordSetType typeId="80903582-8d8c-4655-923a-674e174d14d3" valueTypeId="fe3e4d1e-899d-4636-89a6-c9cc5fd320db"/>
+    <recordKeyType typeId="c0afd7e7-8fbc-4c7a-a6b3-3803803f30f7" valueTypeId="8e4e2d76-a398-44e4-bb7b-95465b71b853"/>
+    <recordType typeId="a834b2ed-8183-4639-8a46-a76d8ee549e2" valueTypeId="23422cc2-cfa3-4ec1-a4f3-e4c1d68f2f99"/>
+  </producedTypes>
+  <name>КнигаУчетаДоходовПатент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книга учета доходов (патент)</value>
+  </synonym>
+  <defaultListForm>AccumulationRegister.КнигаУчетаДоходовПатент.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="774a1394-144e-41d5-9fe6-bcf84d8e70d7">
+    <name>Графа4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Графа4</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="21183e12-a735-4ea5-84a4-da071786903b">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="994955f8-d53a-4db5-ace1-f849a4a1917d">
+    <name>РеквизитыПервичногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты первичного документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="ec4de163-75ce-4cfd-ae01-296735a77b26">
+    <name>ЭтапПроведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап проведения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="04a20a9f-4aeb-4269-be97-ed2e81fbe845">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2e78a0ac-5a25-4822-b4af-ce59266bf29d">
+    <name>Патент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Патент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Патенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="38ddbea5-e886-4aa8-8df4-a47d4884f9de">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

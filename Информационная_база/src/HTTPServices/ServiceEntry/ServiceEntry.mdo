@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac680f7b-47b5-4ea2-ae3d-cc1f2ad058fc">
+  <name>ServiceEntry</name>
+  <synonym>
+    <key>ru</key>
+    <value>Service entry</value>
+  </synonym>
+  <rootURL>service-entry</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="75b2b69b-3fe6-4154-91a3-e332e0ea01a6">
+    <name>PostEntries</name>
+    <synonym>
+      <key>ru</key>
+      <value>Post entries</value>
+    </synonym>
+    <template>/post/entries</template>
+    <methods uuid="bf8f0f70-96cc-4ba7-be46-0d80a4e521ea">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>PostEntriesPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="a4e0b430-3b8c-4380-9b22-85b622897f6e">
+    <name>ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <template>/ping</template>
+    <methods uuid="b370191a-0729-434d-9697-393acef555b2">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>pingGET</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

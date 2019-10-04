@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9442425b-fcaf-4077-b1a7-1f1b7a4c182c">
+  <producedTypes>
+    <selectionType typeId="085de19c-7e2c-4e6a-855c-3d69b313aa1f" valueTypeId="111a6964-70d7-4b66-b518-262e9f198daa"/>
+    <listType typeId="5be05182-72db-492e-af09-b68b47b540da" valueTypeId="1da69203-a298-4b27-9a78-30fc38b56779"/>
+    <managerType typeId="9aec80aa-72ce-4546-a816-c453abf0dc41" valueTypeId="6e346c60-52a3-459e-83c2-f9c5654e8761"/>
+    <recordSetType typeId="ee8ad169-a304-4e5f-8265-5f931f1b9cd0" valueTypeId="299dc3a9-4bf5-4572-960b-069df91e859a"/>
+    <recordKeyType typeId="47c40cf0-8ace-4f4b-98fc-0247a34c08f9" valueTypeId="7aa7f5d9-9a80-4ef7-97ad-2d7ec825308a"/>
+    <recordType typeId="3b51d428-ba01-4462-b67e-d5888bd313ca" valueTypeId="53f5d9f9-65bd-4034-b602-9b0398c6d8ed"/>
+    <recordManagerType typeId="2fb14211-62f3-4ce9-9071-90446042ae22" valueTypeId="f46800b5-2c3f-45e0-85bf-75a68ec21eb4"/>
+  </producedTypes>
+  <name>МРОТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>МРОТ</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.МРОТ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало действия</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Изменения МРОТ</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>История изменения МРОТ</value>
+  </extendedListPresentation>
+  <resources uuid="42b2096d-99ed-4b21-818c-830f9bc31f9b">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение МРОТ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <forms uuid="25a9c788-2dcc-4458-8271-294f349ae3e6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

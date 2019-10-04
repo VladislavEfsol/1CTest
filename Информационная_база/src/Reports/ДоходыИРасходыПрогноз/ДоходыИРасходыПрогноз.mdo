@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c643f51-3d0a-4ecb-9baa-45c77a1209ea">
+  <producedTypes>
+    <objectType typeId="c8505d64-e428-436d-a71a-49b1f8c937fb" valueTypeId="e1f3c89c-c8ee-468e-9e0e-c818e981cd91"/>
+    <managerType typeId="eb431781-4dd7-423d-9bbd-d8673c735450" valueTypeId="4dd73833-7747-437f-8475-e0045bad02d7"/>
+  </producedTypes>
+  <name>ДоходыИРасходыПрогноз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доходы и расходы (прогноз)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ДоходыИРасходыПрогноз.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="f686a09f-a721-42d4-a027-27d90ccd6c40">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="575909a8-0380-4add-bfd4-5e1eb3e0a563">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="75849cb3-f1af-4105-ad3b-d62f03313343">
+    <name>ОбразецВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ведомость</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="ced9fa32-5001-4cd7-bc8d-5e0cf45ac875">
+    <name>ОбразецПланФактныйАнализ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец план фактный анализ</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

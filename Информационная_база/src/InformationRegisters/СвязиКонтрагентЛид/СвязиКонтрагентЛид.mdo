@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="026b9fd6-18b3-4d25-ac27-3181a79351ba">
+  <producedTypes>
+    <selectionType typeId="e3072ba6-7c50-42ce-9607-340036db05a2" valueTypeId="480542a0-9683-4bce-8d9d-b39d9374d052"/>
+    <listType typeId="ada532a0-d571-48f5-bce4-850f22077234" valueTypeId="3a9f49e0-7e06-4c5f-801c-8a29938dcc46"/>
+    <managerType typeId="2a57e927-4035-4799-99d3-3cef41ee7a1a" valueTypeId="feaf8b65-365f-4737-9b49-a37681c3778a"/>
+    <recordSetType typeId="54983f51-75b3-43fe-a545-7e66038c4048" valueTypeId="6aca6949-ab37-47d0-9738-15ed1ba9b150"/>
+    <recordKeyType typeId="56f6fb85-ccef-4b01-9599-ff574bb7e227" valueTypeId="60a0be33-34cd-4f3f-bb02-00f804d27b81"/>
+    <recordType typeId="7a31e5ae-5091-4b59-b7e3-364c7966027b" valueTypeId="c3b0d39a-5b29-46ff-a9f6-e20f77c09aba"/>
+    <recordManagerType typeId="e7214890-ed3e-4081-aeeb-f7c21f70c91f" valueTypeId="a5eef2ff-30e6-4330-b2df-a2a2878ad389"/>
+  </producedTypes>
+  <name>СвязиКонтрагентЛид</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связи контрагент лид</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="aca27e46-d970-4afc-8648-be9475b6adeb">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ff3bf674-0c81-4a6f-bbfc-8405977e5f2d">
+    <name>Лид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лид</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Лиды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

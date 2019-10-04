@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7b84b45-938f-4faa-902a-6c2b2947ab91">
+  <name>ОбработкаОбратногоВызоваOAuth2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка обратного вызова OAuth2</value>
+  </synonym>
+  <rootURL>oauth2callback</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="df2bab81-d337-40b1-89f6-7aa868970873">
+    <name>oauth2callback</name>
+    <synonym>
+      <key>ru</key>
+      <value>Oauth2callback</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="257f2767-7264-4d49-b6cf-d27042bd2aab">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>oauth2callbackGET</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

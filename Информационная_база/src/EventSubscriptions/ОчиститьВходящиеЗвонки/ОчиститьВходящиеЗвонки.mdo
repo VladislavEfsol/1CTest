@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92f8bbd9-d079-4fa3-be5e-e392fe3c6e38">
+  <name>ОчиститьВходящиеЗвонки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистить входящие звонки</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.КонтактныеЛица</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ТелефонияСервер.ОчиститьВходящиеЗвонкиПередУдалением</handler>
+</mdclass:EventSubscription>

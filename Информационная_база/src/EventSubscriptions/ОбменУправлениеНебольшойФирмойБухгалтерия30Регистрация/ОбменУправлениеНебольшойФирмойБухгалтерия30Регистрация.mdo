@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c126ddd-b4d9-4f90-b188-c3901a75355f">
+  <name>ОбменУправлениеНебольшойФирмойБухгалтерия30Регистрация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными &quot;Управление нашей фирмой&quot; - &quot;Бухгалтерия предприяти 3.0&quot;. Перед записью.</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.КатегорииНоменклатуры</types>
+    <types>CatalogObject.ВидыДокументовФизическихЛиц</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.ВидыЦен</types>
+    <types>CatalogObject.СтруктурныеЕдиницы</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.ЛицензииПоставщиковАлкогольнойПродукции</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Спецификации</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.НомераГТД</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>CatalogObject.ЭквайринговыеТерминалы</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБП.ОбменУправлениеНебольшойФирмойБухгалтерия30ПередЗаписью</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9abe4ae-9550-43e1-9941-1ef346a586f3">
+  <name>КонтрольНеразделенныхНаборовЗаписейПриЗаписиУНФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных наборов записей при записи УНФ</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.ВидыПродукцииПоГруппамВЕТИС</types>
+    <types>InformationRegisterRecordSet.ДопустимыеЦелиПоГруппамВЕТИС</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхНаборовЗаписейПриЗаписи</handler>
+</mdclass:EventSubscription>

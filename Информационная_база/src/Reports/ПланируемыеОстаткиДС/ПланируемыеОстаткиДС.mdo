@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="711b3cd1-0297-414f-82fd-724bb1f67f37">
+  <producedTypes>
+    <objectType typeId="ea58b997-9c90-4286-a1da-ae6f4164c131" valueTypeId="e854f75d-61a8-43b3-90b6-16703aac0641"/>
+    <managerType typeId="bb316c26-63e0-4b60-9c37-09697cc64c72" valueTypeId="f44a0a5f-525f-42cc-b41c-512deaacd48a"/>
+  </producedTypes>
+  <name>ПланируемыеОстаткиДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планируемые остатки ДС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПланируемыеОстаткиДС.Form.ФормаОтчетаДополнительная</defaultForm>
+  <mainDataCompositionSchema>Report.ПланируемыеОстаткиДС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="95c30e98-f91d-47c5-aca9-baea20f062f0">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="bf9b0cdb-7da3-42b6-932a-d9b721057ef7">
+    <name>ФормаОтчетаДополнительная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета дополнительная</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="830d3aad-f904-45e7-95d0-6f7ae2e813f6">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="1bed5dbb-c3d2-47f2-802b-413b2535e4bb">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

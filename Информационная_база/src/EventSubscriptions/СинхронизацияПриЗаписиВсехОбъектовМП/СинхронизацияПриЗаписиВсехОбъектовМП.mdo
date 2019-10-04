@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10c9f369-7005-4fe8-a126-798a4a94d5c4">
+  <name>СинхронизацияПриЗаписиВсехОбъектовМП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация при записи всех объектов МП</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтчетОРозничныхПродажахМП</types>
+    <types>CatalogObject.КассыККММП</types>
+    <types>DocumentObject.ЧекККММП</types>
+    <types>CatalogObject.СтатьиМП</types>
+    <types>CatalogObject.ПользователиМП</types>
+    <types>DocumentObject.ВводОстатковМП</types>
+    <types>DocumentObject.ПриходДенегМП</types>
+    <types>DocumentObject.ЗаказМП</types>
+    <types>CatalogObject.СтавкиНДСМП</types>
+    <types>DocumentObject.ПриходТовараМП</types>
+    <types>DocumentObject.ПроизводствоМП</types>
+    <types>DocumentObject.РасходТовараМП</types>
+    <types>DocumentObject.РасходДенегМП</types>
+    <types>CatalogObject.СпецификацииМП</types>
+    <types>CatalogObject.ТоварыМП</types>
+    <types>DocumentObject.ЧекККМВозвратМП</types>
+    <types>CatalogObject.СтруктурныеЕдиницыМП</types>
+    <types>CatalogObject.КонтрагентыМП</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.СинхронизацияПодпискиНаСобытияМП.СинхронизацияПриЗаписиВсехОбъектов</handler>
+</mdclass:EventSubscription>

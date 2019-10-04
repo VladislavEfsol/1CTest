@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8507c32f-2611-4e17-ab2c-565eb8dee242">
+  <producedTypes>
+    <selectionType typeId="c1b1dc2b-4fb7-4624-a23c-b21a1ec0b1ba" valueTypeId="033db90e-eff0-4fad-822f-ec394d3441eb"/>
+    <listType typeId="b5ffc521-b722-4091-83b8-c898983bb49c" valueTypeId="dadbcff6-4f65-46f5-a056-59c0e5b388c6"/>
+    <managerType typeId="ec93fe33-a41d-4032-9ed9-47b23a416c0a" valueTypeId="149efb4e-1c45-464d-8333-831a652b2700"/>
+    <recordSetType typeId="b93efb69-7741-4efa-a559-4187aad44e80" valueTypeId="a9fc91eb-36e4-4d9c-b840-fa14776e17c4"/>
+    <recordKeyType typeId="64fcb3f1-91ed-4eb8-8d1e-7e03cc97ac25" valueTypeId="d84f26f7-249c-4daa-afca-cfab1da907b6"/>
+    <recordType typeId="58f3768f-0c56-4654-a880-da2595c6e5f9" valueTypeId="dd4d9cd4-bb87-4c87-9066-7732bc9b9bc4"/>
+    <recordManagerType typeId="0a8d409b-8085-4c11-9080-0be06b790d19" valueTypeId="289b8f94-4078-4515-84fb-059e1aee13fb"/>
+  </producedTypes>
+  <name>СуммыДокументовРегламентированныйУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Суммы документов регламентированный учет</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4dc08cce-e00d-417b-bcec-6b83e4205124">
+    <name>Всего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Всего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2279357d-67bd-4959-a03f-0b043cdfa5fc">
+    <name>НДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="088037a3-4e91-4802-9e0f-ef052f624356">
+    <name>ТабличнаяЧастьДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть документа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТабличныеЧастиДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="907fa638-ae62-4b4e-b03d-c60718eb8d81">
+    <name>НомерСтрокиДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

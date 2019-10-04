@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a8915f5-a3c9-4cd2-b200-fa7954792eb9">
+  <name>ОбменРозницаУправлениеНебольшойФирмойРегистрация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен розница Управление нашей фирмой регистрация</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.КатегорииНоменклатуры</types>
+    <types>CatalogObject.ВидыАлкогольнойПродукции</types>
+    <types>CatalogObject.ХарактеристикиНоменклатуры</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>CatalogObject.СтруктурныеЕдиницы</types>
+    <types>CatalogObject.ЛицензииПоставщиковАлкогольнойПродукции</types>
+    <types>CatalogObject.ЗначенияСвойствОбъектов</types>
+    <types>CatalogObject.СтраныМира</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Организации</types>
+    <types>ChartOfCharacteristicTypesObject.ДополнительныеРеквизитыИСведения</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.ЗначенияСвойствОбъектовИерархия</types>
+    <types>CatalogObject.НаборыДополнительныхРеквизитовИСведений</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияРТ.ОбменРозницаУправлениеНебольшойФирмойЗарегистрироватьИзменение</handler>
+</mdclass:EventSubscription>

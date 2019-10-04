@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07bc5214-8c83-4e20-b74e-b892a4df75e6">
+  <producedTypes>
+    <objectType typeId="8d09e815-9f12-4338-86d3-62f33e2854f7" valueTypeId="e41fb56f-7978-45cb-ae48-4340f2296567"/>
+    <managerType typeId="aedf90c0-11c2-4294-90f4-60fe45a3ae94" valueTypeId="14ed1965-326b-4bbd-a740-2c83431755ab"/>
+  </producedTypes>
+  <name>Себестоимость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Себестоимость</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.Себестоимость.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="ef7b61d1-d478-40d3-983c-78932235e85e">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="189e3d2d-a488-486e-8ee7-7406e585a8c9">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c8c2718f-5678-4e5b-b253-ad60e195ff41">
+    <name>ОбразецПолный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец полный</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="570f21f2-fd55-406e-9700-11a20f3cdc49">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

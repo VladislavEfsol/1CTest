@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="504e7496-c89e-4403-8a22-18d240fc6149">
+  <producedTypes>
+    <objectType typeId="6be770ed-215a-4be2-9ff0-db4a4c6e3dc7" valueTypeId="ea7d0144-e298-447a-a0d4-485e7cfef710"/>
+    <managerType typeId="dc01c6bb-9d24-405e-8e4d-12b30b7c0199" valueTypeId="b7a474b4-5e2d-4558-9321-e361845f14e2"/>
+  </producedTypes>
+  <name>ПрогнозныйБаланс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджет по балансу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ПрогнозныйБаланс.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="f351b550-5b7b-4325-ae9d-64af151d3089">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="88c38261-012a-4f78-8fb6-684cc3aad3cc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d607c019-a238-40a1-836b-1963297efa8c">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="cbf34de3-066a-4705-a5cb-d39f05acd218">
+    <name>ОбразецПланФактныйАнализ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец план фактный анализ</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

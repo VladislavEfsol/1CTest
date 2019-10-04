@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f0d4934-1df6-4c82-abb0-734e1ba43ba3">
+  <name>ОбсужденияПриЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обсуждения при записи</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.СдельныйНаряд</types>
+    <types>DocumentObject.СверкаВзаиморасчетов</types>
+    <types>DocumentObject.ОтчетПереработчика</types>
+    <types>DocumentObject.РасходныйОрдер</types>
+    <types>DocumentObject.СчетНаОплату</types>
+    <types>DocumentObject.РасходСоСчета</types>
+    <types>DocumentObject.ОтчетОПереработке</types>
+    <types>DocumentObject.ПересортицаЗапасов</types>
+    <types>DocumentObject.ДополнительныеРасходы</types>
+    <types>DocumentObject.РасходИзКассы</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>DocumentObject.ПлатежноеПоручение</types>
+    <types>DocumentObject.ОприходованиеЗапасов</types>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.ПоступлениеДСПлан</types>
+    <types>DocumentObject.ЗаданиеНаРаботу</types>
+    <types>DocumentObject.ПеремещениеЗапасов</types>
+    <types>DocumentObject.ПеремещениеДСПлан</types>
+    <types>DocumentObject.РасходДСПлан</types>
+    <types>DocumentObject.ОтчетКомиссионера</types>
+    <types>CatalogObject.Лиды</types>
+    <types>DocumentObject.РезервированиеЗапасов</types>
+    <types>DocumentObject.СчетФактура</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.ПриходныйОрдер</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>DocumentObject.ЗаказПоставщику</types>
+    <types>DocumentObject.РаспределениеЗатрат</types>
+    <types>DocumentObject.Событие</types>
+    <types>DocumentObject.ЗаказНаПроизводство</types>
+    <types>DocumentObject.ОтчетКомитенту</types>
+    <types>CatalogObject.КонтактныеЛица</types>
+    <types>DocumentObject.СчетНаОплатуПоставщика</types>
+    <types>CatalogObject.Проекты</types>
+    <types>DocumentObject.ПриходнаяНакладная</types>
+    <types>DocumentObject.СборкаЗапасов</types>
+    <types>DocumentObject.РасходнаяНакладная</types>
+    <types>DocumentObject.АктВыполненныхРабот</types>
+    <types>DocumentObject.СписаниеЗапасов</types>
+    <types>DocumentObject.ПоступлениеНаСчет</types>
+    <types>DocumentObject.СчетФактураПолученный</types>
+    <types>DocumentObject.ПоступлениеВКассу</types>
+    <types>DocumentObject.ИнвентаризацияЗапасов</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ОбсужденияСервер.ОбсужденияПриЗаписи</handler>
+</mdclass:EventSubscription>

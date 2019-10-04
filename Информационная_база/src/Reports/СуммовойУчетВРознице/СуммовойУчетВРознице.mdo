@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f875d30c-260c-4f68-aa9b-974c3455218b">
+  <producedTypes>
+    <objectType typeId="60890a86-5f6c-4f40-97da-3c6bc314bf9b" valueTypeId="d7dcc630-180c-44f5-843f-b8301a197022"/>
+    <managerType typeId="fcb42242-5da1-41b5-b200-b86f5b4b2ec9" valueTypeId="00aaaa93-760e-48ac-a01b-d2443e9db885"/>
+  </producedTypes>
+  <name>СуммовойУчетВРознице</name>
+  <synonym>
+    <key>ru</key>
+    <value>Розничные продажи (суммовой учет)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.СуммовойУчетВРознице.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="c396ada5-f3b1-456b-bc66-ea06f3d49c67">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="160613f2-b299-4c19-9c8e-1ce1cfe5f3a3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a6b88f88-be37-489c-b2ee-4348b984a876">
+    <name>ОбразецОстаткиВВалюте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец остатки в валюте</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="ed576558-f885-4b1c-b8cc-a3b3c34f6314">
+    <name>ОбразецОстатки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец остатки</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="8f152c1f-5cc4-4335-9d96-f94de868c437">
+    <name>ОбразецВедомостьВВалюте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ведомость в валюте</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="aee7d8e4-3c3a-440b-9949-6cfbcc54fa50">
+    <name>ОбразецВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ведомость</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

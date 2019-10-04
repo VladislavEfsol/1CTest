@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e3114715-1c26-4821-a7b8-6b5bc6ad1ce3">
+  <producedTypes>
+    <selectionType typeId="bbabcf46-a9f4-439b-9761-462246f9f5b9" valueTypeId="efbcfeb6-731e-42fc-9180-156502c5ca8b"/>
+    <listType typeId="28ddca5d-5c47-44d5-b6b2-564f421823ef" valueTypeId="a0feaa9a-4519-4c81-a948-2bdef81699ad"/>
+    <managerType typeId="5a1dabd4-4025-4f43-aed9-d4ba14bf075d" valueTypeId="4b6ffd01-92ad-4ea1-a246-955a3289df21"/>
+    <recordSetType typeId="898d6fbb-304f-4ce6-b5ce-bc68367ffa69" valueTypeId="71c2de14-e393-459b-9fff-dad2eff21997"/>
+    <recordKeyType typeId="caf921e8-3cf4-430d-bfdb-5adfddc98685" valueTypeId="db690310-9a51-467b-b4d9-3bf991faf95d"/>
+    <recordType typeId="c7620259-e536-4855-9fbe-9928fbf5b584" valueTypeId="a67dee59-6acd-4d2b-89ff-b80000366e22"/>
+    <recordManagerType typeId="6d38fade-9428-4bd8-b63e-a14ecd3bc7fe" valueTypeId="672c8491-b212-4964-9d83-d57aaeb0cb03"/>
+  </producedTypes>
+  <name>СеансовыеДанныеGoogle</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сеансовые данные Google</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5f61c882-dd43-432e-8c82-ce44a0e430ac">
+    <name>access_token</name>
+    <synonym>
+      <key>ru</key>
+      <value>Access token</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1040712d-0f57-420c-b5d5-58d751897d0e">
+    <name>token_type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Token type</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="0dc24e74-65e8-4d8f-b387-243bcf1c8266">
+    <name>refresh_token</name>
+    <synonym>
+      <key>ru</key>
+      <value>Refresh token</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="24296912-4e3d-4890-8781-a24cf336433e">
+    <name>disabled</name>
+    <synonym>
+      <key>ru</key>
+      <value>Disabled</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="348a2633-2e5e-440d-842b-c805d47b32dd">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="73be59a7-9273-417b-a37e-ef1168ee38b7">
+    <name>ОбластьДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область доступа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ОбластиДоступаGoogle</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2aa8efa6-f7d7-4d1d-bc81-35615987475f">
+    <name>УчетнаяЗаписьЭлектроннойПочты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись электронной почты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7b45fa9d-4a14-4431-b33f-fe9a37cea0f0">
+    <name>ЗапросТокена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос токена</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0f751f7d-138b-43e0-88e4-6ee01b9cb7cd">
+    <name>УчетнаяЗаписьGmail</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись Gmail</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="7ad09eef-0f6b-4c0e-ba81-c054ac5e80d1">
+    <name>client_secret_json</name>
+    <synonym>
+      <key>ru</key>
+      <value>Client secret json</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

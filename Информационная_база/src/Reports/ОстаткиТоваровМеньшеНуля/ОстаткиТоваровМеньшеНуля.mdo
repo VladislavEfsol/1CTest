@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c1e3bca-a757-46f8-a141-06492395c35c">
+  <producedTypes>
+    <objectType typeId="854f6d3f-30b0-4fe4-9064-232701abe93c" valueTypeId="dd9a0539-595d-40a1-a80d-32a3f9a54937"/>
+    <managerType typeId="e61917eb-568b-42b9-95d9-0b911279b532" valueTypeId="f1b7e7a4-2d95-4459-b806-630842c84d31"/>
+  </producedTypes>
+  <name>ОстаткиТоваровМеньшеНуля</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки товаров &lt; нуля</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ОстаткиТоваровМеньшеНуля.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="1c013ac3-f126-44de-b098-b301a61fd6cc">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="d0c0a42a-2eb8-4b2a-93d0-4b79bf6b5e93">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="2f9e6734-dd25-4a6d-a840-26bebf74e654">
+    <name>ОбразецОстаткиТоваровМеньшеНуля</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец остатки товаров меньше нуля</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

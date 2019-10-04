@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a58426b0-fd71-42dd-b0ea-0428abab588a">
+  <producedTypes>
+    <selectionType typeId="f3382e65-eda1-4b30-9ca2-7a4920dacf0c" valueTypeId="792f883f-6364-40db-b8b3-397cbd78fd51"/>
+    <listType typeId="c66a024f-3f6f-4df3-95cb-60d087c1ee7b" valueTypeId="d18ac9f6-6e90-4d06-b51c-6947f0435b7f"/>
+    <managerType typeId="068c7247-8502-4a85-93c8-b5cc67a0be15" valueTypeId="c49c5be3-f729-4a04-818a-a8309e0285d9"/>
+  </producedTypes>
+  <name>СкладскиеАкты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Складские акты</value>
+  </synonym>
+  <defaultForm>DocumentJournal.СкладскиеАкты.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.СписаниеЗапасов</registeredDocuments>
+  <registeredDocuments>Document.ОприходованиеЗапасов</registeredDocuments>
+  <registeredDocuments>Document.ИнвентаризацияЗапасов</registeredDocuments>
+  <registeredDocuments>Document.ПересортицаЗапасов</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="55342c22-950c-49f3-8f12-aaaffea8aacf">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.СписаниеЗапасов.Attribute.Организация</references>
+    <references>Document.ОприходованиеЗапасов.Attribute.Организация</references>
+    <references>Document.ИнвентаризацияЗапасов.Attribute.Организация</references>
+    <references>Document.ПересортицаЗапасов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="8da59a46-7ec5-47ee-a993-006d87791f5e">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.СписаниеЗапасов.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.ОприходованиеЗапасов.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.ИнвентаризацияЗапасов.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.ПересортицаЗапасов.Attribute.СтруктурнаяЕдиница</references>
+  </columns>
+  <columns uuid="ce5788ab-2911-4225-83fc-93e585d76ccc">
+    <name>Ячейка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ячейка</value>
+    </synonym>
+    <references>Document.СписаниеЗапасов.Attribute.Ячейка</references>
+    <references>Document.ОприходованиеЗапасов.Attribute.Ячейка</references>
+    <references>Document.ИнвентаризацияЗапасов.Attribute.Ячейка</references>
+    <references>Document.ПересортицаЗапасов.Attribute.Ячейка</references>
+  </columns>
+  <columns uuid="0aa7a038-3e16-4a4d-ae3e-b472fa93929b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.СписаниеЗапасов.Attribute.Комментарий</references>
+    <references>Document.ОприходованиеЗапасов.Attribute.Комментарий</references>
+    <references>Document.ИнвентаризацияЗапасов.Attribute.Комментарий</references>
+    <references>Document.ПересортицаЗапасов.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="66efa308-5104-4cf5-9494-2bf1c43d5b58">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ОприходованиеЗапасов.Attribute.Автор</references>
+    <references>Document.СписаниеЗапасов.Attribute.Автор</references>
+    <references>Document.ИнвентаризацияЗапасов.Attribute.Автор</references>
+    <references>Document.ПересортицаЗапасов.Attribute.Автор</references>
+  </columns>
+  <forms uuid="2425ab68-f3b8-4304-b8ec-f2faeb7c84f3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

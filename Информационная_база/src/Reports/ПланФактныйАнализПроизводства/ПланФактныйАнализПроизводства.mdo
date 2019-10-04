@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="835ec9a5-8e45-48b4-87c7-b02cf3378663">
+  <producedTypes>
+    <objectType typeId="1799e32d-783d-4e06-833a-38f218519479" valueTypeId="84286733-ed7e-4170-a0a2-e75f13f8bb4a"/>
+    <managerType typeId="f8e5a9bd-8429-412a-83a6-a0667e2af807" valueTypeId="7ae15abf-b8ee-4e12-92cf-ab00f9876b6b"/>
+  </producedTypes>
+  <name>ПланФактныйАнализПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>План-фактный анализ производства</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ПланФактныйАнализПроизводства.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="262e1b9b-988e-47f5-b381-18af6017f515">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="b964ce53-ecfb-4d77-a112-35c8b17fbfcc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="3e65a13d-43b6-46c5-a55b-4979635f1dc7">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

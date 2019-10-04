@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f791605b-c96f-4080-8648-d67e72636eb5">
+  <producedTypes>
+    <objectType typeId="554eb0da-377b-4556-9c88-2b85965162ac" valueTypeId="6d7c9899-ea2d-4a76-8325-eebc0181c0d0"/>
+    <managerType typeId="f21e54b6-6c93-4f03-a36d-8d3c920d538a" valueTypeId="a35ab3d7-2b0a-4e60-96c0-ec7c239f9bcb"/>
+  </producedTypes>
+  <name>ФинансовыйРезультат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Финансовый результат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ФинансовыйРезультат.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="08ef8494-9067-4fdb-890b-82486eb2ef0c">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="e3140fc8-1688-4640-a68a-e0f7675c68e9">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="7568cdcd-0c79-428e-9e26-eb7bd540c2a2">
+    <name>ОбразецВедомость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ведомость</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

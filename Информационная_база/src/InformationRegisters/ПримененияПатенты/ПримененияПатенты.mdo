@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3826e81d-dd45-44b0-9df9-77eab962bb38">
+  <producedTypes>
+    <selectionType typeId="60237b98-a4cd-4f97-a194-ea129b7de948" valueTypeId="50b4dd6f-dcd4-412e-8e80-115250d0e8e9"/>
+    <listType typeId="19e86703-e860-4f7f-806c-b5a6cc91506c" valueTypeId="7d5fb23e-0501-4ef3-88f1-1579f2f2072f"/>
+    <managerType typeId="500b1247-2b0d-4a66-8c34-12e282765af2" valueTypeId="8641eace-bee7-4be5-8e10-bf16aba735f3"/>
+    <recordSetType typeId="aa423510-123b-4389-9222-9e5e8a3db901" valueTypeId="19763ca8-bfe5-4d44-9c11-52f1c7224e15"/>
+    <recordKeyType typeId="d0c7ddd3-6c11-4839-8e72-4b1e5fd13472" valueTypeId="56fc90ec-6c29-40ad-baef-5edbfaaa616c"/>
+    <recordType typeId="66678cd8-e8f7-4ac5-8133-98e3e75f3a9e" valueTypeId="201507fe-5d75-48f0-b01d-f2f042f5dd14"/>
+    <recordManagerType typeId="7e90556a-cfca-40a4-8eb3-953f81b045a3" valueTypeId="72879156-e14a-48fd-b160-f3de22d4866c"/>
+  </producedTypes>
+  <name>ПримененияПатенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Применения патентов по складам</value>
+  </synonym>
+  <defaultRecordForm>InformationRegister.ПримененияПатенты.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПримененияПатенты.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Применение паентов</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Применения патентов</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Определяет применение патентов при розничной продаже товаров от имени конкретной организации.</value>
+  </explanation>
+  <resources uuid="6642a123-a446-4f7b-b378-323a65be68ec">
+    <name>РозничнаяТорговляОблагаетсяПатентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Розничная торговля облагается патентом</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="801e491d-01b0-481a-8545-7f246483488b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, для которой определяется применение ЕНВД</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e8988d9a-6c7c-4218-b898-7b5877a0180b">
+    <name>СтруктурнаяЕдиница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктурныеЕдиницы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Складская территория (магазин) для которой определяется применение ЕНВД</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипСтруктурнойЕдиницы</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыСтруктурныхЕдиниц.EnumValue.Розница</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыСтруктурныхЕдиниц.EnumValue.РозницаСуммовойУчет</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыСтруктурныхЕдиниц.EnumValue.Склад</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7df3bc0f-ffb0-49e8-8d72-33558a1afcdc">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c7802d27-e117-4b07-b9ae-0b3ea26cee15">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

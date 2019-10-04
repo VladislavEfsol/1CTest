@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f3f6bf8-da88-436a-819e-35aa810c487e">
+  <producedTypes>
+    <selectionType typeId="f9355c9a-500c-4da8-9437-8691294a3bd8" valueTypeId="770694fa-ed8f-47bb-8cf8-6d9c7d690277"/>
+    <listType typeId="6f391b96-fdf2-4b62-a688-1cd95754e8c5" valueTypeId="7ee74fea-51c8-43f7-9f9d-5c209fba3c5c"/>
+    <managerType typeId="4cbb8839-90c6-4e65-bde4-8282e08b27d1" valueTypeId="4375d2e9-067c-46f9-a0a3-1ee06c013a15"/>
+    <recordSetType typeId="97afd77e-4113-45c2-a28e-3ee7bd51fb44" valueTypeId="e166ce6b-1c58-4d46-9bc0-64faff027352"/>
+    <recordKeyType typeId="3b20ccf2-296c-4af1-b310-4b2653b7b0ed" valueTypeId="363de417-94a9-4b8e-a2ca-dee9ebcb47e4"/>
+    <recordType typeId="a479c203-1de3-44a9-a31e-115698cdeed3" valueTypeId="6c4748f9-5407-4bd4-82d1-b214bac8deb6"/>
+    <recordManagerType typeId="e4aec277-e808-4f76-b6ec-dddd48d2cd4c" valueTypeId="f55e091a-1bcf-4c61-9584-3d80d01ca1ee"/>
+  </producedTypes>
+  <name>СоответствияОбъектовСайта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия объектов сайта</value>
+  </synonym>
+  <defaultListForm>InformationRegister.СоответствияОбъектовСайта.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Используется для хранения информации сопоставления объектов этой информационной базы с объектами сайта.</value>
+  </explanation>
+  <resources uuid="b1b61268-41a7-4d85-a9a2-96c27c6a4457">
+    <name>ОбъектВыгружен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект выгружен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b7c3db6f-b23d-4172-abee-2a43bf0cb0bd">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="26eaebf0-87d0-49c9-9e59-4db96606ec15">
+    <name>ДополнительныеПараметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные параметры</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="aa397765-3c61-49ca-b1c7-da41a429fc8f">
+    <name>УзелИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Узел информационной базы</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef.ОбменУправлениеНебольшойФирмойСайт</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Узел плана обмена, в разрезе которого хранится информация сопоставления объектов.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="64902b44-14a1-4874-8244-37dac4071e18">
+    <name>УникальныйИдентификаторСайта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор сайта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор объекта, полученный от сайта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b59d6f67-9f3c-4830-a176-6af945b09466">
+    <name>УникальныйИдентификаторИнформационнойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор информационной базы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Строка уникального идентификатора объекта ссылочного типа этой информационной базы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f0a995b-ee00-4546-b860-2c41815a0e72">
+    <name>СсылкаНаОбъект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка на объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗначенияСвойствОбъектов</types>
+      <types>CatalogRef.ВидыЦен</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      <types>CatalogRef.НаборыДополнительныхРеквизитовИСведений</types>
+      <types>CatalogRef.КатегорииНоменклатуры</types>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ff983c26-880c-4167-8ae0-c2a2798c29c9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураНабора</dataPath>
+			<field>НоменклатураНабора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ячейка</dataPath>
+			<field>Ячейка</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика состава</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаНабора</dataPath>
+			<field>ХарактеристикаНабора</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура состава</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Номенклатура.Ссылка КАК Номенклатура,
+	ХарактеристикиНоменклатуры.Ссылка КАК Характеристика
+ПОМЕСТИТЬ НаборыИХарактеристики
+ИЗ
+	Справочник.Номенклатура КАК Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ХарактеристикиНоменклатуры КАК ХарактеристикиНоменклатуры
+		ПО (Номенклатура.Ссылка = ХарактеристикиНоменклатуры.Владелец
+				ИЛИ Номенклатура.КатегорияНоменклатуры = ХарактеристикиНоменклатуры.Владелец)
+ГДЕ
+	Номенклатура.ЭтоНабор
+	И НЕ Номенклатура.ПометкаУдаления
+{ГДЕ
+	Номенклатура.Ссылка.* КАК НоменклатураНабора,
+	ХарактеристикиНоменклатуры.Ссылка.* КАК ХарактеристикаНабора}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Номенклатура.Ссылка,
+	ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+ИЗ
+	Справочник.Номенклатура КАК Номенклатура
+ГДЕ
+	НЕ Номенклатура.ПометкаУдаления
+	И Номенклатура.ЭтоНабор
+{ГДЕ
+	Номенклатура.Ссылка.* КАК НоменклатураНабора}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НаборыИХарактеристики.Номенклатура КАК НоменклатураНабора,
+	НаборыИХарактеристики.Характеристика КАК ХарактеристикаНабора,
+	СоставНаборов.Номенклатура КАК Номенклатура,
+	СоставНаборов.Характеристика КАК Характеристика,
+	СУММА(СоставНаборов.Количество * ВЫБОР
+			КОГДА СоставНаборов.ЕдиницаИзмерения ССЫЛКА Справочник.ЕдиницыИзмерения
+				ТОГДА СоставНаборов.ЕдиницаИзмерения.Коэффициент
+			ИНАЧЕ 1
+		КОНЕЦ) КАК Количество
+ПОМЕСТИТЬ СоставНабора
+ИЗ
+	НаборыИХарактеристики КАК НаборыИХарактеристики
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставНаборов КАК СоставНаборов
+		ПО НаборыИХарактеристики.Номенклатура = СоставНаборов.НоменклатураНабора
+			И (НаборыИХарактеристики.Характеристика = СоставНаборов.ХарактеристикаНабора
+					И НЕ СоставНаборов.Общий
+				ИЛИ НаборыИХарактеристики.Характеристика &lt;&gt; ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+					И СоставНаборов.Общий)
+
+СГРУППИРОВАТЬ ПО
+	НаборыИХарактеристики.Номенклатура,
+	НаборыИХарактеристики.Характеристика,
+	СоставНаборов.Номенклатура,
+	СоставНаборов.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СоставНабора.НоменклатураНабора КАК НоменклатураНабора,
+	СоставНабора.ХарактеристикаНабора КАК ХарактеристикаНабора,
+	СоставНабора.Номенклатура КАК Номенклатура,
+	СоставНабора.Характеристика КАК Характеристика,
+	СоставНабора.Количество КАК Количество,
+	ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница
+ПОМЕСТИТЬ СоставНабораИСтруктурныеЕдиницы
+ИЗ
+	СоставНабора КАК СоставНабора,
+	РегистрНакопления.ЗапасыНаСкладах.Остатки(
+			,
+			(Номенклатура, Характеристика) В
+				(ВЫБРАТЬ
+					СоставНабора.Номенклатура КАК Номенклатура,
+					СоставНабора.Характеристика КАК Характеристика
+				ИЗ
+					СоставНабора КАК СоставНабора)) КАК ЗапасыНаСкладахОстатки
+{ГДЕ
+	ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница.*}
+
+СГРУППИРОВАТЬ ПО
+	СоставНабора.НоменклатураНабора,
+	СоставНабора.ХарактеристикаНабора,
+	СоставНабора.Номенклатура,
+	СоставНабора.Характеристика,
+	СоставНабора.Количество,
+	ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СоставНаборов.НоменклатураНабора,
+	СоставНаборов.ХарактеристикаНабора,
+	СоставНаборов.Номенклатура,
+	СоставНаборов.Характеристика,
+	СоставНаборов.Количество,
+	ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка)
+ИЗ
+	СоставНабора КАК СоставНаборов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НаборыИСтруктурныеЕдиницы.НоменклатураНабора КАК НоменклатураНабора,
+	НаборыИСтруктурныеЕдиницы.ХарактеристикаНабора КАК ХарактеристикаНабора,
+	НаборыИСтруктурныеЕдиницы.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница,
+	ВЫРАЗИТЬ((ВЫРАЗИТЬ(ВЫБОР
+				КОГДА НаборыИСтруктурныеЕдиницы.Количество = 0
+					ТОГДА 0
+				ИНАЧЕ ЕСТЬNULL(СУММА(ЗапасыНаСкладахОстатки.КоличествоОстаток), 0) / НаборыИСтруктурныеЕдиницы.Количество
+			КОНЕЦ КАК ЧИСЛО(15, 3))) - 0.4999 КАК ЧИСЛО(15, 0)) КАК Количество,
+	НаборыИСтруктурныеЕдиницы.Номенклатура КАК Номенклатура,
+	НаборыИСтруктурныеЕдиницы.Характеристика КАК Характеристика
+ПОМЕСТИТЬ ОстаткиСоставляющих
+ИЗ
+	СоставНабораИСтруктурныеЕдиницы КАК НаборыИСтруктурныеЕдиницы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ЗапасыНаСкладах.Остатки КАК ЗапасыНаСкладахОстатки
+		ПО НаборыИСтруктурныеЕдиницы.Номенклатура = ЗапасыНаСкладахОстатки.Номенклатура
+			И НаборыИСтруктурныеЕдиницы.Характеристика = ЗапасыНаСкладахОстатки.Характеристика
+			И (НаборыИСтруктурныеЕдиницы.СтруктурнаяЕдиница = ЗапасыНаСкладахОстатки.СтруктурнаяЕдиница
+				ИЛИ НаборыИСтруктурныеЕдиницы.СтруктурнаяЕдиница = ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка))
+
+СГРУППИРОВАТЬ ПО
+	НаборыИСтруктурныеЕдиницы.НоменклатураНабора,
+	НаборыИСтруктурныеЕдиницы.ХарактеристикаНабора,
+	НаборыИСтруктурныеЕдиницы.СтруктурнаяЕдиница,
+	НаборыИСтруктурныеЕдиницы.Номенклатура,
+	НаборыИСтруктурныеЕдиницы.Характеристика,
+	НаборыИСтруктурныеЕдиницы.Количество
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОстаткиСоставляющих.НоменклатураНабора КАК НоменклатураНабора,
+	ОстаткиСоставляющих.ХарактеристикаНабора КАК ХарактеристикаНабора,
+	ОстаткиСоставляющих.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница
+ПОМЕСТИТЬ ВыводимыеДанные
+ИЗ
+	ОстаткиСоставляющих КАК ОстаткиСоставляющих
+
+СГРУППИРОВАТЬ ПО
+	ОстаткиСоставляющих.НоменклатураНабора,
+	ОстаткиСоставляющих.ХарактеристикаНабора,
+	ОстаткиСоставляющих.СтруктурнаяЕдиница
+
+ИМЕЮЩИЕ
+	МИНИМУМ(ОстаткиСоставляющих.Количество) &lt;&gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОстаткиСоставляющих.НоменклатураНабора КАК НоменклатураНабора,
+	ОстаткиСоставляющих.ХарактеристикаНабора КАК ХарактеристикаНабора,
+	ОстаткиСоставляющих.СтруктурнаяЕдиница КАК СтруктурнаяЕдиница,
+	ОстаткиСоставляющих.Количество КАК Количество,
+	ОстаткиСоставляющих.Номенклатура КАК Номенклатура,
+	ОстаткиСоставляющих.Характеристика КАК Характеристика
+ИЗ
+	ОстаткиСоставляющих КАК ОстаткиСоставляющих
+ГДЕ
+	(ОстаткиСоставляющих.НоменклатураНабора, ОстаткиСоставляющих.ХарактеристикаНабора, ОстаткиСоставляющих.СтруктурнаяЕдиница) В
+			(ВЫБРАТЬ
+				ВыводимыеДанные.НоменклатураНабора,
+				ВыводимыеДанные.ХарактеристикаНабора,
+				ВыводимыеДанные.СтруктурнаяЕдиница
+			ИЗ
+				ВыводимыеДанные)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("ВЫБОР КОГДА СтруктурнаяЕдиница=ЗНАЧЕНИЕ(Справочник.СтруктурныеЕдиницы.ПустаяСсылка) ТОГДА Минимум(Количество) ИНАЧЕ 0 КОНЕЦ", "СтруктурнаяЕдиница,ХарактеристикаНабора"))</expression>
+		<group>НоменклатураНабора</group>
+		<group>НоменклатураНабора Иерархия</group>
+		<group>ХарактеристикаНабора</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Минимум(Количество)", "СтруктурнаяЕдиница,ХарактеристикаНабора"))</expression>
+		<group>СтруктурнаяЕдиница</group>
+		<group>СтруктурнаяЕдиница Иерархия</group>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Остатки наборов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">НоменклатураНабора</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтруктурнаяЕдиница</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>НоменклатураНабора</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:field>ХарактеристикаНабора</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>СтруктурнаяЕдиница</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СтруктурнаяЕдиница</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СтруктурныеЕдиницы.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Все склады&gt;</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ХарактеристикаНабора</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ХарактеристикаНабора</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Без характеристик&gt;</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НоменклатураНабора</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ХарактеристикаНабора</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>СтруктурнаяЕдиница</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

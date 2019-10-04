@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a7070c4-e8fd-4e16-88cb-801760b9e6de">
+  <producedTypes>
+    <objectType typeId="d202984a-5b3d-401f-84a1-377294b632a8" valueTypeId="d5023165-0969-4b62-8744-8ae6cde1ee9c"/>
+    <managerType typeId="68fd6a4a-75a2-4f8e-b0a8-89bd517f1b38" valueTypeId="232ad88c-5437-4763-b6b8-e3bb8f9b5eaf"/>
+  </producedTypes>
+  <name>ЗакрытиеМесяца</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие месяца</value>
+  </synonym>
+  <defaultForm>DataProcessor.ЗакрытиеМесяца.Form.Форма</defaultForm>
+  <attributes uuid="515805fd-7b1f-4f20-88f4-7d13e674d78d">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b39c21ed-1247-4d53-8e77-c199bbd91417">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="19b2df71-965b-42e1-867e-e57be3bf0882">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8c4b2979-9fbf-4491-b117-beb7b7050b31">
+    <name>ПереноситьДатуЗапретаРедактирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переносить дату запрета редактирования</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="314d8478-00f3-441d-9a28-44b7935c82c2">
+    <name>ДатыЗапретаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Даты запрета изменения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="03f66d61-b9c1-48cc-b11e-5ce3b89a9167">
+    <name>ОткрытьЗакрытиеМесяца</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрытие месяца</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+  <commands uuid="a475bf07-e699-45cd-ad52-ba68b9c9da2c">
+    <name>ОткрытьДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType/>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

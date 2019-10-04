@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c22e14f3-f843-4584-b89a-39bdd60e5ca5">
+  <producedTypes>
+    <selectionType typeId="c6acc848-aff4-41f6-8bf4-5a9e93f86a91" valueTypeId="389d65b4-a738-4040-8f7f-304721168e7b"/>
+    <listType typeId="d0cf05d2-ec0c-42e5-94f3-3e129c78c3a9" valueTypeId="14ac1aaa-34cd-4993-82d7-31bd86deaf89"/>
+    <managerType typeId="e303d628-a08b-4c67-81a1-c88284b67e3c" valueTypeId="2e48ac58-e448-4250-8903-c9c6029d7dee"/>
+    <recordSetType typeId="a06d0823-d3ef-4f5c-85d7-0dca54dd59a3" valueTypeId="940d40eb-bf07-439c-85c1-17133d335809"/>
+    <recordKeyType typeId="348899be-8b2e-4f1d-b29b-5b3303b37011" valueTypeId="d28fd093-8632-4345-b660-2d61294f8f50"/>
+    <recordType typeId="38924253-fd64-4be5-bd7d-fda89abc99f1" valueTypeId="031f80e1-066b-4432-817a-0c63a7e58c99"/>
+    <recordManagerType typeId="753919fe-da55-4eb6-8caf-4009bfdf792f" valueTypeId="c5c574d7-8fe5-4be0-a3be-cd38decd2efa"/>
+  </producedTypes>
+  <name>ЯндексДоставка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Яндекс.Доставка</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3e678c55-7fa4-4a54-b161-ce038f33aa7d">
+    <name>ИдентификаторЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="bc722be3-5765-4bc9-aa96-e3989bdc0d00">
+    <name>НомерЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="80a1bfde-6e38-4e23-a0f3-e2de8b28ab77">
+    <name>ИдентификаторОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор отгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="f6b58f66-4f26-46bb-a4b0-18818fd0e055">
+    <name>СпособОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отгрузки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыОтгрузки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9e0b7793-0f77-4b7b-bda0-4ecfa0a71d4a">
+    <name>СкладСлужбыДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад службы доставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СкладыСлужбДоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b0e33876-5b17-4115-ad6a-49f9f5a141b1">
+    <name>ИнтервалДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал доставки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИнтервалыДоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a654020-fb99-4646-a08c-e81461eb8f30">
+    <name>ДатаОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отгрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="72e0fa5a-6090-43df-997d-96db1e785bbb">
+    <name>Оформлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оформлен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ff755410-8433-4780-b183-6270a1c38d7f">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыЯндексДоставки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e86833ae-1349-487a-a08e-e1147f907d04">
+    <name>ИзмененЛокально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменен локально</value>
+    </synonym>
+    <comment>Время локального изменения, UTC</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b0daa2fb-f650-46c6-bacf-b51b7d49e9c6">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказПокупателя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="401354ff-73be-46ee-a094-a6cdb4b77520">
+    <name>ПередатьЗаказы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Передать заказы в Яндекс.Доставку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

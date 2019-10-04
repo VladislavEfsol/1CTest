@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c48c0789-a798-41f5-9d4d-a6f594cd5e85">
+  <producedTypes>
+    <objectType typeId="b6382359-d0f3-441d-8b80-c0a424f38e3b" valueTypeId="d685d58b-26a4-4f1e-9698-a23a494473a3"/>
+    <managerType typeId="4ecb4b46-4bb7-4590-9934-ab7085d34c77" valueTypeId="504c25a7-cd73-45b6-8156-16d9a35e6ab9"/>
+  </producedTypes>
+  <name>ПлатежныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Платежный календарь</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПлатежныйКалендарь.Form.Форма</defaultForm>
+  <mainDataCompositionSchema>Report.ПлатежныйКалендарь.Template.СКД_ПлатежныйКалендарь</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <attributes uuid="f5c48921-1cc4-4609-a5cd-e0c97aa5f1ab">
+    <name>ОтображатьОрганизацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="98b379eb-7092-4d45-8fc3-4fde58cbb05a">
+    <name>ОтображатьСтатью</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7950c772-5e10-47eb-8206-3ae71d8300ef">
+    <name>ОтображатьСчетКассу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет / Касса</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7637fd8a-73f8-4bb4-83da-0f7a659d0f5b">
+    <name>ОтображатьТипДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип денежных средств</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9f2d11e1-74ba-4e82-97a5-6fb11fe3df2e">
+    <name>ПериодПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период планирования</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f1bd05a4-89ca-48d2-8d40-dfd77598d508">
+    <name>ВидДиаграммы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид диаграммы</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВариантыДиаграммыПлатежныйКалендарь</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1cbfb367-b03d-4444-9f7b-86e8c9780845">
+    <name>ВариантПересчетаСумм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант пересчета сумм</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ПлатежныйКалендарьВариантыПересчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9440b62f-ee8d-46ce-81bb-65510278a6de">
+    <name>ПланироватьПоДням</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планировать по дням</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bd923dfe-bce4-4016-8412-75529d39cd3f">
+    <name>РазвернутьДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Развернуть до</value>
+    </synonym>
+    <type>
+      <types>EnumRef.АналитикаПлатежногоКалендаря</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="98749bdb-bd6a-433a-b469-5fc06014f3c3">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="6c67719b-571f-470d-b48b-4370c42372f0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="18fdc943-d7e8-4b11-9ff4-09647f4f16b9">
+    <name>ФормаВыбораСчетаКассы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора счета кассы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b3566d69-30b7-4475-babc-7e6834fcfefe">
+    <name>СКД_ПлатежныйКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД платежный календарь</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c665b2b1-59f4-47b1-9481-d256bccd73c9">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="8a85690e-1dec-482c-8fbf-9c72ec66ec01">
+    <name>ПлатежныйКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платежный календарь</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Report>

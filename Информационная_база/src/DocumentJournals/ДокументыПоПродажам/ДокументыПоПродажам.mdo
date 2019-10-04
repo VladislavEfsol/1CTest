@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65d4ed5d-f8b5-4d6c-b917-0e1d168b387d">
+  <producedTypes>
+    <selectionType typeId="330dddec-1d6c-46a1-ac34-3d01fbe9c6b4" valueTypeId="0e1f0a34-5f10-4c44-b973-1bcadb49dee3"/>
+    <listType typeId="94f0e157-359c-4d51-b782-479f851bfa85" valueTypeId="d0cfdc8c-d193-4e0a-b43e-567e592cfd59"/>
+    <managerType typeId="685ab0f2-9291-49a5-8381-bee9e18217e6" valueTypeId="77621bff-a9a2-4ec4-b5d3-9e3c166e771d"/>
+  </producedTypes>
+  <name>ДокументыПоПродажам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по продажам</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоПродажам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РасходнаяНакладная</registeredDocuments>
+  <registeredDocuments>Document.АктВыполненныхРабот</registeredDocuments>
+  <registeredDocuments>Document.ЗаказПокупателя</registeredDocuments>
+  <registeredDocuments>Document.СчетНаОплату</registeredDocuments>
+  <registeredDocuments>Document.СчетФактура</registeredDocuments>
+  <registeredDocuments>Document.КорректировкаРеализации</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пометка удаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="3e03795b-9f9a-4ef9-a34f-11facde34690">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.Организация</references>
+    <references>Document.СчетФактура.Attribute.Организация</references>
+    <references>Document.СчетНаОплату.Attribute.Организация</references>
+    <references>Document.АктВыполненныхРабот.Attribute.Организация</references>
+    <references>Document.ЗаказПокупателя.Attribute.Организация</references>
+    <references>Document.КорректировкаРеализации.Attribute.Организация</references>
+  </columns>
+  <columns uuid="3e7cc417-5841-4e1e-bb6a-60b05f07a022">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.ВидОперации</references>
+    <references>Document.СчетФактура.Attribute.ВидОперации</references>
+    <references>Document.ЗаказПокупателя.Attribute.ВидОперации</references>
+    <references>Document.КорректировкаРеализации.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="8938c2e0-b48f-484a-8aee-7a8f278743df">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.Контрагент</references>
+    <references>Document.СчетФактура.Attribute.Контрагент</references>
+    <references>Document.СчетНаОплату.Attribute.Контрагент</references>
+    <references>Document.АктВыполненныхРабот.Attribute.Контрагент</references>
+    <references>Document.ЗаказПокупателя.Attribute.Контрагент</references>
+    <references>Document.КорректировкаРеализации.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="0e8aca63-0ff4-4f3d-8a1f-7312b21fbf80">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.Договор</references>
+    <references>Document.СчетФактура.Attribute.Договор</references>
+    <references>Document.СчетНаОплату.Attribute.Договор</references>
+    <references>Document.АктВыполненныхРабот.Attribute.Договор</references>
+    <references>Document.ЗаказПокупателя.Attribute.Договор</references>
+    <references>Document.КорректировкаРеализации.Attribute.Договор</references>
+  </columns>
+  <columns uuid="94e4b6a3-eefb-466f-9244-bcbed82a0382">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.Подразделение</references>
+    <references>Document.СчетНаОплату.Attribute.Подразделение</references>
+    <references>Document.АктВыполненныхРабот.Attribute.Подразделение</references>
+    <references>Document.ЗаказПокупателя.Attribute.СтруктурнаяЕдиницаПродажи</references>
+    <references>Document.КорректировкаРеализации.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="75034c88-d68d-45d5-b2e8-847c163e3a57">
+    <name>НДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС</value>
+    </synonym>
+    <references>Document.СчетФактура.Attribute.СуммаНДСДокумента</references>
+  </columns>
+  <columns uuid="3badfc54-7675-4804-b14e-75d5783598b8">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.СуммаДокумента</references>
+    <references>Document.СчетФактура.Attribute.СуммаДокумента</references>
+    <references>Document.АктВыполненныхРабот.Attribute.СуммаДокумента</references>
+    <references>Document.ЗаказПокупателя.Attribute.СуммаДокумента</references>
+    <references>Document.СчетНаОплату.Attribute.СуммаДокумента</references>
+    <references>Document.КорректировкаРеализации.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="e10a5718-2a93-420d-9548-20444fa83522">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.ВалютаДокумента</references>
+    <references>Document.СчетФактура.Attribute.ВалютаДокумента</references>
+    <references>Document.СчетНаОплату.Attribute.ВалютаДокумента</references>
+    <references>Document.АктВыполненныхРабот.Attribute.ВалютаДокумента</references>
+    <references>Document.ЗаказПокупателя.Attribute.ВалютаДокумента</references>
+    <references>Document.КорректировкаРеализации.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="96cac112-c8f8-4c01-b553-3dca0db60f84">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.Комментарий</references>
+    <references>Document.СчетФактура.Attribute.Комментарий</references>
+    <references>Document.СчетНаОплату.Attribute.Комментарий</references>
+    <references>Document.АктВыполненныхРабот.Attribute.Комментарий</references>
+    <references>Document.ЗаказПокупателя.Attribute.Комментарий</references>
+    <references>Document.КорректировкаРеализации.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="6080e3d5-d2dd-4d7e-951f-0a364f6d08d7">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Автор</references>
+    <references>Document.ЗаказПокупателя.Attribute.Автор</references>
+    <references>Document.РасходнаяНакладная.Attribute.Автор</references>
+    <references>Document.СчетНаОплату.Attribute.Автор</references>
+    <references>Document.СчетФактура.Attribute.Автор</references>
+    <references>Document.КорректировкаРеализации.Attribute.Автор</references>
+  </columns>
+  <columns uuid="f43283f5-5280-4dca-acf3-b800174e76d7">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.АктВыполненныхРабот.Attribute.Ответственный</references>
+    <references>Document.ЗаказПокупателя.Attribute.Ответственный</references>
+    <references>Document.РасходнаяНакладная.Attribute.Ответственный</references>
+    <references>Document.СчетНаОплату.Attribute.Ответственный</references>
+    <references>Document.КорректировкаРеализации.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="b3786b68-015b-49d5-802c-98d7fa8c6726">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.РасходнаяНакладная.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.ЗаказПокупателя.Attribute.СтруктурнаяЕдиницаРезерв</references>
+    <references>Document.КорректировкаРеализации.Attribute.СтруктурнаяЕдиница</references>
+  </columns>
+  <forms uuid="8d7fbfc8-e1a7-40dd-a1aa-79d47b1d78e6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="a4241dbe-683b-4f92-8c76-64b0a136dd86">
+    <name>ОткрытьЖурналПродажРазделГлавное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажи</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DocumentJournal>

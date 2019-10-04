@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="039500ac-495c-41de-804e-913e07d19852">
+  <producedTypes>
+    <selectionType typeId="27a677ed-0abf-4083-a3d1-97a5119a7604" valueTypeId="f8a29cb6-62dd-40d8-90d2-9e590d78260c"/>
+    <listType typeId="ce4a512d-141b-4a39-8850-15784b705a2d" valueTypeId="5aa8eb9c-1548-42db-9a2f-40851ca24bd2"/>
+    <managerType typeId="bb626176-263e-4e49-b451-0cf76ec822f5" valueTypeId="608df4af-7a52-4f7b-a0eb-bd9f08d1c631"/>
+  </producedTypes>
+  <name>ДокументыПоЗакупкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по закупкам</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПоЗакупкам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПриходнаяНакладная</registeredDocuments>
+  <registeredDocuments>Document.ЗаказПоставщику</registeredDocuments>
+  <registeredDocuments>Document.ДополнительныеРасходы</registeredDocuments>
+  <registeredDocuments>Document.СчетФактураПолученный</registeredDocuments>
+  <registeredDocuments>Document.СчетНаОплатуПоставщика</registeredDocuments>
+  <registeredDocuments>Document.КорректировкаПоступления</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проведен</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проведения документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПометкаУдаления</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Пометка удаления документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="323cdd10-901c-4e37-930c-c40695e9e1a1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЗаказПоставщику.Attribute.Организация</references>
+    <references>Document.СчетФактураПолученный.Attribute.Организация</references>
+    <references>Document.ПриходнаяНакладная.Attribute.Организация</references>
+    <references>Document.ДополнительныеРасходы.Attribute.Организация</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.Организация</references>
+    <references>Document.КорректировкаПоступления.Attribute.Организация</references>
+  </columns>
+  <columns uuid="ac386ab7-ccf6-4cb2-af87-5ff4e9230560">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <references>Document.ЗаказПоставщику.Attribute.ВидОперации</references>
+    <references>Document.СчетФактураПолученный.Attribute.ВидОперации</references>
+    <references>Document.ПриходнаяНакладная.Attribute.ВидОперации</references>
+    <references>Document.КорректировкаПоступления.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="26788fcf-5a3d-453b-aab6-a4b053335e78">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ЗаказПоставщику.Attribute.Контрагент</references>
+    <references>Document.СчетФактураПолученный.Attribute.Контрагент</references>
+    <references>Document.ПриходнаяНакладная.Attribute.Контрагент</references>
+    <references>Document.ДополнительныеРасходы.Attribute.Контрагент</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.Контрагент</references>
+    <references>Document.КорректировкаПоступления.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="811373a4-18c7-4274-ac55-7de0acdf2137">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <references>Document.ЗаказПоставщику.Attribute.Договор</references>
+    <references>Document.СчетФактураПолученный.Attribute.Договор</references>
+    <references>Document.ПриходнаяНакладная.Attribute.Договор</references>
+    <references>Document.ДополнительныеРасходы.Attribute.Договор</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.Договор</references>
+    <references>Document.КорректировкаПоступления.Attribute.Договор</references>
+  </columns>
+  <columns uuid="f9996ee3-c7f1-4b38-8c8a-d33491973b9c">
+    <name>ЗаказПоставщику</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ поставщику</value>
+    </synonym>
+    <references>Document.ПриходнаяНакладная.Attribute.Заказ</references>
+    <references>Document.ДополнительныеРасходы.Attribute.ЗаказПоставщику</references>
+    <references>Document.КорректировкаПоступления.Attribute.Заказ</references>
+  </columns>
+  <columns uuid="9cd6031c-837c-4a95-a24e-90e2c04440c2">
+    <name>НДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС</value>
+    </synonym>
+    <references>Document.СчетФактураПолученный.Attribute.СуммаНДСДокумента</references>
+  </columns>
+  <columns uuid="4675907b-ddf8-462c-a817-44d42ff72dd1">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <references>Document.ЗаказПоставщику.Attribute.СуммаДокумента</references>
+    <references>Document.СчетФактураПолученный.Attribute.СуммаДокумента</references>
+    <references>Document.ПриходнаяНакладная.Attribute.СуммаДокумента</references>
+    <references>Document.ДополнительныеРасходы.Attribute.СуммаДокумента</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.СуммаДокумента</references>
+    <references>Document.КорректировкаПоступления.Attribute.СуммаДокумента</references>
+  </columns>
+  <columns uuid="f89d360a-df99-4d09-a690-cd36324d1963">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <references>Document.ЗаказПоставщику.Attribute.ВалютаДокумента</references>
+    <references>Document.СчетФактураПолученный.Attribute.ВалютаДокумента</references>
+    <references>Document.ПриходнаяНакладная.Attribute.ВалютаДокумента</references>
+    <references>Document.ДополнительныеРасходы.Attribute.ВалютаДокумента</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.ВалютаДокумента</references>
+    <references>Document.КорректировкаПоступления.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="85f1a8d5-2df0-4300-9574-a4414f339ed0">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ДополнительныеРасходы.Attribute.Ответственный</references>
+    <references>Document.ЗаказПоставщику.Attribute.Ответственный</references>
+    <references>Document.ПриходнаяНакладная.Attribute.Ответственный</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.Ответственный</references>
+    <references>Document.КорректировкаПоступления.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="a1b98556-d402-4839-b1a4-1ea058964e25">
+    <name>НомерВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ вх. документа</value>
+    </synonym>
+    <references>Document.ДополнительныеРасходы.Attribute.НомерВходящегоДокумента</references>
+    <references>Document.ЗаказПоставщику.Attribute.НомерВходящегоДокумента</references>
+    <references>Document.ПриходнаяНакладная.Attribute.НомерВходящегоДокумента</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.НомерВходящегоДокумента</references>
+    <references>Document.СчетФактураПолученный.Attribute.НомерПлатежноРасчетногоДокумента</references>
+    <references>Document.КорректировкаПоступления.Attribute.НомерВходящегоДокумента</references>
+  </columns>
+  <columns uuid="8e7e37c3-9995-432f-a81d-a1f6b8083d26">
+    <name>ДатаВходящегоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата вх. документа</value>
+    </synonym>
+    <references>Document.ДополнительныеРасходы.Attribute.ДатаВходящегоДокумента</references>
+    <references>Document.ЗаказПоставщику.Attribute.ДатаВходящегоДокумента</references>
+    <references>Document.ПриходнаяНакладная.Attribute.ДатаВходящегоДокумента</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.ДатаВходящегоДокумента</references>
+    <references>Document.СчетФактураПолученный.Attribute.ДатаПлатежноРасчетногоДокумента</references>
+    <references>Document.КорректировкаПоступления.Attribute.ДатаВходящегоДокумента</references>
+  </columns>
+  <columns uuid="58c0e0cd-ae6b-46c1-8f3c-97644284697d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <references>Document.ЗаказПоставщику.Attribute.Комментарий</references>
+    <references>Document.СчетФактураПолученный.Attribute.Комментарий</references>
+    <references>Document.ПриходнаяНакладная.Attribute.Комментарий</references>
+    <references>Document.ДополнительныеРасходы.Attribute.Комментарий</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.Комментарий</references>
+    <references>Document.КорректировкаПоступления.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="ba369f25-99ba-43a5-aec0-22af82927c93">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ДополнительныеРасходы.Attribute.Автор</references>
+    <references>Document.ЗаказПоставщику.Attribute.Автор</references>
+    <references>Document.ПриходнаяНакладная.Attribute.Автор</references>
+    <references>Document.СчетНаОплатуПоставщика.Attribute.Автор</references>
+    <references>Document.СчетФактураПолученный.Attribute.Автор</references>
+    <references>Document.КорректировкаПоступления.Attribute.Автор</references>
+  </columns>
+  <columns uuid="87171c6a-c976-4a8a-81cc-7f0df70a9bfb">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <references>Document.ПриходнаяНакладная.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.КорректировкаПоступления.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.ЗаказПоставщику.Attribute.СтруктурнаяЕдиницаРезерв</references>
+    <references>Document.ДополнительныеРасходы.Attribute.СтруктурнаяЕдиница</references>
+  </columns>
+  <forms uuid="dfd3f32d-343e-4c68-ad49-a390f899b3fb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2da44ba1-464a-4164-9db2-5f5cdd250e00">
+    <name>ОткрытьЖурналЗакупокРазделГлавное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закупки</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DocumentJournal>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9b93122-ce6f-4cf7-80cd-adbde4b5dc8c">
+  <producedTypes>
+    <objectType typeId="18a57960-e3f7-495b-b32d-2919c3aa7733" valueTypeId="1d88a1ec-0662-4ac7-8b46-8e1796b40563"/>
+    <managerType typeId="0a851ff3-1531-47a2-a382-5c981371ef49" valueTypeId="3c9d95ad-5190-4056-ae0b-641463f67751"/>
+  </producedTypes>
+  <name>РасчетыПоКредитамИЗаймам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчеты по кредитам и займам</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.РасчетыПоКредитамИЗаймам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="ef561a15-b3b9-46e2-bb6a-7fd634ddc4f0">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="0a45ad23-d304-4300-935a-c1c96951f3a3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="a1f43b87-4911-4a3c-9226-24fb4a14c93f">
+    <name>ОбразецКредитыПолученные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец кредиты полученные</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="6cbeff4a-edec-423f-bab9-41d0c2c015c7">
+    <name>ОбразецЗаймыСотрудникам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец займы сотрудникам</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

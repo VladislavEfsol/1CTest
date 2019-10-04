@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f18c2395-44a6-4ef7-b771-dfb4db3b7d1c">
+  <producedTypes>
+    <selectionType typeId="f23842cf-1345-4957-b0e4-33c6736584f6" valueTypeId="a7fb4fd9-0147-4e39-9149-61ac044e20ee"/>
+    <listType typeId="cc6473aa-986f-41b6-8182-eac87a034061" valueTypeId="3e98b9fd-95d6-4a0a-a19c-adc274e36403"/>
+    <managerType typeId="3d358a44-309a-4d1f-a41f-413a64f4bfca" valueTypeId="886c4043-8116-4e98-8537-191af01c8ee0"/>
+    <recordSetType typeId="ea3e7050-d396-435e-bd7b-857afcd2b118" valueTypeId="99fc1653-cfb3-427c-bd53-68ae37683871"/>
+    <recordKeyType typeId="7889f486-0a6b-4d42-a8a1-be9493b9c45e" valueTypeId="a7b960d1-bb22-4d95-a8b0-5444e294783b"/>
+    <recordType typeId="a6adb1b0-0590-4570-9af5-cd3665b1daf1" valueTypeId="929482d8-7cc6-43ea-9d64-b7c03333a033"/>
+    <recordManagerType typeId="8efa7272-5249-41fb-8b05-7208dda1b160" valueTypeId="95fd6dd8-9219-4bbf-aae0-cb99b810bd7c"/>
+  </producedTypes>
+  <name>НДФЛСоциальныеВычеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Социальные вычеты по НДФЛ</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НДФЛСоциальныеВычеты.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.НДФЛСоциальныеВычеты.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заявления</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Социальный вычет по НДФЛ</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Социальные вычеты по НДФЛ</value>
+  </listPresentation>
+  <resources uuid="54c64a47-10dd-4fa1-a4d0-e602781e2b5c">
+    <name>Применяется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применяется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+  </resources>
+  <resources uuid="440c319e-6556-4d46-b442-6a71b1c77207">
+    <name>СуммаРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма расходов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма предоставляемого имущественного вычета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b6628f41-891e-4b2d-bc05-07ad2499c7fb">
+    <name>КодИФНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ИФНС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <mask>9999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1d3e56a0-286b-4807-a648-caa761f8c1b3">
+    <name>НомерУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер уведомления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер уведомления по имущественному вычета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="1fb94009-4798-4403-85eb-786fdd6ad748">
+    <name>ДатаУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата уведомления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата уведомления о получении имущественного вычета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c0cabebc-8f5d-4196-abba-2f569ddbc082">
+    <name>Представление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имущественный вычет</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="1f98e60d-76f2-47c8-be58-0c6ac9597294">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, которому предоставляется вычет</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d4b9ba43-d631-4377-bbc3-c8e40652d8eb">
+    <name>КодВычета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вычет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВычетыНДФЛ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="807d2603-5dee-43db-ab26-8b13886871eb">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5c4bb45b-8600-482e-b0de-bf8a07e4cb41">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a67ed0b3-94eb-4671-86e2-652fc87cbeef">
+    <name>ФормаЗаполненияСоциальныхВычетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения социальных вычетов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

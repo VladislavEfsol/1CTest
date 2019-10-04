@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d17a0307-b7f4-4bab-8aa3-f60aa4ef8708">
+  <name>ЦенообразованиеДобавитьЗаписиОчередиЦен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ценообразование: Добавить записи очереди цен</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.ЦеныНоменклатуры</types>
+    <types>InformationRegisterRecordSet.ЦеныНоменклатурыКонтрагентов</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ЦенообразованиеСервер.ПодпискаНаСобытиеПриЗаписиЦены</handler>
+</mdclass:EventSubscription>

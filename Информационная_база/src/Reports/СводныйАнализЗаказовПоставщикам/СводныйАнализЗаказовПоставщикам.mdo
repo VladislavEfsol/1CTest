@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8e5ebdf-072b-4b2b-98ca-e0be3fa12cd5">
+  <producedTypes>
+    <objectType typeId="ac21c8c7-c236-45fc-8dcd-9bd720983467" valueTypeId="9eefc57c-fba7-4d20-a5ce-1329fbff6a31"/>
+    <managerType typeId="5e2ad797-c0b3-445c-a861-be7f2eb3b4d6" valueTypeId="f6349c49-49c2-45f4-9852-c95049bdc29e"/>
+  </producedTypes>
+  <name>СводныйАнализЗаказовПоставщикам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сводный анализ заказов поставщикам</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.СводныйАнализЗаказовПоставщикам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="90b401bc-1da8-483d-a772-5eea33f903fc">
+    <name>ФильтрПоСостояниюПоступления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр по состоянию поступления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3b7a4d4c-ffd7-467e-bfc8-aa0053991ca8">
+    <name>ФильтрПоСостояниюОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр по состоянию оплаты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="66a6d1bc-68c0-4d0a-bf76-d04516751def">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="023422ac-f9e1-4c9f-98d3-02a21c380ce4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="58f5ac87-f3e1-4ebb-b9cd-b13e216e453e">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ab3264c-e0a4-4066-9961-52ef8b657bb2">
+  <producedTypes>
+    <objectType typeId="59062c93-0636-4213-b813-51ae0c1272e4" valueTypeId="a75d11b6-883b-4459-abda-8c04cf69e124"/>
+    <refType typeId="d52ba891-8e86-4189-abed-a3c5ef564fd1" valueTypeId="696b9f13-11a6-4e8e-841e-892a242f9670"/>
+    <selectionType typeId="df03a98d-f193-430a-9034-81cb72fa3c69" valueTypeId="96fa63dd-17b8-4930-82ae-c1f6068de400"/>
+    <listType typeId="0a5da691-782d-4f6e-bec3-3d5c88f97abe" valueTypeId="b43ffabf-3f88-446f-92f4-04b91b7da301"/>
+    <managerType typeId="1bbb6ea3-0f31-41e9-b5ab-ab04c8920f78" valueTypeId="08d92c48-7ffb-431e-89d7-c94a24bbdb2d"/>
+  </producedTypes>
+  <name>МассоваяРассылка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовая рассылка</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.МассоваяРассылка.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <basedOn>Document.НачислениеСписаниеБонусныхБаллов</basedOn>
+  <createOnInput>Use</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Рассылка E-mail, SMS</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Массовые рассылки (E-mail, SMS)</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.МассоваяРассылка.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.МассоваяРассылка.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.МассоваяРассылка.Form.ФормаСписка</defaultChoiceForm>
+  <posting>Deny</posting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="cf9fd8f6-820e-40e7-a468-f4825789795d">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, создавший документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a00de61-f8cb-4a54-85c1-98981702771e">
+    <name>ДатаРассылки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рассылки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a1a6a5d0-8904-478b-8da8-7df93e274acf">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.НачислениеСписаниеБонусныхБаллов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ - основание</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Document.СчетНаОплату.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="358286b4-2f03-4998-803b-62752e9c3c66">
+    <name>ИмяОтправителяSMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя отправителя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя отправителя SMS, которое будет отображаться вместо номера у получателей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="465f2c85-cbd4-4578-8924-c93607395789">
+    <name>ИнтервалМеждуПопытками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал между попытками, мин.</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>С каким интервалом (в минутах) повторять рассылку после сбоя.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:NumberValue">
+      <value>5</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c6d9fbe9-eb01-44c4-aceb-8135521f6ec5">
+    <name>ИсточникПривлечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник привлечения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсточникиПривлеченияПокупателей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6e783b6c-e961-4e3a-b7a3-f127a0052765">
+    <name>КартинкиHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Картинки HTML</value>
+    </synonym>
+    <comment>Структура картинок форматированного документа</comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f2650ef-8809-453a-ad4c-1c7fdaa51f0f">
+    <name>КоличествоПопыток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество попыток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите сколько раз будет повторяться рассылка в случае сбоев.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:NumberValue">
+      <value>20</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="43bb8b2d-01a7-4f85-89b1-3f2c63cdc0bf">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cf5c737b-0fff-4e8f-a765-4088079cb46a">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Информация о сотруднике ответственном за ввод текущего документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Сотрудники.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0ee29296-19dd-4502-9215-54f671922a17">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание события</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7f1a72fe-81ea-4588-9893-6be1173e5381">
+    <name>СодержаниеHTML</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание HTML</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1fa71149-39f7-4605-b1d6-5e4d4f907dad">
+    <name>СоздаватьСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создавать события</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак необходимости создавать документы-события для каждого отправленного E-mail или SMS. При этом если рассылка выполняется по электронной почте и для учетной записи включен флаг &quot;Загружать почту&quot; События создаются всегда.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="accf8f69-9150-4227-bfee-fd2c13448484">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияОтправкиРассылки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.СостоянияОтправкиРассылки.EnumValue.Черновик</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2811d17a-9a89-4f2d-98d8-3b5d38f5c000">
+    <name>СпособОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ отправки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыКаналовСвязи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вариант отправки рассылки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыКаналовСвязи.EnumValue.Email</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="216567df-f70a-4826-9933-e83a93c80961">
+    <name>Тема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тема</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>CatalogRef.ТемыСобытий</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тематика рассылки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5ebfee8c-8413-4fd4-b79f-9734f152cb6b">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Учетная запись электронной почты, которая будет использована для отправки электронных писем</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="013a743f-0dcf-4575-9e17-c491afbd0278">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="05257526-7aba-4539-8eb4-54e411d68f47">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="7981539f-a30a-453c-900b-38b6060c0737">
+    <producedTypes>
+      <objectType typeId="3b9a9d98-692e-4c18-913c-9cdf17bec838" valueTypeId="5bd23cbc-a656-4c80-895b-456a33e090ba"/>
+      <rowType typeId="db153dcd-87e2-4ee4-8e42-549273f2d3ed" valueTypeId="daccd595-e882-412f-a8b5-0d632dfea27b"/>
+    </producedTypes>
+    <name>Получатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатели</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="85fc22fc-cb4f-4a5b-bd62-9cea168ebd44">
+      <name>Контакт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контакт</value>
+      </synonym>
+      <type>
+        <types>DefinedType.КонтактСобытия</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Получатель рассылки</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2886da0f-50ce-48cf-ab6c-20d153c58788">
+      <name>КакСвязаться</name>
+      <synonym>
+        <key>ru</key>
+        <value>Как связаться</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d4a26cc3-c3af-47e5-a888-705c72aaa148">
+      <name>УдалитьНомерДляОтправки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить номер для отправки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Преобразованный в формат +xxxxxxxxxxxx номер из поля &quot;Как связаться&quot; для отправки SMS</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b01387c3-a648-47f5-9375-9087f844570b">
+      <name>УдалитьИдентификаторСообщения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить идентификатор сообщения</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Идентификатор сообщения, который передал провайдер. По нему можно получать статус доставки сообщения SMS</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="00253b41-5f3b-4518-9d94-bea702cb7898">
+      <name>УдалитьСтатусДоставки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалить статус доставки</value>
+      </synonym>
+      <type>
+        <types>EnumRef.СостоянияСообщенияSMS</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статус доставки сообщения SMS адресату</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8ef648dd-800b-4bc1-ac25-6864672973f8">
+    <producedTypes>
+      <objectType typeId="72534582-6e4f-4c5a-b7f8-9debdac99b0a" valueTypeId="50e675a1-0eec-40e0-8877-b3f49334f1ae"/>
+      <rowType typeId="1d4bc462-2863-4f42-ac00-f3939e5bbb7c" valueTypeId="691e0dc7-3e5b-4ea0-abcd-477614202293"/>
+    </producedTypes>
+    <name>АльтернативныеУчетныеЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Альтернативные учетные записи</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Используются в случае сбоев во время отправки из основной учетной записи.</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7d61c762-4a53-4f24-b837-2a3d68b3a6e0">
+      <name>УчетнаяЗапись</name>
+      <synonym>
+        <key>ru</key>
+        <value>Учетная запись</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.УчетныеЗаписиЭлектроннойПочты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="4ff0e01c-1517-4de9-b510-b3b2f56dada6">
+    <name>ОбразецЗагрузкиДанных_csv</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец загрузки данных csv</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="14c56f96-65c6-4e5d-b221-f6f32fe8a381">
+    <name>ОбразецЗагрузкиДанных_mxl</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец загрузки данных mxl</value>
+    </synonym>
+  </templates>
+  <templates uuid="834165d8-f5bd-4e0d-bdc5-26dc3094a6d3">
+    <name>ОбразецЗагрузкиДанных_xlsx</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец загрузки данных xlsx</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <commands uuid="c110a52c-a55c-49f7-a5b5-0c9968f1ee00">
+    <name>ОткрытьСписокРассылок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Массовые рассылки (E-mail, SMS)</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Document>

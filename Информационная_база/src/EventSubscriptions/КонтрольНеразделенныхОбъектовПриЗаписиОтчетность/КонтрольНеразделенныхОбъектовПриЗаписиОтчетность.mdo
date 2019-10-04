@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5d2b3af-8714-40a9-95d2-0bcf99622046">
+  <name>КонтрольНеразделенныхОбъектовПриЗаписиОтчетность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль неразделенных объектов при записи отчетность</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ОКУН</types>
+    <types>CatalogObject.ОсобыеУсловияТрудаДляСЗВКПФР</types>
+    <types>CatalogObject.ЗадачиКалендаряПодготовкиОтчетности</types>
+    <types>CatalogObject.ОснованияИсчисляемогоСтраховогоСтажа</types>
+    <types>CatalogObject.ВычетыНДФЛ</types>
+    <types>CatalogObject.ВидыПредпринимательскойДеятельности</types>
+    <types>CatalogObject.КалендарьПодготовкиОтчетности</types>
+    <types>CatalogObject.ОснованияДосрочногоНазначенияПенсииДляСЗВК</types>
+    <types>CatalogObject.ПараметрыИсчисляемогоСтраховогоСтажа</types>
+    <types>CatalogObject.ЗамещениеГосударственныхМуниципальныхДолжностейПФР</types>
+    <types>CatalogObject.ОсобыеУсловияТрудаПФР</types>
+    <types>CatalogObject.ОснованияДосрочногоНазначенияПенсии</types>
+    <types>CatalogObject.ВидыТарифовСтраховыхВзносов</types>
+    <types>CatalogObject.ТерриториальныеУсловияПФР</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65a6ccc8-b8d7-4a6c-9b71-510751add4d3">
+  <producedTypes>
+    <objectType typeId="a162897c-c1a0-499d-8093-a5b32ecba280" valueTypeId="26adac53-dc0e-449f-8081-d103c02be3d1"/>
+    <managerType typeId="21bf2d4c-d052-4757-a45e-a1e34795fca1" valueTypeId="aed1e675-5243-4c5f-a72f-1ed4ab6f807b"/>
+  </producedTypes>
+  <name>ПродажиПоДисконтнымКартам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи по дисконтным картам</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ПродажиПоДисконтнымКартам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Отчет отображает сведения о продажах по дисконтным картам в суммовом выражении за определенный период времени</value>
+  </explanation>
+  <attributes uuid="cbd74c8d-940a-4144-ad6f-b5f2c2d5dfc7">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это отчет УНФ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="6f9cac77-05fc-415d-97a8-c07e3cbb421f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="cab2d9e9-09a1-4e89-acb7-acfca210e320">
+    <name>ОбразецПродажиПоДисконтнымКартам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец продажи по дисконтным картам</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

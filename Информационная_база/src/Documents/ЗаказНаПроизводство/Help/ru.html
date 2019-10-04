@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body>
+<h1>Документ "Заказ на производство"</h1>
+<p>Заказ складу на комплектацию товаров или производственному подразделению на производство продукции, выполнение работ, оказание услуг.</p>
+<p>Данный документ фактически формирует объемно-календарный план комплектации, производства запасов, выполнения работ, оказания услуг.</p>
+<p>В шапке документа указывается структурная единица организации - склад или производственное подразделение, а также дата и время начала выполнения заказа (старт) и время и дата окончания выполнения заказа (финиш).</p>
+<p>В табличной части "<strong>Продукция</strong>" указывается номенклатура, которую необходимо произвести (вид операции Сборка) или разобрать (вид операции Разборка).</p>
+<p>В табличной части "<strong>Материалы</strong>" формируется потребность в сырье, материалах, полуфабрикатах, требующихся для изготовления изделия (вид операции Сборка) или указывается номенклатура - выходной продукт, т.е. результат разборки (вид операции Разборка).</p>
+<p>В табличной части "<strong>Распределение</strong>" выполняется распределение данных из таблицы материалов по производимой продукции в соответствии с выбранными спецификациями. Таблица отображается только при включенном режиме ручного распределения.</p>
+<p>В табличной части "<strong>Операции</strong>" формируется список плановых тех. операций, которые требуется выполнить для производства изделий.</p>
+<p>В табличной части "<strong>Задействованные ресурсы</strong>" указывается перечень ресурсов предприятия, загрузку которых необходимо планировать. </p>
+<p>Если используется механизм <strong>резервирования запасов</strong>, то заказ можно открыть под <a href="Document.ЗаказПокупателя/Help">заказ покупателя</a>, тем самым разместив потребности заказа покупателя по товарам в ожидаемом выпуске по заказу. Необходимые материалы также могут быть зарезервированы на указанном складе под <a href="Document.ЗаказПокупателя/Help">заказ покупателя</a>. </p>
+<p>Если используется <strong>поэтапное производство</strong> с возможностью выполнять этапы разными подразделениями, то для продукции требуется указывать подразделение завершающего этапа - <a href="Catalog.СтруктурныеЕдиницы/Help">структурную единицу</a>, на которой будет храниться остаток незавершенного производства.</p>
+<p>Есть опциональная возможность указывать заказ покупателя и структурную единицу резерва в табличной части (отдельно для каждой строки). Положение изменяется с помощью команды "Шапка / табличная часть" в подменю "Еще" документа.</p>
+<p>Использование механизмов резервирования запасов, технологических операций и планирования ресурсов предприятия можно включить в настройках программы.</p>
+<p>Документ "Заказ на производство" может быть введен на основании документов:</p>
+<ul><li>
+<div><a href="Document.ЗаказПокупателя/Help">"Заказ покупателя"</a>; </div>
+</li>
+<li>
+<div>"Заказ на производство".</div></li></ul><p><br></p><blockquote dir="ltr" style="font-family: &quot;Times New Roman&quot;; margin-right: 0px;">
+<p class="Usual"><b><font size="2">Режим "Остатки и резервы":</font></b></p>
+<p class="Usual"><b><font size="2"><br></font></b></p>
+<ul><li>
+<p class="Usual"><strong>Не использовано</strong> - осталось использовать материалов в рамках заказа. (Скрыта по умолчанию. Можно настроить видимость через Еще -&gt; Настройка формы)</p></li>
+<li>
+<p class="Usual"><strong>Зарезервировано (всего)</strong> - зарезервировано материалов в рамках заказа на всех складах.</p></li>
+<li>
+<p class="Usual"><strong>Размещено</strong> - размещено (заказано) материалов в документах "Заказ на производство" и "Заказ поставщику" по данному заказу.</p></li>
+<li>
+<p class="Usual"><strong>Не обеспечено</strong> - не зарезервировано и не заказано материалов по заказу.</p></li>
+<li>
+<p class="Usual"><strong>Свободно (всего)</strong> - количество свободных материалов на всех складах.</p></li>
+<li>
+<p class="Usual"><strong>Склад (резерв)</strong> - Склад на котором будет произведен резерв при вводе значения в колонку "В резерв". Отображается при переключении расположения склада в документах отгрузки с шапки на табличную часть.</p></li>
+<li>
+<p class="Usual"><strong>Свободно для резерва</strong> - свободное количество на складе из колонки "Склад (резерв)". </p></li>
+<li>
+<p class="Usual"><strong>К поступлению</strong> - ожидаемое количество поступления свободных (не привязанной к заказам) материалров.</p></li></ul><p class="Usual"><b><br></b></p>
+<table cellspacing="0" style="overflow: visible; table-layout: fixed; padding: 0px 0px 0px 2px; vertical-align: bottom; border-collapse: collapse; font-family: Arial; font-size: 8pt;"><tbody style="margin: 0px; font-size: 8pt;"></tbody><colgroup><col width="33"></col><col width="188"></col><col width="110"></col><col width="47"></col><col width="115"></col><col width="195"></col><col width="162"></col><col width="158"></col><col width="122"></col><col width="85"></col><col width="208"></col><col width="166"></col><col width="148"></col><col width="134"></col><col width="202"></col></colgroup><tbody><tr style="height: 23px;"><td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">N</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Номенклатура</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Количество</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Ед.</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Не отгружено</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(255, 232, 179); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Можно использовать (всего)</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(255, 232, 179); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Обеспечено (всего)</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Склад (резерв)</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Свободно для резерва</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">В резерв</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Зарезервировано (всего)</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Размещено (всего)</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Свободно (всего)</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">К поступлению</span></td>
+<td style="font-size: 10pt; color: rgb(77, 77, 77); background-color: rgb(242, 242, 242); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Дата поступления</span></td></tr><tr style="height: 17px;"><td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; padding-left: 2px; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Варочная панель</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">151,000 / 170,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">шт</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">145,000 / 164,000</span></td>
+<td style="color: rgb(0, 150, 70); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">164,000</span></td>
+<td style="color: rgb(255, 140, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">35,000</span></td>
+<td style="color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Хозяйственные товары</span></td>
+<td style="color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">126,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">5,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">30,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">5,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">140,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">21,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">2 документа</span></td></tr><tr style="height: 17px;"><td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; padding-left: 2px; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">2</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Варочная панель</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">19,000 / 170,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">шт</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">19,000 / 164.000</span></td>
+<td style="color: rgb(0, 150, 70); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">164,000</span></td>
+<td style="color: rgb(255, 140, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">35,000</span></td>
+<td style="color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Склад материалов</span></td>
+<td style="color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">14,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">30,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">5,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">140,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">21,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">2 документа</span></td></tr><tr style="height: 17px;"><td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; padding-left: 2px; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">3</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Ведро с отжимом </span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">шт</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(0, 150, 70); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(0, 150, 70); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Хозяйственные товары</span></td>
+<td style="color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="font-size: 8pt; text-decoration: underline; color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td></tr><tr style="height: 17px;"><td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; padding-left: 2px; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">4</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Антифриз-40 10л (зеленый)</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(51, 51, 51); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">шт</span></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">1,000</span></td>
+<td style="color: rgb(255, 0, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">0</span></td>
+<td style="color: rgb(255, 0, 0); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">0</span></td>
+<td style="color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"><span style="white-space: nowrap; max-width: 0px;">Склад материалов</span></td>
+<td style="color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(77, 77, 77); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(51, 51, 51); text-align: right; vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td>
+<td style="color: rgb(77, 77, 77); vertical-align: top; border: 1px solid rgb(160, 160, 160);"></td></tr></tbody></table><p class="Usual"><br></p>
+<li><strong>Дубли строк.</strong> При наличии дублей строк (строка 1,2) значение в колонках "Количество" и "Не отгружено" выводится через "/". Слева от "/" отображается значение по номенклатуре в текущей строке, справа сумма по всем значениям в рамках текущего дубля. </li>
+<li><strong>Цветовая индикация колонок:</strong></li></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>Можно использовать (всего):</li></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Зеленый</b> - доступно к отгрузке в полном объеме</p></blockquote></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Оранжевый</b> - доступно к отгрузке частично.</p></blockquote></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Красный</b> - не доступно  к отгрузке.</p></blockquote></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>Обеспечено (всего):</li></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Зеленый</b> - обеспеченно полностью.</p></blockquote></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Оранжевый</b> - обеспечено частично.</p></blockquote></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<p class="Usual"><b>Красный</b> - не обеспечено.</p></blockquote></blockquote></blockquote><blockquote dir="ltr" style="font-family: &quot;Times New Roman&quot;; margin-right: 0px;">
+<li><strong>Расшифровки гиперссылок:</strong></li></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">Зарезервировано (всего) - отображает резервы по всем структурным единицам.</p></li></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">Размещено (всего) - отображает размещение номенклатуры в разрезе документов.</p></li></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">Свободно (всего) - отображает свободный (не зарезервированный) остаток по всем структурным единицам.</p></li></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">К поступлению - отображает ожидаемое к поступлению количество свободной номенклатуры (Заказы поставщикам не привязанные к Заказам покупателя).</p></li></blockquote></blockquote><blockquote style="font-family: &quot;Times New Roman&quot;; margin: 0px 0px 0px 40px; border: none; padding: 0px;"><blockquote dir="ltr" style="margin-right: 0px;">
+<li>
+<p class="Usual">Дата поступления - ожидаемая дата поступления свободной номенклатуры. Если ожидается поступление по нескольким документам, в расшифровке отражаются соответствующие документы.</p></li></blockquote></blockquote>
+</body></html>

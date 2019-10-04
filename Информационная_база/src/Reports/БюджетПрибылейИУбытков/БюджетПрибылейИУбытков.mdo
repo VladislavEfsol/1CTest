@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c4e1174-00aa-4cbe-8f05-26c76c5500a9">
+  <producedTypes>
+    <objectType typeId="5986ef2e-1215-48b7-a52b-0ac439798ef6" valueTypeId="9d575e20-b865-42db-b2df-fa4d06ba6409"/>
+    <managerType typeId="e66cd637-9ff2-4564-a902-aea884518058" valueTypeId="a44812c0-b334-46a6-9013-2d8c9a2e5f60"/>
+  </producedTypes>
+  <name>БюджетПрибылейИУбытков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджет прибылей и убытков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.БюджетПрибылейИУбытков.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="e645de2f-2747-42fb-94f3-2b4c8b599c2d">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="18a58ec9-f996-4dea-93c9-964a9eb94a2f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="f15bfec1-5ed4-44f2-ab60-1db6bf9e2c89">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="8b2ab594-ba1c-4b76-b2f6-d3ba9c18dcd3">
+    <name>ОбразецБюджетПрибылейИУбытковПланФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец бюджет прибылей и убытков план факт</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

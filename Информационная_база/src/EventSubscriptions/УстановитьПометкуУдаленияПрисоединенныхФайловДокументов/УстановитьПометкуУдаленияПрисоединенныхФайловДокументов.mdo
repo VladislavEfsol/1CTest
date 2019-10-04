@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af2e9b44-3f5b-46f0-8d29-e312a3cc47cf">
+  <name>УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить пометку удаления присоединенных файлов документов</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.СдельныйНаряд</types>
+    <types>DocumentObject.СверкаВзаиморасчетов</types>
+    <types>DocumentObject.СчетНаОплату</types>
+    <types>DocumentObject.РасходСоСчета</types>
+    <types>DocumentObject.ПересортицаЗапасов</types>
+    <types>DocumentObject.ДополнительныеРасходы</types>
+    <types>DocumentObject.РасходИзКассы</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.ПлатежноеПоручение</types>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.ДоговорКредитаИЗайма</types>
+    <types>DocumentObject.ЗаданиеНаРаботу</types>
+    <types>DocumentObject.ПеремещениеЗапасов</types>
+    <types>DocumentObject.МассоваяРассылка</types>
+    <types>DocumentObject.РасходДСПлан</types>
+    <types>DocumentObject.СчетФактура</types>
+    <types>DocumentObject.КорректировкаПоступления</types>
+    <types>DocumentObject.ЗаказПоставщику</types>
+    <types>DocumentObject.Событие</types>
+    <types>DocumentObject.ПриемИПередачаВРемонт</types>
+    <types>DocumentObject.ЗаказНаПроизводство</types>
+    <types>DocumentObject.КорректировкаРеализации</types>
+    <types>DocumentObject.СчетНаОплатуПоставщика</types>
+    <types>DocumentObject.ПриходнаяНакладная</types>
+    <types>DocumentObject.СборкаЗапасов</types>
+    <types>DocumentObject.РасходнаяНакладная</types>
+    <types>DocumentObject.АктВыполненныхРабот</types>
+    <types>DocumentObject.ПоступлениеНаСчет</types>
+    <types>DocumentObject.СчетФактураПолученный</types>
+    <types>DocumentObject.ИнвентаризацияЗапасов</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ПрисоединенныеФайлы.УстановитьПометкуУдаленияПрисоединенныхФайловДокументов</handler>
+</mdclass:EventSubscription>

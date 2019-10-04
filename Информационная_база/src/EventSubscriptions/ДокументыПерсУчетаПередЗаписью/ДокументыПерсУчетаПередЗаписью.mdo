@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39d0d792-3b63-417d-b282-f0d2709bda39">
+  <name>ДокументыПерсУчетаПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы перс учета перед записью</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОписьПачекСЗВ_6</types>
+    <types>DocumentObject.ПачкаРазделов6РасчетаРСВ_1</types>
+    <types>DocumentObject.ПачкаДокументовСЗВ_6_3</types>
+    <types>DocumentObject.РеестрСЗВ_6_2</types>
+    <types>DocumentObject.ПачкаДокументовСЗВ_6_4</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.УчетСтраховыхВзносов.ДокументыПерсУчетаПередЗаписью</handler>
+</mdclass:EventSubscription>

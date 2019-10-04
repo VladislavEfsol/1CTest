@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08b43a7b-0ae2-460e-b374-79c02486b0ed">
+  <name>СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных через универсальный формат регистрация документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтчетПереработчика</types>
+    <types>DocumentObject.СчетНаОплату</types>
+    <types>DocumentObject.РасходСоСчета</types>
+    <types>DocumentObject.ПеремещениеДС</types>
+    <types>DocumentObject.ОтчетОПереработке</types>
+    <types>DocumentObject.ПересортицаЗапасов</types>
+    <types>DocumentObject.ДополнительныеРасходы</types>
+    <types>DocumentObject.РасходИзКассы</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.ПлатежноеПоручение</types>
+    <types>DocumentObject.ОприходованиеЗапасов</types>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.ПрочиеРасходы</types>
+    <types>DocumentObject.ПеремещениеЗапасов</types>
+    <types>DocumentObject.ОтчетКомиссионера</types>
+    <types>DocumentObject.Взаимозачет</types>
+    <types>DocumentObject.РасходыПриИмпорте</types>
+    <types>DocumentObject.СчетФактура</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.НачисленияПоКредитамИЗаймам</types>
+    <types>DocumentObject.ПереоценкаВРозницеСуммовойУчет</types>
+    <types>DocumentObject.КорректировкаПоступления</types>
+    <types>DocumentObject.ОперацияПоПлатежнымКартам</types>
+    <types>DocumentObject.РаспределениеЗатрат</types>
+    <types>DocumentObject.ОтчетКомитенту</types>
+    <types>DocumentObject.КорректировкаРеализации</types>
+    <types>DocumentObject.СчетНаОплатуПоставщика</types>
+    <types>DocumentObject.ПриходнаяНакладная</types>
+    <types>DocumentObject.СборкаЗапасов</types>
+    <types>DocumentObject.РасходнаяНакладная</types>
+    <types>DocumentObject.АктВыполненныхРабот</types>
+    <types>DocumentObject.СписаниеЗапасов</types>
+    <types>DocumentObject.ПоступлениеНаСчет</types>
+    <types>DocumentObject.СчетФактураПолученный</types>
+    <types>DocumentObject.ПоступлениеВКассу</types>
+    <types>DocumentObject.ИнвентаризацияЗапасов</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБП.СинхронизацияДанныхЧерезУниверсальныйФорматПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

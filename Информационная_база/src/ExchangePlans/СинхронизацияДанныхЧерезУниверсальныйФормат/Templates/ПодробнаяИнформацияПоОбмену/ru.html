@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="Content-Language" content="ru"></meta><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"></meta><title>Простой текст с заголовками</title><style>
+td {font-size:80%;}
+a:link, a:visited
+{
+	color: #cc0000;
+	text-decoration: none;
+}
+
+a:hover 
+{ 
+	text-decoration: underline; 
+}
+
+h1 { font-size: 18pt; font-family: Arial, Tahoma; font-weight: bold; text-align: Left; COLOR: #003366; }
+h2 { font-family: Arial, Tahoma; font-size: 14pt; font-weight: bold; text-align: Left; }
+h3 { font-family: Arial, Tahoma; font-size: 12pt; font-weight: bold; text-align: Left }
+h4 { text-align: left; font-family: Arial, Tahoma; font-size: 11.5pt; font-weight: bold }
+h5 {  text-align: left; font-family: Arial, Tahoma; margin-left: 10pt; font-size: 10.5pt }
+table { font-size: 90%; }
+
+.Programtext {
+	PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f0f0f0; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; font-family: Courier New; COLOR: #0000ff; font-size: 10pt; PADDING-TOP: 10px
+}
+body { font-size: 80%; font-family: Verdana; }
+
+.withBorder { border-top: #FFD700 1px solid; border-right: #FFD700 1px solid; font-family: Verdana; text-align: left; }
+.withBorder td { border-bottom: #FFD700 1px solid; border-left: #FFD700 1px solid; }
+.withBorder th { border-bottom: #FFD700 1px solid; background-color: #ffffee; border-left: #FFD700 1px solid; }
+
+ul.TOC li { list-style-type: none; }
+
+PRE.Query, PRE.xml, PRE.vbcode { font-family: Courier New; color: #000080; font-size: 10pt }
+
+pre
+{
+	font-size: 10pt;
+}
+
+.Marker { background-color: #FFFF00; }
+
+.heading { border-bottom: #FFD700 1px solid; background-color: #ffffee; border-left: #FFD700 1px solid; font-weight: bold; }
+
+.tip, .tip td { background-color: #eeffee; width: 95%; padding: 15px; border-width: 0px; }
+.important, .important td { background-color: #ffeeee; width: 95%; border-width: 0px; padding: 15px; }
+.note, .note td { background-color: #eeeeff; width: 95%; padding: 15px; border-width: 0px; }
+
+.k
+{
+	color: red;
+}
+
+.c
+{
+	color: green;
+}
+
+.s
+{
+	color: black;
+}
+
+.n
+{
+	color: black;
+}
+
+.p
+{
+	color: brown;
+}
+.list { font-size: 80%; text-align:right;}
+.date { font-size: 80%; text-align:right; color: green}
+</style><script>
+ function copySource(oButton){
+   if(window.clipboardData){
+     window.clipboardData.setData('Text',oButton.nextSibling.innerText);
+     alert('Текст помещен в буфер обмена');
+   }else{
+     alert('Данная функция поддерживается только в браузере Internet Explorer');
+   }
+ }
+ </script><style>
+ a.cbData {
+   display:block;
+   text-align:right;
+   margin:0;
+   background:#E6E6E6;
+   font-size:8pt;
+   font-family:Courier New;
+   border-bottom:1px solid #969696;
+   text-decoration:none;
+}
+ </style><style>
+.Programtext {
+	MARGIN-TOP: 0pt
+}
+.Query {
+	MARGIN-TOP: 0pt
+}
+.xml {
+	MARGIN-TOP: 0pt
+}
+.vbcode {
+	MARGIN-TOP: 0pt
+} 
+</style></head><body>
+<p class="date" style="font-size: 10.24px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><br></p>
+<h1 style="font-variant-ligatures: normal; orphans: 2; widows: 2;">Настройка синхронизации между «1С:Управление нашей фирмой» и «1С:Бухгалтерия»</h1>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Программа <b>«1С:Управление нашей фирмой» </b>(1С:УНФ) позволяет вести учет, выписывать первичные документы, формировать управленческую отчетность. <br>Поддерживает подготовку и сдачу регламентированной отчетности индивидуального предпринимателя на УСН, ЕНВД и патенте.</p>
+<h3 style="font-variant-ligatures: normal; orphans: 2; widows: 2;">Когда может возникнуть задача в установке дополнительной программы для ведения бухгалтерского учета и синхронизации двух программ.</h3>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"></p>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li>Если <i><b>компания работает на ОСНО или организационно-правовая форма отличается от ИП</b></i>, то возникает задача формирования и сдачи регламентированной бухгалтерской отчетности. <br>Для этой цели рекомендуем использовать программу <b>1С:Бухгалтерия </b>(1С:БП), настроив синхронизацию 1С:УНФ с 1С: БП.</li>
+<p></p>
+<li>Если <b><i>ранее вели весь учет в 1С:БП и для управленческого учета приобрели 1С:УНФ</i></b>, то рекомендуем перенести ведение учета в 1С:УНФ. <br>Оставить в 1С:БП только формирование регламентированной отчетности.</li></ul><p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"></p>
+<p class="important" style="width: 1564.64px; font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><b>Важно! Основным рекомендуемым вариантом</b> ведения учета и настройки синхронизации является <b>создание первичных документов, ведение учета, формирование управленческих отчетов в 1С:УНФ. </b><br><b>Для формирования и сдачи регламентированной бухгалтерской отчетности</b> рекомендуем выгружать введенную информацию <b>из 1С:УНФ в 1С:БП</b>. <br>Такой вариант ведения учета и синхронизации информации предполагает единую точку ввода и позволит избежать дублирования и ошибок.</p>
+<h3 style="font-variant-ligatures: normal; orphans: 2; widows: 2;">Перед настройкой синхронизации</h3>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Перед началом настройки синхронизации в новой базе, где ранее не вели учет, заполните следующую информацию.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Если <b>стартуете</b> базу <b>1С:БП</b>:</p>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li>Сведения об организации/ях, участвующих в синхронизации, с заполнением ИНН и КПП</li>
+<li>Учетную политику и систему налогообложения</li>
+<li>Параметры учета</li>
+<li>Настройки по умолчанию для справочника Номенклатура.</li></ul><p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Если <b>стартуете</b> базу <b>1С:УНФ</b>:</p>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li>Первоначальные настройки программы</li>
+<li>Сведения об организации/ях с указанием организационно-правовой формы, ИНН и КПП, системы налогообложения.</li></ul><h3 style="font-variant-ligatures: normal; orphans: 2; widows: 2;">Основные правила и виды синхронизации</h3>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li>В синхронизации участвуют только проведенные документы. После загрузки они автоматически повторно проводятся. <br>При синхронизации удаленные из одной базы документы или элементы справочников загрузятся в другую базу помеченными на удаление. <br>Для завершения удаления необходимо выполнить <b>Удаление помеченных объектов</b>.</li>
+<p></p>
+<li>В первоначальной синхронизации участвуют все документы и справочники, указанные в <a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#tables">таблицах соответствия</a> . <br>В последующих синхронизациях участвуют только измененные или новые документы и элементы справочников.</li>
+<p></p>
+<li>В зависимости от способа запуска настраивайте автоматическую или ручную синхронизацию. <br>Используйте <b>автоматическую синхронизацию</b> для постоянной актуализации информации между информационными базами, настроив один раз правила. <br>Запускайте автоматическую синхронизацию в ручном режиме, если необходимо срочно актуализировать информацию. <br><b>Ручная синхронизация</b> запускается всегда вручную. Выбор документов для синхронизации производится с использованием помощника, определяя условия и состав отправляемых документов.</li></ul><h2 style="font-variant-ligatures: normal; orphans: 2; widows: 2;">Настройка синхронизации</h2>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Рекомендуется начинать настройку синхронизации в базе 1С:УНФ (рис.1). <br>Только если используете 1С:УНФ в сервисе 1cfresh.com, а 1С:БП установлена как локальная база, то начинайте настройку из базы 1С:БП.</p>
+<p class="important" style="width: 1564.64px; font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><b>Важно! </b>Перед первой настройкой синхронизации сделайте резервные копии обеих информационных баз.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/01.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Рис.1 Схема настройки синхронизации</p>
+<h3 style="font-variant-ligatures: normal; orphans: 2; widows: 2;">ШАГ 1<span lang="en-us">.</span> Первоначальные настройки синхронизации и выгрузка данных в 1С:УНФ</h3>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#1_1">Первоначальные настройки</a></li>
+<li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#1_2">Параметры подключения</a></li>
+<li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#1_3">Правила отправки и получения данных</a></li>
+<li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#1_4">Начальная выгрузка данных</a></li></ul><h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="1_1">Первоначальные настройки</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Для включения возможности синхронизации установите флажок <b>Синхронизация</b> данных в разделе <b><br>Компания – Настройки – Интеграция с другими программами</b></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/02.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Установите префикс информационной базы в поле <b>Префикс базы</b>. Префикс - уникальный набор цифр и букв, который будет добавляться к номеру загружаемого объекта для определения базы создания.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Устанавливайте дату запрета, чтобы загружать документы только за определенный период. Например, установите дату после сдачи регламентированной отчетности и начале нового квартала или года.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/002.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Для начала создайте новую настройку: <b>Настройки синхронизации данных – Новая синхронизация данных.</b></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/03.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Выберите редакцию 1С:Бухгалтерия 8.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/04.png"></img></p>
+<h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="1_2">Параметры подключения</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Переходите к следующему этапу <b>Настроить параметры подключения.</b></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/05.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Выбирайте вариант подключения.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/004.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Если подключаетесь к базе на том же компьютере или в локальной сети, то укажите расположение базы, введите логин и пароль пользователя с правами администратора.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/06.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Если подключаетесь к базе, расположенной в сервисе 1cfresh.com, или информационной базе, опубликованной в интернете, укажите ссылку на размещение базы,<br>логин и пароль пользователя с правами администратора.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/07.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">При использовании сетевого каталога в качестве канала передачи данных укажите его расположение. <br>Для ограничения доступа к файлу выгрузки или оптимизации его передачи создайте архив файла и установите к нему пароль.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/007.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Если параметры подключения верные, то настройке синхронизации присваивается наименование. <br>Укажите префикс информационной базы, с которой будет выполняться синхронизация</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/08.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/008.png"></img></p>
+<h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="1_3">Правила отправки и получения данных</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Переходите к следующему этапу <b>Настроить правила отправки и получения данных</b>.</p>
+<p class="important" style="width: 1564.64px; font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><b>Важно!</b> Если настраивайте синхронизацию данных через файл, то перед этим шагом перейдите к <a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#2"><b>ШАГ 2. Настройка синхронизации в 1С:БП</b></a>. <br>После окончания настроек в 1С:БП вернитесь к этому шагу и завершите настройки в 1С:УНФ.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/09.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">На этом этапе устанавливайте объем информации для синхронизации, с какой даты и по каким правилам будет выгружаться информация из 1С:УНФ. <br>Полная <a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#tables">таблица соответствия и возможностей синхронизации документов и справочников между программами приведена в конце статьи.</a></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Устанавливайте параметры синхронизации:</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/10.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Начните с настройки параметров в разделе <b>Нормативно-справочная информация</b>. Выбирайте <b>Отправлять всю</b> или ограничьте <b>Отправлять только используемую в документах.</b></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Продолжите настройки в разделе <b>Документы</b>. Выбирайте синхронизацию всех документов. Или ограничивайте датой начала выгрузки документов, видами документов или организациями.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Если настроили отбор видов документов для выгрузки, то выгружаются и все связанные документы. Например, вместе с документами <b>Поступление на счет</b> выгрузятся связанные с ними <b>Акт выполненных работ</b>, <b>Расходная накладная</b>.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Выберите вид синхронизации. По умолчанию устанавливается автоматическая. Для ручной синхронизации установите флажок <b>Ручная синхронизация</b> <b>данных</b>.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">В разделе <b>Прочее </b>настраивайте возможности:</p>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li>Автоматически зачитывать авансы при переносе документов в «Бухгалтерию предприятия»</li>
+<li>Переносить Заказы покупателей из 1С:УНФ как документ «Счет покупателю» в 1С:БП</li>
+<li>Обобщенный склад. Доступен для выбора, если включены возможности учета по нескольким складам в табличных частях документов.</li></ul><p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/10_1.png"></img></p>
+<p class="important" style="width: 1564.64px; font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><b>Важно!</b> Укажите обобщенный склад, если ведете в 1С:УНФ учет по нескольким складам в табличной части документов. В 1С:БП эта информация будет перенесена на выбранный <b>Обобщенный склад.</b></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">В дальнейшем настроенные параметры можно изменить.</p>
+<h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="1_4">Начальная выгрузка данных</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Переходите к завершающему этапу первоначальной настройки синхронизации <b>Выполнить начальную выгрузку данных.</b></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/11.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">После этого этапа переходите к настройке в 1С:БП.</p>
+<h3 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="2">ШАГ 2. Настройка синхронизации в 1С:БП</a></h3>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="2"></a>
+<li><a name="2"></a><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#2_1">Загрузка данных в 1С:БП</a></li>
+<li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#2_2">Настройка правил отправки и получения данных в 1С:БП</a></li>
+<li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#2_3">Сопоставление данных</a></li></ul><h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="2_1">Загрузка данных в 1С:БП</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Переходим к настройке синхронизации в 1С:БП.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><b>Администрирование - Синхронизация данных – Настройки синхронизации данных</b></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/12.png"></img></p>
+<p class="date"><a name="2" style="color: rgb(0, 0, 0); font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; text-align: start; widows: 2;"></a><span style="color: rgb(0, 0, 0); font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; text-align: start; widows: 2;">В зависимости от расположения информационных баз и способа синхронизации выбирайте настройки:</span></p>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li>Если программы установлены <b>на одном компьютере или в локальной сети</b>, то просто завершайте загруженные настройки из 1С:УНФ.</li><br><li>Если <b>1С:УНФ работает в сервисе 1cfresh.com</b>, то начинайте настройки с 1С:БП, указывая адрес подключения к 1С:УНФ, логин и пароль.</li><br><li>Если используете <b>синхронизацию данных через файл</b>, то создавайте новую синхронизацию с 1С:УНФ, выбирая файл с выгруженными настройками. <br>Настройки, включая префикс, автоматически применяются к базе после выбора файла.</li></ul><p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/13.png"></img></p>
+<h3 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="2_2">Настройка правил отправки и получения данных в 1С:БП</a></h3>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">В 1С:БП аналогично 1С:УНФ устанавливаем правила для получении и отправки информации.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Правила отправки информации.</p>
+<p class="important" style="width: 1564.64px; font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><b>Важно! Основной рекомендуемый вариант синхронизации</b> - получение всей информации в 1С:БП для формирования регламентированной бухгалтерской отчетности. <br>Без обратной выгрузки скорректированной информации в 1С:УНФ. Такой сценарий позволяет избежать дублирования информации и возникновения ошибок.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/18.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">На вкладке <b>Правила получения данных</b> заполняйте правила, применяемые по умолчанию при загрузке информации.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/19.png"></img></p>
+<h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="2_3">Сопоставление данных</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">На этом этапе сопоставляйте данные в двух программах, чтобы избежать дублирования элементов.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/15.png"></img></p>
+<p class="date"><span style="color: rgb(0, 0, 0); font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; text-align: start; widows: 2;">После этого этапа переходите в 1С:УНФ для завершения настроек и запуска синхронизации.</span></p>
+<h3 style="font-variant-ligatures: normal; orphans: 2; widows: 2;">Шаг 3. Загрузка и запуск синхронизации в 1С:УНФ</h3>
+<ul style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#3_1">Загрузка с учетом сопоставлений</a></li>
+<li><a href="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296.htm#3_2">Запуск синхронизации</a></li></ul><h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="3_1">Загрузка с учетом сопоставлений</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Для загрузки полученных данных из 1С:БП выполните сопоставление и загрузку полученных данных в 1С:УНФ.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">В окне настроек синхронизации данных в 1С:УНФ выберите <b>Синхронизировать</b>.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Начинается сопоставление данных. По завершении получите сообщение о завершении синхронизации. <br>При выявлении ошибок получите предупреждение, где можно просмотреть и исправить ошибки.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/16.png"></img></p>
+<h4 style="font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="3_2">Запуск синхронизации</a></h4>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Запускайте синхронизацию, нажав на кнопку <b>Синхронизировать</b> в одной из баз программ.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><img border="0" src="file:///D:/1C/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%D1%8B/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8%20%D0%BE%20%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8/2019/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/%D0%9E%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%A3%D0%9D%D0%A4%20%D0%B8%20%D0%91%D0%9F/i8107296/17.png"></img></p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">В первый раз справочники синхронизируются по коду или наименованию. Элементы справочников могут синхронизироваться по определенным полям, например по ИНН и КПП в справочниках <b>Организации</b> и <b>Контрагенты</b>.</p>
+<p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">В дальнейшем синхронизация справочников и документов производится по внутреннему идентификатору.</p>
+<p align="left" style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><a name="tables">Таблица 1</a></p>
+<p align="left" style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Документы, участвующие в синхронизации, и их соответствия в 1С:УНФ и 1С:БП</p>
+<p class="important" style="width: 1564.64px; font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"><b>Важно! </b>В таблице соответствия показаны возможности (+) выгрузки документов как из 1С:УНФ в 1С:БП, так и обратно. <br>Обращаем внимание, что <b>основной рекомендуемый вариант синхронизации</b> предусматривает создание документов и ведение учета в 1С:УНФ. <br>В 1С:БП загружается вся информация из 1С:УНФ для формирования регламентированной бухгалтерской отчетности. Без обратной выгрузки скорректированной информации из 1С:БП в 1С:УНФ.</p>
+<table border="1" width="60%" style="font-size: 11.52px; orphans: 2; widows: 2;"><tbody><tr><td width="21%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:Управление нашей фирмой</font></b></p></td>
+<td width="21%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:Бухгалтерия 8</font></b></p></td>
+<td width="12%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:УНФ </font><font size="4">→</font><font size="2">1С:БП</font></b></p></td>
+<td width="12%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:БП </font><font size="4">→</font><font size="2">1С:УНФ</font></b></p></td>
+<td width="31%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">Дополнительная информация</font></b></p></td></tr><tr><td colspan="5" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">ДЕНЬГИ</font></b></p></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Поступление в кассу</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Поступление наличных (ПКО)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Расход из кассы</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Выдача наличных (РКО)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Поступления на счет</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Поступление на расчетный счет</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Расход со счета</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Списание с расчетного счета</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Платежное поручение</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Платежное поручение</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Операция по платежным картам</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Операция по платежным картам</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Авансовый отчет</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Авансовый отчет</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если не включена возможность учета складов в табличной части документов, то заполняется складом из <b>первой строки</b>вкладки <b>Запасы</b> документа. <br>Если возможность включена, то заполняется складом, выбранным как <b>Обобщенный склад</b> в настройках <b>Правил синхронизации</b> в 1С:УНФ.</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Выемка денег</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Поступление наличных (ПКО)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Начисления кредитов и займов</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Фактические движения денежных средств</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="97%" colspan="5" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">ПРОДАЖИ</font></b></p></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Заказ покупателя</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Счет покупателю</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" rowspan="2" style="font-size: 9.216px;"><font size="2">Счет покупателю в 1С:БП может формироваться из 1С:УНФ в зависимости от установленного флажка <b>Переносить заказы покупателей как счета на оплату </b>в правилах синхронизации:</font>
+<ul><li><font size="2">Если флажок установлен, то счет в 1С:БП формируется на основании документа <b>Заказ покупателя</b> в 1С:УНФ</font></li>
+<li><font size="2">Если флажок не установлен, то счет в 1С:БП формируется на основании документа <b>Счет покупателю</b> в 1С:УНФ.</font></li></ul><font size="2">Обратно из 1С:БП документ не выгружается.</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Счет на оплату</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Счет покупателю</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td></tr><tr><td width="21%" rowspan="2" style="font-size: 9.216px;"><font size="2">Расходная накладная</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Реализация (акт, накладная). Реализация товаров: накладная</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в табличной части <b>Расходной накладной</b> только товары</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Реализация (акт, накладная). Реализация: товары, услуги, комиссия</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в табличной части <b>Расходной накладной</b> товары и услуги либо товары на комиссию</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Акт выполненных работ</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Реализация (акт, накладная). Реализация услуг: акт</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Приходная накладная</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Возврат товаров от покупателя</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Счет-фактура (операция - продажа)</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Счета-фактуры выданные (на реализацию)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Корректировка реализации</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Корректировка реализаций</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Счет-фактура (на основании корректировки реализаций - операция корректировка)</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Счет-фактура выданная (корректировочные)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Отчет о розничных продажах</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Отчет о розничных продажах</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><b><font size="2">Чек ККМ</font></b><font size="2"> и <b>Чек ККМ</b> <b>на возврат</b> не переносятся. Переносится только Отчет о розничных продажах</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Отчет комиссионера</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Отчет комиссионера (агента) о продажах</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Переоценка в рознице (суммовой учет)</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Переоценка товаров в рознице</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Корректировка долга покупателя</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Корректировка долга</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="97%" colspan="5" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">РАБОТЫ</font></b></p></td></tr><tr><td width="21%" rowspan="3" style="font-size: 9.216px;"><font size="2">Заказ-наряд</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Реализация (акт, накладная). Реализация товаров: накладная</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в документе <b>Заказ-наряд</b>только товары. Переносится только <b>Заказ-наряд </b>с состоянием <b>Завершен</b></font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Реализация (акт, накладная). Реализация услуг: акт</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в документе <b>Заказ-наряд</b>только работы. Переносится только <b>Заказ-наряд</b> с состоянием <b>Завершен</b></font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Реализация (акты, накладные). Реализация: товары, услуги, комиссия</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в документе <b>Заказ-наряд</b>товары и работы. Переносится только <b>Заказ-наряд</b> с состоянием <b>Завершен</b></font></td></tr><tr><td width="21%" style="font-size: 9.216px;">Прием и передача в ремонт</td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Реализация (акты, накладные)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Синхронизация происходит, если ремонт осуществляется своими силами и на его основе был создан документ <b>Заказ-наряд</b> с состоянием <b>Завершен</b> либо <b>Акт выполненных работ</b> и/или <b>Расходная накладная</b></font></td></tr><tr><td width="97%" colspan="5" align="center" style="font-size: 9.216px;"><b><font size="2">ЗАКУПКИ</font></b></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Счет на оплату (полученный)</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Счет от поставщика</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" rowspan="3" style="font-size: 9.216px;"><font size="2">Приходная накладная</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Поступление (акты, накладные). Поступление товаров: накладная</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в табличной части <b>Приходной накладной </b>только товары</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Поступление (акт, накладная). Поступление услуг: Акт</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в табличной части <b>Приходной накладной </b>только услуги</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Поступление (акт, накладная). Поступление: товары, усуги, комиссия</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если в 1С:УНФ в табличной части <b>Приходной накладной</b> товары и услуги</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Счет-фактура (полученный)</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Счет-фактура полученный (на поступление)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Расходная накладная</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Возврат товаров поставщику</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Корректировка поступлений</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Корректировки поступлений</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Счет-фактура (полученный) (на основании корректировки поступлений - операция корректировка)</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Счет-фактура полученный (корректировочный)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Дополнительные расходы</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Поступление дополнительных расходов</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Инвентаризация запасов</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Инвентаризация товаров</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Оприходование запасов</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Оприходование товаров</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Перемещение запасов</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Перемещение товаров</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Реквизит <b>Партия</b> материалов в эксплуатации в документе <b>Перемещение запасов</b> с видом операции <b>Возврат из эксплуатации</b> подбирается автоматически по методу FIFO. При переносе документа <b>Перемещение запасов</b>, в случае использования давальческих материалов, используйте в табличной части материалы только одного заказчика</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Списание запасов</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Списание товаров</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Реквизит <b>Партия</b> материалов в эксплуатации в документе <b>Списание запасов</b> с установленным флажком <b>Списать запасы из эксплуатации</b>подбирается автоматически по методу FIFO</font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Пересортица запасов</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Списание товаров + оприходование товаров</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Отчет комитенту</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Отчет комитенту</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Корректировка долга поставщику</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Корректировка долга</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="97%" colspan="5" align="center" style="font-size: 9.216px;"><b><font size="2">ПРОИЗВОДСТВО</font></b></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Производство</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Отчет производства за смену</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если у реквизита <b>Изготовитель</b> установлен тип <b>Подразделение</b></font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Производство</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Комплектация номенклатуры</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"><font size="2">Если у реквизита <b>Изготовитель</b> установлен тип <b>Склад</b></font></td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Распределение затрат</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Требование-накладная</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Отчет о переработке</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Реализация услуг по переработке</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr><tr><td width="21%" style="font-size: 9.216px;"><font size="2">Отчет переработчика</font></td>
+<td width="21%" style="font-size: 9.216px;"><font size="2">Поступление из переработки</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td width="31%" style="font-size: 9.216px;"> </td></tr></tbody></table><p style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;"></p>
+<p align="left" style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Таблица 2</p>
+<p align="left" style="font-size: 12.8px; font-variant-ligatures: normal; orphans: 2; widows: 2;">Таблица соответствия справочников для синхронизации</p>
+<table border="1" width="60%" id="table1" style="font-size: 11.52px; orphans: 2; widows: 2;"><tbody><tr><td width="21%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:Управление нашей фирмой</font></b></p></td>
+<td width="21%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:Бухгалтерия 8</font></b></p></td>
+<td width="12%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:УНФ →1С:БП</font></b></p></td>
+<td width="12%" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">1С:БП →1С:УНФ</font></b></p></td>
+<td style="font-size: 9.216px;">
+<p align="center"><b><font size="2">Идентификатор для синхронизации, дополнительная информация</font></b></p></td></tr><tr><td colspan="5" style="font-size: 9.216px;">
+<p align="center"><b><font size="2">КОМПАНИЯ</font></b></p></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Организации</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Организации</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование, ИНН</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Банковские счета</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Банковские счета</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Владелец счета, номер счета.</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Организационо-структурные единицы компании (склады)</font></td>
+<td width="236" style="font-size: 9.216px;"><font size="2">Склады</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование, тип структурной единицы. Переносятся только элементы, используемые в документах. При использовании в 1С:УНФ режима учета по нескольким складам в табличных частях документов, документы переносятся в 1С:БП на обобщенный склад.<b>Обобщенный склад</b> устанавливается в <b>Правилах синхронизации </b>в 1С:УНФ.</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Организационно-структурные единицы компании (подразделения)</font></td>
+<td width="236" style="font-size: 9.216px;"><font size="2">Подразделения</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Организация, наименование, тип структурной единицы. Переносятся только элементы, используемые в документах.</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Банки</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Банки</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">БИК</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Страны мира</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Страны мира</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Код</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Валюты</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Валюты</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Код</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Статьи движения денежных средств</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Статьи движения денежных средств</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td colspan="5" align="center" style="font-size: 9.216px;"><b><font size="2">ФИЗИЧЕСКИЕ ЛИЦА</font></b></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Физические лица</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Физические лица</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование, дата рождения. Для синхронизации подотчетных лиц в 1С:УНФ для сотрудника должен быть заполнен реквизит Физическое лицо. Справочник <b>Сотрудники</b> не участвует в синхронизации</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Виды документов физических лиц</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Виды документов физических лиц</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Виды контактной информации</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Виды контактной информации</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td align="center" colspan="5" style="font-size: 9.216px;"><b><font size="2">КОНТРАГЕНТЫ</font></b></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Контрагенты (покупатели/поставщики)</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Контрагенты (покупатели/поставщики)</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование, ИНН, КПП</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Договоры контрагентов</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Договоры контрагентов</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование, код, владелец, валюта расчетов, организация, вид договора.</font></td></tr><tr><td align="center" colspan="5" style="font-size: 9.216px;"><b><font size="2">ЕГАИС</font></b></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Виды алкогольной продукции</font></td>
+<td width="236" style="font-size: 9.216px;"><font size="2">Сведения об алкогольной продукции</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">В справочнике <b>Номенклатура</b> по реквизиту <b>Код</b> для </font><b><font size="2">Вида алкогольной (спиртосодержащей) продукции</font></b></td></tr><tr><td align="center" colspan="5" style="font-size: 9.216px;"><b><font size="2">НОМЕНКЛАТУРА</font></b></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Номенклатура</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Номенклатура</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование. Для наборов и комплектов в 1С:БП переносятся составляющие</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Категория номенклатуры</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Номенклатурная группа</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Группа номенклатуры</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Группа номенклатуры</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Спецификация номенклатуры</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Спецификация номенклатуры</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование, владелец</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Вид номенклатуры: запас</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Вид номенклатуры: товар</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Вид номенклатуры: подарочный</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Вид номенклатуры: товар</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Вид номенклатуры: услуга</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Вид номенклатуры: услуга</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Вид цен (тип цены номенклатуры)</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Тип цены номенклатуры</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">-</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Наименование, валюта цены.</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Классификатор единиц измерения</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Классификатор единиц измерения</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Код</font></td></tr><tr><td width="238" style="font-size: 9.216px;"><font size="2">Номер ГТД</font></td>
+<td width="238" style="font-size: 9.216px;"><font size="2">Номер ГТД</font></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td width="12%" align="center" style="font-size: 9.216px;"><b><font size="2">+</font></b></td>
+<td style="font-size: 9.216px;"><font size="2">Код. Переносятся только элементы справочника, используемые в документах</font></td></tr></tbody></table><div><br></div>
+<div><br></div></body></html>

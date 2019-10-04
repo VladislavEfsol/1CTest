@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62fbf6bc-626b-4a6d-9b52-55ebb6e678f4">
+  <producedTypes>
+    <objectType typeId="80cf5bba-7fe6-4bb0-a23b-696a832afdfc" valueTypeId="ea0a9cfe-7eb4-49a7-acd7-6f25b8e1007c"/>
+    <refType typeId="0d284077-d646-4a88-840b-4298c2cf82ac" valueTypeId="6e79a10f-c8f2-44e2-a072-a0c9d3f7c8bb"/>
+    <selectionType typeId="b5536e9f-0392-4041-88f0-8289483b6479" valueTypeId="a4fb5782-6ade-49b1-bdc4-93b92e8e59a4"/>
+    <listType typeId="5532d39e-8680-499c-bf5d-acf0246894f8" valueTypeId="0dc09cbc-9f50-44f8-9977-d82d2f314440"/>
+    <managerType typeId="f47c813a-6b5b-4c7f-894b-b41bed8d2ad6" valueTypeId="f630f6eb-56db-41e6-8a6d-5bdf3eb1329d"/>
+  </producedTypes>
+  <name>ЗаписиУСН</name>
+  <synonym>
+    <key>ru</key>
+    <value>Записи КУДиР</value>
+  </synonym>
+  <inputByString>Document.ЗаписиУСН.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДФ='к &quot;Квартал&quot; гггг'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='к &quot;Квартал&quot; гггг'</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Записи и корректировки КУДиР</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Записи и корректировки КУДиР</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Записи КУДиР, а также корректировки по связанным регистрам УСН</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЗаписиУСН.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ЗаписиУСН.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.ЗаписиУСН.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.ПримененныеВычетыПоНДФЛ</registerRecords>
+  <registerRecords>AccumulationRegister.КнигаУчетаДоходовИРасходов</registerRecords>
+  <registerRecords>AccumulationRegister.НДФЛДоходы</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="0a184a8a-9191-4084-9369-646441ddb9b4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f68eb14c-6837-4ca7-a743-082e4bc9e021">
+    <name>ВидЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид записей</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыЗаписейФормированийКУДиР</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>3200ee8b-7de3-44c5-b609-0efe103ed831.6f224c79-5cd8-4751-9b77-182cfa1aabb2</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6bf9ecbf-8937-4475-b29c-3d9181f9e3d5">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>999</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Любая дополнительная информация</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80548f42-68f0-49d0-ba5f-d12c40c4eda1">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, создавший документ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="de93f90c-4be5-428c-88e6-1bfdc6805054">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2cf2b588-c409-4fc4-8d21-c06e4c54d043">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="009c3784-160e-4225-9e8b-5172968aa2b6">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8f41b87a-a308-417a-998a-741fbe52c086">
+    <name>ФормаСпискаЗаписиПрочие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Записи Книги учета доходов и расходов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d4c79054-bf61-4366-95f9-46b7d80c104e">
+    <name>ФормаЗаписиКУДИР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи КУДИР</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="0ebb6f7e-d975-4da3-b067-9e5823af828f">
+    <producedTypes>
+      <objectType typeId="bfd43248-854d-45f4-88f3-71800cdfa901" valueTypeId="e2493085-722e-42dd-ac16-eca12e28eaa5"/>
+      <rowType typeId="034b70c0-7c7a-4b1e-a895-26c8d9546629" valueTypeId="b566654b-e466-4a6a-a8d4-1b4441f3d017"/>
+    </producedTypes>
+    <name>ЗаписиКУДиР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Записи КУДиР</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="863e8ab8-be22-4f54-852d-1f821ec81cd3">
+      <name>Содержание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание дохода-расхода</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>300</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Содержание записи</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="963dda90-568d-468a-a23e-a3949ca7d40e">
+      <name>ДоходВсего</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доход (всего)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Доходы всего</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="92c5ccd9-358a-4edd-b3b7-f2ee3de73429">
+      <name>ДоходБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доход</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Доходы, учитываемые при расчете ЕН </value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ca934826-f5b8-4589-99fa-988c06491dd9">
+      <name>РасходВсего</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расходы (всего)</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Расходы всего</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="46694a4c-e158-4f11-936e-579818be30ce">
+      <name>РасходБаза</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расход</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Расходы, учитываемые при расчете ЕН</value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="04b893ac-63e8-4664-98bf-0ad07866087f">
+      <name>ПервичныйДокумент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Первичный документ</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ЗаписиУСН</types>
+        <types>DocumentRef.РасходнаяНакладная</types>
+        <types>DocumentRef.ОтчетКомиссионера</types>
+        <types>DocumentRef.ПриходнаяНакладная</types>
+        <types>DocumentRef.АктВыполненныхРабот</types>
+        <types>DocumentRef.РасходСоСчета</types>
+        <types>DocumentRef.АвансовыйОтчет</types>
+        <types>DocumentRef.ПоступлениеВКассу</types>
+        <types>DocumentRef.ЗаказПокупателя</types>
+        <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+        <types>DocumentRef.ОтчетКомитенту</types>
+        <types>DocumentRef.РасходИзКассы</types>
+        <types>DocumentRef.ПоступлениеНаСчет</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ссылка на первичный документ в учете</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9629b9f5-8c74-4b4f-b5a5-8ced366204d3">
+      <name>ДатаПервичногоДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата первичного документа</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ДФ=dd.MM.yyyy</value>
+      </format>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="282ec472-dd02-43d3-8d1b-72f4a54f30de">
+      <name>НомерПервичногоДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер первичного документа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>11</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <indexing>Index</indexing>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="5c815ede-9595-4809-9fe5-a1de057a8856">
+    <producedTypes>
+      <objectType typeId="9619756d-7fc4-472b-97e4-73ac422420ef" valueTypeId="c5f241c5-6291-4521-a40c-d81db3936354"/>
+      <rowType typeId="03a88113-74aa-432e-8e75-80c8b5b44a3a" valueTypeId="6b50d385-4919-4c4a-9143-370d359aad4a"/>
+    </producedTypes>
+    <name>ГрафикПоОС</name>
+    <synonym>
+      <key>ru</key>
+      <value>График по ОС</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3022559f-bc43-4a85-b151-fd25a1387992">
+      <name>ПериодПризнания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период признания</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>к &quot;квартал&quot; гггг</value>
+      </format>
+      <toolTip>
+        <key>ru</key>
+        <value>Период, в котором будут признаны эти расходы</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="62544298-147b-4f51-ab3a-933a6248a85e">
+      <name>ОсновноеСредство</name>
+      <synonym>
+        <key>ru</key>
+        <value>ОС или НМА</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВнеоборотныеАктивы</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Основное средство или нематериальный актив</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ca64a336-7790-4958-ba3d-c2d7db6904ac">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма, которая будет признаваться в расходах каждый квартал</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <commands uuid="9e72781f-96aa-46a8-a0bb-736465b3d979">
+    <name>ОткрытьЗаписиУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Книга учета доходов и расходов (УСН)</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Document>

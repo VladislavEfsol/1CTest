@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ГрафикПотребностейЗапасов</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дефицит</dataPath>
+			<field>Дефицит</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонечныйОстаток</dataPath>
+			<field>КонечныйОстаток</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МаксимальныйЗапас</dataPath>
+			<field>МаксимальныйЗапас</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МинимальныйЗапас</dataPath>
+			<field>МинимальныйЗапас</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameters">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.ТипНоменклатуры</dcscor:choiceParameter>
+							<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыНоменклатуры.Запас</dcscor:value>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партия</dataPath>
+			<field>Партия</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поступление</dataPath>
+			<field>Поступление</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоступлениеПросрочено</dataPath>
+			<field>ПоступлениеПросрочено</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Потребность</dataPath>
+			<field>Потребность</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПотребностьПросрочено</dataPath>
+			<field>ПотребностьПросрочено</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Просрочено</dataPath>
+			<field>Просрочено</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>Номенклатура</dcscor:choiceParameter>
+							<dcscor:value>Номенклатура</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПокупателя</dataPath>
+			<field>ЗаказПокупателя</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СчетУчета</dataPath>
+			<field>СчетУчета</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказНаПроизводство</dataPath>
+			<field>ЗаказНаПроизводство</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПоставщику</dataPath>
+			<field>ЗаказПоставщику</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипДвижения</dataPath>
+			<field>ТипДвижения</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказОстаток</dataPath>
+			<field>ЗаказОстаток</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Поставщик</dataPath>
+			<field>Поставщик</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СтруктурныеЕдиницы</v8:Type>
+			</valueType>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameters">
+						<dcscor:item>
+							<dcscor:choiceParameter>Отбор.ТипСтруктурнойЕдиницы</dcscor:choiceParameter>
+							<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыСтруктурныхЕдиниц.Склад</dcscor:value>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦенКонтрагента</dataPath>
+			<field>ВидЦенКонтрагента</field>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единица измерения</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НачальныйОстаток</dataPath>
+			<field>НачальныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начальный остаток</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусОплаты</dataPath>
+			<field>СтатусОплаты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплата заказа</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:EnumRef.СтатусОплаты</v8:Type>
+			</valueType>
+			<availableValue>
+				<value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусОплаты.Отсутствует</value>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусОплаты.Частичная</value>
+			</availableValue>
+			<availableValue>
+				<value xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусОплаты.Полная</value>
+			</availableValue>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЗаказа</dataPath>
+			<field>ВидЗаказа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид заказа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СостояниеЗаказа</dataPath>
+			<field>СостояниеЗаказа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние заказа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтруктурнаяЕдиница</dataPath>
+			<field>СтруктурнаяЕдиница</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение продажи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НеИспользоватьЗаказПокупателя</dataPath>
+			<field>НеИспользоватьЗаказПокупателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не использовать заказ покупателя</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+			<attributeUseRestriction>
+				<condition>true</condition>
+			</attributeUseRestriction>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗаказыОстатки.ТипДвижения КАК ТипДвижения,
+	ЗаказыОстатки.Организация КАК Организация,
+	ЗаказыОстатки.Номенклатура КАК Номенклатура,
+	ЗаказыОстатки.Характеристика КАК Характеристика,
+	ЗаказыОстатки.Заказ КАК Заказ,
+	СУММА(ЗаказыОстатки.КоличествоОстаток) КАК КоличествоОстаток
+ПОМЕСТИТЬ ВременнаяТаблицаЗаказыОстатки
+ИЗ
+	(ВЫБРАТЬ
+		ЗНАЧЕНИЕ(Перечисление.ТипыДвиженийЗапасов.Отгрузка) КАК ТипДвижения,
+		ЗаказыПокупателейОстатки.Организация КАК Организация,
+		ЗаказыПокупателейОстатки.Номенклатура КАК Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ЗаказыПокупателейОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ КАК Характеристика,
+		ЗаказыПокупателейОстатки.ЗаказПокупателя КАК Заказ,
+		ЗаказыПокупателейОстатки.КоличествоОстаток КАК КоличествоОстаток
+	ИЗ
+		РегистрНакопления.ЗаказыПокупателей.Остатки(
+				{(&amp;ДатаОстатки)},
+				Организация = &amp;Организация
+					И Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Запас)
+					И НЕ Номенклатура.ТолькоПоддержкаОстаткаПриРасчетеПотребностей
+					И Номенклатура.СпособПополнения В (&amp;СпособПополнения) {(Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика, (ЗаказПокупателя.ВидЗаказа).* КАК ВидЗаказа, (ЗаказПокупателя.СостояниеЗаказа).* КАК СостояниеЗаказа, (ЗаказПокупателя.СтруктурнаяЕдиницаПродажи).* КАК Подразделение, (ЗаказПокупателя).* КАК ЗаказПокупателя}) КАК ЗаказыПокупателейОстатки
+			{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ФактОплатыЗаказов КАК ФактОплаты
+			ПО ЗаказыПокупателейОстатки.ЗаказПокупателя = ФактОплаты.СчетНаОплату},
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики
+	{ГДЕ
+		(ВЫБОР
+				КОГДА ЕСТЬNULL(ФактОплаты.СуммаОплаты, 0) + ЕСТЬNULL(ФактОплаты.СуммаАванса, 0) = 0
+					ТОГДА ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Отсутствует)
+				КОГДА ЕСТЬNULL(ФактОплаты.СуммаОплаты, 0) + ЕСТЬNULL(ФактОплаты.СуммаАванса, 0) &gt;= ЗаказыПокупателейОстатки.ЗаказПокупателя.СуммаДокумента
+					ТОГДА ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Полная)
+				ИНАЧЕ ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Частичная)
+			КОНЕЦ) КАК СтатусОплаты}
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ЗНАЧЕНИЕ(Перечисление.ТипыДвиженийЗапасов.Отгрузка),
+		ЗапасыОстатки.Организация,
+		ЗапасыОстатки.Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ЗапасыОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ,
+		ЗапасыОстатки.ЗаказПокупателя,
+		-ЗапасыОстатки.КоличествоОстаток
+	ИЗ
+		РегистрНакопления.Запасы.Остатки(
+				{(&amp;ДатаОстатки)},
+				Организация = &amp;Организация
+					И ЗаказПокупателя &lt;&gt; ЗНАЧЕНИЕ(Документ.ЗаказПокупателя.ПустаяСсылка)
+					И Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Запас)
+					И НЕ Номенклатура.ТолькоПоддержкаОстаткаПриРасчетеПотребностей
+					И Номенклатура.СпособПополнения В (&amp;СпособПополнения) {(Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика, (ЗаказПокупателя.ВидЗаказа).* КАК ВидЗаказа, (ЗаказПокупателя.СостояниеЗаказа).* КАК СостояниеЗаказа, (ЗаказПокупателя.СтруктурнаяЕдиницаПродажи).* КАК Подразделение, (ЗаказПокупателя).* КАК ЗаказПокупателя}) КАК ЗапасыОстатки
+			{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ФактОплатыЗаказов КАК ФактОплаты
+			ПО ЗапасыОстатки.ЗаказПокупателя = ФактОплаты.СчетНаОплату},
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики
+	{ГДЕ
+		(ВЫБОР
+				КОГДА ЕСТЬNULL(ФактОплаты.СуммаОплаты, 0) + ЕСТЬNULL(ФактОплаты.СуммаАванса, 0) = 0
+					ТОГДА ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Отсутствует)
+				КОГДА ЕСТЬNULL(ФактОплаты.СуммаОплаты, 0) + ЕСТЬNULL(ФактОплаты.СуммаАванса, 0) &gt;= ЗапасыОстатки.ЗаказПокупателя.СуммаДокумента
+					ТОГДА ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Полная)
+				ИНАЧЕ ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Частичная)
+			КОНЕЦ) КАК СтатусОплаты}
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ПотребностьВЗапасахОстатки.ТипДвижения,
+		ПотребностьВЗапасахОстатки.Организация,
+		ПотребностьВЗапасахОстатки.Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ПотребностьВЗапасахОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ,
+		ПотребностьВЗапасахОстатки.ЗаказПокупателя,
+		ПотребностьВЗапасахОстатки.КоличествоОстаток
+	ИЗ
+		РегистрНакопления.ПотребностьВЗапасах.Остатки(
+				{(&amp;ДатаОкончания)},
+				Организация = &amp;Организация
+					И Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Запас)
+					И НЕ Номенклатура.ТолькоПоддержкаОстаткаПриРасчетеПотребностей
+					И Номенклатура.СпособПополнения В (&amp;СпособПополнения) {(Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика, (ЗаказПокупателя.ВидЗаказа).* КАК ВидЗаказа, (ЗаказПокупателя.СостояниеЗаказа).* КАК СостояниеЗаказа, (ЗаказПокупателя.СтруктурнаяЕдиницаПродажи).* КАК Подразделение, (ЗаказПокупателя).* КАК ЗаказПокупателя}) КАК ПотребностьВЗапасахОстатки
+			{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ФактОплатыЗаказов КАК ФактОплаты
+			ПО ПотребностьВЗапасахОстатки.ЗаказПокупателя = ФактОплаты.СчетНаОплату},
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики
+	{ГДЕ
+		(ВЫБОР
+				КОГДА ЕСТЬNULL(ФактОплаты.СуммаОплаты, 0) + ЕСТЬNULL(ФактОплаты.СуммаАванса, 0) = 0
+					ТОГДА ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Отсутствует)
+				КОГДА ЕСТЬNULL(ФактОплаты.СуммаОплаты, 0) + ЕСТЬNULL(ФактОплаты.СуммаАванса, 0) &gt;= ПотребностьВЗапасахОстатки.ЗаказПокупателя.СуммаДокумента
+					ТОГДА ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Полная)
+				ИНАЧЕ ЗНАЧЕНИЕ(Перечисление.СтатусОплаты.Частичная)
+			КОНЕЦ) КАК СтатусОплаты}
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ЗНАЧЕНИЕ(Перечисление.ТипыДвиженийЗапасов.Поступление),
+		ЗаказыПоставщикамОстатки.Организация,
+		ЗаказыПоставщикамОстатки.Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ЗаказыПоставщикамОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ,
+		ЗаказыПоставщикамОстатки.ЗаказПоставщику,
+		ЗаказыПоставщикамОстатки.КоличествоОстаток
+	ИЗ
+		РегистрНакопления.ЗаказыПоставщикам.Остатки(
+				{(&amp;ДатаОстатки)},
+				Организация = &amp;Организация
+					И Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Запас)
+					И Номенклатура.СпособПополнения В (&amp;СпособПополнения) {(Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика}) КАК ЗаказыПоставщикамОстатки,
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ЗНАЧЕНИЕ(Перечисление.ТипыДвиженийЗапасов.Поступление),
+		ЗаказыНаПроизводствоОстатки.Организация,
+		ЗаказыНаПроизводствоОстатки.Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ЗаказыНаПроизводствоОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ,
+		ЗаказыНаПроизводствоОстатки.ЗаказНаПроизводство,
+		ЗаказыНаПроизводствоОстатки.КоличествоОстаток
+	ИЗ
+		РегистрНакопления.ЗаказыНаПроизводство.Остатки(
+				{(&amp;ДатаОстатки)},
+				Организация = &amp;Организация
+					И Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Запас)
+					И Номенклатура.СпособПополнения В (&amp;СпособПополнения) {(Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика}) КАК ЗаказыНаПроизводствоОстатки,
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики) КАК ЗаказыОстатки
+
+СГРУППИРОВАТЬ ПО
+	ЗаказыОстатки.Организация,
+	ЗаказыОстатки.Номенклатура,
+	ЗаказыОстатки.Характеристика,
+	ЗаказыОстатки.Заказ,
+	ЗаказыОстатки.ТипДвижения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ГрафикПотребностейЗапасов.Период КАК Период,
+	ГрафикПотребностейЗапасов.Номенклатура КАК Номенклатура,
+	ГрафикПотребностейЗапасов.Характеристика КАК Характеристика,
+	ГрафикПотребностейЗапасов.Заказ КАК Заказ,
+	ГрафикПотребностейЗапасов.ТипДвижения КАК ТипДвижения,
+	СУММА(ГрафикПотребностейЗапасов.ЗаказОстаток) КАК ЗаказОстаток,
+	СУММА(ГрафикПотребностейЗапасов.МинимальныйЗапас) КАК МинимальныйЗапас,
+	СУММА(ГрафикПотребностейЗапасов.МаксимальныйЗапас) КАК МаксимальныйЗапас,
+	СУММА(ГрафикПотребностейЗапасов.СвободныйОстаток) КАК СвободныйОстаток,
+	СУММА(ГрафикПотребностейЗапасов.Поступление) КАК Поступление,
+	СУММА(ГрафикПотребностейЗапасов.ПоступлениеПросрочено) КАК ПоступлениеПросрочено,
+	СУММА(ГрафикПотребностейЗапасов.Потребность) КАК Потребность,
+	СУММА(ГрафикПотребностейЗапасов.ПотребностьПросрочено) КАК ПотребностьПросрочено,
+	СУММА(ГрафикПотребностейЗапасов.КонечныйОстаток) КАК КонечныйОстаток,
+	СУММА(ГрафикПотребностейЗапасов.Просрочено) КАК Просрочено,
+	СУММА(ГрафикПотребностейЗапасов.Дефицит) КАК Дефицит
+ПОМЕСТИТЬ ВременнаяТаблицаГрафикПотребностейЗапасов
+ИЗ
+	(ВЫБРАТЬ
+		ДАТАВРЕМЯ(1, 1, 1) КАК Период,
+		ЗапасыОстатки.Номенклатура КАК Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ЗапасыОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ КАК Характеристика,
+		НЕОПРЕДЕЛЕНО КАК Заказ,
+		НЕОПРЕДЕЛЕНО КАК ТипДвижения,
+		0 КАК ЗаказОстаток,
+		ЗапасыОстатки.КоличествоОстаток КАК СвободныйОстаток,
+		0 КАК Поступление,
+		0 КАК ПоступлениеПросрочено,
+		0 КАК Потребность,
+		0 КАК ПотребностьПросрочено,
+		0 КАК МинимальныйЗапас,
+		0 КАК МаксимальныйЗапас,
+		0 КАК КонечныйОстаток,
+		0 КАК Просрочено,
+		0 КАК Дефицит
+	ИЗ
+		РегистрНакопления.Запасы.Остатки(
+				{(&amp;ДатаОстатки)},
+				Организация = &amp;Организация
+					И ЗаказПокупателя = ЗНАЧЕНИЕ(Документ.ЗаказПокупателя.ПустаяСсылка)
+					И Номенклатура.ТипНоменклатуры = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Запас)
+					И Номенклатура.СпособПополнения В (&amp;СпособПополнения) {(Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика, (СтруктурнаяЕдиница).* КАК Склад, (ЗаказПокупателя).* КАК НеИспользоватьЗаказПокупателя}) КАК ЗапасыОстатки,
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ДАТАВРЕМЯ(1, 1, 1),
+		УправлениеЗапасами.Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА УправлениеЗапасами.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ,
+		НЕОПРЕДЕЛЕНО,
+		НЕОПРЕДЕЛЕНО,
+		0,
+		0,
+		0,
+		0,
+		0,
+		0,
+		УправлениеЗапасами.МинимальныйУровеньЗапаса,
+		УправлениеЗапасами.МаксимальныйУровеньЗапаса,
+		0,
+		0,
+		0
+	ИЗ
+		РегистрСведений.УправлениеЗапасами КАК УправлениеЗапасами,
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики
+	ГДЕ
+		УправлениеЗапасами.Организация = &amp;Организация
+	{ГДЕ
+		УправлениеЗапасами.Номенклатура.* КАК Номенклатура,
+		УправлениеЗапасами.Характеристика.* КАК Характеристика}
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ВЫБОР
+			КОГДА ГрафикДвиженияЗапасов.Период &lt; &amp;ДатаНачала
+					ИЛИ ГрафикДвиженияЗапасов.Период &gt; &amp;ДатаОкончания
+					ИЛИ ГрафикДвиженияЗапасов.Период ЕСТЬ NULL
+				ТОГДА ДАТАВРЕМЯ(1, 1, 1)
+			ИНАЧЕ ГрафикДвиженияЗапасов.Период
+		КОНЕЦ,
+		ЗаказыОстатки.Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ЗаказыОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ,
+		ЗаказыОстатки.Заказ,
+		ЗаказыОстатки.ТипДвижения,
+		ВЫБОР
+			КОГДА ГрафикДвиженияЗапасов.Период &gt; &amp;ДатаОкончания
+				ТОГДА -ГрафикДвиженияЗапасов.Количество
+			ИНАЧЕ ЗаказыОстатки.КоличествоОстаток
+		КОНЕЦ,
+		0,
+		СУММА(ВЫБОР
+				КОГДА ГрафикДвиженияЗапасов.ТипДвижения = ЗНАЧЕНИЕ(Перечисление.ТипыДвиженийЗапасов.Поступление)
+						И ГрафикДвиженияЗапасов.Период &lt;= &amp;ДатаОкончания
+						И ГрафикДвиженияЗапасов.Период &gt;= &amp;ДатаНачала
+					ТОГДА ГрафикДвиженияЗапасов.Количество
+				ИНАЧЕ 0
+			КОНЕЦ),
+		0,
+		СУММА(ВЫБОР
+				КОГДА ГрафикДвиженияЗапасов.ТипДвижения = ЗНАЧЕНИЕ(Перечисление.ТипыДвиженийЗапасов.Отгрузка)
+						И ГрафикДвиженияЗапасов.Период &lt;= &amp;ДатаОкончания
+						И ГрафикДвиженияЗапасов.Период &gt;= &amp;ДатаНачала
+					ТОГДА ГрафикДвиженияЗапасов.Количество
+				ИНАЧЕ 0
+			КОНЕЦ),
+		0,
+		0,
+		0,
+		0,
+		0,
+		0
+	ИЗ
+		ВременнаяТаблицаЗаказыОстатки КАК ЗаказыОстатки
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ГрафикДвиженияЗапасов КАК ГрафикДвиженияЗапасов
+			ПО ЗаказыОстатки.Организация = ГрафикДвиженияЗапасов.Организация
+				И ЗаказыОстатки.Номенклатура = ГрафикДвиженияЗапасов.Номенклатура
+				И ЗаказыОстатки.Характеристика = ГрафикДвиженияЗапасов.Характеристика
+				И ЗаказыОстатки.Заказ = ГрафикДвиженияЗапасов.Заказ
+				И ЗаказыОстатки.ТипДвижения = ГрафикДвиженияЗапасов.ТипДвижения,
+		Константа.ФункциональнаяОпцияИспользоватьХарактеристики КАК ФункциональнаяОпцияИспользоватьХарактеристики
+	
+	СГРУППИРОВАТЬ ПО
+		ВЫБОР
+			КОГДА ГрафикДвиженияЗапасов.Период &lt; &amp;ДатаНачала
+					ИЛИ ГрафикДвиженияЗапасов.Период &gt; &amp;ДатаОкончания
+					ИЛИ ГрафикДвиженияЗапасов.Период ЕСТЬ NULL
+				ТОГДА ДАТАВРЕМЯ(1, 1, 1)
+			ИНАЧЕ ГрафикДвиженияЗапасов.Период
+		КОНЕЦ,
+		ЗаказыОстатки.Номенклатура,
+		ВЫБОР
+			КОГДА ФункциональнаяОпцияИспользоватьХарактеристики.Значение
+				ТОГДА ЗаказыОстатки.Характеристика
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатуры.ПустаяСсылка)
+		КОНЕЦ,
+		ЗаказыОстатки.Заказ,
+		ЗаказыОстатки.ТипДвижения,
+		ВЫБОР
+			КОГДА ГрафикДвиженияЗапасов.Период &gt; &amp;ДатаОкончания
+				ТОГДА -ГрафикДвиженияЗапасов.Количество
+			ИНАЧЕ ЗаказыОстатки.КоличествоОстаток
+		КОНЕЦ) КАК ГрафикПотребностейЗапасов
+ГДЕ
+	ГрафикПотребностейЗапасов.Номенклатура.СпособПополнения В(&amp;СпособПополнения)
+
+СГРУППИРОВАТЬ ПО
+	ГрафикПотребностейЗапасов.Период,
+	ГрафикПотребностейЗапасов.Номенклатура,
+	ГрафикПотребностейЗапасов.Характеристика,
+	ГрафикПотребностейЗапасов.Заказ,
+	ГрафикПотребностейЗапасов.ТипДвижения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Период КАК Период,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Номенклатура КАК Номенклатура,
+	СправочникНоменклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА СправочникНоменклатура.СпособПополнения = ЗНАЧЕНИЕ(Перечисление.СпособыПополненияЗапасов.Производство)
+			ТОГДА ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)
+		КОГДА СправочникНоменклатура.Поставщик = ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)
+			ТОГДА ЦеныНоменклатурыКонтрагентовСрезПоследних.ВидЦенКонтрагента.Владелец
+		ИНАЧЕ СправочникНоменклатура.Поставщик
+	КОНЕЦ КАК Поставщик,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Характеристика КАК Характеристика,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Заказ КАК Заказ,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.ТипДвижения КАК ТипДвижения,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.ЗаказОстаток КАК ЗаказОстаток,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.МинимальныйЗапас КАК МинимальныйЗапас,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.МаксимальныйЗапас КАК МаксимальныйЗапас,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.СвободныйОстаток КАК НачальныйОстаток,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Поступление КАК Поступление,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.ПоступлениеПросрочено КАК ПоступлениеПросрочено,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Потребность КАК Потребность,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.ПотребностьПросрочено КАК ПотребностьПросрочено,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.КонечныйОстаток КАК КонечныйОстаток,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Просрочено КАК Просрочено,
+	ВременнаяТаблицаГрафикПотребностейЗапасов.Дефицит КАК Дефицит
+ИЗ
+	ВременнаяТаблицаГрафикПотребностейЗапасов КАК ВременнаяТаблицаГрафикПотребностейЗапасов
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатурыКонтрагентов.СрезПоследних({(&amp;ДатаНачала)}, ВидЦенКонтрагента В (&amp;ВидыЦенКонтрагентов)) КАК ЦеныНоменклатурыКонтрагентовСрезПоследних
+		ПО ВременнаяТаблицаГрафикПотребностейЗапасов.Номенклатура = ЦеныНоменклатурыКонтрагентовСрезПоследних.Номенклатура
+			И ВременнаяТаблицаГрафикПотребностейЗапасов.Характеристика = ЦеныНоменклатурыКонтрагентовСрезПоследних.Характеристика
+			И (ЦеныНоменклатурыКонтрагентовСрезПоследних.Актуальность)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Номенклатура КАК СправочникНоменклатура
+		ПО ВременнаяТаблицаГрафикПотребностейЗапасов.Номенклатура = СправочникНоменклатура.Ссылка
+ГДЕ
+	(СправочникНоменклатура.Поставщик = &amp;Контрагент
+			ИЛИ ЦеныНоменклатурыКонтрагентовСрезПоследних.ВидЦенКонтрагента.Владелец = &amp;Контрагент
+			ИЛИ &amp;Контрагент = ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка))
+
+УПОРЯДОЧИТЬ ПО
+	Номенклатура,
+	Характеристика,
+	Период,
+	Заказ</query>
+	</dataSet>
+	<totalField>
+		<dataPath>МинимальныйЗапас</dataPath>
+		<expression>Максимум(МинимальныйЗапас)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>МаксимальныйЗапас</dataPath>
+		<expression>Максимум(МаксимальныйЗапас)</expression>
+	</totalField>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Окончание периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Организации.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>СпособПополнения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Способ пополнения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.СпособыПополненияЗапасов</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ВидыЦенКонтрагентов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Виды цен контрагентов</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦенКонтрагентов</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Контрагент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Источник</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Контрагенты</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Контрагенты.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ПараметрыВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:ChoiceParameters">
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.Поставщик</dcscor:choiceParameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item>
+				<dcscor:parameter>ВыборГруппИЭлементов</dcscor:parameter>
+				<dcscor:value xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d5p1:FoldersAndItemsUse">Items</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+	</parameter>
+	<parameter>
+		<name>ДатаОстатки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата остатки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Период</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Заказ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипДвижения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НачальныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Поступление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоступлениеПросрочено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Потребность</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПотребностьПросрочено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МинимальныйЗапас</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МаксимальныйЗапас</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонечныйОстаток</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Просрочено</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дефицит</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>6b89f1e0-a511-4a96-8b46-558e4427a92a</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура.КатегорияНоменклатуры</dcsset:left>
+					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+					<dcsset:comparisonType>InHierarchy</dcsset:comparisonType>
+					<dcsset:userSettingID>f5741508-93c1-4918-8f1c-b12ac42587f3</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидЗаказа</dcsset:left>
+					<dcsset:comparisonType>InHierarchy</dcsset:comparisonType>
+					<dcsset:userSettingID>6e13f0f2-5bb9-4019-942a-81972783ff12</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СостояниеЗаказа</dcsset:left>
+					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>abfc034d-6490-4f84-a54b-2977fdebc54f</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтатусОплаты</dcsset:left>
+					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>f08072f8-c1da-4fd8-9ebe-649ac3cb30b5</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаНачала</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>dd0a8b14-e5e5-43bd-8d32-c8561872ce40</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаОкончания</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>bb5707d0-12e2-4bb2-924b-4e7ecd8fb02c</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.Организации.ПустаяСсылка</dcscor:value>
+					<dcsset:userSettingID>9e93b807-7b3d-41cd-ac70-af35b5906e6e</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>СпособПополнения</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>fe456584-c359-4311-b83f-302d2010ff66</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидыЦенКонтрагентов</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>932121a1-cdf5-43b2-a68d-5ceb79d0fe60</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Контрагент</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.Контрагенты.ПустаяСсылка</dcscor:value>
+					<dcsset:userSettingID>51a181bd-220b-4a9b-b681-e4b75d9e4c0b</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДатаОстатки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>d033ad8f-79fa-43a4-99ca-806d27d24fae</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Период</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Заказ.ДатаОтгрузки</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+			<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

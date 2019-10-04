@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f548bbb-64b0-4c31-8c5d-48cff1258cac">
+  <producedTypes>
+    <objectType typeId="2a6831f3-7f62-4753-bce5-d95476daaff4" valueTypeId="6f5d42dc-7158-4f1e-9478-218757d3fcc6"/>
+    <managerType typeId="d0252d49-101c-481f-8516-4a3d41964a37" valueTypeId="a463f5dc-b8a7-4ccc-be73-2020ee3028ec"/>
+  </producedTypes>
+  <name>ОбработкиНалоговИОтчетности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработки налогов и отчетности</value>
+  </synonym>
+  <defaultForm>DataProcessor.ОбработкиНалоговИОтчетности.Form.ОсновнаяФорма</defaultForm>
+  <attributes uuid="c39d155a-1586-4232-aa40-f1f6168c3c03">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="1d058269-b082-4c0d-8a58-b3c25876d6b7">
+    <name>СобытиеКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие календаря</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КалендарьПодготовкиОтчетности</types>
+      <types>CatalogRef.КалендарьПерсональныхЗадачОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f9793e00-7a93-4bbe-bbb2-c646e7104343">
+    <name>СостояниеСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние события</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияСобытийКалендаря</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="01870047-7a61-42ca-9927-5960b9dc5aca">
+    <name>АвансовыйПлатежПоУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авансовый платеж по УСН</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="61cb0b98-c943-4295-8335-8338074fb67c">
+    <name>ГрупповаяРегистрацияРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Групповая регистрация расходов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f56b7830-6983-4bd7-86ef-d757cda9c978">
+    <name>Декларация12</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация об объеме розничной продажи пива и пивных напитков (Приложение №12)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bf4a42ed-2a3e-4a37-8946-14d772896923">
+    <name>ДекларацияПоЕНВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация по ЕНВД</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c85c8350-4609-4910-9d6e-abf425e650ff">
+    <name>ДекларацияПоУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Декларация по УСН</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="92b5fbb5-ee58-45dc-ba34-b5f4deb1095e">
+    <name>ЕдиныйНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единый налог</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3bfbe689-ebb5-4341-a204-afa4495fd51e">
+    <name>ЕдиныйНалогЕНВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единый налог ЕНВД</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="57ba4ba1-82cb-4b3c-a547-c47b2bcff4a1">
+    <name>НалогиСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоги сотрудников</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8c321e93-da1c-4e63-883a-0b7ce135b841">
+    <name>НалогПатент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Патент</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="63357e39-5bdc-4307-ac27-746b587f7e09">
+    <name>ОписанияЗадачИСтартВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описания задач и старт выполнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2afc1a84-b6f3-4e49-b9aa-fabd7616eb04">
+    <name>ОтчетностьВПФР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчетность в ПФР</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e516c0ae-fb96-4c76-9e96-fada9f06c55c">
+    <name>РасчетПоСтраховымВзносам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет по страховым взносам</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6c20f0e5-125e-4471-92f9-f34732846087">
+    <name>СведенияОЗастрахованныхЛицах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о застрахованных лицах (СЗВ-М)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="adbd4881-4ee9-408b-9933-a32ffb505b26">
+    <name>СведенияОСреднесписочнойЧисленности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о среднесписочной численности</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="05d18d68-1e87-4cd4-aa08-3650c9d359d4">
+    <name>Справки2НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справки 2-НДФЛ по сотрудникам сформированы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="80a01800-a7d6-41e0-8ada-1edc2ec63f10">
+    <name>СтраховыеВзносыИП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страховые взносы в ПФР</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="908bcde0-7de7-4d44-bb2d-a5f18d163f6d">
+    <name>СтраховыеВзносыПриДоходахСвыше300тр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страховые взносы в ПФР при доходах свыше 300 т.р.</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c1872ec8-e87c-47d5-81a4-53ce881f738c">
+    <name>ТаблицаЕНВДРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица ЕНВД расшифровка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eddc3ae2-2b58-4055-a876-3ecd31850e6d">
+    <name>ТаблицаПатентРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица патент расшифровка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bc44405e-e93a-4da4-87f6-322fac0f6784">
+    <name>ТорговыйСбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Торговый сбор</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="687263d5-bc6a-48b7-ad62-fdec2dddcc18">
+    <name>Форма1Предприниматель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №1-предприниматель</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="92170f79-000a-4bf0-b341-b0da61cac513">
+    <name>Форма4ФСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма 4-ФСС</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4fe78eef-a95e-4179-a645-df64a9128e32">
+    <name>Форма6НДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма 6-НДФЛ</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6c826574-f702-4a00-bb43-bd3bae964ef9">
+    <name>ФормаУстановкиШрифта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма установки шрифта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="88ed85e2-b8f0-4855-8848-1eaea16482df">
+    <name>ОсновнаяФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4255396e-3246-43c0-b559-bab65e9a30ac">
+    <name>СЗВСтаж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сведения о страховом стаже застрахованных лиц (СЗВ-СТАЖ)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="129bfb51-0f2d-45db-b0d6-bc4261828265">
+    <name>ОписаниеПорядкаЗаполненияДекларацииПоУСН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание порядка заполнения декларации по УСН</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="d6e5e3d4-6c92-4b7a-bcf3-8a16ff19d740">
+    <name>ПорядокУстановкиШрифта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок установки шрифта</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="7983e7c0-5f3e-4552-98f1-ddd0c6867bdd">
+    <name>ОписаниеПорядкаЗаполненияДекларацииПоЕНВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание порядка заполнения декларации по ЕНВД</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

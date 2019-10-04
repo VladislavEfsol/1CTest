@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79fa0e4b-d1d7-4f59-9b9a-9782e45a4deb">
+  <producedTypes>
+    <objectType typeId="6dfa38c4-910d-4eb4-af7d-b38994a49533" valueTypeId="f67ea6ae-7096-497e-aeab-b63915823949"/>
+    <managerType typeId="280cbe7e-51ee-4a80-9637-dfb6b6b6e2cb" valueTypeId="a9f14344-4bed-4784-9b7e-168dc137bed0"/>
+  </producedTypes>
+  <name>Долги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Долги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.Долги.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="f75bd7d1-29e4-4fb5-a7ab-5939c970f1c0">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="a059c605-7832-4f43-8169-b3a63a5a26cb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="59467d02-7002-4b38-930a-6f89a28e6684">
+    <name>ОбразецДолги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец долги</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

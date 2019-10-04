@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="984b2ec0-fb5d-4577-b1e5-57653b4907da">
+  <producedTypes>
+    <selectionType typeId="3293766a-5237-43df-bc4a-4155fd41cf4e" valueTypeId="481d1218-8121-4fe8-9506-62fd1e1513b3"/>
+    <listType typeId="30a082b9-c13f-4ba5-8f75-a00ec5e185b8" valueTypeId="deb336e1-90b8-4a2e-af50-3b5821250444"/>
+    <managerType typeId="39e9aa3c-fb4c-48a3-a5f8-b1819cec26e0" valueTypeId="036301c4-dff7-4d4d-91fb-8f96cce067b2"/>
+    <recordSetType typeId="aba9b5b6-5dbb-40be-bdff-4708cd72c5b5" valueTypeId="c9d457be-8e5a-47e0-a2a5-767a4ec99648"/>
+    <recordKeyType typeId="95a7735b-f118-4232-860d-2ee523c3579f" valueTypeId="4d96d9c3-4406-4c5e-aa75-ead6d81b76e1"/>
+    <recordType typeId="31a94f92-5199-48a5-9cfc-4603fd30213a" valueTypeId="90575c72-21ca-476d-9987-31b3be9d0913"/>
+  </producedTypes>
+  <name>ПодарочныеСертификаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подарочные сертификаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5cd1ea50-a776-4267-8727-3585cf326e0a">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="f0a26744-a1d4-40ee-8d4f-4dc4db78bcfe">
+    <name>ПодарочныйСертификат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подарочный сертификат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ТипНоменклатуры</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.ТипыНоменклатуры.EnumValue.ПодарочныйСертификат</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0a336c71-f5d5-46d8-b34f-5753cd4a40f3">
+    <name>НомерСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер сертификата</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерийныеНомера</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

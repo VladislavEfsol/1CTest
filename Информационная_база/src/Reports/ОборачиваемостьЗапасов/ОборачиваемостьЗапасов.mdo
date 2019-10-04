@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f6dfcb3-1422-4ae9-8a93-879430e204ca">
+  <producedTypes>
+    <objectType typeId="a6d92ce1-3e71-41b7-97ae-e2777f567807" valueTypeId="bcf46ef2-5157-4d92-b573-f782f67a6941"/>
+    <managerType typeId="e2940610-7512-4fe7-85e9-5ed806adc023" valueTypeId="fc6c39ad-f19b-40dd-955a-58b27bacdadc"/>
+  </producedTypes>
+  <name>ОборачиваемостьЗапасов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оборачиваемость запасов</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ОборачиваемостьЗапасов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="f6e1dbcd-c142-4373-bd76-dd7375f507ad">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="58678548-36c0-4908-86e3-8269030dc5fc">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8df9ab7e-72bc-4ee3-af07-0cda8dd98dae">
+    <name>СхемаСреднийОбъем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема средний объем</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="6dadfbab-5257-41f2-8d4b-b6947602373a">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

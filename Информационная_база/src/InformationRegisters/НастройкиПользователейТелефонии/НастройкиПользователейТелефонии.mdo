@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7632cba-8ef4-4b56-a7ef-d24a5a161604">
+  <producedTypes>
+    <selectionType typeId="8d202e08-005c-48a7-aed2-a6ed222184e6" valueTypeId="41620d70-dfb0-48a4-9709-25f789ebe2c3"/>
+    <listType typeId="b74d3f53-8cbc-4ccf-8386-78d82ef78f42" valueTypeId="84156562-ccb4-4ee6-bcf2-c6cee2ad73ed"/>
+    <managerType typeId="5eb084df-b2d9-41dd-83d0-28ec301ab369" valueTypeId="d38816ab-cfc4-41e6-959b-d4be92a2fc93"/>
+    <recordSetType typeId="c2f9db59-f8e8-4691-bc52-bfc8ae6eb1de" valueTypeId="9d02335b-1775-4ca6-b3db-1881ced2f795"/>
+    <recordKeyType typeId="abe7d8f9-c632-4b27-ae3f-07c256554113" valueTypeId="512a16a7-ff51-4db3-b06f-5e4bee438b15"/>
+    <recordType typeId="bcdef0b0-f466-449e-b0bc-673e7d26a205" valueTypeId="9530abaa-0da4-4507-a522-ef1d6bc02c97"/>
+    <recordManagerType typeId="395da0a7-f052-45ca-8e90-9bd263f623f2" valueTypeId="020972c6-2c6a-490a-9c37-1c97f061bb21"/>
+  </producedTypes>
+  <name>НастройкиПользователейТелефонии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки пользователей телефонии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиПользователейТелефонии.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="92361e01-885f-4f75-8824-d8ffdd9a1a0a">
+    <name>ВнутреннийНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутренний номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="2e43f9da-bd07-433b-aa26-62199c68a855">
+    <name>ИсходящийНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исходящий номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="878f6f3f-e6cb-4365-8db5-37a2aba2a1bb">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="24807eaf-085b-46ce-bfcf-2886be219569">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

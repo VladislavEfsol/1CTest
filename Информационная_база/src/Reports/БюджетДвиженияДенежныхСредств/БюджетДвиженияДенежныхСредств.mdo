@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fae749c7-b42a-40cf-9014-e1d782af270c">
+  <producedTypes>
+    <objectType typeId="b44ad441-41c0-4c6e-bd37-7a7105963429" valueTypeId="07d3e331-3296-4f79-bf6f-c1fbffd12738"/>
+    <managerType typeId="3af31735-98a0-4c91-8aeb-d0f2a974d4d6" valueTypeId="bcea62c4-35d2-43de-b9c3-c241bba5e73c"/>
+  </producedTypes>
+  <name>БюджетДвиженияДенежныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бюджет движения денежных средств</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.БюджетДвиженияДенежныхСредств.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="1a2269d2-ad18-4ba2-9211-32164312ff80">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="64127bec-0817-481b-bd2e-694a6d1bf181">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c6bad5ae-e938-4f4d-a5a3-85ecb516c7a8">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="9709c99a-3354-4140-bdfb-2153b3b6827f">
+    <name>ОбразецБюджетДвиженияДенежныхСредствПланФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец бюджет движения денежных средств план факт</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

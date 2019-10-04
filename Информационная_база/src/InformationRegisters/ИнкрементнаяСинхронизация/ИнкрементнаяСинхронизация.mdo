@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed341ee2-625e-4f8b-bc55-656bc204597a">
+  <producedTypes>
+    <selectionType typeId="3577515a-7f25-4fce-89d0-eec331dd51c7" valueTypeId="b0958095-a431-40b1-bab3-29c9ac20ffb7"/>
+    <listType typeId="663cfb8d-959b-4431-bae2-ca053ec6ee55" valueTypeId="c87a5d83-0ef3-416c-8458-ed38ac5b774b"/>
+    <managerType typeId="871f2cb8-7281-4c6a-b348-d4f471100f28" valueTypeId="858aa289-e77e-426d-a09f-5fd1eb5c0eb9"/>
+    <recordSetType typeId="a55f5fe3-df4e-402b-b731-cb856b983c0b" valueTypeId="796eeaa4-c07f-4aaf-9974-fca5fe8aeda9"/>
+    <recordKeyType typeId="5759a230-4716-4280-a0c1-7ac3f22076b4" valueTypeId="b63e05ca-c1d2-4484-aa08-9c5b08ad396a"/>
+    <recordType typeId="9e42ab12-e52e-4c39-8141-8152a245285d" valueTypeId="2ac5e5b2-d861-4bc5-9a25-cd1a8292f5ad"/>
+    <recordManagerType typeId="c54037c7-024c-4eac-a010-602e95a564a4" valueTypeId="78ab8c89-392f-4c70-a6ed-bd3ae10fa67d"/>
+  </producedTypes>
+  <name>ИнкрементнаяСинхронизация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инкрементная синхронизация</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c6f63713-ebda-402e-94a8-458bd4f4cc17">
+    <name>СинхроТокен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Токен синхронизации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="e75aaf8c-1409-4e7f-b557-350b720ce9d6">
+    <name>Предмет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КалендариСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

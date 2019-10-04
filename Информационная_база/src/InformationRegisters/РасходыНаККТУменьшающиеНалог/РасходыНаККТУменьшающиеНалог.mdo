@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00eeda0e-d3ae-4c18-ac17-a8c60defd60b">
+  <producedTypes>
+    <selectionType typeId="34815f2d-e32f-4848-9fa3-9449d40d7570" valueTypeId="eda9b1ed-3243-49a9-acf5-9ea1f13964c1"/>
+    <listType typeId="8eedb6a5-40a2-490b-9ca4-d3f5ec75dbdd" valueTypeId="1e8a4432-a1db-4bdc-85c2-4aa2120c4537"/>
+    <managerType typeId="f045d8d8-9829-4aa6-9643-ccdf628a38f3" valueTypeId="df18e5f0-186c-4b15-bca1-b247240beab4"/>
+    <recordSetType typeId="b08d5819-7c0f-4fc3-a6dc-2255602e542f" valueTypeId="958445f6-e1b3-467b-8e03-ff082940874f"/>
+    <recordKeyType typeId="67550b07-34bd-437e-86ee-ec717e869a7d" valueTypeId="cdfa8c0a-3fb0-4f4e-8c49-e0be0e1f55bc"/>
+    <recordType typeId="91f7e921-b674-4ef1-91e7-294ddd7c41aa" valueTypeId="a38af06f-a69c-4e25-aab1-0b2fbdad8e09"/>
+    <recordManagerType typeId="dbab968d-a662-4fae-a26d-2c710c76cff3" valueTypeId="9ea8681a-a743-49d4-b984-c4ac1fb0a66c"/>
+  </producedTypes>
+  <name>РасходыНаККТУменьшающиеНалог</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расходы на ККТ, уменьшающие налог</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.РасходыНаККТУменьшающиеНалог.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.РасходыНаККТУменьшающиеНалог.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e9b4e4b8-50ed-460c-9e84-873bee2cc0ba">
+    <name>РасходыУменьшающиеНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расходы на приобретение ККТ, уменьшающие налог</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="afdd1cea-5d04-43c6-b301-2f56c891dcf7">
+    <name>НаименованиеККТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование модели ККТ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="ef9c67dc-0f7e-4cb1-9b86-ad16fab1f822">
+    <name>ДатаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата регистрации ККТ</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата регистрации ККТ в  налоговом органе</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="826bb614-1bcc-4341-b31c-3a96b913fbb9">
+    <name>ЗаписьКалендаря</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись календаря</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗаписиКалендаряПодготовкиОтчетности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b08aba06-0ab0-4136-bded-194aaeb2c542">
+    <name>ОбъектУменьшенияНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект уменьшения налога</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Патенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="150168f4-73b3-46e3-8741-3ecd43c160de">
+    <name>КодПООКТМО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ПООКТМО</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>11</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="709da574-a4d5-402c-ab88-efc535b69cb2">
+    <name>КодИФНС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ИФНС</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>4</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="14cadb2b-052e-45d3-b49f-1421321048ff">
+    <name>ЗаводскойНомерККТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заводской номер ККТ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1f6fcc63-8d44-4101-8b96-cb957335fd3c">
+    <name>РегистрационныйНомерККТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер ККТ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="99007406-5563-4efa-8d6b-9487b1173ceb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7dde586b-2571-4263-b17b-af825ac77b8e">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

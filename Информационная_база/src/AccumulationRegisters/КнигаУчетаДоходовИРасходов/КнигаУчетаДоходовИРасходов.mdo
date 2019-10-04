@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="741076ce-4678-4de8-a758-5478963c5a49">
+  <producedTypes>
+    <selectionType typeId="03886c7d-2a70-42a7-8b2c-773264ef2006" valueTypeId="8857507a-95dd-45b4-b4f6-b98d1e35ac2d"/>
+    <listType typeId="cb408cde-421b-4c0c-8fe8-9365c6d1f467" valueTypeId="6d1b5b4f-34e9-472d-a3a0-ba47a4959461"/>
+    <managerType typeId="9435caae-3091-441d-a00f-adaa02c54326" valueTypeId="441ae93c-18ac-4f19-8c41-6af594e8b4bb"/>
+    <recordSetType typeId="2894c52d-2939-437e-9975-37f883bf1511" valueTypeId="e58871f3-4186-4a3b-920a-d588042071d1"/>
+    <recordKeyType typeId="97771366-5501-41e4-810d-bdc02acbd17d" valueTypeId="8e39513e-95db-4bea-81b7-e55d2a9ced9b"/>
+    <recordType typeId="4e76303c-dbdc-43c9-b0a2-ecc93702d3e3" valueTypeId="56563775-2a00-4f06-bbc6-e69fd1f66a04"/>
+  </producedTypes>
+  <name>КнигаУчетаДоходовИРасходов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Книга учета доходов и расходов</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>ru</key>
+    <value>Книга учета доходов и расходов (регистр)</value>
+  </listPresentation>
+  <resources uuid="530db20c-34fa-4cab-9918-c838f006e61a">
+    <name>ДоходВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доход (всего)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Суммы доходов всего</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="2bc73d1c-a06c-4ee8-9e35-2ec70e18b38a">
+    <name>ДоходБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Суммы, попадающие в базу расчета по единому налогу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="011fa9d1-73a6-4dd9-a502-3fd318b98ee0">
+    <name>РасходВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход (всего)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма общих понесенных расходов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="abb2c612-807e-4c0f-8287-89236269c4f5">
+    <name>РасходБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма расходов, участвующих в исчеслении единого налога</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="f2d302f1-f68f-4857-9647-0937e8cdb398">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание дохода-расхода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Содержание записи</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3f430b6e-fdf2-4c57-8c89-32eca988a521">
+    <name>ПервичныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первичный документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаписиУСН</types>
+      <types>DocumentRef.РасходСоСчета</types>
+      <types>DocumentRef.АвансовыйОтчет</types>
+      <types>DocumentRef.ПоступлениеВКассу</types>
+      <types>DocumentRef.ОтчетОРозничныхПродажах</types>
+      <types>DocumentRef.РасходИзКассы</types>
+      <types>DocumentRef.ПоступлениеНаСчет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e4b10167-0262-404d-aa61-d93258030be1">
+    <name>ДатаПервичногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата первичного документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="dce240b2-d93c-4308-a01c-afdb6159f0c8">
+    <name>НомерПервичногоДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер первичного документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="7c0df9e8-2ed0-486c-a033-4994bca66b9b">
+    <name>НомерСтрокиДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="79a0d72c-d3bd-4a3e-b185-da2045a1ce3b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогоплательщик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4fad98bb-71b2-4973-a5be-0d6f4e40e3c4">
+    <name>ВидЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид записи</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыЗаписейФормированийКУДиР</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

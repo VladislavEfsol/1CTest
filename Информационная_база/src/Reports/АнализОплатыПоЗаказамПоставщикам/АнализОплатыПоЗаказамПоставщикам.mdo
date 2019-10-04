@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e700468b-e51e-4110-b110-8520ca918f40">
+  <producedTypes>
+    <objectType typeId="1ca4a95a-90d3-4bb2-a437-1935b946e775" valueTypeId="54573302-be27-495c-a134-f1b7bf565516"/>
+    <managerType typeId="3362ca2d-a8e8-410f-b6d5-99f70fef829f" valueTypeId="637b3d68-6f7e-4642-9719-0803286759f7"/>
+  </producedTypes>
+  <name>АнализОплатыПоЗаказамПоставщикам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ оплаты по заказам поставщикам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.АнализОплатыПоЗаказамПоставщикам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="062927a0-b0c9-4ea9-be81-5a9cc87990cc">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="103b9434-01ec-45fa-bcad-99f64ac26745">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="58919e9e-208e-43e3-81fd-bf049d7ebe61">
+    <name>ОбразецОсновной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец основной</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

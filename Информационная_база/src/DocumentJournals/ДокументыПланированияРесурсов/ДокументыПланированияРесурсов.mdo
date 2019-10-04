@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6e6a673-d55e-4ea5-b503-d435c749fa02">
+  <producedTypes>
+    <selectionType typeId="663ad667-58c7-4e9e-9a42-c0ac9931c81c" valueTypeId="33cf07a4-b302-46ef-8126-4b3a6fa50b31"/>
+    <listType typeId="ef07b775-0a2b-4778-bbf6-ab772a7c3689" valueTypeId="75963fbe-e0bd-4816-87ed-d1588fae0f0a"/>
+    <managerType typeId="ade0f0c8-f5c3-4390-845b-57c1611017e7" valueTypeId="e11fb078-3d5d-4ba1-abdd-4818879968a4"/>
+  </producedTypes>
+  <name>ДокументыПланированияРесурсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы планирования ресурсов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ДокументыПланированияРесурсов.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.ЗаказНаПроизводство</registeredDocuments>
+  <registeredDocuments>Document.ЗаказПокупателя</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата заказа</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <synonym>
+      <key>ru</key>
+      <value>№ заказа</value>
+    </synonym>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="0347a90c-693f-476d-a9bb-fc5653bda3ad">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.Автор</references>
+    <references>Document.ЗаказПокупателя.Attribute.Автор</references>
+  </columns>
+  <columns uuid="5b8f758d-906d-4991-89fd-c7293eb67eb8">
+    <name>ВариантЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант завершения</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.ВариантЗавершения</references>
+    <references>Document.ЗаказПокупателя.Attribute.ВариантЗавершения</references>
+  </columns>
+  <columns uuid="960f608c-2bf0-4ac0-85dc-df1cef8538de">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.ВидОперации</references>
+    <references>Document.ЗаказПокупателя.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="271d31f8-6a1f-467f-b65c-8302a85f0602">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.ЗаказПокупателя</references>
+  </columns>
+  <columns uuid="6c02eafc-ab4a-49ac-8710-ef98320e19f7">
+    <name>КлючевыеРесурсы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурсы</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.СписокРесурсов</references>
+    <references>Document.ЗаказПокупателя.Attribute.СписокРесурсов</references>
+  </columns>
+  <columns uuid="59002300-e9ec-4927-be05-4d08f80b6210">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <references>Document.ЗаказПокупателя.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="32150cf1-5b65-47f5-a5c0-0fe73096b0ed">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.СписокНоменклатуры</references>
+    <references>Document.ЗаказПокупателя.Attribute.СписокНоменклатуры</references>
+  </columns>
+  <columns uuid="e26b304b-4c72-4af5-8793-36184b8a1b10">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.Организация</references>
+    <references>Document.ЗаказПокупателя.Attribute.Организация</references>
+  </columns>
+  <columns uuid="da6ce201-0a6e-4328-8b78-9f47bcff6278">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.Ответственный</references>
+    <references>Document.ЗаказПокупателя.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="8d2fdbac-0f40-43de-8230-7560fea95ac8">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.СтруктурнаяЕдиница</references>
+    <references>Document.ЗаказПокупателя.Attribute.СтруктурнаяЕдиницаПродажи</references>
+  </columns>
+  <columns uuid="600fde10-c919-461d-89fa-3a283c852a76">
+    <name>СостояниеЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.СостояниеЗаказа</references>
+    <references>Document.ЗаказПокупателя.Attribute.СостояниеЗаказа</references>
+  </columns>
+  <columns uuid="b50844f9-85a8-473b-a5af-fba8e1205ce3">
+    <name>Старт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старт</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.Старт</references>
+    <references>Document.ЗаказПокупателя.Attribute.Старт</references>
+  </columns>
+  <columns uuid="f6040454-4696-45d5-8ea4-a656dfd525e0">
+    <name>УдалитьЗакрыт</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) закрыт</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.УдалитьЗакрыт</references>
+    <references>Document.ЗаказПокупателя.Attribute.УдалитьЗакрыт</references>
+  </columns>
+  <columns uuid="b32cbbbf-98fe-43d2-9d10-a4d114367b93">
+    <name>Финиш</name>
+    <synonym>
+      <key>ru</key>
+      <value>Финиш</value>
+    </synonym>
+    <references>Document.ЗаказНаПроизводство.Attribute.Финиш</references>
+    <references>Document.ЗаказПокупателя.Attribute.Финиш</references>
+  </columns>
+  <forms uuid="19c4b1f8-ecfb-4db4-92c8-aebe0bc603ab">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

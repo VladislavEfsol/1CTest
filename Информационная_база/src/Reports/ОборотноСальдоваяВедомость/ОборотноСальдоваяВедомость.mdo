@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e13d730-2670-4da3-82f0-76cc66b04851">
+  <producedTypes>
+    <objectType typeId="286ea1b6-01d2-45c1-b795-2c6eb16638dd" valueTypeId="45326184-d2cb-414f-90ab-2e03de6f82a6"/>
+    <managerType typeId="7e72a9d5-6a65-4deb-a3ff-a8674ae581b9" valueTypeId="0fe408f1-dced-4489-bf68-84c12f4149a6"/>
+  </producedTypes>
+  <name>ОборотноСальдоваяВедомость</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оборотно-сальдовая ведомость</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>CommonForm.ФормаОтчетаУНФ</defaultForm>
+  <mainDataCompositionSchema>Report.ОборотноСальдоваяВедомость.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Информация об остатках по счетам учета на начало и конец периода и оборотах по дебету и кредиту за период</value>
+  </explanation>
+  <attributes uuid="1033c9c5-c3a9-4540-8b14-5b9d55613801">
+    <name>ЭтоОтчетУНФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенные настройки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <templates uuid="3001fa6a-b6e8-4f2c-a387-72ff713e5301">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="152761b9-4269-46a6-afb8-c0d06504cc46">
+    <name>ОбразецОСВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Образец ОСВ</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Report>

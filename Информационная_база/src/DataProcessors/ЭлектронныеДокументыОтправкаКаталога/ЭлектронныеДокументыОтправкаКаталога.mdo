@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a73e935-4e64-4557-bb8a-f08894c29f16">
+  <producedTypes>
+    <objectType typeId="d473b225-57a1-4a3a-92ab-1401124d0240" valueTypeId="6e49e734-cc0a-4062-a42b-3e66158e7e6e"/>
+    <managerType typeId="e4a4c20a-f1f8-4826-a820-122bc3f26a23" valueTypeId="a1aa6d28-5cd3-4f4e-891b-f25105b80b3c"/>
+  </producedTypes>
+  <name>ЭлектронныеДокументыОтправкаКаталога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка каталога</value>
+  </synonym>
+  <defaultForm>DataProcessor.ЭлектронныеДокументыОтправкаКаталога.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <tabularSections uuid="2737def3-2535-4510-b4d7-6160dc89d6b9">
+    <producedTypes>
+      <objectType typeId="7fb658da-5155-464c-a127-ab3d52f3965c" valueTypeId="3ae9d836-ff3a-4183-80a4-511f0139e3f5"/>
+      <rowType typeId="907c9233-18eb-4e6f-9ea6-8be3c036cbac" valueTypeId="b566eb58-35df-412b-bf10-876272088670"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d2e6562c-07a7-4980-8046-177297fc00bd">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c7175c84-ffdc-4ec9-a6d7-e67ff9698408">
+      <name>ХарактеристикаНоменклатуры</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>DataProcessor.ЭлектронныеДокументыОтправкаКаталога.TabularSection.Товары.Attribute.Номенклатура</field>
+      </choiceParameterLinks>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="518b8dd7-2711-4e3a-b853-c9286fe5cdfd">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e46636f2-fcf6-4868-bf68-c00adf0e9df9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="5ea7d4dd-f5e9-41e2-bdb8-c1c170e66718">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="86124699-a156-477b-8375-b2287b554fb4">
+    <name>ЗагрузкаДанныхКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных контрагента</value>
+    </synonym>
+    <group>FormNavigationPanelSeeAlso</group>
+    <commandParameterType>
+      <types>CatalogRef.Контрагенты</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b4073bc-089f-4748-86da-0f1189988c6a">
+  <producedTypes>
+    <selectionType typeId="f0c08c33-8aae-435b-82db-91fdbd52a735" valueTypeId="aca1bbd3-1be7-4c97-b441-0cee6b2cddae"/>
+    <listType typeId="5228d58f-b997-47c0-85cd-9404609f6e16" valueTypeId="254c95d6-96bb-4d54-a1b2-f6ed6eb208c1"/>
+    <managerType typeId="366e7b0f-e2e0-4f5f-b7d1-2cc3345e4c03" valueTypeId="131720ae-ff88-4fd9-bc76-24876ddf9e8a"/>
+    <recordSetType typeId="9d6bf9b9-a584-4010-8f7e-d30d44c11f01" valueTypeId="b4f7c699-5958-44bc-9a90-58037f2d01c5"/>
+    <recordKeyType typeId="b4fc5382-6b00-4ba5-8f4f-c62b0f7a2a91" valueTypeId="a77e9238-dd32-4dae-9993-02c289bd0dd8"/>
+    <recordType typeId="95007c5b-3c4b-4614-985e-b90cd7d4a15e" valueTypeId="a9b03e89-5adf-4a2f-9934-db8e3a802e2e"/>
+    <recordManagerType typeId="6f31401f-a5b9-4c60-8a2a-0de5d735115e" valueTypeId="ab61dbbb-5157-4360-9214-11483c169f96"/>
+  </producedTypes>
+  <name>ПрименениеПереводовВПути</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переводы в пути</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПрименениеПереводовВПути.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Переводы в пути</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>История изменения: Переводы в пути</value>
+  </extendedListPresentation>
+  <resources uuid="399a741b-6955-430d-95d9-cb36938c53c9">
+    <name>ИспользоватьПереводыВПутиПриПеремещенияДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется счет 57 &quot;Переводы в пути&quot; при перемещении денежных средств</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Операции перевода денежных средств на другой счет организации, взноса и снятия наличных 
+с расчетного счета в банке отражаются с использованием счета 57 &quot;Переводы в пути&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="288a70a4-2fdc-4215-bae4-3a5eacb41ca3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2aca0c13-723d-4501-b2f1-e1c95c20aec8">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

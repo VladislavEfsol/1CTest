@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="500e51a6-0802-4258-83c0-0fdc7d8b8aaf">
+  <producedTypes>
+    <selectionType typeId="6dae4b9e-ef17-4df1-a070-25e1d2a98bdd" valueTypeId="f038ac94-a3ee-4c73-a88b-ee3f78a16a0e"/>
+    <listType typeId="9a1dd628-63d4-4717-ac67-2354273d8c3c" valueTypeId="ceac3eae-d7d9-4af7-9062-3c95f4f6006f"/>
+    <managerType typeId="662df841-c5e4-4fc8-8f55-ba636d6290e4" valueTypeId="c46bc496-9496-4852-9c8c-c27d1fb2bb46"/>
+    <recordSetType typeId="7208d9ed-af30-4305-88cf-df2ed05db4a3" valueTypeId="53b0745a-c7a8-4840-bdf5-9d1b39eb4376"/>
+    <recordKeyType typeId="a17eb64a-1762-4b8e-a4f3-b7f603b3b4e1" valueTypeId="de694572-11cc-43eb-852b-e5eea2e39894"/>
+    <recordType typeId="f56903d9-b974-4112-80a8-f06fe66aecb4" valueTypeId="29112c83-564e-4201-87c5-68ff67c51146"/>
+  </producedTypes>
+  <name>БонусныеБаллы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бонусные баллы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата операции начисления или списания бонусных баллов</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="e2437015-34f5-4c84-a0de-a83e445b9c5d">
+    <name>Начислено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество баллов, доступных для оплаты</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="08b1bc22-2029-4122-b772-41b3a2cfa08a">
+    <name>КСписанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>К списанию</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество баллов, подлежащих списанию, уменьшающее доступное для оплаты количество</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="f50b05c7-e93f-4d06-89f9-39b613843264">
+    <name>ДатаПервоначальногоНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата первоначального начисления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата первоначального начисления заполняется только для движений по ресурсу &quot;К списанию&quot; при начислении бонусных баллов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="f765843f-0889-47eb-91f6-7518d0bbf8f9">
+    <name>БонуснаяКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бонусная карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДисконтныеКарты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дисконтная карта, по которой накапливаются баллы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

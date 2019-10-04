@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>DataProcessor.КлиентБанк.Command.ОткрытьКлиентБанк</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsPlacement>
+    <placementFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>DataProcessor.КлиентБанк.Command.ОткрытьКлиентБанк</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>DocumentJournal.ДокументыПоБанку.Command.ДокументыПоБанку</commands>
+      <commands>DataProcessor.КлиентБанк.Command.ОткрытьКлиентБанк</commands>
+      <commands>Document.ПлатежноеПоручение.StandardCommand.OpenList</commands>
+      <commands>Document.ПоступлениеНаСчет.StandardCommand.OpenList</commands>
+      <commands>Document.РасходСоСчета.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

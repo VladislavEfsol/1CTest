@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05541312-20d2-48c4-9097-125f78de6325">
+  <producedTypes>
+    <objectType typeId="0582f079-5e80-485b-982b-6e3434f0d42c" valueTypeId="22a519ed-1b78-4760-aa2f-c22c310668ca"/>
+    <managerType typeId="f3ec5e90-2c86-4604-811e-8c251ee65495" valueTypeId="530c8d7c-d9a9-45f4-918a-555db3091f2f"/>
+  </producedTypes>
+  <name>СопоставлениеНоменклатурыЕГАИС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сопоставление номенклатуры ЕГАИС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СопоставлениеНоменклатурыЕГАИС.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <tabularSections uuid="ec859ace-3795-40eb-a8b6-6aa1225972b8">
+    <producedTypes>
+      <objectType typeId="cda7ebab-2e86-4808-a067-e6a3c2defc3f" valueTypeId="7b7e3e26-e87f-4644-8011-ce624fae695b"/>
+      <rowType typeId="8de0ed7b-b173-4542-963d-05030fae3a69" valueTypeId="61a83949-5937-4bfa-9a1f-134f6283f139"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9e732f31-f0ff-40bb-b150-53ea92236508">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Наименование номенклатурной позиции.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8056f63d-8231-41dd-8742-352660410d1e">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ХарактеристикаНоменклатуры</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Если у выбранной номенклатуры используются характеристики, то необходимо выбрать характеристику номенклатуры.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6e4f9be9-1001-407c-9b8f-1ecd48293fc9">
+      <name>АлкогольнаяПродукция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Алкогольная продукция</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КлассификаторАлкогольнойПродукцииЕГАИС</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="fd8b33fd-a471-49d1-a432-1d0bc425b2af">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

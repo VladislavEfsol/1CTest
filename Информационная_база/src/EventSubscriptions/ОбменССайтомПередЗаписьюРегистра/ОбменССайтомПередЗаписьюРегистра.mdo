@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc5583bd-ea13-4e4f-b4b4-5a9c88678668">
+  <name>ОбменССайтомПередЗаписьюРегистра</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен с сайтом перед записью регистра</value>
+  </synonym>
+  <source>
+    <types>AccumulationRegisterRecordSet.ОплатаСчетовИЗаказов</types>
+    <types>AccumulationRegisterRecordSet.ЗаказыПокупателей</types>
+    <types>InformationRegisterRecordSet.ШтрихкодыНоменклатуры</types>
+    <types>InformationRegisterRecordSet.ОтклоненияОтГрафиковРаботыРесурсов</types>
+    <types>AccumulationRegisterRecordSet.ЗапасыНаСкладах</types>
+    <types>InformationRegisterRecordSet.ЦеныНоменклатуры</types>
+    <types>InformationRegisterRecordSet.РасписаниеЗагрузкиРесурсов</types>
+    <types>InformationRegisterRecordSet.ГрафикиРаботыРесурсов</types>
+    <types>AccumulationRegisterRecordSet.Запасы</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменССайтом.ОбменССайтомПередЗаписьюРегистраПередЗаписью</handler>
+</mdclass:EventSubscription>

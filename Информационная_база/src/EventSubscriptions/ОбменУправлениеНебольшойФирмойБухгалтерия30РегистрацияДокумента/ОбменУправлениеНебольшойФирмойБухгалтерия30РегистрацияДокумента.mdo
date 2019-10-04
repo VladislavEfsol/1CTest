@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf0698bc-e165-4d38-814a-73c8b4dd6f2d">
+  <name>ОбменУправлениеНебольшойФирмойБухгалтерия30РегистрацияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен данными &quot;Управление нашей фирмой&quot; - &quot;Бухгалтерия предприяти 3.0&quot;. Перед записью документа.</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ОтчетПереработчика</types>
+    <types>DocumentObject.СчетНаОплату</types>
+    <types>DocumentObject.РасходСоСчета</types>
+    <types>DocumentObject.ПеремещениеДС</types>
+    <types>DocumentObject.ОтчетОПереработке</types>
+    <types>DocumentObject.ПересортицаЗапасов</types>
+    <types>DocumentObject.ДополнительныеРасходы</types>
+    <types>DocumentObject.РасходИзКассы</types>
+    <types>DocumentObject.АвансовыйОтчет</types>
+    <types>DocumentObject.ПлатежноеПоручение</types>
+    <types>DocumentObject.ОприходованиеЗапасов</types>
+    <types>DocumentObject.ЗаказПокупателя</types>
+    <types>DocumentObject.ПрочиеРасходы</types>
+    <types>DocumentObject.ДоговорКредитаИЗайма</types>
+    <types>DocumentObject.ПеремещениеЗапасов</types>
+    <types>DocumentObject.ОтчетКомиссионера</types>
+    <types>DocumentObject.Взаимозачет</types>
+    <types>DocumentObject.РасходыПриИмпорте</types>
+    <types>DocumentObject.СчетФактура</types>
+    <types>DocumentObject.ОтчетОРозничныхПродажах</types>
+    <types>DocumentObject.НачисленияПоКредитамИЗаймам</types>
+    <types>DocumentObject.ПереоценкаВРозницеСуммовойУчет</types>
+    <types>DocumentObject.КорректировкаПоступления</types>
+    <types>DocumentObject.ОперацияПоПлатежнымКартам</types>
+    <types>DocumentObject.РаспределениеЗатрат</types>
+    <types>DocumentObject.ОтчетКомитенту</types>
+    <types>DocumentObject.КорректировкаРеализации</types>
+    <types>DocumentObject.СчетНаОплатуПоставщика</types>
+    <types>DocumentObject.МаркировкаТоваровГИСМ</types>
+    <types>DocumentObject.ПриходнаяНакладная</types>
+    <types>DocumentObject.СборкаЗапасов</types>
+    <types>DocumentObject.РасходнаяНакладная</types>
+    <types>DocumentObject.АктВыполненныхРабот</types>
+    <types>DocumentObject.СписаниеЗапасов</types>
+    <types>DocumentObject.ПоступлениеНаСчет</types>
+    <types>DocumentObject.СчетФактураПолученный</types>
+    <types>DocumentObject.ПоступлениеВКассу</types>
+    <types>DocumentObject.ИнвентаризацияЗапасов</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияБП.ОбменУправлениеНебольшойФирмойБухгалтерия30ПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>
